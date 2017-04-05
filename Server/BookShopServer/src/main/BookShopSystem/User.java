@@ -1,4 +1,4 @@
-package BookingSystem;
+package BookShopSystem;
 import java.util.List;
 import java.util.ArrayList;
 

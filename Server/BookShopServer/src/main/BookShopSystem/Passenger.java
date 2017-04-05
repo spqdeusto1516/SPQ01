@@ -1,4 +1,4 @@
-package BookingSystem;
+package BookShopSystem;
 
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
