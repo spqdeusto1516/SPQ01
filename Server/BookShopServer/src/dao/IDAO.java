@@ -1,9 +1,8 @@
-package Dao;
+package dao;
 
 import java.util.List;
 
-import BookingSystem.Reservation;
-import BookingSystem.User;
+import bookShopSystem.User;
 
 public interface IDAO {
 	public void storeObject(Object object);

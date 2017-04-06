@@ -1,12 +1,12 @@
-package Dao;
+package dao;
 
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
 import javax.jdo.Transaction;
 
-import BookingSystem.Reservation;
-import BookingSystem.User;
+import bookShopSystem.Reservation;
+import bookShopSystem.User;
 
 public class UserDAO implements IDAO {
 

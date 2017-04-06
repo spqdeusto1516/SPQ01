@@ -1,11 +1,11 @@
 package remote;
 
-import BookingSystem.*;
+import bookShopSystem.*;
 
 public class BSService {
 	public void setPassenger(String p) {
 	}
-	public Flight getFlight(int num){
+	public Book getBook(int num){
 		return null;
 	}
 }

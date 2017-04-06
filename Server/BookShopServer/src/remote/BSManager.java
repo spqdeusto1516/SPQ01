@@ -9,24 +9,24 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-import BookingSystem.Flight;
-import BookingSystem.Passenger;
-import BookingSystem.Reservation;
-import BookingSystem.User;
 import Dao.DaoFactory;
 import Server.AGateway;
 import Server.AirGateway;
 import Server.PGateway;
-import dto.FlightDTO;
-import dto.FlightDtoAssembler;
+import bookShopSystem.Book;
+//import bookShopSystem.Passenger;
+//import bookShopSystem.Reservation;
+import bookShopSystem.User;
+import dto.BookDTO;
+import dto.BookDtoAssembler;
 
-public class BSManager extends UnicastRemoteObject implements IBookingSystemManager {
+public class BSManager extends UnicastRemoteObject implements IBookShopManager {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private Flight[] ff;
+	private Book[] ff;
 	User user;
 	DaoFactory DaoF;
 	PGateway Pgateway;
@@ -82,7 +82,7 @@ public class BSManager extends UnicastRemoteObject implements IBookingSystemMana
 	}
 
 	@Override
-	public List<FlightDTO> getFlights() {
+	public List<BookDTO> getBooks() {
 		// TODO Auto-generated method stub
 		ff =Airgateway.getFlights();
 		System.out.println(ff[3].getAirlineCode()+" "+ff[3].getDeparture());

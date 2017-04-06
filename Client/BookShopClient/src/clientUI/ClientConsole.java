@@ -1,12 +1,12 @@
-package ClientUI;
+package clientUI;
 
 import java.rmi.RemoteException;
 import java.util.Scanner;
 
 import javax.sound.midi.ControllerEventListener;
 
-import ClientController.ClientController;
-import dto.FlightDTO;
+import clientController.ClientController;
+import dto.BookDTO;
 
 public class ClientConsole {
 	
@@ -66,7 +66,7 @@ public class ClientConsole {
  	            // selection = testint++;
  	            selection = scanner.nextInt();
  	            switch (selection) {
- 	            case 1: controller.getFlights();
+ 	            case 1: controller.getBooks();
  	            		return console.submenu2(console);
  	            case 2: 
  	            	logged=false;
@@ -119,11 +119,11 @@ public class ClientConsole {
          	
              System.out.println("Welcome to the Flights MENU");
              
-             for (int i=0;i<controller.flights.size();i++) {
-            	 System.out.println((1+i)+": "+controller.flights.get(i).getAcronym()+" "+controller.flights.get(i).getDescription());
+             for (int i=0;i<controller.books.size();i++) {
+            	 System.out.println((1+i)+": "+controller.books.get(i).getAcronym()+" "+controller.books.get(i).getDescription());
 			}
             
-             for (int i=1;i<controller.flights.size()+1;i++) {
+             for (int i=1;i<controller.books.size()+1;i++) {
             	 System.out.println("["+i+"] BookFlight "+i+"");
              }
 	         System.out.println("[3] LogOut");
@@ -132,16 +132,16 @@ public class ClientConsole {
               //send Password
              switch (pass) {
 	            case 1: 
-	            	ResNum=controller.book(controller.flights.get(pass));
+	            	ResNum=controller.book(controller.books.get(pass));
 	            	return console.submenu3(console);
 	            case 2: 
-	            	ResNum=controller.book(controller.flights.get(pass));
+	            	ResNum=controller.book(controller.books.get(pass));
 	            	return console.submenu3(console);
 	            case 3: 
-	            	ResNum=controller.book(controller.flights.get(pass));
+	            	ResNum=controller.book(controller.books.get(pass));
 	            	return console.submenu3(console);
 	            case 4: 
-	            	ResNum=controller.book(controller.flights.get(pass));
+	            	ResNum=controller.book(controller.books.get(pass));
 	            	return console.submenu3(console);
 	            case 5: logged=false;
             	return console.mainMenu(console);

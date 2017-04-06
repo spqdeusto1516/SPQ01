@@ -1,16 +1,16 @@
-package ClientController;
+package clientController;
 
 import java.rmi.RemoteException;
 import java.util.List;
 
-import dto.FlightDTO;
-import Client.RMIServiceLocator;
-import ClientUI.ClientConsole;
+import client.RMIServiceLocator;
+import clientUI.ClientConsole;
+import BookDTO;
 
 public class ClientController {
 	@SuppressWarnings("unused")
 	private RMIServiceLocator rsl;
-	public  List<bookDTO> books;
+	public  List<BookDTO> books;
 	
 	public ClientController(String[] args) throws RemoteException {
 		// Add your code HERE - Related to the Service Locator
@@ -24,7 +24,7 @@ public class ClientController {
     		
     		// Add your code HERE - Related to getting the service and requesting creation of TVProgram	
     		
-    		flights = rsl.getServiceB().getFlights();
+    		books = rsl.getServiceB().getBooks();
     		
     		
     	} catch (Exception e){
@@ -61,13 +61,13 @@ public class ClientController {
     	
     }
     
-    public int book(FlightDTO flight){
+    public int book(BookDTO book){
     	System.out.println("making Reservation");
     	String[] pass=new String[2];
     	pass[0]="Joel";
     	pass[1]="Ander";
     	try {
-			return rsl.getServiceB().makeRReservation(flight.getAcronym(), pass);
+			return rsl.getServiceB().makeRReservation(book.getAcronym(), pass);
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

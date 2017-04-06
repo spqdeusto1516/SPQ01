@@ -2,7 +2,7 @@ package dto;
 
 import java.io.Serializable;
 
-public class FlightDTO implements Serializable{
+public class BookDTO implements Serializable{
 
 	/**
 	 * 
@@ -12,7 +12,7 @@ public class FlightDTO implements Serializable{
 	private String description;
 	//addStuff
 
-	public FlightDTO(String acronym, String description) {
+	public BookDTO(String acronym, String description) {
 		this.acronym = acronym;
 		this.description = description;
 	}

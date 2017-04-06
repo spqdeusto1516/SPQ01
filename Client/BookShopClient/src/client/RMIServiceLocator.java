@@ -1,18 +1,18 @@
-package Client;
+package client;
 
 import java.net.MalformedURLException;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.HashMap;
 
-import remote.IBookingSystemManager;
+import remote.IBookShopManager;
 
 public class RMIServiceLocator{
 	/** 
 	 * The Cache - Limitation: one server at a time
 	 * Proposed improvement: list of services
 	 */
-	private IBookingSystemManager BookingService;
+	private IBookShopManager BookingService;
 
     /** Creates a new instance of RMIServiceLocator */
     public RMIServiceLocator(){ 
@@ -24,7 +24,7 @@ public class RMIServiceLocator{
     	String name = "//" + ip + ":" + port + "/" + serviceName;
 		try {
 			System.out.println(serviceName);
-			BookingService = (IBookingSystemManager) java.rmi.Naming.lookup(name);
+			BookingService = (IBookShopManager) java.rmi.Naming.lookup(name);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -39,7 +39,7 @@ public class RMIServiceLocator{
 	
     }
     
-    public IBookingSystemManager getServiceB() {    	
+    public IBookShopManager getServiceB() {    	
     	// Add your code to return the TARGET reference HERE
     	return BookingService;
     }
