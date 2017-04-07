@@ -134,7 +134,7 @@
 						<artifactId>exec-maven-plugin</artifactId>  
 						<version>1.2.1</version>  
 						<configuration>  
-									<mainClass>java.server.Server</mainClass>
+									<mainClass>server.Server</mainClass>
 									<systemProperties>
 										
 										<systemProperty>
@@ -173,7 +173,7 @@
 						<artifactId>exec-maven-plugin</artifactId>  
 						<version>1.2.1</version>  
 						<configuration>  
-									<mainClass>java.client.Client</mainClass>
+									<mainClass>client.Client</mainClass>
 									<systemProperties>
 										<systemProperty>
 											<key>java.security.manager</key>

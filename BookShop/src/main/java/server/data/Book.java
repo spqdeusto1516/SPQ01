@@ -1,9 +1,9 @@
 package server.data;
 
-//@PersistenceCapable(detachable="true")
+@PersistenceCapable(detachable="true")
 public class Book {
 	
-	//@PrimaryKey
+	@PrimaryKey
 	private int ISBN;
 	private String title;
 	private String category;

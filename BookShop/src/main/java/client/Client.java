@@ -19,6 +19,9 @@ public class Client {
     public Client(){ 
     
     }
+    public static void main(String[] args) {
+    	
+    }
 
     public void setService(String ip, String port, String serviceName){    
     	// Add your code to get the TARGET reference HERE    
