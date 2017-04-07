@@ -4,7 +4,7 @@ import java.net.MalformedURLException;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-
+import client.controller.BookShopController;
 import server.remote.IBookShopManager;
 
 public class Client {
@@ -20,8 +20,15 @@ public class Client {
     
     }
     public static void main(String[] args) {
-    	
-    }
+    	BookShopController bookshop = null;
+		try {
+			bookshop=new BookShopController(args);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.print(bookshop.hello());
+	}
 
     public void setService(String ip, String port, String serviceName){    
     	// Add your code to get the TARGET reference HERE    

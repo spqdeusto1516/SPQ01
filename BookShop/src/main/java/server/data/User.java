@@ -1,5 +1,8 @@
 package server.data;
 
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+
 @PersistenceCapable(detachable="true")
 public class User{
 	

@@ -12,6 +12,8 @@ import javax.jdo.Query;
 import javax.jdo.JDOHelper;
 import javax.jdo.Transaction;
 
+import server.remote.BookShopManager;
+import server.remote.IBookShopManager;
 
 import java.util.HashMap;
 
@@ -108,26 +110,27 @@ public class Server extends UnicastRemoteObject implements IServer {
 */
 	public static void main(String[] args) {
 		if (args.length != 3) {
-			System.out.println("How to invoke: java [policy] [codebase] Server.Server [host] [port] [server]");
 			System.exit(0);
 		}
 
 		if (System.getSecurityManager() == null) {
-			System.setSecurityManager(new RMISecurityManager());
+			System.setSecurityManager(new SecurityManager());
 		}
 
 		String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
 
 		try {
-			IServer objServer = new Server();
-			Naming.rebind(name, objServer);
-			System.out.println("Server '" + name + "' active and waiting...");
-			java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );
-			java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
-			String line  = stdin.readLine();
+			
+			IBookShopManager adminService = new BookShopManager();			
+			Naming.rebind(name, adminService);
+			System.out.println("* TVProgram Admin Service '" + name + "' active and waiting...");
+			
 		} catch (Exception e) {
-			System.err.println("Hello exception: " + e.getMessage());
+			System.err.println("$ TVProgramManager exception: " + e.getMessage());
 			e.printStackTrace();
 		}
+		do{
+			
+		}while(true);
 	}
 }
