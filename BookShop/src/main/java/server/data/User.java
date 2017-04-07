@@ -1,5 +1,7 @@
 package server.data;
 
+import javax.jdo.annotations.*;
+
 @PersistenceCapable(detachable="true")
 public class User{
 	
