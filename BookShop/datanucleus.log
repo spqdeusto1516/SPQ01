@@ -10155,3 +10155,889 @@ java.sql.SQLException: Access denied for user 'spq'@'localhost' (using password:
 	at java.lang.Thread.run(Thread.java:745)
 16:02:52,150 (Finalizer) DEBUG [DataNucleus.MetaData] - Deregistering listener for metadata initialisation
 >>>>>>> branch 'master' of https://github.com/spqdeusto1617/SPQ01
+17:19:11,805 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+17:19:11,807 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+17:19:11,807 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+17:19:11,808 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+17:19:11,808 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+17:19:11,808 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+17:19:11,808 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+17:19:11,808 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+17:19:11,809 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+17:19:11,809 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+17:19:11,809 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+17:19:11,809 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+17:19:11,809 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+17:19:11,810 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+17:19:11,810 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+17:19:11,810 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+17:19:11,810 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+17:19:11,810 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+17:19:11,810 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+17:19:11,811 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes
+17:19:11,811 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m1\datanucleus-core-5.1.0-m1.jar
+17:19:11,811 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m1\datanucleus-api-jdo-5.1.0-m1.jar
+17:19:11,811 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m1\datanucleus-rdbms-5.1.0-m1.jar
+17:19:11,811 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+17:19:11,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
+17:19:11,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+17:19:11,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\jdom\jdom\2.0.2\jdom-2.0.2.jar
+17:19:11,813 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar
+17:19:11,813 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
+17:19:11,858 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+17:19:11,908 (main) DEBUG [DataNucleus.General] - Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/sony%20vaio/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
+17:19:11,925 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+17:19:11,928 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+17:19:11,933 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 5.1.0.m1 at URL file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar.
+17:19:11,972 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar!/plugin.xml.
+17:19:12,015 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar!/plugin.xml.
+17:19:12,029 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 5.1.0.m1 at URL file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar.
+17:19:12,039 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar!/plugin.xml.
+17:19:12,041 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar!/plugin.xml.
+17:19:12,045 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 5.1.0.m1 at URL file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar.
+17:19:12,068 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar!/plugin.xml.
+17:19:12,087 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar!/plugin.xml.
+17:19:12,129 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.metadata.validate desconocida - vamos a ignorarla
+17:19:12,130 (main) DEBUG [DataNucleus.Datastore] - Creating StoreManager for datastore
+17:19:12,352 (main) DEBUG [DataNucleus.Connection] - Hemos creado tx data source con pool tipo dbcp2-builtin
+17:19:12,352 (main) DEBUG [DataNucleus.Connection] - Registrado la factoria de connecciones transaccionales bajo el nombre "rdbms/tx"
+17:19:12,353 (main) DEBUG [DataNucleus.Connection] - Registrado la factoria de connecciones nontransaccionales bajo el nombre "rdbms/nontx"
+17:19:12,385 (main) DEBUG [DataNucleus.Connection] - Hemos creado nontx data source con pool tipo dbcp2-builtin
+17:19:12,902 (main) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@5442a311 [conn=null, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" abierto
+17:19:12,965 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BIT, sql-type=BIT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BitRDBMSMapping, default=true)
+17:19:12,966 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:19:12,966 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BooleanRDBMSMapping, default=false)
+17:19:12,967 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+17:19:12,968 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+17:19:12,969 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Byte (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=true)
+17:19:12,969 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Byte (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+17:19:12,970 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Character (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=true)
+17:19:12,971 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Character (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+17:19:12,972 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Double (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=true)
+17:19:12,973 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Double (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+17:19:12,973 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=FLOAT, sql-type=FLOAT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.FloatRDBMSMapping, default=true)
+17:19:12,974 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=false)
+17:19:12,974 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=REAL, sql-type=REAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.RealRDBMSMapping, default=false)
+17:19:12,975 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+17:19:12,975 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=true)
+17:19:12,976 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:19:12,976 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+17:19:12,976 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+17:19:12,976 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+17:19:12,977 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+17:19:12,977 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=INTEGER, sql-type=INT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+17:19:12,977 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+17:19:12,977 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+17:19:12,977 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+17:19:12,977 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=true)
+17:19:12,977 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+17:19:12,978 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+17:19:12,978 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=true)
+17:19:12,978 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:19:12,979 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:19:12,979 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+17:19:12,980 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=CLOB, sql-type=CLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.ClobRDBMSMapping, default=false)
+17:19:12,983 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+17:19:12,985 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+17:19:12,985 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=MEDIUMTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+17:19:12,986 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=TEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+17:19:12,986 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=LONGBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+17:19:12,986 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=MEDIUMBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+17:19:12,988 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NVarcharRDBMSMapping, default=false)
+17:19:12,988 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NCharRDBMSMapping, default=false)
+17:19:12,988 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigDecimal (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=true)
+17:19:12,988 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigDecimal (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+17:19:12,989 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigInteger (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=true)
+17:19:12,989 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=true)
+17:19:12,990 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+17:19:12,990 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:19:12,991 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:19:12,991 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:19:12,991 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=true)
+17:19:12,992 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+17:19:12,992 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:19:12,992 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:19:12,992 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:19:12,992 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+17:19:12,992 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:19:12,992 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:19:12,993 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+17:19:12,993 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+17:19:12,993 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+17:19:12,993 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+17:19:12,993 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:19:12,993 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:19:12,993 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:19:12,993 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+17:19:12,995 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarBinaryRDBMSMapping, default=true)
+17:19:12,996 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+17:19:12,996 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=VARBINARY, sql-type=VARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarBinaryRDBMSMapping, default=false)
+17:19:12,998 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.File (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BinaryStreamRDBMSMapping, default=true)
+17:19:12,998 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+17:19:12,998 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+17:19:12,998 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+17:19:12,998 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:19:12,998 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:19:13,036 (main) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=REAL, sql-type=REAL)
+17:19:13,036 (main) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR)
+17:19:13,036 (main) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR)
+17:19:13,036 (main) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN)
+17:19:13,072 (main) DEBUG [DataNucleus.Datastore.Schema] - La columna "`DELETEME1491578353062`.`UNUSED`" añadió a la representación de la table.
+17:19:13,078 (main) DEBUG [DataNucleus.Datastore.Schema] - Crear la tabla `DELETEME1491578353062`
+17:19:13,082 (main) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `DELETEME1491578353062`
+(
+    `UNUSED` INTEGER NOT NULL
+) ENGINE=INNODB
+17:19:13,562 (main) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 479 ms
+17:19:13,613 (main) DEBUG [DataNucleus.Datastore.Schema] - No era posible determinar el nombre del esquema por este DataStore
+17:19:13,613 (main) DEBUG [DataNucleus.Datastore.Schema] - Borrar la tabla `DELETEME1491578353062`
+17:19:13,613 (main) DEBUG [DataNucleus.Datastore.Schema] - DROP TABLE `DELETEME1491578353062` CASCADE
+17:19:13,827 (main) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 214 ms
+17:19:13,828 (main) DEBUG [DataNucleus.Datastore] - ======================= Datastore =========================
+17:19:13,828 (main) DEBUG [DataNucleus.Datastore] - StoreManager : "rdbms" (org.datanucleus.store.rdbms.RDBMSStoreManager)
+17:19:13,829 (main) DEBUG [DataNucleus.Datastore] - Datastore : read-write
+17:19:13,829 (main) DEBUG [DataNucleus.Datastore] - Schema Control : AutoCreate(Tables,Columns,Constraints), Validate(None)
+17:19:13,829 (main) DEBUG [DataNucleus.Datastore] - Schema : NamingFactory=datanucleus2 identifierCase=null
+17:19:13,829 (main) DEBUG [DataNucleus.Datastore] - Query Languages : [JDOQL, JPQL, SQL, STOREDPROC]
+17:19:13,829 (main) DEBUG [DataNucleus.Datastore] - Queries : Timeout=0
+17:19:13,829 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+17:19:13,830 (main) DEBUG [DataNucleus.Datastore] - Datastore Adapter : org.datanucleus.store.rdbms.adapter.MySQLAdapter
+17:19:13,830 (main) DEBUG [DataNucleus.Datastore] - Datastore : name="MySQL" version="5.5.5-10.1.16-MariaDB"
+17:19:13,830 (main) DEBUG [DataNucleus.Datastore] - Datastore Driver : name="MySQL Connector Java" version="mysql-connector-java-5.1.41 ( Revision: 83c6dc41b96809df81444362933043b20a1d49d5 )"
+17:19:13,830 (main) DEBUG [DataNucleus.Datastore] - Primary Connection Factory : URL[jdbc:mysql://localhost/BookShop]
+17:19:13,830 (main) DEBUG [DataNucleus.Datastore] - Secondary Connection Factory : URL[jdbc:mysql://localhost/BookShop]
+17:19:13,830 (main) DEBUG [DataNucleus.Datastore] - Datastore Identifiers : factory="datanucleus2" case="UPPERCASE" catalog=BookShop
+17:19:13,830 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Cases : lowercase "lowercase" "UPPERCASE" 
+17:19:13,831 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Lengths (max) : Table=64 Column=64 Constraint=64 Index=64 Delimiter=`
+17:19:13,831 (main) DEBUG [DataNucleus.Datastore] - Support for Identifiers in DDL : catalog=true schema=false
+17:19:13,831 (main) DEBUG [DataNucleus.Datastore] - Datastore : checkTableViewExistence, rdbmsConstraintCreateMode=DataNucleus, initialiseColumnInfo=ALL
+17:19:13,831 (main) DEBUG [DataNucleus.Datastore] - Support Statement Batching : yes (max-batch-size=50)
+17:19:13,831 (main) DEBUG [DataNucleus.Datastore] - Queries : Results direction=forward, type=forward-only, concurrency=read-only
+17:19:13,831 (main) DEBUG [DataNucleus.Datastore] - Java-Types : string-default-length=255
+17:19:13,831 (main) DEBUG [DataNucleus.Datastore] - JDBC-Types : VARCHAR, LONGVARCHAR, BINARY, VARBINARY, LONGVARBINARY, BIGINT, TINYINT, BIT, CHAR, NUMERIC, DECIMAL, INTEGER, CLOB, SMALLINT, BLOB, FLOAT, DOUBLE, DATE, TIME, TIMESTAMP
+17:19:13,832 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+17:19:13,832 (main) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@5442a311 [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@6f195bc3, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" cerrado
+17:19:13,834 (main) DEBUG [DataNucleus.Datastore] - StoreManager now created
+17:19:13,852 (main) DEBUG [DataNucleus.Persistence] - Tipos de Java inicializando ...
+17:19:13,928 (main) DEBUG [DataNucleus.Persistence] - Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
+17:19:13,929 (main) DEBUG [DataNucleus.Persistence] - Inicializando TypeConverters ...
+17:19:13,993 (main) DEBUG [DataNucleus.Persistence] - TypeConverters listo
+17:19:13,994 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
+17:19:13,994 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for char[] to : java.nio.ByteBuffer
+17:19:13,994 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for double[] to : java.nio.ByteBuffer
+17:19:13,994 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for float[] to : java.nio.ByteBuffer
+17:19:13,994 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for int[] to : java.nio.ByteBuffer
+17:19:13,994 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for long[] to : java.nio.ByteBuffer
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for short[] to : java.nio.ByteBuffer
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.Color to : int[],java.lang.String
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.image.BufferedImage to : java.nio.ByteBuffer,byte[]
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.io.Serializable to : java.nio.ByteBuffer,java.lang.String,byte[]
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Boolean to : java.lang.Integer,java.lang.Character
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Character to : java.lang.String
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Class to : java.lang.String
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Integer to : java.lang.String
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Long to : java.lang.String
+17:19:13,995 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigDecimal to : java.nio.ByteBuffer,java.lang.String,java.lang.Double
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigInteger to : java.lang.Long,java.nio.ByteBuffer,java.lang.String
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URI to : java.lang.String
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URL to : java.lang.String
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Date to : java.lang.Long,java.lang.String,java.util.Date
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Time to : java.lang.Long,java.lang.String,java.util.Date
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Timestamp to : java.lang.Long,java.lang.String,java.util.Date
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Duration to : java.lang.Long,java.lang.String,java.lang.Double
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Instant to : java.lang.Long,java.lang.String,java.util.Date,java.sql.Timestamp
+17:19:13,996 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalDate to : java.lang.String,java.util.Date,java.sql.Date
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalDateTime to : java.lang.String,java.util.Date,java.sql.Timestamp
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalTime to : java.lang.Long,java.lang.String,java.util.Date,java.sql.Time
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.MonthDay to : int[],java.lang.String,java.util.Date,java.sql.Date
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.OffsetDateTime to : java.lang.String,java.util.Date,java.sql.Timestamp
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.OffsetTime to : java.lang.Long,java.lang.String,java.sql.Time
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Period to : java.lang.String
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Year to : java.lang.Integer,java.lang.String
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.YearMonth to : int[],java.lang.String,java.util.Date,java.sql.Date
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZonedDateTime to : java.lang.String,java.sql.Timestamp
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZoneId to : java.lang.String
+17:19:13,997 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
+17:19:13,998 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.BitSet to : java.lang.String
+17:19:13,998 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Calendar to : java.lang.String,java.util.Date,[Ljava.lang.Object;,java.sql.Timestamp
+17:19:13,998 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Currency to : java.lang.String
+17:19:13,998 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Date to : java.lang.Long,java.lang.String
+17:19:13,998 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Locale to : java.lang.String
+17:19:13,998 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.TimeZone to : java.lang.String
+17:19:13,998 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.UUID to : java.lang.String
+17:19:13,999 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery) mapping-name=mysql, JDO-listener=true
+17:19:13,999 (main) DEBUG [DataNucleus.MetaData] - Registering listener for metadata initialisation
+17:19:14,007 (main) DEBUG [DataNucleus.Cache] - Cache de nivel 2 del tipo "soft" inicializada
+17:19:14,009 (main) DEBUG [DataNucleus.Persistence] - Started pool of ExecutionContext (maxPool=20, reaperThread=false)
+17:19:14,017 (main) DEBUG [DataNucleus.Persistence] - ================= NucleusContext ===============
+17:19:14,017 (main) DEBUG [DataNucleus.Persistence] - DataNucleus Context : Versión: "5.1.0.m1" con JRE "1.8.0_20" en "Windows 8.1"
+17:19:14,017 (main) DEBUG [DataNucleus.Persistence] - Persistence API : JDO
+17:19:14,017 (main) DEBUG [DataNucleus.Persistence] - Plugin Registry : org.datanucleus.plugin.NonManagedPluginRegistry
+17:19:14,018 (main) DEBUG [DataNucleus.Persistence] - ClassLoading : default
+17:19:14,018 (main) DEBUG [DataNucleus.Persistence] - Persistence : pm-singlethreaded, nontransactional-read, nontransactional-write, reachability-at-commit, detach-all-on-commit, copy-on-attach, managed-relations(checked), deletion-policy=JDO2, serverTimeZone=Europe/Paris
+17:19:14,018 (main) DEBUG [DataNucleus.Persistence] - Transactions : type=RESOURCE_LOCAL, mode=datastore, isolation=read-committed
+17:19:14,019 (main) DEBUG [DataNucleus.Persistence] - ValueGeneration : txn-isolation=read-committed connection=New
+17:19:14,019 (main) DEBUG [DataNucleus.Persistence] - Cache : Level1 (soft), Level2 (soft, mode=UNSPECIFIED), QueryResults (soft), Collections/Maps 
+17:19:14,019 (main) DEBUG [DataNucleus.Persistence] - ================================================
+17:19:14,019 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+17:19:14,019 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+17:19:14,019 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+17:19:14,020 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/BookShop
+17:19:14,020 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+17:19:14,020 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+17:19:14,020 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+17:19:14,020 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.metadata.validate=false
+17:19:14,020 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+17:19:14,020 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+17:19:14,020 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateall=true
+17:19:14,021 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+17:19:14,021 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+17:19:14,021 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+17:19:14,021 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.validateconstraints=false
+17:19:14,021 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.validatetables=false
+17:19:14,021 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+17:19:14,021 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\client\Client.class
+17:19:14,021 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\client\controller\BookShopController.class
+17:19:14,022 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\client\remote\RMIServiceLocator.class
+17:19:14,022 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\data\Book.class
+17:19:14,022 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\data\Review.class
+17:19:14,022 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\data\User.class
+17:19:14,022 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\IServer.class
+17:19:14,022 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\remote\BookShopManager.class
+17:19:14,022 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\remote\IBookShopManager.class
+17:19:14,023 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\Server.class
+17:19:14,023 (main) DEBUG [DataNucleus.SchemaTool] - Leyendo 10 ficheros (metadata/class) ...
+17:19:14,045 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de los archivos de metadata "[]" ...
+17:19:14,046 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata ya ha terminado
+17:19:14,047 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de las clases "[client.controller.BookShopController, server.IServer, server.Server, server.remote.IBookShopManager, server.data.User, client.Client, server.remote.BookShopManager, client.remote.RMIServiceLocator, server.data.Review, server.data.Book]" ...
+17:19:14,051 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /META-INF/package.jdo
+17:19:14,052 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /WEB-INF/package.jdo
+17:19:14,052 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /package.jdo
+17:19:14,052 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client/package.jdo
+17:19:14,053 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client.jdo
+17:19:14,053 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client/controller/package.jdo
+17:19:14,054 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client/controller.jdo
+17:19:14,054 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client/controller/BookShopController.jdo
+17:19:14,054 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "client.controller.BookShopController"
+17:19:14,054 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "client.controller.BookShopController" no tener Meta-Data
+17:19:14,055 (main) DEBUG [DataNucleus.MetaData] - La clase "client.controller.BookShopController" no tiene MetaData o annotaciones.
+17:19:14,055 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /META-INF/package.jdo
+17:19:14,056 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /WEB-INF/package.jdo
+17:19:14,056 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /package.jdo
+17:19:14,056 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /server/package.jdo
+17:19:14,057 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /server.jdo
+17:19:14,057 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /server/IServer.jdo
+17:19:14,057 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.IServer"
+17:19:14,057 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.IServer" no tener Meta-Data
+17:19:14,057 (main) DEBUG [DataNucleus.MetaData] - La clase "server.IServer" no tiene MetaData o annotaciones.
+17:19:14,059 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /META-INF/package.jdo
+17:19:14,060 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /WEB-INF/package.jdo
+17:19:14,060 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /package.jdo
+17:19:14,060 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/package.jdo
+17:19:14,061 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server.jdo
+17:19:14,061 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/Server.jdo
+17:19:14,061 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.Server"
+17:19:14,061 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.Server" no tener Meta-Data
+17:19:14,062 (main) DEBUG [DataNucleus.MetaData] - La clase "server.Server" no tiene MetaData o annotaciones.
+17:19:14,062 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /META-INF/package.jdo
+17:19:14,062 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /WEB-INF/package.jdo
+17:19:14,063 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /package.jdo
+17:19:14,063 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server/package.jdo
+17:19:14,064 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server.jdo
+17:19:14,064 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server/remote/package.jdo
+17:19:14,064 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server/remote.jdo
+17:19:14,065 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server/remote/IBookShopManager.jdo
+17:19:14,065 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager"
+17:19:14,065 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.remote.IBookShopManager" no tener Meta-Data
+17:19:14,065 (main) DEBUG [DataNucleus.MetaData] - La clase "server.remote.IBookShopManager" no tiene MetaData o annotaciones.
+17:19:14,152 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" tiene anotaciones de JDO y vamos a usarlas.
+17:19:14,163 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /META-INF/package.jdo
+17:19:14,164 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /WEB-INF/package.jdo
+17:19:14,164 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /package.jdo
+17:19:14,165 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/package.jdo
+17:19:14,165 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client.jdo
+17:19:14,165 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/Client.jdo
+17:19:14,166 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "client.Client"
+17:19:14,166 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "client.Client" no tener Meta-Data
+17:19:14,166 (main) DEBUG [DataNucleus.MetaData] - La clase "client.Client" no tiene MetaData o annotaciones.
+17:19:14,167 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /META-INF/package.jdo
+17:19:14,168 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /WEB-INF/package.jdo
+17:19:14,168 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /package.jdo
+17:19:14,168 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server/package.jdo
+17:19:14,169 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server.jdo
+17:19:14,169 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server/remote/package.jdo
+17:19:14,169 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server/remote.jdo
+17:19:14,170 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server/remote/BookShopManager.jdo
+17:19:14,170 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager"
+17:19:14,170 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.remote.BookShopManager" no tener Meta-Data
+17:19:14,170 (main) DEBUG [DataNucleus.MetaData] - La clase "server.remote.BookShopManager" no tiene MetaData o annotaciones.
+17:19:14,172 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /META-INF/package.jdo
+17:19:14,172 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /WEB-INF/package.jdo
+17:19:14,172 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /package.jdo
+17:19:14,173 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client/package.jdo
+17:19:14,173 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client.jdo
+17:19:14,173 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client/remote/package.jdo
+17:19:14,174 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client/remote.jdo
+17:19:14,174 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client/remote/RMIServiceLocator.jdo
+17:19:14,174 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator"
+17:19:14,174 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "client.remote.RMIServiceLocator" no tener Meta-Data
+17:19:14,174 (main) DEBUG [DataNucleus.MetaData] - La clase "client.remote.RMIServiceLocator" no tiene MetaData o annotaciones.
+17:19:14,176 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" tiene anotaciones de JDO y vamos a usarlas.
+17:19:14,178 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" tiene anotaciones de JDO y vamos a usarlas.
+17:19:14,179 (main) DEBUG [DataNucleus.MetaData] - Populación del MetaData ...
+17:19:14,180 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" : Populando Meta-Data
+17:19:14,181 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /META-INF/package-mysql.orm
+17:19:14,181 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /WEB-INF/package-mysql.orm
+17:19:14,182 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /package-mysql.orm
+17:19:14,182 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server/package-mysql.orm
+17:19:14,182 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server-mysql.orm
+17:19:14,183 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server/data/package-mysql.orm
+17:19:14,183 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server/data-mysql.orm
+17:19:14,183 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server/data/User-mysql.orm
+17:19:14,183 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "orm" por la clase "server.data.User"
+17:19:14,184 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" campo "email" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,184 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,184 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" campo "name" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,184 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" campo "address" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,187 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" : Populando Meta-Data
+17:19:14,188 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /META-INF/package-mysql.orm
+17:19:14,188 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /WEB-INF/package-mysql.orm
+17:19:14,188 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /package-mysql.orm
+17:19:14,189 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server/package-mysql.orm
+17:19:14,189 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server-mysql.orm
+17:19:14,189 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server/data/package-mysql.orm
+17:19:14,190 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server/data-mysql.orm
+17:19:14,190 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server/data/Review-mysql.orm
+17:19:14,190 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "orm" por la clase "server.data.Review"
+17:19:14,190 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" campo "user" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,190 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" campo "book" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,191 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" campo "comment" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,191 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" campo "rating" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,192 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" : Populando Meta-Data
+17:19:14,193 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /META-INF/package-mysql.orm
+17:19:14,193 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /WEB-INF/package-mysql.orm
+17:19:14,194 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /package-mysql.orm
+17:19:14,194 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server/package-mysql.orm
+17:19:14,194 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server-mysql.orm
+17:19:14,195 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server/data/package-mysql.orm
+17:19:14,195 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server/data-mysql.orm
+17:19:14,195 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server/data/Book-mysql.orm
+17:19:14,195 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "orm" por la clase "server.data.Book"
+17:19:14,196 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "title" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,196 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "category" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,196 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "edition" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,196 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "author" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,196 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "price" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,196 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "stock" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,196 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "description" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:19:14,196 (main) DEBUG [DataNucleus.MetaData] - Inicialisación del MetaData ...
+17:19:14,197 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase server.data.User pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.User pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+17:19:14,197 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+17:19:14,197 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase server.data.Book pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Book pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+17:19:14,199 (main) ERROR [DataNucleus.MetaData] - Habia un error leyendo los ficheros. Por favor lee el LOG para obtener mas información. Lo siguiente puede ayudar : Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+org.datanucleus.exceptions.NucleusUserException: Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1393)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	... 3 more
+Nested Throwables StackTrace:
+Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase server.data.User pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.User pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase server.data.Book pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Book pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+17:20:28,176 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+17:20:28,178 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+17:20:28,178 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+17:20:28,178 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+17:20:28,179 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+17:20:28,179 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+17:20:28,179 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+17:20:28,179 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+17:20:28,179 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+17:20:28,180 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+17:20:28,180 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+17:20:28,180 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+17:20:28,180 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+17:20:28,181 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+17:20:28,181 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+17:20:28,181 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+17:20:28,181 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+17:20:28,181 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+17:20:28,182 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+17:20:28,182 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes
+17:20:28,182 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m1\datanucleus-core-5.1.0-m1.jar
+17:20:28,182 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m1\datanucleus-api-jdo-5.1.0-m1.jar
+17:20:28,182 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m1\datanucleus-rdbms-5.1.0-m1.jar
+17:20:28,183 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+17:20:28,183 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
+17:20:28,183 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+17:20:28,183 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\org\jdom\jdom\2.0.2\jdom-2.0.2.jar
+17:20:28,184 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar
+17:20:28,184 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\sony vaio\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
+17:20:28,216 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+17:20:28,267 (main) DEBUG [DataNucleus.General] - Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/sony%20vaio/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
+17:20:28,284 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+17:20:28,287 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+17:20:28,293 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 5.1.0.m1 at URL file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar.
+17:20:28,330 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar!/plugin.xml.
+17:20:28,377 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar!/plugin.xml.
+17:20:28,395 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 5.1.0.m1 at URL file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar.
+17:20:28,408 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar!/plugin.xml.
+17:20:28,411 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar!/plugin.xml.
+17:20:28,417 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 5.1.0.m1 at URL file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar.
+17:20:28,440 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar!/plugin.xml.
+17:20:28,460 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/sony%20vaio/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar!/plugin.xml.
+17:20:28,496 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.metadata.validate desconocida - vamos a ignorarla
+17:20:28,497 (main) DEBUG [DataNucleus.Datastore] - Creating StoreManager for datastore
+17:20:28,717 (main) DEBUG [DataNucleus.Connection] - Hemos creado tx data source con pool tipo dbcp2-builtin
+17:20:28,717 (main) DEBUG [DataNucleus.Connection] - Registrado la factoria de connecciones transaccionales bajo el nombre "rdbms/tx"
+17:20:28,717 (main) DEBUG [DataNucleus.Connection] - Registrado la factoria de connecciones nontransaccionales bajo el nombre "rdbms/nontx"
+17:20:28,749 (main) DEBUG [DataNucleus.Connection] - Hemos creado nontx data source con pool tipo dbcp2-builtin
+17:20:29,274 (main) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@5442a311 [conn=null, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" abierto
+17:20:29,335 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BIT, sql-type=BIT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BitRDBMSMapping, default=true)
+17:20:29,336 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:20:29,336 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BooleanRDBMSMapping, default=false)
+17:20:29,337 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+17:20:29,338 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+17:20:29,340 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Byte (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=true)
+17:20:29,340 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Byte (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+17:20:29,340 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Character (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=true)
+17:20:29,341 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Character (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+17:20:29,342 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Double (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=true)
+17:20:29,343 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Double (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+17:20:29,344 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=FLOAT, sql-type=FLOAT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.FloatRDBMSMapping, default=true)
+17:20:29,344 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=false)
+17:20:29,345 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=REAL, sql-type=REAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.RealRDBMSMapping, default=false)
+17:20:29,345 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+17:20:29,345 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=true)
+17:20:29,346 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:20:29,346 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+17:20:29,346 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+17:20:29,347 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+17:20:29,347 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+17:20:29,347 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=INTEGER, sql-type=INT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+17:20:29,347 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+17:20:29,347 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+17:20:29,347 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+17:20:29,347 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=true)
+17:20:29,348 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+17:20:29,348 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+17:20:29,349 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=true)
+17:20:29,349 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:20:29,349 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:20:29,350 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+17:20:29,351 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=CLOB, sql-type=CLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.ClobRDBMSMapping, default=false)
+17:20:29,353 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+17:20:29,356 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+17:20:29,356 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=MEDIUMTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+17:20:29,356 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=TEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+17:20:29,357 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=LONGBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+17:20:29,357 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=MEDIUMBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+17:20:29,359 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NVarcharRDBMSMapping, default=false)
+17:20:29,359 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NCharRDBMSMapping, default=false)
+17:20:29,359 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigDecimal (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=true)
+17:20:29,359 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigDecimal (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+17:20:29,360 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigInteger (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=true)
+17:20:29,360 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=true)
+17:20:29,361 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+17:20:29,361 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:20:29,362 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:20:29,362 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:20:29,362 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=true)
+17:20:29,363 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+17:20:29,363 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:20:29,363 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:20:29,363 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:20:29,363 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+17:20:29,363 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:20:29,363 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:20:29,364 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+17:20:29,364 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+17:20:29,364 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+17:20:29,364 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+17:20:29,364 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:20:29,364 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:20:29,364 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+17:20:29,364 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+17:20:29,367 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarBinaryRDBMSMapping, default=true)
+17:20:29,367 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+17:20:29,367 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=VARBINARY, sql-type=VARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarBinaryRDBMSMapping, default=false)
+17:20:29,369 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.File (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BinaryStreamRDBMSMapping, default=true)
+17:20:29,369 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+17:20:29,369 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+17:20:29,369 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+17:20:29,369 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+17:20:29,369 (main) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+17:20:29,411 (main) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=REAL, sql-type=REAL)
+17:20:29,411 (main) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR)
+17:20:29,411 (main) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR)
+17:20:29,412 (main) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN)
+17:20:29,447 (main) DEBUG [DataNucleus.Datastore.Schema] - La columna "`DELETEME1491578429437`.`UNUSED`" añadió a la representación de la table.
+17:20:29,453 (main) DEBUG [DataNucleus.Datastore.Schema] - Crear la tabla `DELETEME1491578429437`
+17:20:29,457 (main) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `DELETEME1491578429437`
+(
+    `UNUSED` INTEGER NOT NULL
+) ENGINE=INNODB
+17:20:29,912 (main) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 455 ms
+17:20:29,944 (main) DEBUG [DataNucleus.Datastore.Schema] - No era posible determinar el nombre del esquema por este DataStore
+17:20:29,944 (main) DEBUG [DataNucleus.Datastore.Schema] - Borrar la tabla `DELETEME1491578429437`
+17:20:29,944 (main) DEBUG [DataNucleus.Datastore.Schema] - DROP TABLE `DELETEME1491578429437` CASCADE
+17:20:30,126 (main) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 181 ms
+17:20:30,127 (main) DEBUG [DataNucleus.Datastore] - ======================= Datastore =========================
+17:20:30,127 (main) DEBUG [DataNucleus.Datastore] - StoreManager : "rdbms" (org.datanucleus.store.rdbms.RDBMSStoreManager)
+17:20:30,127 (main) DEBUG [DataNucleus.Datastore] - Datastore : read-write
+17:20:30,127 (main) DEBUG [DataNucleus.Datastore] - Schema Control : AutoCreate(Tables,Columns,Constraints), Validate(None)
+17:20:30,128 (main) DEBUG [DataNucleus.Datastore] - Schema : NamingFactory=datanucleus2 identifierCase=null
+17:20:30,128 (main) DEBUG [DataNucleus.Datastore] - Query Languages : [JDOQL, JPQL, SQL, STOREDPROC]
+17:20:30,128 (main) DEBUG [DataNucleus.Datastore] - Queries : Timeout=0
+17:20:30,128 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+17:20:30,128 (main) DEBUG [DataNucleus.Datastore] - Datastore Adapter : org.datanucleus.store.rdbms.adapter.MySQLAdapter
+17:20:30,128 (main) DEBUG [DataNucleus.Datastore] - Datastore : name="MySQL" version="5.5.5-10.1.16-MariaDB"
+17:20:30,128 (main) DEBUG [DataNucleus.Datastore] - Datastore Driver : name="MySQL Connector Java" version="mysql-connector-java-5.1.41 ( Revision: 83c6dc41b96809df81444362933043b20a1d49d5 )"
+17:20:30,128 (main) DEBUG [DataNucleus.Datastore] - Primary Connection Factory : URL[jdbc:mysql://localhost/BookShop]
+17:20:30,129 (main) DEBUG [DataNucleus.Datastore] - Secondary Connection Factory : URL[jdbc:mysql://localhost/BookShop]
+17:20:30,129 (main) DEBUG [DataNucleus.Datastore] - Datastore Identifiers : factory="datanucleus2" case="UPPERCASE" catalog=BookShop
+17:20:30,129 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Cases : lowercase "lowercase" "UPPERCASE" 
+17:20:30,129 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Lengths (max) : Table=64 Column=64 Constraint=64 Index=64 Delimiter=`
+17:20:30,129 (main) DEBUG [DataNucleus.Datastore] - Support for Identifiers in DDL : catalog=true schema=false
+17:20:30,129 (main) DEBUG [DataNucleus.Datastore] - Datastore : checkTableViewExistence, rdbmsConstraintCreateMode=DataNucleus, initialiseColumnInfo=ALL
+17:20:30,129 (main) DEBUG [DataNucleus.Datastore] - Support Statement Batching : yes (max-batch-size=50)
+17:20:30,130 (main) DEBUG [DataNucleus.Datastore] - Queries : Results direction=forward, type=forward-only, concurrency=read-only
+17:20:30,130 (main) DEBUG [DataNucleus.Datastore] - Java-Types : string-default-length=255
+17:20:30,130 (main) DEBUG [DataNucleus.Datastore] - JDBC-Types : VARCHAR, LONGVARCHAR, BINARY, VARBINARY, LONGVARBINARY, BIGINT, TINYINT, BIT, CHAR, NUMERIC, DECIMAL, INTEGER, CLOB, SMALLINT, BLOB, FLOAT, DOUBLE, DATE, TIME, TIMESTAMP
+17:20:30,130 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+17:20:30,130 (main) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@5442a311 [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@6f195bc3, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" cerrado
+17:20:30,132 (main) DEBUG [DataNucleus.Datastore] - StoreManager now created
+17:20:30,150 (main) DEBUG [DataNucleus.Persistence] - Tipos de Java inicializando ...
+17:20:30,226 (main) DEBUG [DataNucleus.Persistence] - Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
+17:20:30,226 (main) DEBUG [DataNucleus.Persistence] - Inicializando TypeConverters ...
+17:20:30,289 (main) DEBUG [DataNucleus.Persistence] - TypeConverters listo
+17:20:30,290 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
+17:20:30,290 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for char[] to : java.nio.ByteBuffer
+17:20:30,290 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for double[] to : java.nio.ByteBuffer
+17:20:30,290 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for float[] to : java.nio.ByteBuffer
+17:20:30,290 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for int[] to : java.nio.ByteBuffer
+17:20:30,290 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for long[] to : java.nio.ByteBuffer
+17:20:30,290 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for short[] to : java.nio.ByteBuffer
+17:20:30,290 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.Color to : int[],java.lang.String
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.image.BufferedImage to : java.nio.ByteBuffer,byte[]
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.io.Serializable to : java.nio.ByteBuffer,java.lang.String,byte[]
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Boolean to : java.lang.Integer,java.lang.Character
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Character to : java.lang.String
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Class to : java.lang.String
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Integer to : java.lang.String
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Long to : java.lang.String
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
+17:20:30,291 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigDecimal to : java.nio.ByteBuffer,java.lang.String,java.lang.Double
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigInteger to : java.lang.Long,java.nio.ByteBuffer,java.lang.String
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URI to : java.lang.String
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URL to : java.lang.String
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Date to : java.lang.Long,java.lang.String,java.util.Date
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Time to : java.lang.Long,java.lang.String,java.util.Date
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Timestamp to : java.lang.Long,java.lang.String,java.util.Date
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Duration to : java.lang.Long,java.lang.String,java.lang.Double
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Instant to : java.lang.Long,java.lang.String,java.util.Date,java.sql.Timestamp
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalDate to : java.lang.String,java.util.Date,java.sql.Date
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalDateTime to : java.lang.String,java.util.Date,java.sql.Timestamp
+17:20:30,292 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalTime to : java.lang.Long,java.lang.String,java.util.Date,java.sql.Time
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.MonthDay to : int[],java.lang.String,java.util.Date,java.sql.Date
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.OffsetDateTime to : java.lang.String,java.util.Date,java.sql.Timestamp
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.OffsetTime to : java.lang.Long,java.lang.String,java.sql.Time
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Period to : java.lang.String
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Year to : java.lang.Integer,java.lang.String
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.YearMonth to : int[],java.lang.String,java.util.Date,java.sql.Date
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZonedDateTime to : java.lang.String,java.sql.Timestamp
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZoneId to : java.lang.String
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.BitSet to : java.lang.String
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Calendar to : java.lang.String,java.util.Date,[Ljava.lang.Object;,java.sql.Timestamp
+17:20:30,293 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Currency to : java.lang.String
+17:20:30,294 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Date to : java.lang.Long,java.lang.String
+17:20:30,294 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Locale to : java.lang.String
+17:20:30,294 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.TimeZone to : java.lang.String
+17:20:30,294 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.UUID to : java.lang.String
+17:20:30,294 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery) mapping-name=mysql, JDO-listener=true
+17:20:30,295 (main) DEBUG [DataNucleus.MetaData] - Registering listener for metadata initialisation
+17:20:30,303 (main) DEBUG [DataNucleus.Cache] - Cache de nivel 2 del tipo "soft" inicializada
+17:20:30,305 (main) DEBUG [DataNucleus.Persistence] - Started pool of ExecutionContext (maxPool=20, reaperThread=false)
+17:20:30,313 (main) DEBUG [DataNucleus.Persistence] - ================= NucleusContext ===============
+17:20:30,313 (main) DEBUG [DataNucleus.Persistence] - DataNucleus Context : Versión: "5.1.0.m1" con JRE "1.8.0_20" en "Windows 8.1"
+17:20:30,313 (main) DEBUG [DataNucleus.Persistence] - Persistence API : JDO
+17:20:30,313 (main) DEBUG [DataNucleus.Persistence] - Plugin Registry : org.datanucleus.plugin.NonManagedPluginRegistry
+17:20:30,313 (main) DEBUG [DataNucleus.Persistence] - ClassLoading : default
+17:20:30,313 (main) DEBUG [DataNucleus.Persistence] - Persistence : pm-singlethreaded, nontransactional-read, nontransactional-write, reachability-at-commit, detach-all-on-commit, copy-on-attach, managed-relations(checked), deletion-policy=JDO2, serverTimeZone=Europe/Paris
+17:20:30,314 (main) DEBUG [DataNucleus.Persistence] - Transactions : type=RESOURCE_LOCAL, mode=datastore, isolation=read-committed
+17:20:30,314 (main) DEBUG [DataNucleus.Persistence] - ValueGeneration : txn-isolation=read-committed connection=New
+17:20:30,314 (main) DEBUG [DataNucleus.Persistence] - Cache : Level1 (soft), Level2 (soft, mode=UNSPECIFIED), QueryResults (soft), Collections/Maps 
+17:20:30,314 (main) DEBUG [DataNucleus.Persistence] - ================================================
+17:20:30,315 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+17:20:30,315 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+17:20:30,315 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+17:20:30,315 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/BookShop
+17:20:30,315 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+17:20:30,315 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+17:20:30,316 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+17:20:30,316 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.metadata.validate=false
+17:20:30,316 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+17:20:30,316 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+17:20:30,316 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateall=true
+17:20:30,316 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+17:20:30,316 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+17:20:30,316 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+17:20:30,317 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.validateconstraints=false
+17:20:30,317 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.validatetables=false
+17:20:30,317 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+17:20:30,317 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\client\Client.class
+17:20:30,317 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\client\controller\BookShopController.class
+17:20:30,317 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\client\remote\RMIServiceLocator.class
+17:20:30,317 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\data\Book.class
+17:20:30,317 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\data\Review.class
+17:20:30,318 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\data\User.class
+17:20:30,318 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\IServer.class
+17:20:30,318 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\remote\BookShopManager.class
+17:20:30,318 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\remote\IBookShopManager.class
+17:20:30,318 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\softwareDesign\workspace\SPQ01\BookShop\target\classes\server\Server.class
+17:20:30,318 (main) DEBUG [DataNucleus.SchemaTool] - Leyendo 10 ficheros (metadata/class) ...
+17:20:30,338 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de los archivos de metadata "[]" ...
+17:20:30,338 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata ya ha terminado
+17:20:30,339 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de las clases "[client.controller.BookShopController, server.IServer, server.Server, server.remote.IBookShopManager, server.data.User, client.Client, server.remote.BookShopManager, client.remote.RMIServiceLocator, server.data.Review, server.data.Book]" ...
+17:20:30,343 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /META-INF/package.jdo
+17:20:30,344 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /WEB-INF/package.jdo
+17:20:30,344 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /package.jdo
+17:20:30,344 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client/package.jdo
+17:20:30,345 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client.jdo
+17:20:30,345 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client/controller/package.jdo
+17:20:30,346 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client/controller.jdo
+17:20:30,346 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.controller.BookShopController" en /client/controller/BookShopController.jdo
+17:20:30,346 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "client.controller.BookShopController"
+17:20:30,346 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "client.controller.BookShopController" no tener Meta-Data
+17:20:30,347 (main) DEBUG [DataNucleus.MetaData] - La clase "client.controller.BookShopController" no tiene MetaData o annotaciones.
+17:20:30,347 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /META-INF/package.jdo
+17:20:30,347 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /WEB-INF/package.jdo
+17:20:30,348 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /package.jdo
+17:20:30,348 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /server/package.jdo
+17:20:30,349 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /server.jdo
+17:20:30,349 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.IServer" en /server/IServer.jdo
+17:20:30,349 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.IServer"
+17:20:30,349 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.IServer" no tener Meta-Data
+17:20:30,349 (main) DEBUG [DataNucleus.MetaData] - La clase "server.IServer" no tiene MetaData o annotaciones.
+17:20:30,351 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /META-INF/package.jdo
+17:20:30,351 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /WEB-INF/package.jdo
+17:20:30,352 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /package.jdo
+17:20:30,352 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/package.jdo
+17:20:30,352 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server.jdo
+17:20:30,353 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/Server.jdo
+17:20:30,353 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.Server"
+17:20:30,353 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.Server" no tener Meta-Data
+17:20:30,353 (main) DEBUG [DataNucleus.MetaData] - La clase "server.Server" no tiene MetaData o annotaciones.
+17:20:30,353 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /META-INF/package.jdo
+17:20:30,354 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /WEB-INF/package.jdo
+17:20:30,354 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /package.jdo
+17:20:30,355 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server/package.jdo
+17:20:30,355 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server.jdo
+17:20:30,355 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server/remote/package.jdo
+17:20:30,356 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server/remote.jdo
+17:20:30,356 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager" en /server/remote/IBookShopManager.jdo
+17:20:30,356 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.IBookShopManager"
+17:20:30,356 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.remote.IBookShopManager" no tener Meta-Data
+17:20:30,356 (main) DEBUG [DataNucleus.MetaData] - La clase "server.remote.IBookShopManager" no tiene MetaData o annotaciones.
+17:20:30,441 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" tiene anotaciones de JDO y vamos a usarlas.
+17:20:30,452 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /META-INF/package.jdo
+17:20:30,452 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /WEB-INF/package.jdo
+17:20:30,453 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /package.jdo
+17:20:30,453 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/package.jdo
+17:20:30,453 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client.jdo
+17:20:30,454 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/Client.jdo
+17:20:30,454 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "client.Client"
+17:20:30,454 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "client.Client" no tener Meta-Data
+17:20:30,454 (main) DEBUG [DataNucleus.MetaData] - La clase "client.Client" no tiene MetaData o annotaciones.
+17:20:30,455 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /META-INF/package.jdo
+17:20:30,456 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /WEB-INF/package.jdo
+17:20:30,456 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /package.jdo
+17:20:30,456 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server/package.jdo
+17:20:30,457 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server.jdo
+17:20:30,457 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server/remote/package.jdo
+17:20:30,457 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server/remote.jdo
+17:20:30,458 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager" en /server/remote/BookShopManager.jdo
+17:20:30,458 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.BookShopManager"
+17:20:30,458 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.remote.BookShopManager" no tener Meta-Data
+17:20:30,458 (main) DEBUG [DataNucleus.MetaData] - La clase "server.remote.BookShopManager" no tiene MetaData o annotaciones.
+17:20:30,459 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /META-INF/package.jdo
+17:20:30,460 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /WEB-INF/package.jdo
+17:20:30,460 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /package.jdo
+17:20:30,460 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client/package.jdo
+17:20:30,461 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client.jdo
+17:20:30,461 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client/remote/package.jdo
+17:20:30,461 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client/remote.jdo
+17:20:30,462 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator" en /client/remote/RMIServiceLocator.jdo
+17:20:30,462 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "client.remote.RMIServiceLocator"
+17:20:30,462 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "client.remote.RMIServiceLocator" no tener Meta-Data
+17:20:30,462 (main) DEBUG [DataNucleus.MetaData] - La clase "client.remote.RMIServiceLocator" no tiene MetaData o annotaciones.
+17:20:30,464 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" tiene anotaciones de JDO y vamos a usarlas.
+17:20:30,466 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" tiene anotaciones de JDO y vamos a usarlas.
+17:20:30,466 (main) DEBUG [DataNucleus.MetaData] - Populación del MetaData ...
+17:20:30,467 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" : Populando Meta-Data
+17:20:30,468 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /META-INF/package-mysql.orm
+17:20:30,469 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /WEB-INF/package-mysql.orm
+17:20:30,469 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /package-mysql.orm
+17:20:30,470 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server/package-mysql.orm
+17:20:30,470 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server-mysql.orm
+17:20:30,470 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server/data/package-mysql.orm
+17:20:30,471 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server/data-mysql.orm
+17:20:30,471 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.User" en /server/data/User-mysql.orm
+17:20:30,471 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "orm" por la clase "server.data.User"
+17:20:30,471 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" campo "email" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,472 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,472 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" campo "name" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,472 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.User" campo "address" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,475 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" : Populando Meta-Data
+17:20:30,475 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /META-INF/package-mysql.orm
+17:20:30,476 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /WEB-INF/package-mysql.orm
+17:20:30,476 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /package-mysql.orm
+17:20:30,476 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server/package-mysql.orm
+17:20:30,477 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server-mysql.orm
+17:20:30,477 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server/data/package-mysql.orm
+17:20:30,477 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server/data-mysql.orm
+17:20:30,478 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Review" en /server/data/Review-mysql.orm
+17:20:30,478 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "orm" por la clase "server.data.Review"
+17:20:30,478 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" campo "user" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,478 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" campo "book" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,478 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" campo "comment" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,478 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Review" campo "rating" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,480 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" : Populando Meta-Data
+17:20:30,480 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /META-INF/package-mysql.orm
+17:20:30,481 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /WEB-INF/package-mysql.orm
+17:20:30,481 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /package-mysql.orm
+17:20:30,481 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server/package-mysql.orm
+17:20:30,482 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server-mysql.orm
+17:20:30,482 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server/data/package-mysql.orm
+17:20:30,482 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server/data-mysql.orm
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "server.data.Book" en /server/data/Book-mysql.orm
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "orm" por la clase "server.data.Book"
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "title" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "category" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "edition" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "author" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "price" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "stock" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,483 (main) DEBUG [DataNucleus.MetaData] - Clase "server.data.Book" campo "description" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:20:30,484 (main) DEBUG [DataNucleus.MetaData] - Inicialisación del MetaData ...
+17:20:30,484 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase server.data.User pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.User pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+17:20:30,485 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+17:20:30,485 (main) ERROR [DataNucleus.MetaData] - Encontro el Meta-Data de la clase server.data.Book pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Book pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+
+17:20:30,486 (main) ERROR [DataNucleus.MetaData] - Habia un error leyendo los ficheros. Por favor lee el LOG para obtener mas información. Lo siguiente puede ayudar : Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+org.datanucleus.exceptions.NucleusUserException: Hemos encontrado errores durante la inicialisación de MetaData. Compruebe por favor, las excepciones adjuntados
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1393)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	... 3 more
+Nested Throwables StackTrace:
+Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Review pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase server.data.User pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.User pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
+Encontro el Meta-Data de la clase server.data.Book pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+org.datanucleus.exceptions.NucleusUserException: Encontro el Meta-Data de la clase server.data.Book pero la clase no esta analizado! Por favor, debes analizar la clase antes de usar DataNucleus.
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseClassMetaData(MetaDataManagerImpl.java:2814)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaData(MetaDataManagerImpl.java:2747)
+	at org.datanucleus.metadata.MetaDataManagerImpl.initialiseFileMetaDataForUse(MetaDataManagerImpl.java:1382)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:645)
+	at org.datanucleus.metadata.MetaDataUtils.getFileMetaDataForInputFiles(MetaDataUtils.java:790)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:368)
