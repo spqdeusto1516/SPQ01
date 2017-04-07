@@ -1,9 +1,9 @@
 package server.data;
 
-@PersistenceCapable
-public class User {
+//@PersistenceCapable(detachable="true")
+public class User{
 	
-	@PrimaryKey
+	//@PrimaryKey
 	private int id_user;
 	private String email;
 	private String password;

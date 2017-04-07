@@ -1,9 +1,9 @@
 package server.data;
 
-@PersistenceCapable
+//@PersistenceCapable(detachable="true")
 public class Review {
 	
-	@PrimaryKey
+	//@PrimaryKey
 	private int id_review;
 	private User user;
 	private Book book;

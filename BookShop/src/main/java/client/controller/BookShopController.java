@@ -3,7 +3,7 @@ package client.controller;
 import java.rmi.RemoteException;
 import java.util.List;
 
-import client.remote.Client;
+import client.Client;
 
 public class BookShopController {
 

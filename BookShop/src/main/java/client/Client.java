@@ -1,10 +1,10 @@
-package client.remote;
+package client;
 
 import java.net.MalformedURLException;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-import remote.IBookingSystemManager;
+
 import server.remote.IBookShopManager;
 
 public class Client {
