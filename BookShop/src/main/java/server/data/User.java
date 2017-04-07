@@ -1,7 +1,11 @@
 package server.data;
 
+<<<<<<< HEAD
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
+=======
+import javax.jdo.annotations.*;
+>>>>>>> branch 'master' of https://github.com/spqdeusto1617/SPQ01
 
 @PersistenceCapable(detachable="true")
 public class User{
