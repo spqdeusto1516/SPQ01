@@ -13,7 +13,7 @@
   <properties>
 		<server.IP>127.0.0.1</server.IP>
 		<server.port>1099</server.port>
-		<server.Name>BetAgain</server.Name>
+		<server.Name>BookShopServer</server.Name>
 		<policy.file>${basedir}/src/main/resources/security/java.policy</policy.file>
 		<config.files.dir>${basedir}/src/main/resources</config.files.dir>
 		<doxygen.config.file>${basedir}/src/main/resources/Doxyfile</doxygen.config.file>
@@ -181,7 +181,7 @@
 						<artifactId>exec-maven-plugin</artifactId>
 						<version>1.2.1</version>
 						<configuration>
-							<mainClass>server.BookShop</mainClass>
+							<mainClass>server.remote.BookShopManager</mainClass>
 							<systemProperties>
 								<systemProperty>
 									<key>java.security.manager</key>
