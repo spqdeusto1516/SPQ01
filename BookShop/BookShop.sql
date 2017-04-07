@@ -1,11 +1,5 @@
-CREATE DATABASE BetAgain;
-
-GRANT ALTER, SELECT,INSERT,UPDATE,DELETE,CREATE,DROP, INDEX
-           ON BetAgain.*
-           TO spq@'%'
-           IDENTIFIED BY 'spq';
-
-GRANT ALTER, SELECT,INSERT,UPDATE,DELETE,CREATE,DROP, INDEX
-           ON BetAgain.*
-           TO spq@localhost
-           IDENTIFIED BY 'spq';
+DROP SCHEMA  IF EXIXSTS bookshop;
+DROP USER IF EXISTS 'spq'@'%';
+CREATE SCHEMA bookshop;
+CREATE USER IF NOT EXISTS 'spq'@'% IDENTIFIED BY 'spq';
+GRANT ALL ON bookshop.* TO 'spq'@'%';
