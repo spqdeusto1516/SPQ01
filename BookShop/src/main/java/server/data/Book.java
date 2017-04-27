@@ -1,6 +1,6 @@
 package server.data;
 
-
+//trial
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
