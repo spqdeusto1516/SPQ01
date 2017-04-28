@@ -6,7 +6,7 @@ import server.remote.*;
 
 public class RMIServiceLocator {
 	
-	 private IBookShopManager service;
+	 private IRemote service;
 
 	    public RMIServiceLocator(){ 
 	     
@@ -27,7 +27,7 @@ public class RMIServiceLocator {
 	                //String nameUserS = "//" + args[0] + ":" + args[1] + "/" + args[3];
 	                //String nameSongS = "//" + args[0] + ":" + args[1] + "/" + args[3];
 	                System.out.println(url);
-	                        service = (IBookShopManager) java.rmi.Naming.lookup(url);
+	                        service = (IRemote) java.rmi.Naming.lookup(url);
 	                        System.out.println("OBTENIDO EL SERVICIO");
 	                } catch (Exception e) {
 	                        System.err.println("- Excepción al ejecutar el cliente: " + e.getMessage());
@@ -36,7 +36,7 @@ public class RMIServiceLocator {
 	    
 	    
 
-	    public IBookShopManager getService() {       
+	    public IRemote getService() {       
 	        return service;
 	    }
 

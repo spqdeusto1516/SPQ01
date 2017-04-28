@@ -4,23 +4,29 @@ package server.data;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.jdo.annotations.*;
 
 
 @PersistenceCapable(detachable="true")
-public class Book {
+public class Book implements Serializable{
 	
+	
+	private static final long serialVersionUID = 1L;
 	@PrimaryKey
 	private int ISBN;
 	private String title;
 	private String category;
 	private String edition;
 	private String author;
-	private float price;
+	private double price;
 	private String description;
 	private String img;
 	
-	public Book(int ISBN, String title, String category, String edition, String author, float price, String description, String img){
+	public Book(int ISBN, String title, String category, String edition, String author, double price, String description, String img){
 		this.ISBN = ISBN;
 		this.title = title;
 		this.category = category;
@@ -29,6 +35,27 @@ public class Book {
 		this.price = price;
 		this.description = description;
 		this.img = img;
+	}
+	
+	public Book(int ISBN, String title, String author, double price){
+		this.ISBN = ISBN;
+		this.title = title;
+		this.author = author;
+		this.price = price;
+	}
+	/*@Persistent(defaultFetchGroup="true", mappedBy="book", dependentElement="true")
+	@Join
+	*/
+	List<Review> reviews = new ArrayList<Review>();
+	
+	public void addReview(Review review){
+		reviews.add(review);
+	}
+	public void removeReview(Review review){
+		reviews.remove(review);
+	}
+	public List<Review> getReviews(){
+		return this.reviews;
 	}
 
 	public int getISBN() {
@@ -71,11 +98,11 @@ public class Book {
 		this.author = author;
 	}
 	
-	public float getPrice() {
+	public double  getPrice() {
 		return price;
 	}
 	
-	public void setPrice(float price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 		
@@ -93,5 +120,8 @@ public class Book {
 
 	public void setImg(String img) {
 		this.img = img;
+	}
+	public String toString() {
+		 return "Book: ISBN --> " + this.ISBN + ", title -->  " + this.title + ",  author -->  " + this.author + ", price --> "+ this.price;
 	}
 }

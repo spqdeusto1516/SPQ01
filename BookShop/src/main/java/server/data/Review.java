@@ -1,17 +1,20 @@
 package server.data;
 
 
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.PrimaryKey;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.jdo.annotations.*;
 
 
-@PersistenceCapable(detachable="true")
-public class Review {
+@PersistenceCapable
+public class Review implements Serializable{
 	
+	
+	private static final long serialVersionUID = 1L;
 	@PrimaryKey
-	private int id_review;
+	private int id_review; 
 	private User user;
 	private Book book;
 	private String comment;
@@ -19,19 +22,31 @@ public class Review {
 	
 	public Review(int id_review, User user, Book book, String comment, float rating) {
 		super();
-		this.id_review = id_review;
+		this.id_review= id_review;
 		this.user = user;
 		this.book = book;
 		this.comment = comment;
 		this.rating = rating;
 	}
+	 
 	
-	public int getId_review() {
-		return id_review;
+	
+	public Review() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public void setId_review(int id_review) {
-		this.id_review = id_review;
+
+
+
+	public Review(int id_review, String comment, float rating) {
+		super();
+		this.id_review= id_review;
+		this.comment = comment;
+		this.rating = rating;
 	}
+
+
+
 	public User getUser() {
 		return user;
 	}
@@ -55,5 +70,17 @@ public class Review {
 	}
 	public void setRating(float rating) {
 		this.rating = rating;
+	}
+
+
+
+	public int getId_review() {
+		return id_review;
+	}
+
+
+
+	public void setId_review(int id_review) {
+		this.id_review = id_review;
 	} 
 }
