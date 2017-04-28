@@ -16,14 +16,16 @@ public class User{
 	private String password;
 	private String name;
 	private String address;
+	private boolean role;        //true --> admin
+								 //false --> user
 	
-
-	public User(int id_user, String email, String password, String name, String address) {
+	public User(int id_user, String email, String password, String name, String address, boolean role) {
 		this.id_user = id_user;
 		this.email = email;
 		this.password = password;
 		this.name = name;
 		this.address = address;
+		this.role = role;
 	}
 
 	public int getId_user() {
@@ -65,4 +67,14 @@ public class User{
 	public void setAddress(String address) {
 	       this.address = address;
 	}
+
+	public boolean isRole() {
+		return role;
+	}
+
+	public void setRole(boolean role) {
+		this.role = role;
+	}
+	
+	
 }

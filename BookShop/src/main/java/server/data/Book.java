@@ -17,18 +17,18 @@ public class Book {
 	private String edition;
 	private String author;
 	private float price;
-	private int stock;
 	private String description;
+	private String img;
 	
-	public Book(int ISBN, String title, String category, String edition, String author, float price, int stock, String description){
+	public Book(int ISBN, String title, String category, String edition, String author, float price, String description, String img){
 		this.ISBN = ISBN;
 		this.title = title;
 		this.category = category;
 		this.edition = edition;
 		this.author = author;
 		this.price = price;
-		this.stock = stock;
 		this.description = description;
+		this.img = img;
 	}
 
 	public int getISBN() {
@@ -78,20 +78,20 @@ public class Book {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	
-	public int getStock() {
-		return stock;
-	}
-	
-	public void setStock(int stock) {
-		this.stock = stock;
-	}
-	
+		
 	public String getDescription() {
 		return description;
 	}
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
 }
