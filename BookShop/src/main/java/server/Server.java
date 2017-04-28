@@ -10,36 +10,7 @@ import server.remote.*;
 
 public class Server{
 
-public static void addStuff(){
 
-	//	DATOS DE PRUEBAS
-		Book b =new Book(1,"HL1","pabloAut",0.2);
-		Book b1 =new Book(2,"HL2","maria",0.2);
-		Book b2 =new Book(3,"Skyrim","ainhoa",0.2);
-		Book b3= new Book(4,"Oblivion","joel",0.2);
-
-		User a =  new User ("aihnoa","qwerty",false);
-
-		IDB db = new DB();
-
-		db.addBookToDb( b);
-
-		db.addBookToDb( b1);
-		db.addBookToDb( b2);
-		db.addBookToDb( b3);
-
-
-
-		db.registerUser("pablo", "qwerty", false);
-
-
-	//	db.buyGame(a.getLogin(), g.getName());
-	//	db.buyGame(a.getLogin(), g2.getName());
-
-
-
-
-}
 	public static void main(String[] args) {
 
 		if (args.length != 3) {
@@ -57,8 +28,39 @@ public static void addStuff(){
 			IRemote objServer = new Remote();
 			Naming.rebind(name, objServer);
 
-			//DB testing
-			addStuff();
+	
+
+			Review r1 = new Review( 1,  "Me come los huevos HL1",56.6);
+			Review r2 = new Review( 2,  "Me come los huevos Mucho",28.6);
+			Review r3 = new Review( 3,  "Me come los huevos Un mogolllon",100.6);
+			
+			Book b =new Book(1,"HL1","pabloAut",0.2);
+			Book b1 =new Book(2,"HL2","maria",0.2);
+			Book b2 =new Book(3,"Skyrim","ainhoa",0.2);
+			Book b3= new Book(4,"Oblivion","joel",0.2);
+
+			IDB db = new DB();
+
+			db.addBookToDb(b);
+			db.addBookToDb(b1);
+			db.addBookToDb(b2);
+			db.addBookToDb(b3);
+
+			db.registerUser("aihnoa@mecomehuevos.es","qwerty",false);
+			db.registerUser("pablo@mariaysusCommitsdeMofa.es", "qwerty", false);
+	
+			User a =db.showUser("aihnoa@mecomehuevos.es");
+						
+			User a1 =db.showUser("pablo@mariaysusCommitsdeMofa.es");
+			
+			db.createReview(a.getEmail(), "HL1", r1);
+			//db.createReview(a1.getEmail(), "HL1", r2);
+			db.createReview(a1.getEmail(), "HL2", r3);
+			
+			
+		
+			
+		
 
 			System.out.println("[S] Server '" + name + "' active and waiting...");
 			java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );

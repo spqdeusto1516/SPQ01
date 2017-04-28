@@ -36,6 +36,7 @@ public class User implements Serializable{
 		this.password = password;
 		this.role = role;
 	}
+	
 	@Persistent(defaultFetchGroup="true", mappedBy="user", dependentElement="true")
 	@Join
 	List<Review> reviews = new ArrayList<Review>();

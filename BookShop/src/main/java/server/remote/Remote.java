@@ -72,5 +72,34 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 			return(users);
 		}
 	}
+
+	@Override
+	public boolean addReview(String u, String b, Review r)throws RemoteException {
+		IDB db = new DB();
+		return db.createReview(u, b, r);
+		
+	}
+
+	@Override
+	public boolean addBook(Book book) throws RemoteException{
+		IDB db = new DB();
+		 return db.addBookToDb(book);
+	}
+		
+	@Override
+	public List<Review> getAllReviews() throws RemoteException {
+	
+		IDB db = new DB();
+		List<Review> reviews = db.getAllReviews();
+		if(reviews.isEmpty()){
+			throw new RemoteException("No Reviews");
+		}
+		else{
+			return(reviews);
+		}
+	}
+
+	
+	
 	
 }

@@ -18,9 +18,9 @@ public class Review implements Serializable{
 	private User user;
 	private Book book;
 	private String comment;
-	private float rating;
+	private double rating;
 	
-	public Review(int id_review, User user, Book book, String comment, float rating) {
+	public Review(int id_review, User user, Book book, String comment, double rating) {
 		super();
 		this.id_review= id_review;
 		this.user = user;
@@ -38,7 +38,7 @@ public class Review implements Serializable{
 
 
 
-	public Review(int id_review, String comment, float rating) {
+	public Review(int id_review, String comment, double rating) {
 		super();
 		this.id_review= id_review;
 		this.comment = comment;
@@ -65,10 +65,10 @@ public class Review implements Serializable{
 	public void setComment(String comment) {
 		this.comment = comment;
 	}
-	public float getRating() {
+	public double getRating() {
 		return rating;
 	}
-	public void setRating(float rating) {
+	public void setRating(double rating) {
 		this.rating = rating;
 	}
 
@@ -76,6 +76,14 @@ public class Review implements Serializable{
 
 	public int getId_review() {
 		return id_review;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Review [id_review=" + id_review +  ", comment=" + comment
+				+ ", rating=" + rating + "]";
 	}
 
 

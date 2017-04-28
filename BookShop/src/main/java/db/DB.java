@@ -2,9 +2,8 @@ package db;
 
 import java.util.List;
 
-import server.data.Book;
-import server.data.Review;
-import server.data.User;
+import server.data.*;
+
 
 public class DB implements IDB{
 
@@ -49,10 +48,43 @@ public class DB implements IDB{
 	}
 
 	@Override
-	public boolean createReview(String u, String book, Review r) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	public boolean createReview(String u, String b, Review r) {
+
+			
+			User user =null;
+			Book book =null;
+			Review review = null ;
+			boolean ret=true;
+			
+						try {
+
+						book= dao.retrieveBookByParameter(b);
+						user = dao.retrieveUser(u);
+						review = dao.retrieveReview(r.getId_review());
+
+					} catch (Exception  e) {
+						System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
+						ret=false;
+					}
+
+
+					if (book == null || user == null || review !=null ) {
+
+
+
+					}else if (book !=null && user != null && review == null  ){
+
+						r.setBook(book);
+						book.addReview(r);
+						r.setUser(user);
+						user.addReview(r);
+
+						dao.storeReview(r);
+					}
+					
+					return ret;
+				}
+	
 
 	@Override
 	public boolean registerUser(String email, String password, boolean role) {

@@ -43,9 +43,8 @@ public class Book implements Serializable{
 		this.author = author;
 		this.price = price;
 	}
-	/*@Persistent(defaultFetchGroup="true", mappedBy="book", dependentElement="true")
-	@Join
-	*/
+	@Persistent(defaultFetchGroup="true", mappedBy="book", dependentElement="true")
+	@Join	
 	List<Review> reviews = new ArrayList<Review>();
 	
 	public void addReview(Review review){
