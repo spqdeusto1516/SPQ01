@@ -12,7 +12,7 @@ public interface IRemote extends Remote{
 //	String sayMessage(String login, String password, String message) throws RemoteException;
 	 boolean registerUser(String email, String password,boolean role) throws RemoteException;
 	 boolean addBook(Book book) throws RemoteException;
-	 boolean addReview(String u, String b, Review r) throws RemoteException;
+//	 boolean addReview(String u, String b, Review r) throws RemoteException;
 	List<Book> showBooksInStore() throws RemoteException;
 	//List<Book> showOwnedBooks(String email) throws RemoteException;
 //	boolean buyBook(String email, String title) throws RemoteException;

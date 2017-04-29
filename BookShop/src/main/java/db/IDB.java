@@ -12,13 +12,14 @@ package db;
 		  List<Book> getAllBooks();
 		  
 		  boolean buyBook(String u, String book_title);
-		  boolean createReview(String u, String book, Review r);
+		//  boolean createReview(String u, String book, Review r);
 		
 		
 		boolean registerUser(String email, String password,boolean role);
 
 		boolean addBookToDb(Book b);
-		
+		boolean addReviewToBook(Book b, Review r );
+		boolean addReviewToUser(User u, Review r );
 		
 		Book showBookByISBN	(int ISBN);
 		Book showBookByTitle	(String title);

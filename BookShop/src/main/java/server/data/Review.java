@@ -15,8 +15,10 @@ public class Review implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@PrimaryKey
 	private int id_review; 
+	
 	private User user;
 	private Book book;
+	
 	private String comment;
 	private double rating;
 	

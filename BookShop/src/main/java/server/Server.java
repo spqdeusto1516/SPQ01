@@ -33,6 +33,7 @@ public class Server{
 			Review r1 = new Review( 1,  "Me come los huevos HL1",56.6);
 			Review r2 = new Review( 2,  "Me come los huevos Mucho",28.6);
 			Review r3 = new Review( 3,  "Me come los huevos Un mogolllon",100.6);
+			Review r4 = new Review( 4,  "Carazo magic",100.6);
 			
 			Book b =new Book(1,"HL1","pabloAut",0.2);
 			Book b1 =new Book(2,"HL2","maria",0.2);
@@ -46,16 +47,30 @@ public class Server{
 			db.addBookToDb(b2);
 			db.addBookToDb(b3);
 
-			db.registerUser("aihnoa@mecomehuevos.es","qwerty",false);
+			db.registerUser("jon", "qwerty", false);
 			db.registerUser("pablo@mariaysusCommitsdeMofa.es", "qwerty", false);
+			db.registerUser("Carazo@.es", "qwerty", false);
 	
-			User a =db.showUser("aihnoa@mecomehuevos.es");
-						
-			User a1 =db.showUser("pablo@mariaysusCommitsdeMofa.es");
+			User a1 =db.showUser("jon");						
+			User a2 =db.showUser("pablo@mariaysusCommitsdeMofa.es");
+			User a3 =db.showUser("Carazo@.es");
 			
-			db.createReview(a.getEmail(), "HL1", r1);
-			//db.createReview(a1.getEmail(), "HL1", r2);
-			db.createReview(a1.getEmail(), "HL2", r3);
+			db.addReviewToBook(b1, r1);	
+			db.addReviewToBook(b3, r2);
+			db.addReviewToBook(b3, r3);	
+			
+			Review r11 = db.showReview(r1.getId_review());
+			Review r22 = db.showReview(r2.getId_review());
+			Review r33 = db.showReview(r3.getId_review());
+			
+			db.addReviewToUser(a1, r11);							
+			db.addReviewToUser(a2, r22);			
+			db.addReviewToUser(a3, r33);
+			
+			// db.addReviewToBook(b3, r4);	
+			// db.addReviewToUser(a4, r4);
+			
+		
 			
 			
 		

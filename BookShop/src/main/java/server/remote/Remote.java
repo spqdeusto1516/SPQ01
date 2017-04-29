@@ -73,12 +73,7 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 		}
 	}
 
-	@Override
-	public boolean addReview(String u, String b, Review r)throws RemoteException {
-		IDB db = new DB();
-		return db.createReview(u, b, r);
-		
-	}
+	
 
 	@Override
 	public boolean addBook(Book book) throws RemoteException{

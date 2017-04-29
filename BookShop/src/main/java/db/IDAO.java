@@ -17,12 +17,6 @@ public interface IDAO {
 	Book retrieveBook(int ISBN );
 	boolean updateBook(Book b);
 
-	
-	
-	
-	
-	
-	
 	Book retrieveBookByParameter(String title);
 	
 

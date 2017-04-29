@@ -45,8 +45,8 @@ public class Client {
 		for(int i = 0; i<reviews.size(); i++){
 			Review r = reviews.get(i);
 			System.out.println((i+1) + ".-" + r.toString());
-			System.out.println("EMAIL USER IN REVIEW" + r.getUser().getEmail());
-			System.out.println("BOOK TITTLE IN REVIEW"+ r.getBook().getTitle());
+	//		System.out.println("EMAIL USER IN REVIEW" + r.getUser().getEmail());
+	//		System.out.println("BOOK TITTLE IN REVIEW"+ r.getBook().getTitle());
 			
 		}
 		

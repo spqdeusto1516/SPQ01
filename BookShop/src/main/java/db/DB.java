@@ -47,43 +47,76 @@ public class DB implements IDB{
 		return false;
 	}
 
-	@Override
-	public boolean createReview(String u, String b, Review r) {
+	
+	public boolean addReviewToBook(Book b, Review r ) {
+		Book book =null;
+		Review review = null ;
+		
+		boolean ret=true;
+		
+					try {
 
-			
-			User user =null;
-			Book book =null;
-			Review review = null ;
-			boolean ret=true;
-			
-						try {
+					book= dao.retrieveBookByParameter(b.getTitle());				
+					review = dao.retrieveReview(r.getId_review());
 
-						book= dao.retrieveBookByParameter(b);
-						user = dao.retrieveUser(u);
-						review = dao.retrieveReview(r.getId_review());
-
-					} catch (Exception  e) {
-						System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
-						ret=false;
-					}
-
-
-					if (book == null || user == null || review !=null ) {
-
-
-
-					}else if (book !=null && user != null && review == null  ){
-
-						r.setBook(book);
-						book.addReview(r);
-						r.setUser(user);
-						user.addReview(r);
-
-						dao.storeReview(r);
-					}
-					
-					return ret;
+				} catch (Exception  e) {
+					System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
+					ret=false;
 				}
+
+
+				if (book == null  || review !=null ) {
+
+
+
+				}else if (book !=null  && review == null  ){
+
+					r.setBook(book);											
+					book.addReview(r);
+					
+					dao.updateBook(book);
+					
+				}
+				
+			return ret;	
+	}
+
+	public boolean addReviewToUser(User u, Review r) {
+		User user = null;
+		Review review = null;
+		
+		boolean ret=true;
+		
+		try {
+
+			
+			user = dao.retrieveUser(u.getEmail());
+			review = dao.retrieveReview(r.getId_review());
+
+		} catch (Exception  e) {
+			System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
+			ret=false;
+		}
+
+
+		if ( user == null) {
+
+
+
+		}else if ( user != null && review != null  ){
+
+			
+			review.setUser(user);														
+			user.addReview(review);
+		
+			dao.updateReview(review);
+		//	dao.updateUser(user);
+		}
+		
+		return ret;
+	}
+
+	
 	
 
 	@Override
