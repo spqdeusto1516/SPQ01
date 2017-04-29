@@ -48,16 +48,18 @@ public class DB implements IDB{
 	}
 
 	
-	public boolean addReviewToBook(Book b, Review r ) {
+	public boolean addReviewToBook(Book b, Review r, User u ) {
 		Book book =null;
 		Review review = null ;
-		
+		User user =null;
 		boolean ret=true;
 		
 					try {
 
 					book= dao.retrieveBookByParameter(b.getTitle());				
 					review = dao.retrieveReview(r.getId_review());
+					user = dao.retrieveUser(u.getEmail());
+					
 
 				} catch (Exception  e) {
 					System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
@@ -71,10 +73,15 @@ public class DB implements IDB{
 
 				}else if (book !=null  && review == null  ){
 
-					r.setBook(book);											
-					book.addReview(r);
+					r.setBook(book);
+					r.setUser(user);
 					
+					book.addReview(r);										
+					user.addReview(r);
+					
+					dao.updateReview(r);
 					dao.updateBook(book);
+					dao.updateUser(user);
 					
 				}
 				
@@ -82,38 +89,36 @@ public class DB implements IDB{
 	}
 
 	public boolean addReviewToUser(User u, Review r) {
-		User user = null;
-		Review review = null;
+		User user =null;
+		Review review = null ;
 		
 		boolean ret=true;
 		
-		try {
+					try {
 
-			
-			user = dao.retrieveUser(u.getEmail());
-			review = dao.retrieveReview(r.getId_review());
+					user= dao.retrieveUser(u.getEmail());				
+					review = dao.retrieveReview(r.getId_review());
 
-		} catch (Exception  e) {
-			System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
-			ret=false;
-		}
-
-
-		if ( user == null) {
+				} catch (Exception  e) {
+					System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
+					ret=false;
+				}
 
 
+				if (user == null   ) {
 
-		}else if ( user != null && review != null  ){
 
-			
-			review.setUser(user);														
-			user.addReview(review);
-		
-			dao.updateReview(review);
-		//	dao.updateUser(user);
-		}
-		
-		return ret;
+
+				}else if (user !=null  && review != null  ){
+
+					review.setUser(user);											
+					user.addReview(review);
+					
+					dao.updateUser(user);
+					
+				}
+				
+			return ret;	
 	}
 
 	

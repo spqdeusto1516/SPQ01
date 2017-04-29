@@ -18,7 +18,7 @@ package db;
 		boolean registerUser(String email, String password,boolean role);
 
 		boolean addBookToDb(Book b);
-		boolean addReviewToBook(Book b, Review r );
+		boolean addReviewToBook(Book b, Review r, User user );
 		boolean addReviewToUser(User u, Review r );
 		
 		Book showBookByISBN	(int ISBN);

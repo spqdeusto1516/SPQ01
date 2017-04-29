@@ -42,12 +42,14 @@ public class DAO implements IDAO {
 	public User retrieveUser(String email) {
 		// TODO Auto-generated method stub
 		User user = null;
+		User userCopy = null;
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.getFetchPlan().setMaxFetchDepth(2);
 		Transaction tx = pm.currentTransaction();
 		try {
 			tx.begin();
 			user = pm.getObjectById(User.class, email);
+			userCopy = (User)pm.detachCopy(user);
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
@@ -62,7 +64,7 @@ public class DAO implements IDAO {
     		pm.close();
 	    }
 
-		return user;
+		return userCopy;
 	}
 
 	@Override
@@ -117,12 +119,14 @@ public class DAO implements IDAO {
 	public Review retrieveReview(int id_review) {
 		// TODO Auto-generated method stub
 		Review review = null;
+		Review reviewCopy = null;
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.getFetchPlan().setMaxFetchDepth(2);
 		Transaction tx = pm.currentTransaction();
 		try {
 			tx.begin();
 			review = pm.getObjectById(Review.class, id_review);
+			reviewCopy =(Review) pm.detachCopy(review);
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
@@ -192,12 +196,14 @@ public class DAO implements IDAO {
 	public Book retrieveBook(int ISBN) {
 		// TODO Auto-generated method stub
 		Book book = null;
+		Book bookCopy = null;
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.getFetchPlan().setMaxFetchDepth(2);
 		Transaction tx = pm.currentTransaction();
 		try {
 			tx.begin();
 			book = pm.getObjectById(Book.class, ISBN);
+			bookCopy = (Book)pm.detachCopy(book);
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
@@ -212,7 +218,7 @@ public class DAO implements IDAO {
     		pm.close();
 	    }
 
-		return book;
+		return bookCopy;
 	}
 
 	@Override
@@ -226,7 +232,7 @@ public class DAO implements IDAO {
 	    	pm.makePersistent(b);
 	    	tx.commit();
 	     } catch (Exception ex) {
-		   	System.out.println("Error updating a user: " + ex.getMessage());
+		   	System.out.println("Error updating a Book: " + ex.getMessage());
 		   	r=false;
 	     } finally {
 		   	if (tx != null && tx.isActive()) {
