@@ -1,1 +1,31 @@
-**.log
+!.mvn/wrapper/maven-wrapper.jar
+
+#Eclipse files
+**/.project
+**/.classpath
+**/.settings/
+blog/bin/
+**/.tern-project
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Maven
+log/
+target/
+
+## File-based project format
+*.ipr
+*.iws
+*.iml
+
+.springBeans
+/mvnw.bat
+/mvn.cmd
+/mvnw
+/mvnw.cmd
+/.mvn/
+
+*.cmd
