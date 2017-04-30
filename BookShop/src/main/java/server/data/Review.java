@@ -45,7 +45,7 @@ public class Review implements Serializable{
 
 	public Review( String comment, double rating) {
 		super();
-		;
+		
 		this.comment = comment;
 		this.rating = rating;
 	}

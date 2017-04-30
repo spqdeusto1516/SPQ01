@@ -84,6 +84,58 @@ public class DAOMockTest {
 		assertEquals( "dipina", newUser.getPassword());
 		
 	}
+	@Test
+	public void testAddBookValid() throws RemoteException {
+		// Setting up the test data
+		
+		Book b =new Book(2,"maria","pabloaut",0.2);
+		
+		//Stubbing
+		when( dao.retrieveBook (2) ).thenReturn(null);
+		
+		//Calling the method under test
+		
+		db.addBookToDb(b);
+		
+		// Verifying the outcome
+		ArgumentCaptor<Book> bookCaptor = ArgumentCaptor.forClass( Book.class );
+		verify (dao).storeBook(bookCaptor.capture());
+		Book newBook = bookCaptor.getValue();
+		
+		assertEquals( b.toString(), newBook.toString());
+		
+	}
+	@Test(expected=RemoteException.class)
+	public void testAddBookInvalidRemote() throws RemoteException {
+		// Setting up the test data
+		
+		Book b =null;
+		
+		//Stubbing
+		//when( dao.retrieveBook (a) ).thenReturn(null);
+		
+		System.out.println("Invalid book remote, testing exception");
+		IRemote remote = new Remote();
+		
+		//Calling the method under test
+		remote.addBook(b);
+	}
+	/**
+	@Test(expected=AssertionError.class)
+	public void testAddBookInvalidDB() throws RemoteException {
+		// Setting up the test data
+		
+		Book b =null;
+		
+		//Stubbing
+		//when( dao.retrieveBook (a) ).thenReturn(null);
+		
+		System.out.println("Invalid book remote, testing exception");
+		
+		
+		//Calling the method under test
+		db.addBookToDb(b);
+	}
 /**
 	@Test(expected=RemoteException.class)
 	public void testSayMessageUserInvalid() throws RemoteException {

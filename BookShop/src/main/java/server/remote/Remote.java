@@ -77,8 +77,12 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 
 	@Override
 	public boolean addBook(Book book) throws RemoteException{
+		if(book!=null){
 		IDB db = new DB();
 		 return db.addBookToDb(book);
+		}else{
+			throw new RemoteException("Invalid book");
+		}
 	}
 		
 	@Override
