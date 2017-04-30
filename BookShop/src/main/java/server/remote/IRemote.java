@@ -22,6 +22,7 @@ public interface IRemote extends Remote{
 	//List<Book> showReviewsOfBook(String title) throws RemoteException;
 	List<User> getAllUsers() throws RemoteException;
 	List<Review> getAllReviews() throws RemoteException;
+	Book bookTest()throws RemoteException;
 	
 	
 }

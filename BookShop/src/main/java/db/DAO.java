@@ -118,30 +118,33 @@ public class DAO implements IDAO {
 	@Override
 	public Review retrieveReview(int id_review) {
 		// TODO Auto-generated method stub
-		Review review = null;
-		Review reviewCopy = null;
 		PersistenceManager pm = pmf.getPersistenceManager();
-		pm.getFetchPlan().setMaxFetchDepth(2);
-		Transaction tx = pm.currentTransaction();
-		try {
-			tx.begin();
-			review = pm.getObjectById(Review.class, id_review);
-			reviewCopy =(Review) pm.detachCopy(review);
-			tx.commit();
-		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
-		{
-			System.out.println("Review does not exist: " + jonfe.getMessage());
-		}
+	    Transaction tx = pm.currentTransaction();
+	    pm.getFetchPlan().setMaxFetchDepth(3);
+	    Review review = null;
+	    
+	    try {
+	        tx.begin();
+	        Extent<Review> extentP = pm.getExtent(Review.class);
 
-		finally {
-	    	if (tx != null && tx.isActive()) {
-	    		tx.rollback();
-	    	}
+	        for (Review p : extentP) {
 
-    		pm.close();
+	            if (p.getId_review() == id_review) {
+	                review = p;
+	            }
+	        }
+	        tx.commit();
+	    } catch (Exception ex) {
+	        System.out.println("# Error getting Extent: " + ex.getMessage());
+	       
+	    } finally {
+	        if (tx.isActive()) {
+	            tx.rollback();
+	        }
+	        pm.close();
 	    }
-
-		return review;
+	    System.out.println(review);
+	    return review;
 	}
 
 	@Override

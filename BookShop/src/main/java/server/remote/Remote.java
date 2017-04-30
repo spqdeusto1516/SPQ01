@@ -94,6 +94,20 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 		}
 	}
 
+	@Override
+	public Book bookTest() {
+		
+		Book b = new Book(1,"Prueba de librooo","Maria", 19.90);
+		
+		IDB db = new DB();
+		
+		db.addBookToDb(b);
+		Book b1=db.showBookByTitle(b.getTitle());
+		System.out.println("Este es el libro"+ b1);
+		
+		return(b1);
+	}
+
 	
 	
 	

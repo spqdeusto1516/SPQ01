@@ -25,9 +25,9 @@ public class Review implements Serializable{
 	private String comment;
 	private double rating;
 	
-	public Review(int id_review, User user, Book book, String comment, double rating) {
+	public Review( User user, Book book, String comment, double rating) {
 		super();
-		this.id_review= id_review;
+		
 		this.user = user;
 		this.book = book;
 		this.comment = comment;
@@ -43,9 +43,9 @@ public class Review implements Serializable{
 
 
 
-	public Review(int id_review, String comment, double rating) {
+	public Review( String comment, double rating) {
 		super();
-		this.id_review= id_review;
+		;
 		this.comment = comment;
 		this.rating = rating;
 	}

@@ -103,19 +103,20 @@ public class DB implements IDB{
 				}
 
 
-				if (book == null  || review !=null ) {
+				if (book == null  || user == null ||review !=null ) {
 
 
 
-				}else if (book !=null  && review == null  ){
-
+				}else if (book !=null  && user !=null && review == null  ){
+					int a= getAllReviews().size()+1;
 					r.setBook(book);
 					r.setUser(user);
+					r.setId_review(a);
 					
 					book.addReview(r);										
 					user.addReview(r);
 					
-					// dao.updateReview(r);
+					
 					dao.updateBook(book);
 					dao.updateUser(user);
 					
@@ -151,6 +152,35 @@ public class DB implements IDB{
 		
 			user = new User(email, password,role);
 			dao.storeUser(user);
+			
+		}
+		return ret;
+	}
+	
+	public boolean registerUser(User u) {
+
+
+		User user = null;
+		boolean ret=true;
+
+		try {
+			user = dao.retrieveUser(u.getEmail());
+		} catch (Exception  e) {
+			//System.out.println("Exception launched: " + e.getMessage());
+			ret=false;
+		}
+
+		if (user != null) {
+			
+			user.setPassword(u.getPassword());
+			user.setRole(u.getRole());
+		
+			dao.updateUser(user);
+
+		} else {
+			
+			
+			dao.storeUser(u);
 			
 		}
 		return ret;

@@ -31,11 +31,11 @@ public class Server{
 
 	
 
-			Review r1 = new Review( 1,  "Me come los huevos HL1",56.6);
-			Review r2 = new Review( 2,  "Me come los huevos Mucho",28.6);
-			Review r3 = new Review( 3,  "Me come los huevos Un mogolllon",100.6);
-			Review r4 = new Review( 4,  "Carazo magic",100.6);
-			Review r5 = new Review( 5,  "Carazo magic V2",100.6);
+			Review r1 = new Review( "Me come los huevos HL1",56.6);
+			Review r2 = new Review( "Me come los huevos Mucho",28.6);
+			Review r3 = new Review( "Me come los huevos Un mogolllon",100.6);
+			Review r4 = new Review( "Carazo magic",100.6);
+			Review r5 = new Review( "Carazo magic V2",100.6);
 			
 			Book b4 =new Book(1,"HL1","pabloaut",0.2);
 			Book b1 =new Book(2,"HL2","maria",0.2);
