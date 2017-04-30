@@ -16,7 +16,10 @@ public class Review implements Serializable{
 	@PrimaryKey
 	private int id_review; 
 	
+	@Persistent (defaultFetchGroup="true")
 	private User user;
+	
+	@Persistent (defaultFetchGroup="true")
 	private Book book;
 	
 	private String comment;

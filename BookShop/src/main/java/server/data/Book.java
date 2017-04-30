@@ -47,6 +47,10 @@ public class Book implements Serializable{
 	@Join	
 	List<Review> reviews = new ArrayList<Review>();
 	
+	@Persistent(defaultFetchGroup="true", dependentElement="true")
+	@Join	
+	List<User> users = new ArrayList<User>();
+	
 	public void addReview(Review review){
 		reviews.add(review);
 	}
@@ -55,6 +59,16 @@ public class Book implements Serializable{
 	}
 	public List<Review> getReviews(){
 		return this.reviews;
+	}
+	
+	public void addUser(User user){
+		users.add(user);
+	}
+	public void removeUser(User user){
+		users.remove(user);
+	}
+	public List<User> getUsers(){
+		return this.users;
 	}
 
 	public int getISBN() {

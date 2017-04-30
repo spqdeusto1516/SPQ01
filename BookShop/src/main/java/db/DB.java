@@ -42,13 +42,49 @@ public class DB implements IDB{
 	}
 
 	@Override
-	public boolean buyBook(String u, String book_title) {
+	public boolean buyBook(String email, String book_title) {
 		// TODO Auto-generated method stub
-		return false;
+		Book book =null;		
+		User user =null;
+		boolean ret=true;
+		
+					try {
+
+					book= dao.retrieveBookByParameter(book_title);									
+					user = dao.retrieveUser(email);					
+				} catch (Exception  e) {
+					System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
+					ret=false;
+				}
+	
+					if (book == null  || user ==null ) {
+
+
+
+				}else if (book !=null  &&  user != null  ){
+
+
+						
+						book.addUser(user);										
+						user.addBook(book);
+						
+				
+						dao.updateBook(book);
+						dao.updateUser(user);
+						
+					}	
+					
+					
+					
+					
+					
+	
+	return ret;
+	
 	}
 
 	
-	public boolean addReviewToBook(Book b, Review r, User u ) {
+	public boolean addReview(Book b, Review r, User u ) {
 		Book book =null;
 		Review review = null ;
 		User user =null;
@@ -79,7 +115,7 @@ public class DB implements IDB{
 					book.addReview(r);										
 					user.addReview(r);
 					
-					dao.updateReview(r);
+					// dao.updateReview(r);
 					dao.updateBook(book);
 					dao.updateUser(user);
 					
@@ -88,39 +124,7 @@ public class DB implements IDB{
 			return ret;	
 	}
 
-	public boolean addReviewToUser(User u, Review r) {
-		User user =null;
-		Review review = null ;
-		
-		boolean ret=true;
-		
-					try {
-
-					user= dao.retrieveUser(u.getEmail());				
-					review = dao.retrieveReview(r.getId_review());
-
-				} catch (Exception  e) {
-					System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
-					ret=false;
-				}
-
-
-				if (user == null   ) {
-
-
-
-				}else if (user !=null  && review != null  ){
-
-					review.setUser(user);											
-					user.addReview(review);
-					
-					dao.updateUser(user);
-					
-				}
-				
-			return ret;	
-	}
-
+	
 	
 	
 

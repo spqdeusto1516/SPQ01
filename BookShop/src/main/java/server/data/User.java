@@ -41,6 +41,10 @@ public class User implements Serializable{
 	@Join
 	List<Review> reviews = new ArrayList<Review>();
 	
+	@Persistent(defaultFetchGroup="true", dependentElement="true")
+	@Join	
+	List<Book> books = new ArrayList<Book>();
+	
 	public void addReview(Review review){
 		reviews.add(review);
 	}
@@ -50,6 +54,18 @@ public class User implements Serializable{
 	public List<Review> getReviews(){
 		return this.reviews;
 	}
+	
+	public void addBook(Book book){
+		books.add(book);
+	}
+	public void removeBook(Book book){
+		books.remove(book);
+	}
+	public List<Book> getBooks(){
+		return this.books;
+	}
+	
+	
 	public String getEmail() {
 		return email;
 	}
@@ -82,7 +98,7 @@ public class User implements Serializable{
 	       this.address = address;
 	}
 
-	public boolean isRole() {
+	public boolean getRole() {
 		return role;
 	}
 

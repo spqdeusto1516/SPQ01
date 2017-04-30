@@ -1,6 +1,7 @@
 package server;
 
 import java.rmi.Naming;
+import java.util.List;
 
 import db.DB;
 import db.IDB;
@@ -34,11 +35,12 @@ public class Server{
 			Review r2 = new Review( 2,  "Me come los huevos Mucho",28.6);
 			Review r3 = new Review( 3,  "Me come los huevos Un mogolllon",100.6);
 			Review r4 = new Review( 4,  "Carazo magic",100.6);
+			Review r5 = new Review( 5,  "Carazo magic V2",100.6);
 			
 			Book b4 =new Book(1,"HL1","pabloaut",0.2);
 			Book b1 =new Book(2,"HL2","maria",0.2);
 			Book b2 =new Book(3,"Skyrim","ainhoa",0.2);
-			Book b3= new Book(4,"Oblivion","joel",0.2);
+			Book b3= new Book(4,"LOTR","joel",0.2);
 
 			IDB db = new DB();
 
@@ -57,10 +59,14 @@ public class Server{
 			User a3 =db.showUser("Carazo@.es");
 			User a4 =db.showUser("Alon@.es");
 			
-			db.addReviewToBook(b4, r4, a4);
-			db.addReviewToBook(b1, r1, a1);	
-			db.addReviewToBook(b2, r2, a2);
-			db.addReviewToBook(b3, r3, a2);	
+			
+			db.addReview(b1, r1, a1);	
+			db.addReview(b2, r2, a2);
+			
+			db.addReview(b3, r3, a2);
+			db.addReview(b3, r4, a3);
+			db.addReview(b2, r5, a2);
+			
 			
 			//db.addReviewToBook(b3, r4);
 			
@@ -73,15 +79,26 @@ public class Server{
 			//db.addReviewToUser(a3, r33);
 			
 			 	
-			// db.addReviewToUser(a4, r4);
-			
-		
-			
-			
-		
-			
-		
+			db.buyBook("jon", "LOTR");
 
+		User showU=	db.showUser("jon");
+		List<Book> books=showU.getBooks();
+		
+		if (books.isEmpty()) {
+		System.out.println("User: login --> " + showU.getEmail() + ", password -->  " +
+		showU.getPassword() + ", Super User -->  " + showU .getRole());	
+
+		}else{
+			StringBuffer booksStr = new StringBuffer();
+			for (Book book: books) {
+				booksStr.append(book.toString() + " - ");
+			}
+		System.out.println("User: login --> " + showU.getEmail() + ", password -->  " +
+		showU.getPassword() + ", Super User -->  " + showU .getRole()+"User books --> [" + booksStr + "]");
+			
+
+		}
+			
 			System.out.println("[S] Server '" + name + "' active and waiting...");
 			java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );
 			java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
