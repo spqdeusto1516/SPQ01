@@ -19,6 +19,7 @@ public interface IDAO {
 
 	Book retrieveBookByParameter(String title);
 	
+	 boolean deleteDatabase();
 
 	//Get all entities
 

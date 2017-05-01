@@ -23,6 +23,7 @@ import server.remote.Remote;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
+import java.util.List;
 import java.net.MalformedURLException;
 
 import javax.jdo.JDOHelper;
@@ -161,6 +162,9 @@ public class RMITest {
 		assertTrue( true );
 	}
 	
+	
+	
+	
 	@Test public void registerExistingUserTest() {
 		try{
 			logger.info("Test 2 - Register existing user. Change password");
@@ -206,8 +210,60 @@ public class RMITest {
 		assertEquals(b.toString(), bookTest.toString());
 		
 	}
-	
 		
+		@Test public void showBooksInStoreTest() {
+			try{
+				logger.info("Test 4 - showBooksInStore");
+				Book b1 =new Book(2,"HL2","maria",0.2);
+				remote.addBook(b1);
+				remote.showBooksInStore();
+				
+			}
+			catch (Exception re){
+				logger.error(" RemoteException: " );
+				logger.trace(re.getMessage());
+				re.printStackTrace();
+				
+			}
+			
+			assertTrue( true );
+			
+			
+			
+		}
+	
+		@Test public void showUsersTest() {
+			try{
+				logger.info("Test 5 - showUsers");
+				
+				remote.registerUser("HL2","maria",false);
+				remote.getAllUsers();
+				
+			}
+			catch (Exception re){
+				logger.error(" RemoteException: " );
+				logger.trace(re.getMessage());
+				re.printStackTrace();
+				
+			}
+			
+			assertTrue( true );
+			
+			
+			
+		}
+		@Test(expected=RemoteException.class)
+		public void showUsersFailTest() throws RemoteException{
+				IDAO dao = new DAO();
+				logger.info("Test 6 - showUsers");
+				
+				dao.deleteDatabase();
+				remote.getAllUsers();
+				
+		
+			
+					
+		}
 		
 	/**	
 	@Test public void licenseTestValidation() {

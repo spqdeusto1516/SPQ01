@@ -381,5 +381,41 @@ public class DAO implements IDAO {
 
         return books;
 	}
+	public  boolean deleteDatabase() {
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
+		PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx = pm.currentTransaction();
+        boolean r = true;
+        try
+        {
+            tx.begin();
+	
+            logger.info("Deleting test users from persistence. Cleaning up.");
+            Query<User> q1 = pm.newQuery(User.class);
+            Query<Book> q2 = pm.newQuery(Book.class);
+            Query<Review> q3 = pm.newQuery(Review.class);
+            	q1.deletePersistentAll();
+            	q2.deletePersistentAll();
+            	q3.deletePersistentAll();
+           
+			
+            tx.commit();
+            
+        }
+        catch(Exception ex) {
+            logger.error("# Error deleting DB: " + ex.getMessage());
+            r = false;
+        }
+        finally
+        {
+            if (tx.isActive())
+            {
+                tx.rollback();
+            }
+            pm.close();
+        }
+        return r;
+		
+	}
 
 }

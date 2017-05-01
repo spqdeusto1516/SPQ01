@@ -133,6 +133,7 @@ public class DAOMockTest {
 		//Calling the method under test
 		remote.addBook(b);
 	}
+
 	/**
 	@Test(expected=AssertionError.class)
 	public void testAddBookInvalidDB() throws RemoteException {
