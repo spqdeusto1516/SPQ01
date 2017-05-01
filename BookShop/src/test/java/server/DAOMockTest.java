@@ -71,7 +71,7 @@ public class DAOMockTest {
 		// Setting expectations -  the method storeUser() is called once and the argument is intercepted
 		verify (dao).storeUser(userCaptor.capture());
 		User newUser = userCaptor.getValue();
-		System.out.println("Registering mock new user: " + newUser.getEmail());
+		logger.info("Registering mock new user: " + newUser.getEmail());
 	
 		assertEquals( "cortazar", newUser.getEmail());
 		logger.debug("Finishing testRegisterUserCorrectly() ");
@@ -89,7 +89,7 @@ public class DAOMockTest {
 		ArgumentCaptor<User> userCaptor = ArgumentCaptor.forClass( User.class );
 		verify (dao).updateUser(userCaptor.capture());
 		User newUser = userCaptor.getValue();
-		System.out.println("Changing password of mock user: " + newUser.getPassword());
+		logger.info("Changing password of mock user: " + newUser.getPassword());
 		assertEquals( "dipina", newUser.getPassword());
 		
 	}
@@ -123,7 +123,7 @@ public class DAOMockTest {
 		//Stubbing
 		//when( dao.retrieveBook (a) ).thenReturn(null);
 		
-		System.out.println("Invalid book remote, testing exception");
+		logger.info("Invalid book remote, testing exception");
 		IRemote remote = new Remote();
 		
 		//Calling the method under test
@@ -139,7 +139,7 @@ public class DAOMockTest {
 		//Stubbing
 		//when( dao.retrieveBook (a) ).thenReturn(null);
 		
-		System.out.println("Invalid book remote, testing exception");
+		logger.info("Invalid book remote, testing exception");
 		
 		
 		//Calling the method under test
@@ -150,7 +150,7 @@ public class DAOMockTest {
 	public void testSayMessageUserInvalid() throws RemoteException {
 		
 		when( dao.retrieveUser("cortazar") ).thenReturn( null );
-		System.out.println("Say message and invalid user, testing exception");
+		logger.info("Say message and invalid user, testing exception");
 		
 		db.
 			

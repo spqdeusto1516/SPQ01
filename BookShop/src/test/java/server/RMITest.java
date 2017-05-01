@@ -221,7 +221,7 @@ public class RMITest {
 		}
 		assertEquals(l, licenseTest);
 	}
-	
+	*/
 
 	@After public  void deleteDatabase() {
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
@@ -233,8 +233,12 @@ public class RMITest {
 	
             System.out.println("Deleting test users from persistence. Cleaning up.");
             Query<User> q1 = pm.newQuery(User.class);
-            long numberInstancesDeleted = q1.deletePersistentAll();
-            System.out.println("Deleted " + numberInstancesDeleted + " user");
+            Query<Book> q2 = pm.newQuery(Book.class);
+            Query<Review> q3 = pm.newQuery(Review.class);
+            long numberInstancesDeleted1 = q1.deletePersistentAll();
+            long numberInstancesDeleted2 = q2.deletePersistentAll();
+            long numberInstancesDeleted3 = q3.deletePersistentAll();
+           
 			
             tx.commit();
         }
@@ -248,7 +252,7 @@ public class RMITest {
         }
 		
 	}
-	*/
+	
 
 	@AfterClass static public void tearDown() {
 		try	{
