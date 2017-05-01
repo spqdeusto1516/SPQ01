@@ -1,4 +1,4 @@
-package es.deusto.server;
+package server;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;  
@@ -22,6 +22,10 @@ import server.data.*;
 import server.remote.IRemote;
 import server.remote.Remote;
 
+import org.junit.Rule;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 
 /**
@@ -33,6 +37,8 @@ import server.remote.Remote;
 public class DAOMockTest {
 	
 	DB db;
+	final Logger logger = LoggerFactory.getLogger(DAOMockTest.class);
+	static int iteration = 0;
 	
 	@Mock
 	IDAO dao;
@@ -41,16 +47,19 @@ public class DAOMockTest {
 		return new JUnit4TestAdapter(DAOMockTest.class);
 	}
 
+	
 	@Before
-	public void setUp() throws Exception {		
+	public void setUp() throws Exception {
+		logger.info("Entering setUp: {}", iteration++);
 		db = new DB(dao);
+		logger.info("Leaving setUp");
 
 	}
 
 	@Test
 	//@Ignore
 	public void testRegisterUserCorrectly() {
-	
+		logger.info("Starting testRegisterUserCorrectly() ");
 		// Stubbing - return a given value when a specific method is called
 		when( dao.retrieveUser("cortazar") ).thenReturn( null );
 		User u = new User ("cortazar", "cortazar",false);
@@ -65,7 +74,7 @@ public class DAOMockTest {
 		System.out.println("Registering mock new user: " + newUser.getEmail());
 	
 		assertEquals( "cortazar", newUser.getEmail());
-		
+		logger.debug("Finishing testRegisterUserCorrectly() ");
 	}
 	
 	@Test

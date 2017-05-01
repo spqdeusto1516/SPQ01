@@ -29,3 +29,5 @@ target/
 /.mvn/
 
 *.cmd
+/datanucleus.log
+/datanucleos.goal

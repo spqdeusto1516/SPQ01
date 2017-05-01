@@ -1,4 +1,4 @@
-package es.deusto.server;
+package server;
 
 
 import static org.junit.Assert.*;
