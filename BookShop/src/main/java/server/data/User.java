@@ -3,6 +3,11 @@ package server.data;
 
 import javax.jdo.annotations.*;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import db.DB;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.ArrayList;
@@ -14,6 +19,7 @@ public class User implements Serializable{
 	
 	
 	private static final long serialVersionUID = 1L;
+	final static Logger logger = LoggerFactory.getLogger(User.class);
 	@PrimaryKey
 	private String email;
 	private String password;

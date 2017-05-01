@@ -3,6 +3,9 @@ package server;
 import java.rmi.Naming;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import db.DB;
 import db.IDB;
 import server.data.*;
@@ -11,11 +14,13 @@ import server.remote.*;
 
 public class Server{
 
-
+	final static  Logger logger = LoggerFactory.getLogger(Server.class);
 	public static void main(String[] args) {
 
+		
+		
 		if (args.length != 3) {
-			System.out.println("[S] How to invoke: java [policy] [codebase] Server.Server [host] [port] [server]");
+			logger.info("[S] How to invoke: java [policy] [codebase] Server.Server [host] [port] [server]");
 			System.exit(0);
 		}
 
@@ -85,7 +90,7 @@ public class Server{
 		List<Book> books=showU.getBooks();
 		
 		if (books.isEmpty()) {
-		System.out.println("User: login --> " + showU.getEmail() + ", password -->  " +
+		logger.info("User: login --> " + showU.getEmail() + ", password -->  " +
 		showU.getPassword() + ", Super User -->  " + showU .getRole());	
 
 		}else{
@@ -93,13 +98,13 @@ public class Server{
 			for (Book book: books) {
 				booksStr.append(book.toString() + " - ");
 			}
-		System.out.println("User: login --> " + showU.getEmail() + ", password -->  " +
+		logger.info("User: login --> " + showU.getEmail() + ", password -->  " +
 		showU.getPassword() + ", Super User -->  " + showU .getRole()+"User books --> [" + booksStr + "]");
 			
 
 		}
 			
-			System.out.println("[S] Server '" + name + "' active and waiting...");
+			logger.info("[S] Server '" + name + "' active and waiting...");
 			java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );
 			java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
 			@SuppressWarnings("unused")
@@ -111,7 +116,8 @@ public class Server{
 
 
 		} catch (Exception e) {
-			System.err.println("[S] Server exception: " + e.getMessage());
+			logger.error("[S] Server exception: ");
+			logger.trace(e.getMessage());
 			e.printStackTrace();
 		}
 

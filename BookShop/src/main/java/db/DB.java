@@ -2,6 +2,10 @@ package db;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 import server.data.*;
 
 
@@ -10,6 +14,7 @@ public class DB implements IDB{
 	private static final long serialVersionUID = 1L;
 	private int cont = 0;
 	IDAO dao;
+	final static  Logger logger = LoggerFactory.getLogger(DB.class);
 
 	public DB(){
 		super();
@@ -53,7 +58,9 @@ public class DB implements IDB{
 					book= dao.retrieveBookByParameter(book_title);									
 					user = dao.retrieveUser(email);					
 				} catch (Exception  e) {
-					System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
+					logger.error("Exception launched in checking if the data already exist: ");
+					logger.trace(e.getMessage());
+					e.printStackTrace();
 					ret=false;
 				}
 	
@@ -98,7 +105,9 @@ public class DB implements IDB{
 					
 
 				} catch (Exception  e) {
-					System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
+					logger.error("Exception launched in checking if the data already exist: ");
+					logger.trace(e.getMessage());
+					e.printStackTrace();
 					ret=false;
 				}
 
@@ -138,7 +147,9 @@ public class DB implements IDB{
 		try {
 			user = dao.retrieveUser(email);
 		} catch (Exception  e) {
-			System.out.println("Exception launched: " + e.getMessage());
+			logger.error("Exception launched: ");
+			logger.trace(e.getMessage());
+			e.printStackTrace();
 			ret=false;
 		}
 
@@ -166,7 +177,9 @@ public class DB implements IDB{
 		try {
 			user = dao.retrieveUser(u.getEmail());
 		} catch (Exception  e) {
-			//System.out.println("Exception launched: " + e.getMessage());
+			logger.error("Exception launched: ");
+			logger.trace(e.getMessage());
+			e.getStackTrace();
 			ret=false;
 		}
 
@@ -199,7 +212,9 @@ public class DB implements IDB{
 		
 
 		} catch (Exception  e) {
-			System.out.println("Exception launched in checking if the data already exist: " + e.getMessage());
+			logger.error("Exception launched in checking if the data already exist: ");
+			logger.trace(e.getMessage());
+			e.getStackTrace();
 			ret = false;
 		}
 

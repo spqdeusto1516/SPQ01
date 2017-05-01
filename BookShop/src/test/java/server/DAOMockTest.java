@@ -16,11 +16,15 @@ import org.junit.Before;
 import org.junit.Test;
 //import org.junit.Ignore;
 
-import db.*;
 
+
+
+import db.*;
+import server.*;
 import server.data.*;
-import server.remote.IRemote;
-import server.remote.Remote;
+import server.remote.*;
+
+
 
 import org.junit.Rule;
 import org.slf4j.Logger;
@@ -37,7 +41,7 @@ import org.slf4j.LoggerFactory;
 public class DAOMockTest {
 	
 	DB db;
-	final Logger logger = LoggerFactory.getLogger(DAOMockTest.class);
+	final static  Logger logger = LoggerFactory.getLogger(DAOMockTest.class);
 	static int iteration = 0;
 	
 	@Mock
@@ -123,7 +127,7 @@ public class DAOMockTest {
 		//Stubbing
 		//when( dao.retrieveBook (a) ).thenReturn(null);
 		
-		logger.info("Invalid book remote, testing exception");
+		logger.error("Invalid book remote, testing exception");
 		IRemote remote = new Remote();
 		
 		//Calling the method under test

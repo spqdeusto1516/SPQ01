@@ -4,6 +4,10 @@ import java.util.List;
 
 import javax.swing.plaf.synth.SynthSeparatorUI;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 import server.data.*;
 import server.remote.*;
 
@@ -11,11 +15,12 @@ import server.remote.*;
 public class Client {
 	
 	private static String[] mainMenu = {"Show Books on store", "Show owned books", "Buy book"};
+	final static  Logger logger = LoggerFactory.getLogger(Client.class);
 	
 	public static void displayMenu(String[] options){
-		System.out.println("Insert the option number to select an action. If you want to go back, input 'b'; if you want to exit the application, input 'quit'");
+		logger.info("Insert the option number to select an action. If you want to go back, input 'b'; if you want to exit the application, input 'quit'");
 		for(int i = 0; i<options.length; i++){
-			System.out.println((i+1) + ".- " + options[i]);
+			logger.info((i+1) + ".- " + options[i]);
 		}
 	}
 	
@@ -31,22 +36,22 @@ public class Client {
 			
 			
 		} catch (RemoteException e) {
-			System.out.println(e.getMessage());
+			logger.error(e.getMessage());
 		}
 		
 		for(int i = 0; i<books.size(); i++){
 			Book b = books.get(i);
-			System.out.println((i+1) + ".-" + b.toString());
+			logger.info((i+1) + ".-" + b.toString());
 		}
 		for(int i = 0; i<users.size(); i++){
 			User u = users.get(i);
-			System.out.println((i+1) + ".-" + u.toString());
+			logger.info((i+1) + ".-" + u.toString());
 		}
 		for(int i = 0; i<reviews.size(); i++){
 			Review r = reviews.get(i);
-			System.out.println((i+1) + ".-" + r.toString());
-	//		System.out.println("EMAIL USER IN REVIEW" + r.getUser().getEmail());
-	//		System.out.println("BOOK TITTLE IN REVIEW"+ r.getBook().getTitle());
+			logger.info((i+1) + ".-" + r.toString());
+	//		logger.info("EMAIL USER IN REVIEW" + r.getUser().getEmail());
+	//		logger.info("BOOK TITTLE IN REVIEW"+ r.getBook().getTitle());
 			
 		}
 		
@@ -55,7 +60,7 @@ public class Client {
 	public static void main(String[] args) {
 		
 		if (args.length != 3) {
-			System.out.println("Use: java [policy] [codebase] Client.Client [host] [port] [server]");
+			logger.info("Use: java [policy] [codebase] Client.Client [host] [port] [server]");
 			System.exit(0);
 		}
 		if (System.getSecurityManager() == null) {
@@ -94,20 +99,20 @@ public class Client {
 					break;
 				case("3"):
 					//Buy game
-					System.out.println("Insert a games Id to select it; If you want to go back, input 'b'; if you want to exit the application, input 'quit'");
+					logger.info("Insert a games Id to select it; If you want to go back, input 'b'; if you want to exit the application, input 'quit'");
 					showGames(server, null);
 					input = System.console().readLine();
 					
 					String n = "HL1";
 					
 					if(server.buyGame(username, n)){
-						System.out.println("Game bought successfully");
+						logger.info("Game bought successfully");
 					}
 					break;
 				case("b"):
 					break;
 				default:
-					System.out.println("Invalid input");
+					logger.info("Invalid input");
 					break;
 				}
 				
@@ -117,7 +122,7 @@ public class Client {
 			
 			
 		} catch (Exception e) {
-			System.err.println("RMI Example exception: " + e.getMessage());
+			logger.error("RMI Example exception: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}

@@ -12,6 +12,10 @@ import javax.jdo.Query;
 import javax.jdo.JDOHelper;
 import javax.jdo.Transaction;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 import server.data.*;
 import db.*;
 
@@ -19,6 +23,7 @@ import db.*;
 public class Remote extends UnicastRemoteObject implements IRemote {
 
 	private static final long serialVersionUID = 1L;
+	final static  Logger logger = LoggerFactory.getLogger(Remote.class);
 	private int cont = 0;
 	private PersistenceManager pm=null;
 	private Transaction tx=null;
@@ -107,7 +112,7 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 		
 		db.addBookToDb(b);
 		Book b1=db.showBookByTitle(b.getTitle());
-		System.out.println("Este es el libro"+ b1);
+		logger.info("Este es el libro"+ b1);
 		
 		return(b1);
 	}

@@ -7,12 +7,18 @@ import java.util.List;
 
 import javax.jdo.annotations.*;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import db.DB;
+
 
 @PersistenceCapable
 public class Review implements Serializable{
 	
 	
 	private static final long serialVersionUID = 1L;
+	final static Logger logger = LoggerFactory.getLogger(Review.class);
 	@PrimaryKey
 	private int id_review; 
 	

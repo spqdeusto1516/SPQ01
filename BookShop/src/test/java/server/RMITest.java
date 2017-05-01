@@ -7,6 +7,8 @@ import junit.framework.JUnit4TestAdapter;
 import org.junit.BeforeClass;
 import org.junit.Before;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.junit.AfterClass;
 import org.junit.After;
 //import org.junit.Ignore;
@@ -44,7 +46,7 @@ public class RMITest {
 	private static Thread rmiServerThread = null;
 	
 	private IRemote remote;
-
+	final static Logger logger = LoggerFactory.getLogger(RMITest.class);
 	public static junit.framework.Test suite() {
 		return new JUnit4TestAdapter(RMITest.class);
 	}
@@ -57,9 +59,10 @@ public class RMITest {
 			public void run() {
 				try {
 					java.rmi.registry.LocateRegistry.createRegistry(1099);
-					System.out.println("BeforeClass: RMI registry ready.");
+					logger.info("BeforeClass: RMI registry ready.");
 				} catch (Exception e) {
-					System.out.println("Exception starting RMI registry:");
+					logger.error("Exception starting RMI registry:");
+					logger.trace(e.getMessage());
 					e.printStackTrace();
 				}	
 			}
@@ -70,14 +73,16 @@ public class RMITest {
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException ie) {
+			logger.error("Interruption Exception");
+			logger.trace(ie.getMessage());
 			ie.printStackTrace();
 		}
 		
 		class RMIServerRunnable implements Runnable {
 
 			public void run() {
-				System.out.println("This is a test to check how mvn test executes this test without external interaction; JVM properties by program");
-				System.out.println("**************: " + cwd);
+				logger.info("This is a test to check how mvn test executes this test without external interaction; JVM properties by program");
+				logger.info("**************: " + cwd);
 				System.setProperty("java.rmi.server.codebase", "file:" + cwd);
 				System.setProperty("java.security.policy", "target\\test-classes\\security\\java.policy");
 
@@ -86,18 +91,20 @@ public class RMITest {
 				}
 
 				String name = "//127.0.0.1:1099/MessengerRMIDAO";
-				System.out.println("BeforeClass - Setting the server ready TestServer name: " + name);
+				logger.info("BeforeClass - Setting the server ready TestServer name: " + name);
 
 				try {
 					
 					IRemote remote = new Remote();
 					Naming.rebind(name, remote);
 				} catch (RemoteException re) {
-					System.err.println(" # Messenger RemoteException: " + re.getMessage());
+					logger.error(" # Messenger RemoteException: ");
+					logger.trace(re.getMessage());
 					re.printStackTrace();
 					System.exit(-1);
 				} catch (MalformedURLException murle) {
-					System.err.println(" # Messenger MalformedURLException: " + murle.getMessage());
+					logger.error(" # Messenger MalformedURLException: ");
+					logger.trace(murle.getMessage());
 					murle.printStackTrace();
 					System.exit(-1);
 				}
@@ -108,7 +115,10 @@ public class RMITest {
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException ie) {
+			logger.error("Interruption Exception");
+			logger.trace(ie.getMessage());
 			ie.printStackTrace();
+			
 		}
 	
 	}
@@ -123,12 +133,13 @@ public class RMITest {
 		}
 
 		String name = "//127.0.0.1:1099/MessengerRMIDAO";
-		System.out.println("BeforeTest - Setting the client ready for calling TestServer name: " + name);
+		logger.info("BeforeTest - Setting the client ready for calling TestServer name: " + name);
 		remote = (IRemote) java.rmi.Naming.lookup(name);
 		}
 		catch (Exception re) {
-			System.err.println(" # Messenger RemoteException: " + re.getMessage());
-	//		re.printStackTrace();
+			logger.error(" # Messenger RemoteException: ");
+			logger.trace(re.getMessage());
+			re.printStackTrace();
 			System.exit(-1);
 		} 
 		
@@ -136,11 +147,13 @@ public class RMITest {
 	
 	@Test public void registerNewUserTest() {
 		try{
-			System.out.println("Test 1 - Register new user");
+			logger.info("Test 1 - Register new user");
 			remote.registerUser("ipina", "ipina",false);
 		}
 		catch (Exception re) {
-			System.err.println(" # Messenger RemoteException: " + re.getMessage());
+			logger.error(" RemoteException: " );
+			logger.trace(re.getMessage());
+			re.printStackTrace();
 		} 
 		/*
 		 * Very simple test, inserting a valid new user
@@ -150,14 +163,16 @@ public class RMITest {
 	
 	@Test public void registerExistingUserTest() {
 		try{
-			System.out.println("Test 2 - Register existing user. Change password");
+			logger.info("Test 2 - Register existing user. Change password");
 			remote.registerUser("smith", "smith",false);
 			// Silly way of testing the password testing
 			remote.registerUser("smith", "doe",false);
 			
 		}
 		catch (Exception re) {
-			System.err.println(" # Messenger RemoteException: " + re.getMessage());
+			logger.error(" RemoteException: " + re.getMessage());
+			logger.trace(re.getMessage());
+			re.printStackTrace();
 		} 
 		/*
 		 * Very simple test 
@@ -169,7 +184,7 @@ public class RMITest {
 	//@Test public void sayMessageValidUser() {
 	
 		@Test public void bookTestValidation() {
-		System.out.println("Test 3 - Game Test ");
+		logger.info("Test 3 - Game Test ");
 		
 		
 		Book b = new Book(1,"Prueba de librooo","Maria", 19.90);
@@ -181,6 +196,10 @@ public class RMITest {
 			bookTest = remote.bookTest();		
 			
 		} catch (RemoteException e){
+			logger.error(" # RemoteException: " + e.getMessage());
+			logger.trace(e.getMessage());
+			e.printStackTrace();
+			
 			
 		}
 	
@@ -192,7 +211,7 @@ public class RMITest {
 		
 	/**	
 	@Test public void licenseTestValidation() {
-		System.out.println("Test 4 - License Test");		
+		logger.info("Test 4 - License Test");		
 		License licenseTest = null;
 		
 		Company c = new Company("DICE");
@@ -217,6 +236,10 @@ public class RMITest {
 		
 			
 		} catch (RemoteException e){
+		logger.error("Remote Exception");
+		logger.trace(e.getMessage());
+		e.printStackTrace();
+		
 			
 		}
 		assertEquals(l, licenseTest);
@@ -231,7 +254,7 @@ public class RMITest {
         {
             tx.begin();
 	
-            System.out.println("Deleting test users from persistence. Cleaning up.");
+            logger.info("Deleting test users from persistence. Cleaning up.");
             Query<User> q1 = pm.newQuery(User.class);
             Query<Book> q2 = pm.newQuery(Book.class);
             Query<Review> q3 = pm.newQuery(Review.class);
@@ -259,6 +282,8 @@ public class RMITest {
 			rmiServerThread.join();
 			rmiRegistryThread.join();
 		} catch (InterruptedException ie) {
+			logger.error("Interruption Exception");
+			logger.trace(ie.getMessage());
 			ie.printStackTrace();
 		}
 		
