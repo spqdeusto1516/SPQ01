@@ -106,7 +106,6 @@ public class DB implements IDB{
 
 				} catch (Exception  e) {
 					logger.error("Exception launched in checking if the data already exist: ");
-					logger.trace(e.getMessage());
 					e.printStackTrace();
 					ret=false;
 				}

@@ -9,7 +9,7 @@ public interface IDAO {
 	User retrieveUser(String email);
 	boolean updateUser(User u);
 
-	boolean storeReview(Review r);
+	
 	Review retrieveReview(int id_review );
 	boolean updateReview(Review r);
 
@@ -19,7 +19,7 @@ public interface IDAO {
 
 	Book retrieveBookByParameter(String title);
 	
-	 boolean deleteDatabase();
+	// boolean deleteDatabase();
 
 	//Get all entities
 

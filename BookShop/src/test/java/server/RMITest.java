@@ -257,7 +257,7 @@ public class RMITest {
 				IDAO dao = new DAO();
 				logger.info("Test 6 - showUsers");
 				
-				dao.deleteDatabase();
+				//dao.deleteDatabase();
 				remote.getAllUsers();
 				
 		

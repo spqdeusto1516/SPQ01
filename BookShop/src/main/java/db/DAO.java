@@ -97,61 +97,36 @@ public class DAO implements IDAO {
 	    return r;
 	}
 
-	@Override
-	public boolean storeReview(Review r) {
-		// TODO Auto-generated method stub
-		PersistenceManager pm = pmf.getPersistenceManager();
-		Transaction tx = pm.currentTransaction();
-	    boolean ret=true;
-		try {
-	       tx.begin();
-	      
-		       pm.makePersistent(r);
-		       tx.commit();
-		    } catch (Exception ex) {
-		    	logger.error("   $ Error storing an object: " + ex.getMessage());
-		    	ret=false;
-		    
-		    } finally {
-		    	if (tx != null && tx.isActive()) {
-		    		tx.rollback();
-		    	}
-
-	    		pm.close();
-		    }
-	    return ret;
-	}
+	
+	
 
 	@Override
 	public Review retrieveReview(int id_review) {
 		// TODO Auto-generated method stub
+		Review review = null;
+		Review reviewCopy = null;
 		PersistenceManager pm = pmf.getPersistenceManager();
-	    Transaction tx = pm.currentTransaction();
-	    pm.getFetchPlan().setMaxFetchDepth(3);
-	    Review review = null;
-	    
-	    try {
-	        tx.begin();
-	        Extent<Review> extentP = pm.getExtent(Review.class);
+		pm.getFetchPlan().setMaxFetchDepth(2);
+		Transaction tx = pm.currentTransaction();
+		try {
+			tx.begin();
+			review = pm.getObjectById(Review.class, id_review);
+			reviewCopy =(Review) pm.detachCopy(review);
+			tx.commit();
+		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
+		{
+			System.out.println("Review does not exist: " + jonfe.getMessage());
+		}
 
-	        for (Review p : extentP) {
+		finally {
+	    	if (tx != null && tx.isActive()) {
+	    		tx.rollback();
+	    	}
 
-	            if (p.getId_review() == id_review) {
-	                review = p;
-	            }
-	        }
-	        tx.commit();
-	    } catch (Exception ex) {
-	        logger.error("# Error getting Extent: " + ex.getMessage());
-	       
-	    } finally {
-	        if (tx.isActive()) {
-	            tx.rollback();
-	        }
-	        pm.close();
+    		pm.close();
 	    }
-	    logger.info(review.toString());
-	    return review;
+
+		return review;
 	}
 
 	@Override
@@ -381,6 +356,7 @@ public class DAO implements IDAO {
 
         return books;
 	}
+	/*
 	public  boolean deleteDatabase() {
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -417,5 +393,5 @@ public class DAO implements IDAO {
         return r;
 		
 	}
-
+*/
 }
