@@ -10,7 +10,7 @@ import server.remote.*;
 
 public class Client {
 	
-	private static String[] mainMenu = {"Show games on store", "Show owned games", "Buy game"};
+	private static String[] mainMenu = {"Show Books on store", "Show owned books", "Buy book"};
 	
 	public static void displayMenu(String[] options){
 		System.out.println("Insert the option number to select an action. If you want to go back, input 'b'; if you want to exit the application, input 'quit'");
@@ -19,7 +19,7 @@ public class Client {
 		}
 	}
 	
-	public static void showGames(IRemote server){
+	public static void showBooks(IRemote server){
 		List<Book> books = null;
 		List<User> users = null;
 		List<Review> reviews = null;
@@ -72,7 +72,7 @@ public class Client {
 		
 	
 			
-			showGames(server);
+			showBooks(server);
 	
 			/**	
 			showGames(server, null);
