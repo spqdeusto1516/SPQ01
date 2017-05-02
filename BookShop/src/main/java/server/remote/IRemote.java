@@ -23,11 +23,11 @@ public interface IRemote extends Remote{
 	List<User> getAllUsers() throws RemoteException;
 	List<Review> getAllReviews() throws RemoteException;
 	Book bookTest()throws RemoteException;
-	Book getBookByISBN	(int ISBN);
-	Book getBookByTitle	(String title);
+	Book getBookByISBN	(int ISBN)throws RemoteException;
+	Book getBookByTitle	(String title)throws RemoteException;
 	
-	Review getReview	(int id_review);
-	User	getUser	(String email);
+	Review getReview	(int id_review)throws RemoteException;
+	User	getUser	(String email)throws RemoteException;
 	
 	
 }
