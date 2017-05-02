@@ -66,6 +66,7 @@ reports with the command: mvn dashboard:dashboard
 mvn clean compile
 mvn datanucleus:schema-delete
 mvn test
+mvn datanucleus:schema-delete
 mvn cobertura:cobertura
 mvn checkstyle:checkstyle
 mvn jdepend:generate

@@ -280,6 +280,7 @@ public class RMITest {
 			try{
 				remote.registerUser("JunitUser","Junit Pass",false);
 				remote.addBook(b);
+				db.buyBook(u.getEmail(), b.getTitle());
 				db.addReview(b, r, u);
 				db.showUser(u.getEmail());
 				reviewTest =	db.showReview(1);
