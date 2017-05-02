@@ -20,12 +20,12 @@ import server.remote.*;
 		
 		private static String[] logInMenu = {"Log In", "Sign Up"};
 		private static String[] showBooksMenu = {"Search", "Show all the books", "Log Out"};
-		private static String[] searchMenu = {"ISBN", "Title", "Author", "Go back"};
+		private static String[] searchMenu = {"ISBN", "Title", "Go back"};
 		private static String[] bookSelectionMenu = {"Buy", "Write a review","Go back"};
 		private static String[] reviewMenu = {"Rank", "Comment", "Go back"};
 		
 		public static void displayMenu(String[] options){
-			logger.info("\nMenu");
+			logger.info("Menu");
 			logger.info("----");
 			for(int i = 0; i<options.length; i++){
 				logger.info((i+1) + ".- " + options[i]);
@@ -35,7 +35,7 @@ import server.remote.*;
 		}
 		
 		public static void displaySubMenu(String[] options){
-			logger.info("\nMenu");
+			logger.info("Menu");
 			logger.info("----");
 			for(int i = 0; i<options.length; i++){
 				logger.info((i+1) + ".- " + options[i]);
@@ -111,17 +111,17 @@ import server.remote.*;
 			switch (input) {
 			case("1"):
 				//ISBN
-				
+				searchISBN(server);
+				menuShowBooks(server);
+				//TODO MenuBook
 				break;
 			case("2"):
 				//Title
-				
+				searchTitle(server);
+				menuShowBooks(server);
+				//TODO MenuBook
 				break;
 			case("3"):
-				//Author
-				
-				break;
-			case("4"):
 				//Go back
 				menuShowBooks(server);
 				break;
@@ -237,6 +237,36 @@ import server.remote.*;
 			logger.info("You have been register. Now Log In.");
 		}
 		
+		public static void searchISBN(IRemote server){
+			int input;
+			Book b = null;
+			logger.info("ISBN:");
+			input = Integer.parseInt(System.console().readLine());
+			
+			try {
+				b = server.getBookByISBN(input);
+				logger.info(b.toString());
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		
+		public static void searchTitle(IRemote server){
+			String input= "";
+			Book b = null;
+			logger.info("Title:");
+			input = System.console().readLine();
+			
+			try {
+				b = server.getBookByTitle(input);
+				logger.info(b.toString());
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		
 		public static void showBooks(IRemote server){
 			List<Book> books = null;
