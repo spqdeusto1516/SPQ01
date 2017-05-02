@@ -46,18 +46,18 @@ import server.remote.*;
 		public static void mainMenu(IRemote server){
 			String input= "";
 			//User user = null;
-			boolean log = false; 
+			 
 			do{
 				displayMenu(logInMenu);
 				input = System.console().readLine();
 				switch(input){
 				case("1"):
 					//Log in
-					log = logIn(server);
-					if(log != true){
-						log = logIn(server);
-						menuShowBooks(server);
-					}
+					 logIn(server);
+					//if(log != true){
+						//log = logIn(server);
+						//menuShowBooks(server);
+					
 					menuShowBooks(server);
 					break;
 				case("2"):
@@ -70,7 +70,7 @@ import server.remote.*;
 					logger.info("Not valid");
 					break;
 				}
-			}while(log == false);
+			}while(!input.equals("exit"));
 
 		}
 		
@@ -179,12 +179,12 @@ import server.remote.*;
 		}
 		
 		
-		public static boolean logIn(IRemote server){
-			boolean log = false;
+		public static void logIn(IRemote server){
+			
 			String email;
 			String password;
-			User user=null;
-			List<User> users = null;
+			
+			
 			String input= "";
 					
 			logger.info("Email:");
@@ -196,27 +196,13 @@ import server.remote.*;
 			password = input;		
 			
 			try {
-				users = server.getAllUsers();
+				server.registerUser(email, password, false);
+				
 			} catch (RemoteException e) {
 				logger.info(e.getMessage());
 			}
-			/*
-			for(int i = 0; i<users.size(); i++){
-				User b = users.get(i);
-				if(b.getEmail().equals(email) && b.getPassword().equals(password)){
-					user = b;
-					break;
-				}
-			}*/
 			
-			if(user!=null){
-				log = true;
-				logger.info("Welcome!");
-			}else{
-				log = false;
-				logger.info("Incorrect!");
-			}
-			return log;
+			
 		}
 		
 		public static void signUp(IRemote server){
