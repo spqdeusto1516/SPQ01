@@ -117,6 +117,35 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 		return(b1);
 	}
 
+	@Override
+	public Book getBookByISBN(int ISBN) {
+		// TODO Auto-generated method stub
+		IDB db =new DB();
+		return db.showBookByISBN(ISBN);
+	}
+
+	@Override
+	public Book getBookByTitle(String title) {
+		// TODO Auto-generated method stub
+		IDB db =new DB();
+		return db.showBookByTitle(title);
+	}
+
+	@Override
+	public Review getReview(int id_review) {
+		// TODO Auto-generated method stub
+		IDB db =new DB();
+		return db.showReview(id_review);
+	}
+
+	@Override
+	public User getUser(String email) {
+		// TODO Auto-generated method stub
+		IDB db =new DB();
+		return db.showUser(email);
+	}
+	
+
 	
 	
 	
