@@ -64,6 +64,7 @@ reports with the command: mvn dashboard:dashboard
 
 5. Run the Dashboard plugin: mvn dashboard:dashboard
 mvn clean compile
+mvn datanucleus:schema-delete
 mvn test
 mvn cobertura:cobertura
 mvn checkstyle:checkstyle

@@ -106,7 +106,7 @@ public class DAO implements IDAO {
 		Review review = null;
 		Review reviewCopy = null;
 		PersistenceManager pm = pmf.getPersistenceManager();
-		pm.getFetchPlan().setMaxFetchDepth(2);
+		pm.getFetchPlan().setMaxFetchDepth(3);
 		Transaction tx = pm.currentTransaction();
 		try {
 			tx.begin();

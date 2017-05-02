@@ -265,6 +265,37 @@ public class RMITest {
 					
 		}
 		
+		@Test public void reviewsTestValidation() {
+			logger.info("Test 7 - License Test");		
+			Review reviewTest = null;
+			IDB db = new DB();
+			
+			Book b = new Book(10,"BF 1942", "jaja",19.90);		
+			Review r = new Review ("GGGG",7.5);		
+			User u = new User("JunitUser","Junit Pass",false);
+			
+			
+			r.setBook(b);
+			r.setUser(u);
+			try{
+				remote.registerUser("JunitUser","Junit Pass",false);
+				remote.addBook(b);
+				db.addReview(b, r, u);
+				db.showUser(u.getEmail());
+				reviewTest =	db.showReview(1);
+				
+				
+			} catch (RemoteException e){
+			logger.error("Remote Exception");
+			logger.trace(e.getMessage());
+			e.printStackTrace();
+			
+				
+			}
+			assertEquals(r.toString(), reviewTest.toString());
+			assertEquals(r.getBook().getTitle(), reviewTest.getBook().getTitle());
+			assertEquals(r.getUser().getEmail(), reviewTest.getUser().getEmail());
+		}
 	/**	
 	@Test public void licenseTestValidation() {
 		logger.info("Test 4 - License Test");		
@@ -301,7 +332,7 @@ public class RMITest {
 		assertEquals(l, licenseTest);
 	}
 	*/
-
+/**
 	@After public  void deleteDatabase() {
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -332,7 +363,7 @@ public class RMITest {
 		
 	}
 	
-
+**/
 	@AfterClass static public void tearDown() {
 		try	{
 			rmiServerThread.join();
