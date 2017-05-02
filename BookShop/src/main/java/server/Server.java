@@ -70,7 +70,8 @@ public class Server{
 			
 			db.addReview(b3, r3, a2);
 			db.addReview(b3, r4, a3);
-			db.addReview(b2, r5, a2);
+			db.addReview(b2, r5, a4);
+			
 			
 			
 			//db.addReviewToBook(b3, r4);

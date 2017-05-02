@@ -5,11 +5,13 @@ import static org.junit.Assert.*;
 import junit.framework.JUnit4TestAdapter;
 
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.junit.AfterClass;
+
 import org.junit.After;
 //import org.junit.Ignore;
 
@@ -39,6 +41,7 @@ import javax.jdo.Transaction;
  * Testing the only the Remoteness
  */
 //@Ignore
+
 public class RMITest {
 	// Properties are hard-coded because we want the test to be executed without external interaction
 	
@@ -296,6 +299,46 @@ public class RMITest {
 			assertEquals(r.toString(), reviewTest.toString());
 			assertEquals(r.getBook().getTitle(), reviewTest.getBook().getTitle());
 			assertEquals(r.getUser().getEmail(), reviewTest.getUser().getEmail());
+		}
+		/**
+		@Test public void fullReview(){
+
+			Review r1 = new Review( "Me come los huevos HL1",56.6);
+			Review r2 = new Review( "Me come los huevos Mucho",28.6);
+			Review r3 = new Review( "Me come los huevos Un mogolllon",100.6);
+			Review r4 = new Review( "Carazo magic",100.6);
+			Review r5 = new Review( "Carazo magic V2",100.6);
+			
+			Book b4 =new Book(1,"HL1","pabloaut",0.2);
+			Book b1 =new Book(2,"HL2","maria",0.2);
+			Book b2 =new Book(3,"Skyrim","ainhoa",0.2);
+			Book b3= new Book(4,"LOTR","joel",0.2);
+
+			IDB db = new DB();
+
+			db.addBookToDb(b4);
+			db.addBookToDb(b1);
+			db.addBookToDb(b2);
+			db.addBookToDb(b3);
+
+			db.registerUser("jon", "qwerty", false);
+			db.registerUser("pablo@mariaysusCommitsdeMofa.es", "qwerty", false);
+			db.registerUser("Carazo@.es", "qwerty", false);
+			db.registerUser("Alon@.es", "qwerty", false);
+	
+			User a1 =db.showUser("jon");						
+			User a2 =db.showUser("pablo@mariaysusCommitsdeMofa.es");
+			User a3 =db.showUser("Carazo@.es");
+			User a4 =db.showUser("Alon@.es");
+			
+			
+			db.addReview(b1, r1, a1);	
+			db.addReview(b2, r2, a2);
+			
+			db.addReview(b3, r3, a2);
+			db.addReview(b3, r4, a3);
+			db.addReview(b2, r5, a4);
+			
 		}
 	/**	
 	@Test public void licenseTestValidation() {
