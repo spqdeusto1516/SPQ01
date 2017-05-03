@@ -23,6 +23,8 @@ import server.remote.*;
 		private static String[] searchMenu = {"ISBN", "Title", "Go back"};
 		private static String[] bookSelectionMenu = {"Buy", "Write a review","Go back"};
 		private static String[] reviewMenu = {"Rank", "Comment", "Go back"};
+		private static String emailUser;
+		private static String bookSelectionTitle;
 		
 		public static void displayMenu(String[] options){
 			logger.info("Menu");
@@ -86,8 +88,7 @@ import server.remote.*;
 			case("2"):
 				showBooks(server);
 				//Select one
-				displaySubMenu(bookSelectionMenu);
-				input = System.console().readLine();
+				menuBook(server);
 				break;
 			case("3"):
 				//Log Out
@@ -108,13 +109,11 @@ import server.remote.*;
 				//ISBN
 				searchISBN(server);
 				menuShowBooks(server);
-				//TODO MenuBook
 				break;
 			case("2"):
 				//Title
 				searchTitle(server);
 				menuShowBooks(server);
-				//TODO MenuBook
 				break;
 			case("3"):
 				//Go back
@@ -133,7 +132,8 @@ import server.remote.*;
 			switch(input){
 			case("1"):
 				//Buy
-		
+				buyBook(server);
+				menuShowBooks(server);
 				break;
 			case("2"):
 				//Write a review
@@ -156,11 +156,11 @@ import server.remote.*;
 			switch (input) {
 			case("1"):
 				//Rank
-				
+				//TODO
 				break;
 			case("2"):
 				//Comment
-				
+				//TODO
 				break;
 			case("3"):
 				//Go back
@@ -170,33 +170,29 @@ import server.remote.*;
 				logger.info("Not valid");
 				break;
 			}
-				
 		}
 		
 		
 		public static void logIn(IRemote server){
 			
-			String email;
 			String password;
-			
 			
 			String input= "";
 					
 			logger.info("Email:");
 			input = System.console().readLine();
-			email = input;
+			emailUser = input;
 			
 			logger.info("Password:");
 			input = System.console().readLine();
 			password = input;		
 			
 			try {
-				server.registerUser(email, password, false);
+				server.registerUser(emailUser, password, false);
 				
 			} catch (RemoteException e) {
 				logger.info(e.getMessage());
 			}
-			
 			
 		}
 		
@@ -242,7 +238,6 @@ import server.remote.*;
 				b = server.getBookByISBN(input);
 				logger.info(b.toString());
 			} catch (RemoteException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
@@ -258,7 +253,6 @@ import server.remote.*;
 				b = server.getBookByTitle(input);
 				logger.info(b.toString());
 			} catch (RemoteException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -277,23 +271,41 @@ import server.remote.*;
 				Book b = books.get(i);
 				logger.info((i+1) + ".-" + b.toString());
 			}
-			logger.info("Choose a book to visualise: ");
+			logger.info("Choose a book to visualize: ");
 			input =  Integer.parseInt(System.console().readLine());
 			showBook(server, input - 1);
 		}
-		//TODO visualizar un solo libro con sus reviews
+		
 		public static void showBook(IRemote server, int numBook){
 			List<Book> books = null;
 			
 			try {
 				books = server.showBooksInStore();
 			} catch (RemoteException e) {
-				logger.info(e.getMessage());
+				logger.error(e.getMessage());
 			}
 			Book b = books.get(numBook);
+			bookSelectionTitle = b.getTitle();
 			logger.info(b.toString());
 		}
-		//TODO Adpatarlo para que coja las reviews del libro que esta sellecionado y llamarlo en showBook
+		
+		public static void buyBook(IRemote server){
+			boolean buyOk = false;
+			
+			try {
+				buyOk = server.buyBook(emailUser, bookSelectionTitle);
+			} catch (RemoteException e) {
+				e.printStackTrace();
+			}
+			System.out.println(buyOk);
+			if(buyOk == true){
+				logger.info("You have bought "+bookSelectionTitle);
+			}else{
+				logger.info("Not pssible. Try later!");
+			}
+		}
+		/*
+		//Adpatarlo para que coja las reviews del libro que esta sellecionado y llamarlo en showBook
 		public static void showReviews(IRemote server){
 			List<Review> reviews = null;
 			try {
@@ -302,9 +314,8 @@ import server.remote.*;
 				logger.info(e.getMessage());
 			}
 		}
-		
+		*/
 		public static void main(String[] args) {
-			
 			if (args.length != 3) {
 				logger.info("Use: java [policy] [codebase] Client.Client [host] [port] [server]");
 				System.exit(0);
@@ -316,7 +327,7 @@ import server.remote.*;
 			try{
 				String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
 				IRemote server = (IRemote) java.rmi.Naming.lookup(name);
-				//Menus
+				//Menu
 				mainMenu(server);
 				
 			}catch (Exception e) {

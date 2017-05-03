@@ -29,5 +29,6 @@ public interface IRemote extends Remote{
 	Review getReview	(int id_review)throws RemoteException;
 	User	getUser	(String email)throws RemoteException;
 	
+	public boolean buyBook(String email, String book_title) throws RemoteException;
 	
 }

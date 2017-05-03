@@ -52,41 +52,28 @@ public class DB implements IDB{
 		Book book =null;		
 		User user =null;
 		boolean ret=true;
-		
-					try {
-
-					book= dao.retrieveBookByParameter(book_title);									
-					user = dao.retrieveUser(email);					
-				} catch (Exception  e) {
-					logger.error("Exception launched in checking if the data already exist: ");
-					logger.trace(e.getMessage());
-					e.printStackTrace();
-					ret=false;
-				}
+		try {
+			book= dao.retrieveBookByParameter(book_title);									
+			user = dao.retrieveUser(email);					
+		} catch (Exception  e) {
+			logger.error("Exception launched in checking if the data already exist: ");
+			logger.trace(e.getMessage());
+			e.printStackTrace();
+			ret=false;
+		}
 	
-					if (book == null  || user ==null ) {
+		if (book == null  || user ==null ) {
 
+		}else if (book !=null  &&  user != null  ){
+			book.addUser(user);										
+			user.addBook(book);					
 
-
-				}else if (book !=null  &&  user != null  ){
-
-
+			dao.updateBook(book);
+			dao.updateUser(user);
 						
-						book.addUser(user);										
-						user.addBook(book);
-						
-				
-						dao.updateBook(book);
-						dao.updateUser(user);
-						
-					}	
-					
-					
-					
-					
-					
-	
-	return ret;
+		}	
+
+		return ret;
 	
 	}
 

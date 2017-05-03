@@ -145,6 +145,13 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 		return db.showUser(email);
 	}
 	
+	@Override
+	public boolean buyBook(String email, String book_title) {
+		// TODO Auto-generated method stub
+		IDB db =new DB();
+		return db.buyBook(email, book_title);
+	}
+	
 
 	
 	
