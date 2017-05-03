@@ -84,15 +84,10 @@ import server.remote.*;
 				menuSearch(server);
 				break;
 			case("2"):
-				
-				//TODO show all the books
-				//TODO Method with input to select one
-				
-				
+				showBooks(server);
 				//Select one
 				displaySubMenu(bookSelectionMenu);
 				input = System.console().readLine();
-				
 				break;
 			case("3"):
 				//Log Out
@@ -270,6 +265,7 @@ import server.remote.*;
 		
 		public static void showBooks(IRemote server){
 			List<Book> books = null;
+			int input;
 			
 			try {
 				books = server.showBooksInStore();
@@ -281,41 +277,12 @@ import server.remote.*;
 				Book b = books.get(i);
 				logger.info((i+1) + ".-" + b.toString());
 			}
-		/*	List<Book> books = null;
-			List<User> users = null;
-			List<Review> reviews = null;
-		try {
-				
-				books = server.showBooksInStore();
-				users = server.getAllUsers();
-				reviews = server.getAllReviews();
-				
-				
-			} catch (RemoteException e) {
-				logger.info(e.getMessage());
-			}
-			
-			for(int i = 0; i<books.size(); i++){
-				Book b = books.get(i);
-				logger.info((i+1) + ".-" + b.toString());
-			}
-			
-			for(int i = 0; i<users.size(); i++){
-				User u = users.get(i);
-				logger.info((i+1) + ".-" + u.toString());
-			}
-			
-			for(int i = 0; i<reviews.size(); i++){
-				Review r = reviews.get(i);
-				logger.info((i+1) + ".-" + r.toString());
-		//		logger.info("EMAIL USER IN REVIEW" + r.getUser().getEmail());
-		//		logger.info("BOOK TITTLE IN REVIEW"+ r.getBook().getTitle());
-				
-			}
-			*/
+			logger.info("Choose a book to visualise: ");
+			input =  Integer.parseInt(System.console().readLine());
+			showBook(server, input - 1);
 		}
 		//TODO visualizar un solo libro con sus reviews
-		public static void showBook(IRemote server, Book book){
+		public static void showBook(IRemote server, int numBook){
 			List<Book> books = null;
 			
 			try {
@@ -323,11 +290,8 @@ import server.remote.*;
 			} catch (RemoteException e) {
 				logger.info(e.getMessage());
 			}
-
-			for(int i = 0; i<books.size(); i++){
-				Book b = books.get(i);
-				logger.info((i+1) + ".-" + b.toString());
-			}
+			Book b = books.get(numBook);
+			logger.info(b.toString());
 		}
 		//TODO Adpatarlo para que coja las reviews del libro que esta sellecionado y llamarlo en showBook
 		public static void showReviews(IRemote server){
