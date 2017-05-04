@@ -10,10 +10,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import db.DAO;
-import db.DB;
-import db.IDAO;
-import db.IDB;
 
 import org.junit.AfterClass;
 
