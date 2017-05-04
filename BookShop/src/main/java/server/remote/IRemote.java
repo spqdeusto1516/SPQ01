@@ -6,17 +6,15 @@ import java.util.List;
 
 import server.data.*;
 
-import java.rmi.RemoteException;
+
 
 public interface IRemote extends Remote{
-//	String sayMessage(String login, String password, String message) throws RemoteException;
+
 	 boolean registerUser(String email, String password,boolean role) throws RemoteException;
 	 boolean addBook(Book book) throws RemoteException;
-//	 boolean addReview(String u, String b, Review r) throws RemoteException;
+
 	List<Book> showBooksInStore() throws RemoteException;
 	//List<Book> showOwnedBooks(String email) throws RemoteException;
-//	boolean buyBook(String email, String title) throws RemoteException;
-	//boolean buyBook(String email, int ISBN) throws RemoteException;
 	
 	//List<Book> showReviewsOfBook(int ISBN) throws RemoteException;
 	//List<Book> showReviewsOfBook(String title) throws RemoteException;
@@ -29,6 +27,7 @@ public interface IRemote extends Remote{
 	Review getReview	(int id_review)throws RemoteException;
 	User	getUser	(String email)throws RemoteException;
 	
-	public boolean buyBook(String email, String book_title) throws RemoteException;
+	 boolean buyBook(String email, String book_title) throws RemoteException;
+	 boolean addReview(Book b, Review r, User u) throws RemoteException;
 	
 }

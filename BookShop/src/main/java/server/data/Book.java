@@ -1,13 +1,11 @@
 package server.data;
 
-//trial
+
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import db.DB;
 
 import java.io.Serializable;
 import java.util.ArrayList;

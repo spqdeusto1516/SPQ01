@@ -32,7 +32,7 @@ public class DAO implements IDAO {
 		       pm.makePersistent(u);
 		       tx.commit();
 		    } catch (Exception ex) {
-		    	logger.error("   $ Error storing an object: " + ex.getMessage());
+		    	
 		    	ret=false;
 		    
 		    } finally {
@@ -60,7 +60,7 @@ public class DAO implements IDAO {
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
-			logger.error("User does not exist: " + jonfe.getMessage());
+			
 		}
 
 		finally {
@@ -85,7 +85,7 @@ public class DAO implements IDAO {
 	    	pm.makePersistent(u);
 	    	tx.commit();
 	     } catch (Exception ex) {
-		   	logger.error("Error updating a user: " + ex.getMessage());
+		   	
 		   	r=false;
 	     } finally {
 		   	if (tx != null && tx.isActive()) {
@@ -104,18 +104,16 @@ public class DAO implements IDAO {
 	public Review retrieveReview(int id_review) {
 		// TODO Auto-generated method stub
 		Review review = null;
-		Review reviewCopy = null;
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.getFetchPlan().setMaxFetchDepth(3);
 		Transaction tx = pm.currentTransaction();
 		try {
 			tx.begin();
 			review = pm.getObjectById(Review.class, id_review);
-			reviewCopy =(Review) pm.detachCopy(review);
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
-			System.out.println("Review does not exist: " + jonfe.getMessage());
+			
 		}
 
 		finally {
@@ -140,7 +138,7 @@ public class DAO implements IDAO {
 	    	pm.makePersistent(review);
 	    	tx.commit();
 	     } catch (Exception ex) {
-		   	logger.error("Error updating a user: " + ex.getMessage());
+		   	
 		   	r=false;
 	     } finally {
 		   	if (tx != null && tx.isActive()) {
@@ -164,7 +162,7 @@ public class DAO implements IDAO {
 		       pm.makePersistent(b);
 		       tx.commit();
 		    } catch (Exception ex) {
-		    	logger.error("   $ Error storing an object: " + ex.getMessage());
+		    	
 		    	ret=false;
 		    
 		    } finally {
@@ -192,7 +190,7 @@ public class DAO implements IDAO {
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
-			logger.error("Book does not exist: " + jonfe.getMessage());
+			
 		}
 
 		finally {
@@ -217,7 +215,7 @@ public class DAO implements IDAO {
 	    	pm.makePersistent(b);
 	    	tx.commit();
 	     } catch (Exception ex) {
-		   	logger.error("Error updating a Book: " + ex.getMessage());
+		   
 		   	r=false;
 	     } finally {
 		   	if (tx != null && tx.isActive()) {
@@ -249,7 +247,7 @@ public class DAO implements IDAO {
 	        }
 	        tx.commit();
 	    } catch (Exception ex) {
-	        logger.error("# Error getting Extent: " + ex.getMessage());
+	        
 	       
 	    } finally {
 	        if (tx.isActive()) {
@@ -282,7 +280,7 @@ public class DAO implements IDAO {
 
 	            tx.commit();
 	        } catch (Exception ex) {
-	            logger.error("# Error getting Extent: " + ex.getMessage());
+	            
 	        } finally {
 	            if (tx.isActive()) {
 	                tx.rollback();
@@ -314,7 +312,7 @@ public class DAO implements IDAO {
 
             tx.commit();
         } catch (Exception ex) {
-            logger.error("# Error getting Extent: " + ex.getMessage());
+           
         } finally {
             if (tx.isActive()) {
                 tx.rollback();
@@ -346,7 +344,7 @@ public class DAO implements IDAO {
 
             tx.commit();
         } catch (Exception ex) {
-            logger.error("# Error getting Extent: " + ex.getMessage());
+            
         } finally {
             if (tx.isActive()) {
                 tx.rollback();

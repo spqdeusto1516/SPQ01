@@ -32,11 +32,7 @@ import org.slf4j.LoggerFactory;
 
 
 
-/**
- * 
- * @author cortazar
- * Testing of the Service Layer, mocking the DAO layer
- */
+
 @RunWith(MockitoJUnitRunner.class)  
 public class DAOMockTest {
 	
@@ -150,40 +146,6 @@ public class DAOMockTest {
 		//Calling the method under test
 		db.addBookToDb(b);
 	}
-/**
-	@Test(expected=RemoteException.class)
-	public void testSayMessageUserInvalid() throws RemoteException {
-		
-		when( dao.retrieveUser("cortazar") ).thenReturn( null );
-		logger.info("Say message and invalid user, testing exception");
-		
-		db.
-			
-	}
-	
-	@Test
-	public void testSayMessageUserValid() throws RemoteException {
-		// Setting up the test data
-		User u = new User("cortazar","cortazar");
-		Message mes = new Message("testing message");
-		mes.setUser(u);
-		u.addMessage(mes) ;
-		
-		//Stubbing
-		when( dao.retrieveUser("cortazar") ).thenReturn(u);
-		
-		//Calling the method under test
-		
-		m.sayMessage("cortazar", "cortazar", "testing message");
-		
-		// Verifying the outcome
-		ArgumentCaptor<User> userCaptor = ArgumentCaptor.forClass( User.class );
-		verify (dao).updateUser(userCaptor.capture());
-		User newUser = userCaptor.getValue();
-		
-		assertEquals( "cortazar", newUser.getMessages().get(0).getUser().getLogin());
-		
-	}
-	*/
+**/
 
 }

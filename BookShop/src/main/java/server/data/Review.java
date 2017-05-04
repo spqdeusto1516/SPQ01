@@ -2,15 +2,12 @@ package server.data;
 
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.jdo.annotations.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import db.DB;
 
 
 @PersistenceCapable

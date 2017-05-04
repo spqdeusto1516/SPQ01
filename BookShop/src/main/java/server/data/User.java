@@ -6,8 +6,6 @@ import javax.jdo.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import db.DB;
-
 import java.io.Serializable;
 import java.util.List;
 import java.util.ArrayList;
@@ -114,33 +112,7 @@ public class User implements Serializable{
 	
 	 public String toString() {
 		 return "User: email --> " + this.email + ", password -->  " + this.password + ",  User Role -->  " + this.role;
-		 /**	  
-	
-	 if (messages.isEmpty() && licenses.isEmpty()) {
-	 return "User: login --> " + this.login + ", password -->  " + this.password + ", Super User -->  " + this.isSuperuser;
-		 
-} else if(licenses.isEmpty()) {
-		 StringBuffer messagesStr = new StringBuffer();
-			for (Message message: this.messages) {
-				messagesStr.append(message.toString() + " - ");
-			}
 		
-	        return "User: login --> " + this.login + ", password -->  " + this.password + ", Super User -->  " + this.isSuperuser + ", messages --> [" + messagesStr + "]";
-	 }else{
-        	StringBuffer messagesStr = new StringBuffer();
-				for (Message message: this.messages) {
-					messagesStr.append(message.toString() + " - ");
-				}
-				StringBuffer licensesStr = new StringBuffer();
-				for (License license: this.licenses) {
-					licensesStr.append(license.toString() + " - ");
-				}
-	        	
-				return "User: login --> " + this.login + ", password -->  " + this.password + ", Super User -->  " 
-				+ this.isSuperuser + ", messages --> [" + messagesStr + "]"+ ", game licenses --> [" + licensesStr + "]";
-	        	
-	        }
-        **/	
         	
 	 }
 	 

@@ -5,17 +5,17 @@ import static org.junit.Assert.*;
 import junit.framework.JUnit4TestAdapter;
 
 import org.junit.BeforeClass;
-import org.junit.Rule;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import db.DAO;
+import db.DB;
+import db.IDAO;
+import db.IDB;
+
 import org.junit.AfterClass;
-
-import org.junit.After;
-//import org.junit.Ignore;
-
-import db.*;
 
 import server.data.*;
 import server.remote.IRemote;
@@ -25,14 +25,7 @@ import server.remote.Remote;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
-import java.util.List;
 import java.net.MalformedURLException;
-
-import javax.jdo.JDOHelper;
-import javax.jdo.PersistenceManagerFactory;
-import javax.jdo.Query;
-import javax.jdo.PersistenceManager;
-import javax.jdo.Transaction;
 
 
 
@@ -188,8 +181,6 @@ public class RMITest {
 	}
 	
 	
-	//@Test public void sayMessageValidUser() {
-	
 		@Test public void bookTestValidation() {
 		logger.info("Test 3 - Game Test ");
 		
@@ -255,127 +246,56 @@ public class RMITest {
 			
 			
 		}
-		@Test(expected=RemoteException.class)
-		public void showUsersFailTest() throws RemoteException{
-				IDAO dao = new DAO();
+		@Test public void getThings(){
+			boolean a = true;
+			
+			try {
 				logger.info("Test 6 - showUsers");
 				
-				//dao.deleteDatabase();
-				remote.getAllUsers();
+				User u1;
+				Review r1 = new Review( "Review 1",56.6);
+				Book b1 =new Book(2,"Book2","maria",0.2);
+				Book b2=null;
+				remote.registerUser("Maria","maria",false);
+				u1=remote.getUser("Maria");
+				
+				remote.addBook(b1);
+				
+				
+				
+				b2 =remote.getBookByISBN(b1.getISBN());
+				
+				remote.addReview(b2, r1, u1);
+				remote.getReview(r1.getId_review());
+				remote.getAllReviews();
+				remote.buyBook(u1.getEmail(), b2.getTitle());
+				
+				
+			}
+				catch (Exception re){
+					logger.error(" RemoteException: " );
+					logger.trace(re.getMessage());
+					re.printStackTrace();
+					a=false;
+					
+			}
+			assertTrue(a);
+		}
+		@Test(expected=RemoteException.class)
+		public void showUserFailTest() throws RemoteException{
+				
+				logger.info("Test 7 - showUsersFail");
+				
+				
+				remote.getUser(null);
+				
 				
 		
 			
 					
 		}
 		
-		@Test public void reviewsTestValidation() {
-			logger.info("Test 7 - License Test");		
-			Review reviewTest = null;
-			IDB db = new DB();
-			
-			Book b = new Book(10,"BF 1942", "jaja",19.90);		
-			Review r = new Review ("GGGG",7.5);		
-			User u = new User("JunitUser","Junit Pass",false);
-			
-			
-			r.setBook(b);
-			r.setUser(u);
-			try{
-				remote.registerUser("JunitUser","Junit Pass",false);
-				remote.addBook(b);
-				db.buyBook(u.getEmail(), b.getTitle());
-				db.addReview(b, r, u);
-				db.showUser(u.getEmail());
-				reviewTest =	db.showReview(1);
-				
-				
-			} catch (RemoteException e){
-			logger.error("Remote Exception");
-			logger.trace(e.getMessage());
-			e.printStackTrace();
-			
-				
-			}
-			assertEquals(r.toString(), reviewTest.toString());
-			assertEquals(r.getBook().getTitle(), reviewTest.getBook().getTitle());
-			assertEquals(r.getUser().getEmail(), reviewTest.getUser().getEmail());
-		}
-		/**
-		@Test public void fullReview(){
-
-			Review r1 = new Review( "Me come los huevos HL1",56.6);
-			Review r2 = new Review( "Me come los huevos Mucho",28.6);
-			Review r3 = new Review( "Me come los huevos Un mogolllon",100.6);
-			Review r4 = new Review( "Carazo magic",100.6);
-			Review r5 = new Review( "Carazo magic V2",100.6);
-			
-			Book b4 =new Book(1,"HL1","pabloaut",0.2);
-			Book b1 =new Book(2,"HL2","maria",0.2);
-			Book b2 =new Book(3,"Skyrim","ainhoa",0.2);
-			Book b3= new Book(4,"LOTR","joel",0.2);
-
-			IDB db = new DB();
-
-			db.addBookToDb(b4);
-			db.addBookToDb(b1);
-			db.addBookToDb(b2);
-			db.addBookToDb(b3);
-
-			db.registerUser("jon", "qwerty", false);
-			db.registerUser("pablo@mariaysusCommitsdeMofa.es", "qwerty", false);
-			db.registerUser("Carazo@.es", "qwerty", false);
-			db.registerUser("Alon@.es", "qwerty", false);
 	
-			User a1 =db.showUser("jon");						
-			User a2 =db.showUser("pablo@mariaysusCommitsdeMofa.es");
-			User a3 =db.showUser("Carazo@.es");
-			User a4 =db.showUser("Alon@.es");
-			
-			
-			db.addReview(b1, r1, a1);	
-			db.addReview(b2, r2, a2);
-			
-			db.addReview(b3, r3, a2);
-			db.addReview(b3, r4, a3);
-			db.addReview(b2, r5, a4);
-			
-		}
-	/**	
-	@Test public void licenseTestValidation() {
-		logger.info("Test 4 - License Test");		
-		License licenseTest = null;
-		
-		Company c = new Company("DICE");
-		Genre gr = new Genre("Bellic simulator");
-		Game g = new Game("BF 1942", 19.90, 0);		
-		License l = new License ("GGGG");		
-		User u = new User("JunitUser","Junit Pass",false);
-		
-		g.setCompany(c);
-		g.setGenre(gr);
-		l.setGame(g);
-		
-		g.addLicense(l);
-		u.addLicense(l);
-		
-		c.addGame(g);
-		gr.addGame(g);
-		
-		try{
-			remote.registerUser("cortazar","cortazar",false);
-			licenseTest = remote.licenseTest();
-		
-			
-		} catch (RemoteException e){
-		logger.error("Remote Exception");
-		logger.trace(e.getMessage());
-		e.printStackTrace();
-		
-			
-		}
-		assertEquals(l, licenseTest);
-	}
-	*/
 /**
 	@After public  void deleteDatabase() {
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
@@ -406,8 +326,8 @@ public class RMITest {
         }
 		
 	}
-	
-**/
+	**/
+
 	@AfterClass static public void tearDown() {
 		try	{
 			rmiServerThread.join();

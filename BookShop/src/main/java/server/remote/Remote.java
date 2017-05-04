@@ -1,16 +1,10 @@
 package server.remote;
 
-import java.rmi.Naming;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.ArrayList;
-import java.util.List;
 
-import javax.jdo.PersistenceManager;
-import javax.jdo.PersistenceManagerFactory;
-import javax.jdo.Query;
-import javax.jdo.JDOHelper;
-import javax.jdo.Transaction;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,22 +18,10 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 
 	private static final long serialVersionUID = 1L;
 	final static  Logger logger = LoggerFactory.getLogger(Remote.class);
-	private int cont = 0;
-	private PersistenceManager pm=null;
-	private Transaction tx=null;
 
 	public Remote() throws RemoteException {
 		super();
-//		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
-//		this.pm = pmf.getPersistenceManager();
-//		this.tx = pm.currentTransaction();
-	//}
-	
-	//protected void finalize () throws Throwable {
-	//	if (tx.isActive()) {
-  //          tx.rollback();
- //       }
- //       pm.close();
+
 	}
 
 	@Override
@@ -118,41 +100,87 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 	}
 
 	@Override
-	public Book getBookByISBN(int ISBN) {
+	public Book getBookByISBN(int ISBN) throws RemoteException{
 		// TODO Auto-generated method stub
 		IDB db =new DB();
-		return db.showBookByISBN(ISBN);
+		Book b = null;
+		try{
+		b = db.showBookByISBN(ISBN);
+		}catch (Exception e){
+			
+		}
+		return b;
 	}
 
 	@Override
-	public Book getBookByTitle(String title) {
+	public Book getBookByTitle(String title) throws RemoteException{
 		// TODO Auto-generated method stub
 		IDB db =new DB();
-		return db.showBookByTitle(title);
+		Book b = null;
+		try{
+			b=db.showBookByTitle(title);
+		}catch (Exception e){
+			
+		}
+		return b;
 	}
 
 	@Override
-	public Review getReview(int id_review) {
+	public Review getReview(int id_review) throws RemoteException {
 		// TODO Auto-generated method stub
 		IDB db =new DB();
-		return db.showReview(id_review);
+		Review r=null;
+		try{
+		r= db.showReview(id_review);
+		}catch (Exception e){
+			
+		}
+		return r;
+		
 	}
 
 	@Override
-	public User getUser(String email) {
-		// TODO Auto-generated method stub
+	public User getUser(String email) throws RemoteException {
 		IDB db =new DB();
+	if(email != null){
+		
 		return db.showUser(email);
+		
+		
+	}else{
+		throw new RemoteException();
+			
+		    
+		      
+		    }
+		
+	
 	}
 	
 	@Override
-	public boolean buyBook(String email, String book_title) {
+	public boolean buyBook(String email, String book_title) throws RemoteException{
 		// TODO Auto-generated method stub
 		IDB db =new DB();
-		return db.buyBook(email, book_title);
+		boolean a=false;
+		try{
+		a = db.buyBook(email, book_title);
+		}catch(Exception e){
+			
+		}
+		return a;
 	}
 	
-
+	public boolean addReview(Book b, Review r, User u) {
+		// TODO Auto-generated method stub
+		IDB db =new DB();
+		boolean a=false;
+		try{
+		a = db.addReview(b, r, u);
+		}catch(Exception e){
+			
+		}
+		return a;
+	}
 	
 	
 	

@@ -297,7 +297,8 @@ import server.remote.*;
 			} catch (RemoteException e) {
 				e.printStackTrace();
 			}
-			System.out.println(buyOk);
+			logger.info(""+buyOk);
+			
 			if(buyOk == true){
 				logger.info("You have bought "+bookSelectionTitle);
 			}else{

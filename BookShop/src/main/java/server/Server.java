@@ -1,7 +1,7 @@
 package server;
 
 import java.rmi.Naming;
-import java.util.List;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,16 +36,16 @@ public class Server{
 
 	
 
-			Review r1 = new Review( "Me come los huevos HL1",56.6);
-			Review r2 = new Review( "Me come los huevos Mucho",28.6);
-			Review r3 = new Review( "Me come los huevos Un mogolllon",100.6);
-			Review r4 = new Review( "Carazo magic",100.6);
-			Review r5 = new Review( "Carazo magic V2",100.6);
+			Review r1 = new Review( "Review 1",56.6);
+			Review r2 = new Review( "Review 2",28.6);
+			Review r3 = new Review( "Review 3",100.6);
+			Review r4 = new Review( "Review 4",100.6);
+			Review r5 = new Review( "Review 5",100.6);
 			
-			Book b4 =new Book(1,"HL1","pabloaut",0.2);
-			Book b1 =new Book(2,"HL2","maria",0.2);
-			Book b2 =new Book(3,"Skyrim","ainhoa",0.2);
-			Book b3= new Book(4,"LOTR","joel",0.2);
+			Book b4 =new Book(1,"Book1","pabloaut",0.2);
+			Book b1 =new Book(2,"Book2","maria",0.2);
+			Book b2 =new Book(3,"Book3","ainhoa",0.2);
+			Book b3= new Book(4,"Book4","joel",0.2);
 
 			IDB db = new DB();
 
@@ -55,14 +55,14 @@ public class Server{
 			db.addBookToDb(b3);
 
 			db.registerUser("jon", "qwerty", false);
-			db.registerUser("pablo@mariaysusCommitsdeMofa.es", "qwerty", false);
-			db.registerUser("Carazo@.es", "qwerty", false);
-			db.registerUser("Alon@.es", "qwerty", false);
+			db.registerUser("pablo", "qwerty", false);
+			db.registerUser("Carazo", "qwerty", false);
+			db.registerUser("Alon", "qwerty", false);
 	
 			User a1 =db.showUser("jon");						
-			User a2 =db.showUser("pablo@mariaysusCommitsdeMofa.es");
-			User a3 =db.showUser("Carazo@.es");
-			User a4 =db.showUser("Alon@.es");
+			User a2 =db.showUser("pablo");
+			User a3 =db.showUser("Carazo");
+			User a4 =db.showUser("Alon");
 			
 			
 			db.addReview(b1, r1, a1);	
@@ -73,37 +73,13 @@ public class Server{
 			db.addReview(b2, r5, a4);
 			
 			
-			
-			//db.addReviewToBook(b3, r4);
-			
-			//Review r11 = db.showReview(r1.getId_review());
-			//Review r22 = db.showReview(r2.getId_review());
-			//Review r33 = db.showReview(r3.getId_review());
-			
-			//db.addReviewToUser(a1, r11);							
-			//db.addReviewToUser(a2, r22);			
-			//db.addReviewToUser(a3, r33);
-			
-			 	
-			db.buyBook("jon", "LOTR");
+	
+			db.buyBook("jon", "Book4");
 
-		User showU=	db.showUser("jon");
-		List<Book> books=showU.getBooks();
 		
-		if (books.isEmpty()) {
-		logger.info("User: login --> " + showU.getEmail() + ", password -->  " +
-		showU.getPassword() + ", Super User -->  " + showU .getRole());	
-
-		}else{
-			StringBuffer booksStr = new StringBuffer();
-			for (Book book: books) {
-				booksStr.append(book.toString() + " - ");
-			}
-		logger.info("User: login --> " + showU.getEmail() + ", password -->  " +
-		showU.getPassword() + ", Super User -->  " + showU .getRole()+"User books --> [" + booksStr + "]");
 			
 
-		}
+		
 			
 			logger.info("[S] Server '" + name + "' active and waiting...");
 			java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );

@@ -12,7 +12,6 @@ import server.data.*;
 public class DB implements IDB{
 
 	private static final long serialVersionUID = 1L;
-	private int cont = 0;
 	IDAO dao;
 	final static  Logger logger = LoggerFactory.getLogger(DB.class);
 

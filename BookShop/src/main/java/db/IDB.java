@@ -10,24 +10,18 @@ package db;
 		  List<User> getAllUsers();
 		  List<Review> getAllReviews();
 		  List<Book> getAllBooks();
-		  
-		  
-		  
+		
 		  boolean buyBook(String email, String book_title);
-		//  boolean createReview(String u, String book, Review r);
-		
-		
-		boolean registerUser(String email, String password,boolean role);
-
-		boolean addBookToDb(Book b);
-		boolean addReview(Book b, Review r, User user );
-		
-		
-		Book showBookByISBN	(int ISBN);
-		Book showBookByTitle	(String title);
-		Review showReview	(int id_review);
-		
-		User	showUser	(String email);
+	
+			boolean registerUser(String email, String password,boolean role);
+	
+			boolean addBookToDb(Book b);
+			boolean addReview(Book b, Review r, User user );
+			
+			Book showBookByISBN	(int ISBN);
+			Book showBookByTitle	(String title);
+			Review showReview	(int id_review);
+			User showUser	(String email);
 		
 		
 }
