@@ -194,8 +194,8 @@ public class ShowBooks {
 		gbc_btnSearch.gridx = 3;
 		gbc_btnSearch.gridy = 2;
 		gbc_btnSearch.fill= GridBagConstraints.BOTH;
-		//Image imgSearch = new ImageIcon(this.getClass().getResource("search.png")).getImage();
-		//btnSearch.setIcon(new ImageIcon(imgSearch));
+		Image imgSearch = new ImageIcon(this.getClass().getResource("search.png")).getImage();
+		btnSearch.setIcon( (Icon) new ImageIcon(imgSearch));
 		bookSearch.add(btnSearch, gbc_btnSearch);		
 		
 		// Create JButton for refreshing data of JTable

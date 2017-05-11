@@ -19,6 +19,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.rmi.RemoteException;
 
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -116,9 +117,9 @@ public class LogIn {
 		gbc_imageLogo.gridy = 0;
 		gbc_imageLogo.fill= GridBagConstraints.HORIZONTAL;
 		imageLogo.setFont(new Font("Yu Gothic", Font.PLAIN, 25));
-		//Image imgBack = new ImageIcon(this.getClass().getResource("booklogo.jpg")).getImage();
+		Image imgBack = new ImageIcon(this.getClass().getResource("booklogo.jpg")).getImage();
 		//System.out.println(getClass().getResource("booklogo.jpg"));
-		//imageLogo.setIcon(new ImageIcon(imgBack));
+		imageLogo.setIcon( (Icon) new ImageIcon(imgBack));
 		logIn.add(imageLogo, gbc_imageLogo);
 		
 		// JLabel component about login message
@@ -211,8 +212,8 @@ public class LogIn {
 		btnLogIn.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		
 		// setting an image as an icon for Log In Button
-		//ImageIcon imgLogIn = new ImageIcon(this.getClass().getResource("**/login.png"));
-		//btnLogIn.setIcon(new ImageIcon(imgLogIn.getImage()));
+		
+		btnLogIn.setIcon( (Icon) new ImageIcon(LogIn.class.getResource("login.png")));
 		//System.out.println(getClass().getResource("login.png"));
 		GridBagConstraints gbc_btnLogIn = new GridBagConstraints();
 		gbc_btnLogIn.insets = new Insets(0, 0, 2, 10);
