@@ -1,213 +1,645 @@
-22:16:52> DEBUG (Log4JLogger.java:63): Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
-22:16:52> DEBUG (Log4JLogger.java:63): Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
-22:16:52> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
-22:16:52> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
-22:16:52> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar.
-22:16:53> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
-22:16:53> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
-22:16:53> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.api.jdo version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar.
-22:16:53> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
-22:16:53> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
-22:16:53> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.store.rdbms version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar.
-22:16:53> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
-22:16:53> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
-22:16:53> DEBUG (Log4JLogger.java:63): Tipos de Java inicializando ...
-22:16:53> DEBUG (Log4JLogger.java:63): Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
-22:16:53> DEBUG (Log4JLogger.java:63): Inicializando TypeConverters ...
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverters listo
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for char[] to : java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for double[] to : java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for float[] to : java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for int[] to : java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for long[] to : java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for short[] to : java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.Color to : java.lang.String,int[]
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.image.BufferedImage to : java.nio.ByteBuffer,byte[]
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.io.Serializable to : java.lang.String,java.nio.ByteBuffer,byte[]
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Boolean to : java.lang.Integer,java.lang.Character
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Character to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Class to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Integer to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Long to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigDecimal to : java.lang.Double,java.lang.String,java.nio.ByteBuffer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigInteger to : java.lang.String,java.nio.ByteBuffer,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URI to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URL to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Date to : java.util.Date,java.lang.String,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Time to : java.util.Date,java.lang.String,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Timestamp to : java.util.Date,java.lang.String,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Duration to : java.lang.Double,java.lang.String,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Instant to : java.util.Date,java.lang.String,java.sql.Timestamp,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDate to : java.util.Date,java.sql.Date,java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalTime to : java.sql.Time,java.util.Date,java.lang.String,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.MonthDay to : java.util.Date,java.sql.Date,java.lang.String,int[]
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetTime to : java.sql.Time,java.lang.String,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Period to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Year to : java.lang.String,java.lang.Integer
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.YearMonth to : java.util.Date,java.sql.Date,java.lang.String,int[]
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZonedDateTime to : java.lang.String,java.sql.Timestamp
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneId to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.BitSet to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Calendar to : java.util.Date,java.lang.String,java.sql.Timestamp,[Ljava.lang.Object;
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Currency to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Date to : java.lang.String,java.lang.Long
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Locale to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.TimeZone to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.UUID to : java.lang.String
-22:16:53> DEBUG (Log4JLogger.java:63): MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
-22:16:53> INFO  (Log4JLogger.java:82): DataNucleus Enhancer (versión 5.1.0.m2) para el API "JDO" utilisando el JRE "{2}"
-22:16:53> DEBUG (Log4JLogger.java:63): DataNucleus Enhancer : Classpath
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\git\SPQ01\BookShop\target\classes
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m2\datanucleus-core-5.1.0-m2.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m2\datanucleus-api-jdo-5.1.0-m2.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m2\datanucleus-rdbms-5.1.0-m2.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\mockito\mockito-core\2.7.21\mockito-core-2.7.21.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\ow2\asm\asm\5.2\asm-5.2.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-simple\1.6.4\slf4j-simple-1.6.4.jar
-22:16:53> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-api\1.6.4\slf4j-api-1.6.4.jar
-22:16:53> DEBUG (Log4JLogger.java:63): Reading fileListFile: C:\Users\Javier\AppData\Local\Temp\enhancer-348232982266304092.flf
-22:16:53> DEBUG (Log4JLogger.java:63): Enhancing classes
-22:16:53> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata de las clases "[client.Client, db.DAO, db.DB, db.IDAO, db.IDB, server.data.Book, server.data.Review, server.data.User, server.remote.IRemote, server.remote.Remote, server.Server]" ...
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /META-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /WEB-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/Client.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.Client"
-22:16:53> DEBUG (Log4JLogger.java:63): Registrando la clase "client.Client" no tener Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): La clase "client.Client" no tiene MetaData o annotaciones.
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /META-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /WEB-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db/DAO.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.DAO"
-22:16:53> DEBUG (Log4JLogger.java:63): Registrando la clase "db.DAO" no tener Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): La clase "db.DAO" no tiene MetaData o annotaciones.
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /META-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /WEB-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db/DB.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.DB"
-22:16:53> DEBUG (Log4JLogger.java:63): Registrando la clase "db.DB" no tener Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): La clase "db.DB" no tiene MetaData o annotaciones.
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /META-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /WEB-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db/IDAO.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.IDAO"
-22:16:53> DEBUG (Log4JLogger.java:63): Registrando la clase "db.IDAO" no tener Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): La clase "db.IDAO" no tiene MetaData o annotaciones.
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /META-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /WEB-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db/IDB.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.IDB"
-22:16:53> DEBUG (Log4JLogger.java:63): Registrando la clase "db.IDB" no tener Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): La clase "db.IDB" no tiene MetaData o annotaciones.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" tiene anotaciones de JDO y vamos a usarlas.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" tiene anotaciones de JDO y vamos a usarlas.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.User" tiene anotaciones de JDO y vamos a usarlas.
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /META-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /WEB-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote/IRemote.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.IRemote"
-22:16:53> DEBUG (Log4JLogger.java:63): Registrando la clase "server.remote.IRemote" no tener Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): La clase "server.remote.IRemote" no tiene MetaData o annotaciones.
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /META-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /WEB-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote/Remote.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.Remote"
-22:16:53> DEBUG (Log4JLogger.java:63): Registrando la clase "server.remote.Remote" no tener Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): La clase "server.remote.Remote" no tiene MetaData o annotaciones.
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /META-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /WEB-INF/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/package.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/Server.jdo
-22:16:53> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.Server"
-22:16:53> DEBUG (Log4JLogger.java:63): Registrando la clase "server.Server" no tener Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): La clase "server.Server" no tiene MetaData o annotaciones.
-22:16:53> DEBUG (Log4JLogger.java:63): Populación del MetaData ...
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" : Populando Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "title" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "category" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "edition" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "author" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "price" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "description" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "img" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" : Populando Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" campo "comment" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" campo "rating" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.User" : Populando Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "name" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "address" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "role" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-22:16:53> DEBUG (Log4JLogger.java:63): Inicialisación del MetaData ...
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" : Inicializando Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" : Inicializando Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): Clase "server.data.User" : Inicializando Meta-Data
-22:16:53> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata ya ha terminado
-22:16:53> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Book" empezando ...
-22:16:53> INFO  (Log4JLogger.java:82): La clase "server.data.Book" esta enhanced.
-22:16:53> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.Book
-22:16:53> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Book" ha terminado
-22:16:53> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Review" empezando ...
-22:16:53> INFO  (Log4JLogger.java:82): La clase "server.data.Review" esta enhanced.
-22:16:53> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.Review
-22:16:53> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Review" ha terminado
-22:16:53> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.User" empezando ...
-22:16:53> INFO  (Log4JLogger.java:82): La clase "server.data.User" esta enhanced.
-22:16:53> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.User
-22:16:53> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.User" ha terminado
-22:16:53> INFO  (Log4JLogger.java:82): DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=94 ms, enhance=17 ms, total=111 ms. Compruebe el LOG para los detalles
+17:52:56> DEBUG (Log4JLogger.java:63): Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+17:52:56> DEBUG (Log4JLogger.java:63): Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
+17:52:56> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+17:52:56> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+17:52:56> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar.
+17:52:56> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
+17:52:56> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
+17:52:56> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.api.jdo version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar.
+17:52:56> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
+17:52:56> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
+17:52:56> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.store.rdbms version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar.
+17:52:56> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
+17:52:56> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
+17:52:56> DEBUG (Log4JLogger.java:63): Tipos de Java inicializando ...
+17:52:56> DEBUG (Log4JLogger.java:63): Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
+17:52:56> DEBUG (Log4JLogger.java:63): Inicializando TypeConverters ...
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverters listo
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for char[] to : java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for double[] to : java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for float[] to : java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for int[] to : java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for long[] to : java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for short[] to : java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.Color to : java.lang.String,int[]
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.image.BufferedImage to : java.nio.ByteBuffer,byte[]
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.io.Serializable to : java.lang.String,java.nio.ByteBuffer,byte[]
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Boolean to : java.lang.Integer,java.lang.Character
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Character to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Class to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Integer to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Long to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigDecimal to : java.lang.Double,java.lang.String,java.nio.ByteBuffer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigInteger to : java.lang.String,java.nio.ByteBuffer,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URI to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URL to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Date to : java.util.Date,java.lang.String,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Time to : java.util.Date,java.lang.String,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Timestamp to : java.util.Date,java.lang.String,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Duration to : java.lang.Double,java.lang.String,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Instant to : java.util.Date,java.lang.String,java.sql.Timestamp,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDate to : java.util.Date,java.sql.Date,java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalTime to : java.sql.Time,java.util.Date,java.lang.String,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.MonthDay to : java.util.Date,java.sql.Date,java.lang.String,int[]
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetTime to : java.sql.Time,java.lang.String,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Period to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Year to : java.lang.String,java.lang.Integer
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.YearMonth to : java.util.Date,java.sql.Date,java.lang.String,int[]
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZonedDateTime to : java.lang.String,java.sql.Timestamp
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneId to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.BitSet to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Calendar to : java.util.Date,java.lang.String,java.sql.Timestamp,[Ljava.lang.Object;
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Currency to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Date to : java.lang.String,java.lang.Long
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Locale to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.TimeZone to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.UUID to : java.lang.String
+17:52:56> DEBUG (Log4JLogger.java:63): MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+17:52:56> INFO  (Log4JLogger.java:82): DataNucleus Enhancer (versión 5.1.0.m2) para el API "JDO" utilisando el JRE "{2}"
+17:52:56> DEBUG (Log4JLogger.java:63): DataNucleus Enhancer : Classpath
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\git\SPQ01\BookShop\target\classes
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m2\datanucleus-core-5.1.0-m2.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m2\datanucleus-api-jdo-5.1.0-m2.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m2\datanucleus-rdbms-5.1.0-m2.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\mockito\mockito-core\2.7.21\mockito-core-2.7.21.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\ow2\asm\asm\5.2\asm-5.2.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-simple\1.6.4\slf4j-simple-1.6.4.jar
+17:52:56> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-api\1.6.4\slf4j-api-1.6.4.jar
+17:52:56> DEBUG (Log4JLogger.java:63): Reading fileListFile: C:\Users\Javier\AppData\Local\Temp\enhancer-8142373921213192360.flf
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing classes
+17:52:56> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata de las clases "[client.Client, db.DAO, db.DB, db.IDAO, db.IDB, server.data.Book, server.data.Review, server.data.User, server.remote.IRemote, server.remote.Remote, server.Server]" ...
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /META-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /WEB-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/Client.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.Client"
+17:52:56> DEBUG (Log4JLogger.java:63): Registrando la clase "client.Client" no tener Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "client.Client" no tiene MetaData o annotaciones.
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /META-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /WEB-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db/DAO.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.DAO"
+17:52:56> DEBUG (Log4JLogger.java:63): Registrando la clase "db.DAO" no tener Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "db.DAO" no tiene MetaData o annotaciones.
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /META-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /WEB-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db/DB.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.DB"
+17:52:56> DEBUG (Log4JLogger.java:63): Registrando la clase "db.DB" no tener Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "db.DB" no tiene MetaData o annotaciones.
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /META-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /WEB-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db/IDAO.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.IDAO"
+17:52:56> DEBUG (Log4JLogger.java:63): Registrando la clase "db.IDAO" no tener Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "db.IDAO" no tiene MetaData o annotaciones.
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /META-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /WEB-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db/IDB.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.IDB"
+17:52:56> DEBUG (Log4JLogger.java:63): Registrando la clase "db.IDB" no tener Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "db.IDB" no tiene MetaData o annotaciones.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" tiene anotaciones de JDO y vamos a usarlas.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" tiene anotaciones de JDO y vamos a usarlas.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.User" tiene anotaciones de JDO y vamos a usarlas.
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /META-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /WEB-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote/IRemote.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.IRemote"
+17:52:56> DEBUG (Log4JLogger.java:63): Registrando la clase "server.remote.IRemote" no tener Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.remote.IRemote" no tiene MetaData o annotaciones.
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /META-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /WEB-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote/Remote.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.Remote"
+17:52:56> DEBUG (Log4JLogger.java:63): Registrando la clase "server.remote.Remote" no tener Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.remote.Remote" no tiene MetaData o annotaciones.
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /META-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /WEB-INF/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/package.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/Server.jdo
+17:52:56> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.Server"
+17:52:56> DEBUG (Log4JLogger.java:63): Registrando la clase "server.Server" no tener Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.Server" no tiene MetaData o annotaciones.
+17:52:56> DEBUG (Log4JLogger.java:63): Populación del MetaData ...
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" : Populando Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "title" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "category" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "edition" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "author" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "price" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "description" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "img" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" : Populando Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" campo "comment" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" campo "rating" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.User" : Populando Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "name" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "address" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "role" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "money" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:52:56> DEBUG (Log4JLogger.java:63): Inicialisación del MetaData ...
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" : Inicializando Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" : Inicializando Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): Clase "server.data.User" : Inicializando Meta-Data
+17:52:56> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata ya ha terminado
+17:52:56> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Book" empezando ...
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no implementa el interfaz "org.datanucleus.enhancement.Persistable"!
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no implementa el interfaz "org.datanucleus.enhancement.Detachable"!
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el campo "dnStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el campo "dnDetachedState" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el campo "dnFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el campo "dnFieldTypes" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el campo "dnFieldNames" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el campo "dnFieldFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnReplaceField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnGetStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnIsTransactional" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnNewInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnNewInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnSuperClone" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnProvideFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "___dn$loadClass" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnIsDirty" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnReplaceFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnIsDetached" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnMakeDirty" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnIsDeleted" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnProvideField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnPreSerialize" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnGetObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnGetVersion" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnIsNew" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnCopyField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnCopyFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnReplaceDetachedState" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnIsPersistent" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "dnReplaceFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Book" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el interfaz: org.datanucleus.enhancement.Detachable
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el interfaz: org.datanucleus.enhancement.Persistable
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.reviews"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.users"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.ISBN"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.title"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.category"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.edition"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.author"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.price"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.description"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.img"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.reviews"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.users"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.ISBN"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.title"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.author"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.<init> : ignorando enhance de set del campo "server.data.Book.price"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.addReview, cambiando el uso del campo "server.data.Book.reviews" para utilisar "dnGetreviews()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.removeReview, cambiando el uso del campo "server.data.Book.reviews" para utilisar "dnGetreviews()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getReviews, cambiando el uso del campo "server.data.Book.reviews" para utilisar "dnGetreviews()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.addUser, cambiando el uso del campo "server.data.Book.users" para utilisar "dnGetusers()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.removeUser, cambiando el uso del campo "server.data.Book.users" para utilisar "dnGetusers()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getUsers, cambiando el uso del campo "server.data.Book.users" para utilisar "dnGetusers()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getISBN, cambiando el uso del campo "server.data.Book.ISBN" para utilisar "dnGetISBN()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.setISBN, cambiando el uso del campo "server.data.Book.ISBN" para utilisar "dnSetISBN()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getTitle, cambiando el uso del campo "server.data.Book.title" para utilisar "dnGettitle()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.setTitle, cambiando el uso del campo "server.data.Book.title" para utilisar "dnSettitle()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getCategory, cambiando el uso del campo "server.data.Book.category" para utilisar "dnGetcategory()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.setCategory, cambiando el uso del campo "server.data.Book.category" para utilisar "dnSetcategory()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getEdition, cambiando el uso del campo "server.data.Book.edition" para utilisar "dnGetedition()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.setEdition, cambiando el uso del campo "server.data.Book.edition" para utilisar "dnSetedition()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getAuthor, cambiando el uso del campo "server.data.Book.author" para utilisar "dnGetauthor()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.setAuthor, cambiando el uso del campo "server.data.Book.author" para utilisar "dnSetauthor()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getPrice, cambiando el uso del campo "server.data.Book.price" para utilisar "dnGetprice()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.setPrice, cambiando el uso del campo "server.data.Book.price" para utilisar "dnSetprice()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getDescription, cambiando el uso del campo "server.data.Book.description" para utilisar "dnGetdescription()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.setDescription, cambiando el uso del campo "server.data.Book.description" para utilisar "dnSetdescription()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.getImg, cambiando el uso del campo "server.data.Book.img" para utilisar "dnGetimg()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.setImg, cambiando el uso del campo "server.data.Book.img" para utilisar "dnSetimg()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.toString, cambiando el uso del campo "server.data.Book.ISBN" para utilisar "dnGetISBN()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.toString, cambiando el uso del campo "server.data.Book.title" para utilisar "dnGettitle()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.toString, cambiando el uso del campo "server.data.Book.author" para utilisar "dnGetauthor()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Book.toString, cambiando el uso del campo "server.data.Book.price" para utilisar "dnGetprice()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "org.datanucleus.enhancement.StateManager dnStateManager"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "byte dnFlags"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[Ljava.lang.Object; dnDetachedState"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[B dnFieldFlags"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "java.lang.Class dnPersistableSuperclass"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[Ljava.lang.String; dnFieldNames"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "int dnInheritedFieldCount"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el constructor "server.data.Book()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsFromObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldConsumer fc, java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsFromObjectId(java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsToObjectId(java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsToObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldSupplier fs, java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetObjectId()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetVersion()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnPreSerialize()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.ExecutionContextReference dnGetExecutionContext()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.StateManager dnGetStateManager()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDeleted()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDirty()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsNew()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsPersistent()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsTransactional()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnMakeDirty(java.lang.String fieldName)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnNewObjectIdInstance(java.lang.Object key)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnProvideFields([I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceFields([I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceFlags()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceStateManager(org.datanucleus.enhancement.StateManager sm)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceDetachedState()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDetached()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm, java.lang.Object obj)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceField(int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnProvideField(int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyField(server.data.Book obj, int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyFields(java.lang.Object obj, [I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[B __dnFieldFlagsInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "int __dnGetInheritedFieldCount()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "int dnGetManagedFieldCount()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Class ___dn$loadClass(java.lang.String className)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnSuperClone()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void writeObject(java.io.ObjectOutputStream out)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "int dnGetISBN(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetISBN(server.data.Book objPC, int val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetauthor(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetauthor(server.data.Book objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetcategory(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetcategory(server.data.Book objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetdescription(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetdescription(server.data.Book objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetedition(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetedition(server.data.Book objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetimg(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetimg(server.data.Book objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "double dnGetprice(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetprice(server.data.Book objPC, double val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.util.List dnGetreviews(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetreviews(server.data.Book objPC, java.util.List val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGettitle(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSettitle(server.data.Book objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.util.List dnGetusers(server.data.Book objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetusers(server.data.Book objPC, java.util.List val)"
+17:52:56> INFO  (Log4JLogger.java:82): Escribiendo el archivo de clase "C:\Users\Javier\git\SPQ01\BookShop\target\classes\server\data\Book.class" con definicion enhanced
+17:52:56> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.Book
+17:52:56> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Book" ha terminado
+17:52:56> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Review" empezando ...
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no implementa el interfaz "org.datanucleus.enhancement.Persistable"!
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el campo "dnStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el campo "dnFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el campo "dnFieldTypes" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el campo "dnFieldNames" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el campo "dnFieldFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnReplaceField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnGetStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnIsTransactional" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnNewInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnNewInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnSuperClone" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnProvideFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "___dn$loadClass" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnIsDirty" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnReplaceFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnIsDetached" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnMakeDirty" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnIsDeleted" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnProvideField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnPreSerialize" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnGetObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnGetVersion" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnIsNew" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnCopyField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnCopyFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnIsPersistent" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "dnReplaceFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.Review" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el interfaz: org.datanucleus.enhancement.Persistable
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.<init> : ignorando enhance de set del campo "server.data.Review.user"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.<init> : ignorando enhance de set del campo "server.data.Review.book"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.<init> : ignorando enhance de set del campo "server.data.Review.comment"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.<init> : ignorando enhance de set del campo "server.data.Review.rating"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.<init> : ignorando enhance de set del campo "server.data.Review.comment"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.<init> : ignorando enhance de set del campo "server.data.Review.rating"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.getUser, cambiando el uso del campo "server.data.Review.user" para utilisar "dnGetuser()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.setUser, cambiando el uso del campo "server.data.Review.user" para utilisar "dnSetuser()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.getBook, cambiando el uso del campo "server.data.Review.book" para utilisar "dnGetbook()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.setBook, cambiando el uso del campo "server.data.Review.book" para utilisar "dnSetbook()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.getComment, cambiando el uso del campo "server.data.Review.comment" para utilisar "dnGetcomment()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.setComment, cambiando el uso del campo "server.data.Review.comment" para utilisar "dnSetcomment()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.getRating, cambiando el uso del campo "server.data.Review.rating" para utilisar "dnGetrating()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.setRating, cambiando el uso del campo "server.data.Review.rating" para utilisar "dnSetrating()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.getId_review, cambiando el uso del campo "server.data.Review.id_review" para utilisar "dnGetid_review()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.toString, cambiando el uso del campo "server.data.Review.id_review" para utilisar "dnGetid_review()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.toString, cambiando el uso del campo "server.data.Review.comment" para utilisar "dnGetcomment()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.toString, cambiando el uso del campo "server.data.Review.rating" para utilisar "dnGetrating()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.Review.setId_review, cambiando el uso del campo "server.data.Review.id_review" para utilisar "dnSetid_review()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "org.datanucleus.enhancement.StateManager dnStateManager"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "byte dnFlags"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[B dnFieldFlags"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "java.lang.Class dnPersistableSuperclass"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[Ljava.lang.String; dnFieldNames"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "int dnInheritedFieldCount"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsFromObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldConsumer fc, java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsFromObjectId(java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsToObjectId(java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsToObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldSupplier fs, java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetObjectId()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetVersion()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnPreSerialize()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.ExecutionContextReference dnGetExecutionContext()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.StateManager dnGetStateManager()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDeleted()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDirty()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsNew()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsPersistent()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsTransactional()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnMakeDirty(java.lang.String fieldName)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnNewObjectIdInstance(java.lang.Object key)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnProvideFields([I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceFields([I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceFlags()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceStateManager(org.datanucleus.enhancement.StateManager sm)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDetached()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm, java.lang.Object obj)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceField(int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnProvideField(int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyField(server.data.Review obj, int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyFields(java.lang.Object obj, [I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[B __dnFieldFlagsInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "int __dnGetInheritedFieldCount()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "int dnGetManagedFieldCount()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Class ___dn$loadClass(java.lang.String className)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnSuperClone()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void writeObject(java.io.ObjectOutputStream out)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "server.data.Book dnGetbook(server.data.Review objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetbook(server.data.Review objPC, server.data.Book val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetcomment(server.data.Review objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetcomment(server.data.Review objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "int dnGetid_review(server.data.Review objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetid_review(server.data.Review objPC, int val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "double dnGetrating(server.data.Review objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetrating(server.data.Review objPC, double val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "server.data.User dnGetuser(server.data.Review objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetuser(server.data.Review objPC, server.data.User val)"
+17:52:56> INFO  (Log4JLogger.java:82): Escribiendo el archivo de clase "C:\Users\Javier\git\SPQ01\BookShop\target\classes\server\data\Review.class" con definicion enhanced
+17:52:56> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.Review
+17:52:56> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Review" ha terminado
+17:52:56> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.User" empezando ...
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no implementa el interfaz "org.datanucleus.enhancement.Persistable"!
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no implementa el interfaz "org.datanucleus.enhancement.Detachable"!
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el campo "dnStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el campo "dnDetachedState" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el campo "dnFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el campo "dnFieldTypes" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el campo "dnFieldNames" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el campo "dnFieldFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnReplaceField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnGetStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnIsTransactional" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnNewInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnNewInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnSuperClone" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnProvideFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "___dn$loadClass" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnIsDirty" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnReplaceFlags" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnIsDetached" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnMakeDirty" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnIsDeleted" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnProvideField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnPreSerialize" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnGetObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnGetVersion" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnIsNew" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnCopyField" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnCopyFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnReplaceDetachedState" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnIsPersistent" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "dnReplaceFields" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): La clase "server.data.User" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el interfaz: org.datanucleus.enhancement.Detachable
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el interfaz: org.datanucleus.enhancement.Persistable
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.getMoney, cambiando el uso del campo "server.data.User.money" para utilisar "dnGetmoney()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.setMoney, cambiando el uso del campo "server.data.User.money" para utilisar "dnSetmoney()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.money"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.reviews"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.books"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.email"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.password"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.name"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.address"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.role"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.money"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.money"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.reviews"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.books"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.email"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.password"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.role"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.<init> : ignorando enhance de set del campo "server.data.User.money"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.addReview, cambiando el uso del campo "server.data.User.reviews" para utilisar "dnGetreviews()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.removeReview, cambiando el uso del campo "server.data.User.reviews" para utilisar "dnGetreviews()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.getReviews, cambiando el uso del campo "server.data.User.reviews" para utilisar "dnGetreviews()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.addBook, cambiando el uso del campo "server.data.User.books" para utilisar "dnGetbooks()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.removeBook, cambiando el uso del campo "server.data.User.books" para utilisar "dnGetbooks()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.getBooks, cambiando el uso del campo "server.data.User.books" para utilisar "dnGetbooks()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.getEmail, cambiando el uso del campo "server.data.User.email" para utilisar "dnGetemail()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.setEmail, cambiando el uso del campo "server.data.User.email" para utilisar "dnSetemail()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.getPassword, cambiando el uso del campo "server.data.User.password" para utilisar "dnGetpassword()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.setPassword, cambiando el uso del campo "server.data.User.password" para utilisar "dnSetpassword()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.getName, cambiando el uso del campo "server.data.User.name" para utilisar "dnGetname()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.setName, cambiando el uso del campo "server.data.User.name" para utilisar "dnSetname()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.getAddress, cambiando el uso del campo "server.data.User.address" para utilisar "dnGetaddress()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.setAddress, cambiando el uso del campo "server.data.User.address" para utilisar "dnSetaddress()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.getRole, cambiando el uso del campo "server.data.User.role" para utilisar "dnGetrole()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.setRole, cambiando el uso del campo "server.data.User.role" para utilisar "dnSetrole()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.toString, cambiando el uso del campo "server.data.User.email" para utilisar "dnGetemail()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.toString, cambiando el uso del campo "server.data.User.password" para utilisar "dnGetpassword()"
+17:52:56> DEBUG (Log4JLogger.java:63): Enhancing metodo original server.data.User.toString, cambiando el uso del campo "server.data.User.role" para utilisar "dnGetrole()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "org.datanucleus.enhancement.StateManager dnStateManager"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "byte dnFlags"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[Ljava.lang.Object; dnDetachedState"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[B dnFieldFlags"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "java.lang.Class dnPersistableSuperclass"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "[Ljava.lang.String; dnFieldNames"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el campo "int dnInheritedFieldCount"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el constructor "server.data.User()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsFromObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldConsumer fc, java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsFromObjectId(java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsToObjectId(java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyKeyFieldsToObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldSupplier fs, java.lang.Object oid)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetObjectId()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetVersion()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnPreSerialize()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.ExecutionContextReference dnGetExecutionContext()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.StateManager dnGetStateManager()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDeleted()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDirty()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsNew()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsPersistent()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsTransactional()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnMakeDirty(java.lang.String fieldName)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnNewObjectIdInstance(java.lang.Object key)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnProvideFields([I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceFields([I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceFlags()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceStateManager(org.datanucleus.enhancement.StateManager sm)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceDetachedState()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnIsDetached()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm, java.lang.Object obj)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnReplaceField(int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnProvideField(int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyField(server.data.User obj, int index)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnCopyFields(java.lang.Object obj, [I indices)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "[B __dnFieldFlagsInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "int __dnGetInheritedFieldCount()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "int dnGetManagedFieldCount()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Class ___dn$loadClass(java.lang.String className)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.Object dnSuperClone()"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void writeObject(java.io.ObjectOutputStream out)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetaddress(server.data.User objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetaddress(server.data.User objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.util.List dnGetbooks(server.data.User objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetbooks(server.data.User objPC, java.util.List val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetemail(server.data.User objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetemail(server.data.User objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "double dnGetmoney(server.data.User objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetmoney(server.data.User objPC, double val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetname(server.data.User objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetname(server.data.User objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.lang.String dnGetpassword(server.data.User objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetpassword(server.data.User objPC, java.lang.String val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "java.util.List dnGetreviews(server.data.User objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetreviews(server.data.User objPC, java.util.List val)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "boolean dnGetrole(server.data.User objPC)"
+17:52:56> DEBUG (Log4JLogger.java:63): Agregando el metodo "void dnSetrole(server.data.User objPC, boolean val)"
+17:52:56> INFO  (Log4JLogger.java:82): Escribiendo el archivo de clase "C:\Users\Javier\git\SPQ01\BookShop\target\classes\server\data\User.class" con definicion enhanced
+17:52:56> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.User
+17:52:56> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.User" ha terminado
+17:52:56> INFO  (Log4JLogger.java:82): DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=85 ms, enhance=84 ms, total=169 ms. Compruebe el LOG para los detalles

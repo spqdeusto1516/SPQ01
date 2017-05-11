@@ -1,0 +1,222 @@
+\hypertarget{classserver_1_1remote_1_1_remote}{}\section{server.\+remote.\+Remote Class Reference}
+\label{classserver_1_1remote_1_1_remote}\index{server.\+remote.\+Remote@{server.\+remote.\+Remote}}
+Inheritance diagram for server.\+remote.\+Remote\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classserver_1_1remote_1_1_remote}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classserver_1_1remote_1_1_remote_a023cdc695c53195005bf645a97307529}{Remote} ()  throws Remote\+Exception 
+\item 
+boolean \hyperlink{classserver_1_1remote_1_1_remote_ad3a381123e93a8e5ec26d84c4ff8b92f}{register\+User} (String email, String password, boolean role)  throws Remote\+Exception 
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_book}{Book} $>$ \hyperlink{classserver_1_1remote_1_1_remote_a131873c01bc4fe829dd7d2385c89ca87}{show\+Books\+In\+Store} ()  throws Remote\+Exception 
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_user}{User} $>$ \hyperlink{classserver_1_1remote_1_1_remote_a3d41acc8ab7328be2082573542758f07}{get\+All\+Users} ()  throws Remote\+Exception 
+\item 
+boolean \hyperlink{classserver_1_1remote_1_1_remote_a496fcecd259c1b527ffba62fc452afee}{add\+Book} (\hyperlink{classserver_1_1data_1_1_book}{Book} book)  throws Remote\+Exception
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_review}{Review} $>$ \hyperlink{classserver_1_1remote_1_1_remote_a22538e64b45f5f93237b455100243b44}{get\+All\+Reviews} ()  throws Remote\+Exception 
+\item 
+\hyperlink{classserver_1_1data_1_1_book}{Book} \hyperlink{classserver_1_1remote_1_1_remote_a38bce20fa59064fe8d970164d6155435}{book\+Test} ()
+\item 
+\hyperlink{classserver_1_1data_1_1_book}{Book} \hyperlink{classserver_1_1remote_1_1_remote_a36ffc6f95ea75ad7d393ea296e1bc0cc}{get\+Book\+By\+I\+S\+BN} (int I\+S\+BN)  throws Remote\+Exception
+\item 
+\hyperlink{classserver_1_1data_1_1_book}{Book} \hyperlink{classserver_1_1remote_1_1_remote_a560427fc017e15f04e12bd880e6f086e}{get\+Book\+By\+Title} (String title)  throws Remote\+Exception
+\item 
+\hyperlink{classserver_1_1data_1_1_review}{Review} \hyperlink{classserver_1_1remote_1_1_remote_a98bd7181568c637a6cbcc0b72ebb9f95}{get\+Review} (int id\+\_\+review)  throws Remote\+Exception 
+\item 
+\hyperlink{classserver_1_1data_1_1_user}{User} \hyperlink{classserver_1_1remote_1_1_remote_abef8350014445d8f2d5ffb4c088e82b6}{get\+User} (String email)  throws Remote\+Exception 
+\item 
+boolean \hyperlink{classserver_1_1remote_1_1_remote_af5d1abb1730b8db14ab9dd476df158d8}{buy\+Book} (String email, String book\+\_\+title)  throws Remote\+Exception
+\item 
+boolean \hyperlink{classserver_1_1remote_1_1_remote_af94163cf6d5c40cfc880eb517d56aa48}{add\+Review} (\hyperlink{classserver_1_1data_1_1_book}{Book} b, \hyperlink{classserver_1_1data_1_1_review}{Review} r, \hyperlink{classserver_1_1data_1_1_user}{User} u)
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_review}{Review} $>$ \hyperlink{classserver_1_1remote_1_1_remote_a396c96a6b8802c2b4658ecccd37e84db}{get\+User\+Reviews} (String email)
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_review}{Review} $>$ \hyperlink{classserver_1_1remote_1_1_remote_a501e5c5fe847917c9615f0772864a147}{get\+Book\+Reviews} (String title)
+\item 
+double \hyperlink{classserver_1_1remote_1_1_remote_afd253ddc199a34a1e05317878f957cc9}{average\+Rating\+By\+Book} (String title)
+\item 
+double \hyperlink{classserver_1_1remote_1_1_remote_a67fc7aeeb889a80cda6e1a5f83858c2a}{average\+Rating\+By\+User} (String email)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a023cdc695c53195005bf645a97307529}\label{classserver_1_1remote_1_1_remote_a023cdc695c53195005bf645a97307529}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!Remote@{Remote}}
+\index{Remote@{Remote}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{Remote()}{Remote()}}
+{\footnotesize\ttfamily server.\+remote.\+Remote.\+Remote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a496fcecd259c1b527ffba62fc452afee}\label{classserver_1_1remote_1_1_remote_a496fcecd259c1b527ffba62fc452afee}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!add\+Book@{add\+Book}}
+\index{add\+Book@{add\+Book}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{add\+Book()}{addBook()}}
+{\footnotesize\ttfamily boolean server.\+remote.\+Remote.\+add\+Book (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{book }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a3b11a0e182873e445ec8546394e36373}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_af94163cf6d5c40cfc880eb517d56aa48}\label{classserver_1_1remote_1_1_remote_af94163cf6d5c40cfc880eb517d56aa48}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!add\+Review@{add\+Review}}
+\index{add\+Review@{add\+Review}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{add\+Review()}{addReview()}}
+{\footnotesize\ttfamily boolean server.\+remote.\+Remote.\+add\+Review (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{b,  }\item[{\hyperlink{classserver_1_1data_1_1_review}{Review}}]{r,  }\item[{\hyperlink{classserver_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_ab24486281e8c228ee82a48a5ca70297b}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_afd253ddc199a34a1e05317878f957cc9}\label{classserver_1_1remote_1_1_remote_afd253ddc199a34a1e05317878f957cc9}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!average\+Rating\+By\+Book@{average\+Rating\+By\+Book}}
+\index{average\+Rating\+By\+Book@{average\+Rating\+By\+Book}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{average\+Rating\+By\+Book()}{averageRatingByBook()}}
+{\footnotesize\ttfamily double server.\+remote.\+Remote.\+average\+Rating\+By\+Book (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a4a53942c94debc835f1817b2753722de}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a67fc7aeeb889a80cda6e1a5f83858c2a}\label{classserver_1_1remote_1_1_remote_a67fc7aeeb889a80cda6e1a5f83858c2a}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!average\+Rating\+By\+User@{average\+Rating\+By\+User}}
+\index{average\+Rating\+By\+User@{average\+Rating\+By\+User}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{average\+Rating\+By\+User()}{averageRatingByUser()}}
+{\footnotesize\ttfamily double server.\+remote.\+Remote.\+average\+Rating\+By\+User (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a11c915f0c22728be1898d46a78ac92cf}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a38bce20fa59064fe8d970164d6155435}\label{classserver_1_1remote_1_1_remote_a38bce20fa59064fe8d970164d6155435}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!book\+Test@{book\+Test}}
+\index{book\+Test@{book\+Test}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{book\+Test()}{bookTest()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} server.\+remote.\+Remote.\+book\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a7d561f9f92fb53177f2d3e49e445148a}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_af5d1abb1730b8db14ab9dd476df158d8}\label{classserver_1_1remote_1_1_remote_af5d1abb1730b8db14ab9dd476df158d8}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!buy\+Book@{buy\+Book}}
+\index{buy\+Book@{buy\+Book}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{buy\+Book()}{buyBook()}}
+{\footnotesize\ttfamily boolean server.\+remote.\+Remote.\+buy\+Book (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{book\+\_\+title }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a5ecb918e7d2650346770f3ff5676c25b}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a22538e64b45f5f93237b455100243b44}\label{classserver_1_1remote_1_1_remote_a22538e64b45f5f93237b455100243b44}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!get\+All\+Reviews@{get\+All\+Reviews}}
+\index{get\+All\+Reviews@{get\+All\+Reviews}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{get\+All\+Reviews()}{getAllReviews()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ server.\+remote.\+Remote.\+get\+All\+Reviews (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a017e07cb93ae582188c20d7b1ce6b014}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a3d41acc8ab7328be2082573542758f07}\label{classserver_1_1remote_1_1_remote_a3d41acc8ab7328be2082573542758f07}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!get\+All\+Users@{get\+All\+Users}}
+\index{get\+All\+Users@{get\+All\+Users}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{get\+All\+Users()}{getAllUsers()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_user}{User}$>$ server.\+remote.\+Remote.\+get\+All\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a3ff8752a1911b6ca54fc4a04af90fe7a}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a36ffc6f95ea75ad7d393ea296e1bc0cc}\label{classserver_1_1remote_1_1_remote_a36ffc6f95ea75ad7d393ea296e1bc0cc}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!get\+Book\+By\+I\+S\+BN@{get\+Book\+By\+I\+S\+BN}}
+\index{get\+Book\+By\+I\+S\+BN@{get\+Book\+By\+I\+S\+BN}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{get\+Book\+By\+I\+S\+B\+N()}{getBookByISBN()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} server.\+remote.\+Remote.\+get\+Book\+By\+I\+S\+BN (\begin{DoxyParamCaption}\item[{int}]{I\+S\+BN }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a736183bf7a57f78acf11fb78ae0f0e58}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a560427fc017e15f04e12bd880e6f086e}\label{classserver_1_1remote_1_1_remote_a560427fc017e15f04e12bd880e6f086e}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!get\+Book\+By\+Title@{get\+Book\+By\+Title}}
+\index{get\+Book\+By\+Title@{get\+Book\+By\+Title}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{get\+Book\+By\+Title()}{getBookByTitle()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} server.\+remote.\+Remote.\+get\+Book\+By\+Title (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a520cc1af90d13264c14b32e19b5ce712}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a501e5c5fe847917c9615f0772864a147}\label{classserver_1_1remote_1_1_remote_a501e5c5fe847917c9615f0772864a147}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!get\+Book\+Reviews@{get\+Book\+Reviews}}
+\index{get\+Book\+Reviews@{get\+Book\+Reviews}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{get\+Book\+Reviews()}{getBookReviews()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ server.\+remote.\+Remote.\+get\+Book\+Reviews (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a600254593b70d9757190475d3435b390}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a98bd7181568c637a6cbcc0b72ebb9f95}\label{classserver_1_1remote_1_1_remote_a98bd7181568c637a6cbcc0b72ebb9f95}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!get\+Review@{get\+Review}}
+\index{get\+Review@{get\+Review}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{get\+Review()}{getReview()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_review}{Review} server.\+remote.\+Remote.\+get\+Review (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+review }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a7b3462a438579c85dc7f097acf9cec41}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_abef8350014445d8f2d5ffb4c088e82b6}\label{classserver_1_1remote_1_1_remote_abef8350014445d8f2d5ffb4c088e82b6}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_user}{User} server.\+remote.\+Remote.\+get\+User (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_ab741cf58a7e2b18ba36069d14d9d04ef}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a396c96a6b8802c2b4658ecccd37e84db}\label{classserver_1_1remote_1_1_remote_a396c96a6b8802c2b4658ecccd37e84db}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!get\+User\+Reviews@{get\+User\+Reviews}}
+\index{get\+User\+Reviews@{get\+User\+Reviews}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{get\+User\+Reviews()}{getUserReviews()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ server.\+remote.\+Remote.\+get\+User\+Reviews (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a9e52d282ba2386018ebd6817459a743f}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_ad3a381123e93a8e5ec26d84c4ff8b92f}\label{classserver_1_1remote_1_1_remote_ad3a381123e93a8e5ec26d84c4ff8b92f}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!register\+User@{register\+User}}
+\index{register\+User@{register\+User}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{register\+User()}{registerUser()}}
+{\footnotesize\ttfamily boolean server.\+remote.\+Remote.\+register\+User (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{password,  }\item[{boolean}]{role }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_a2e426f5eb58352993207ce0a24539f81}{server.\+remote.\+I\+Remote}.
+
+\mbox{\Hypertarget{classserver_1_1remote_1_1_remote_a131873c01bc4fe829dd7d2385c89ca87}\label{classserver_1_1remote_1_1_remote_a131873c01bc4fe829dd7d2385c89ca87}} 
+\index{server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}!show\+Books\+In\+Store@{show\+Books\+In\+Store}}
+\index{show\+Books\+In\+Store@{show\+Books\+In\+Store}!server\+::remote\+::\+Remote@{server\+::remote\+::\+Remote}}
+\subsubsection{\texorpdfstring{show\+Books\+In\+Store()}{showBooksInStore()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_book}{Book}$>$ server.\+remote.\+Remote.\+show\+Books\+In\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfaceserver_1_1remote_1_1_i_remote_ac8a764235c51eff20d635f40707e377e}{server.\+remote.\+I\+Remote}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/server/remote/\hyperlink{_remote_8java}{Remote.\+java}\end{DoxyCompactItemize}

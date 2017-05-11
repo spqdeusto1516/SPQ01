@@ -1,0 +1,226 @@
+\hypertarget{classdb_1_1_d_b}{}\section{db.\+DB Class Reference}
+\label{classdb_1_1_d_b}\index{db.\+DB@{db.\+DB}}
+Inheritance diagram for db.\+DB\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdb_1_1_d_b}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdb_1_1_d_b_a1f91d243772e38f908a993724eb01243}{DB} ()
+\item 
+\hyperlink{classdb_1_1_d_b_afdc419eebbdef14244d859ac59d19dc7}{DB} (\hyperlink{interfacedb_1_1_i_d_a_o}{I\+D\+AO} udao)
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_user}{User} $>$ \hyperlink{classdb_1_1_d_b_ad02e4c78f9afe64af34fb2e5889ce501}{get\+All\+Users} ()
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_review}{Review} $>$ \hyperlink{classdb_1_1_d_b_ac7a84c5621f4ad2263cd830dbf10842e}{get\+All\+Reviews} ()
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_book}{Book} $>$ \hyperlink{classdb_1_1_d_b_ab4fbfd3716967ce37cc462ca04c68ca8}{get\+All\+Books} ()
+\item 
+boolean \hyperlink{classdb_1_1_d_b_a8a1a15bae4352c3c73092d801ef26c41}{buy\+Book} (String email, String book\+\_\+title)
+\item 
+boolean \hyperlink{classdb_1_1_d_b_accfa7c2f48252f167576221dc14ff721}{add\+Review} (\hyperlink{classserver_1_1data_1_1_book}{Book} b, \hyperlink{classserver_1_1data_1_1_review}{Review} r, \hyperlink{classserver_1_1data_1_1_user}{User} u)
+\item 
+boolean \hyperlink{classdb_1_1_d_b_a76fac3ed38eaecd5a073224d6ad51332}{register\+User} (String email, String password, boolean role)
+\item 
+boolean \hyperlink{classdb_1_1_d_b_aa767c59cde3ca8f76c3acbd0c5348608}{register\+User} (\hyperlink{classserver_1_1data_1_1_user}{User} u)
+\item 
+boolean \hyperlink{classdb_1_1_d_b_a705ed9c0ffae567ec3ac09fbd7138c6f}{add\+Book\+To\+Db} (\hyperlink{classserver_1_1data_1_1_book}{Book} b)
+\item 
+\hyperlink{classserver_1_1data_1_1_book}{Book} \hyperlink{classdb_1_1_d_b_ae902ce95ca7433f1f7f77419f4121f4c}{show\+Book\+By\+I\+S\+BN} (int I\+S\+BN)
+\item 
+\hyperlink{classserver_1_1data_1_1_book}{Book} \hyperlink{classdb_1_1_d_b_a22a4c5b98facd4506b03828697220773}{show\+Book\+By\+Title} (String title)
+\item 
+\hyperlink{classserver_1_1data_1_1_review}{Review} \hyperlink{classdb_1_1_d_b_a84b36a9e2c155b1aa2868844cd157df7}{show\+Review} (int id\+\_\+review)
+\item 
+\hyperlink{classserver_1_1data_1_1_user}{User} \hyperlink{classdb_1_1_d_b_a914986669ac622ef33ae344baaefa32c}{show\+User} (String email)
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_review}{Review} $>$ \hyperlink{classdb_1_1_d_b_a9ef4c302b91da17852f09a27a90fb4b5}{get\+User\+Reviews} (String email)
+\item 
+List$<$ \hyperlink{classserver_1_1data_1_1_review}{Review} $>$ \hyperlink{classdb_1_1_d_b_a02a42ee97d8e7189733dfc720a05452e}{get\+Book\+Reviews} (String title)
+\item 
+double \hyperlink{classdb_1_1_d_b_a8b2b9d6c4aabb17719e2d2af4cf7ba74}{average\+Rating\+By\+Book} (String title)
+\item 
+double \hyperlink{classdb_1_1_d_b_a38091677ae1e964a84320d6e539ea62e}{average\+Rating\+By\+User} (String email)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdb_1_1_d_b_a1f91d243772e38f908a993724eb01243}\label{classdb_1_1_d_b_a1f91d243772e38f908a993724eb01243}} 
+\index{db\+::\+DB@{db\+::\+DB}!DB@{DB}}
+\index{DB@{DB}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{D\+B()}{DB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily db.\+D\+B.\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdb_1_1_d_b_afdc419eebbdef14244d859ac59d19dc7}\label{classdb_1_1_d_b_afdc419eebbdef14244d859ac59d19dc7}} 
+\index{db\+::\+DB@{db\+::\+DB}!DB@{DB}}
+\index{DB@{DB}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{D\+B()}{DB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily db.\+D\+B.\+DB (\begin{DoxyParamCaption}\item[{\hyperlink{interfacedb_1_1_i_d_a_o}{I\+D\+AO}}]{udao }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdb_1_1_d_b_a705ed9c0ffae567ec3ac09fbd7138c6f}\label{classdb_1_1_d_b_a705ed9c0ffae567ec3ac09fbd7138c6f}} 
+\index{db\+::\+DB@{db\+::\+DB}!add\+Book\+To\+Db@{add\+Book\+To\+Db}}
+\index{add\+Book\+To\+Db@{add\+Book\+To\+Db}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{add\+Book\+To\+Db()}{addBookToDb()}}
+{\footnotesize\ttfamily boolean db.\+D\+B.\+add\+Book\+To\+Db (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{b }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a63904b26597f651ea6acbd03384e0afb}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_accfa7c2f48252f167576221dc14ff721}\label{classdb_1_1_d_b_accfa7c2f48252f167576221dc14ff721}} 
+\index{db\+::\+DB@{db\+::\+DB}!add\+Review@{add\+Review}}
+\index{add\+Review@{add\+Review}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{add\+Review()}{addReview()}}
+{\footnotesize\ttfamily boolean db.\+D\+B.\+add\+Review (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{b,  }\item[{\hyperlink{classserver_1_1data_1_1_review}{Review}}]{r,  }\item[{\hyperlink{classserver_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a00a453c6d4fc604615f5a173d86600fc}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a8b2b9d6c4aabb17719e2d2af4cf7ba74}\label{classdb_1_1_d_b_a8b2b9d6c4aabb17719e2d2af4cf7ba74}} 
+\index{db\+::\+DB@{db\+::\+DB}!average\+Rating\+By\+Book@{average\+Rating\+By\+Book}}
+\index{average\+Rating\+By\+Book@{average\+Rating\+By\+Book}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{average\+Rating\+By\+Book()}{averageRatingByBook()}}
+{\footnotesize\ttfamily double db.\+D\+B.\+average\+Rating\+By\+Book (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a4d23da2e383e7fe0638089fb2686b6c3}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a38091677ae1e964a84320d6e539ea62e}\label{classdb_1_1_d_b_a38091677ae1e964a84320d6e539ea62e}} 
+\index{db\+::\+DB@{db\+::\+DB}!average\+Rating\+By\+User@{average\+Rating\+By\+User}}
+\index{average\+Rating\+By\+User@{average\+Rating\+By\+User}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{average\+Rating\+By\+User()}{averageRatingByUser()}}
+{\footnotesize\ttfamily double db.\+D\+B.\+average\+Rating\+By\+User (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a5bb2209c976ab0a7f20606ed5df0e0cf}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a8a1a15bae4352c3c73092d801ef26c41}\label{classdb_1_1_d_b_a8a1a15bae4352c3c73092d801ef26c41}} 
+\index{db\+::\+DB@{db\+::\+DB}!buy\+Book@{buy\+Book}}
+\index{buy\+Book@{buy\+Book}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{buy\+Book()}{buyBook()}}
+{\footnotesize\ttfamily boolean db.\+D\+B.\+buy\+Book (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{book\+\_\+title }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a2ac985a90e8369fab676950b3fb4c2bc}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_ab4fbfd3716967ce37cc462ca04c68ca8}\label{classdb_1_1_d_b_ab4fbfd3716967ce37cc462ca04c68ca8}} 
+\index{db\+::\+DB@{db\+::\+DB}!get\+All\+Books@{get\+All\+Books}}
+\index{get\+All\+Books@{get\+All\+Books}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{get\+All\+Books()}{getAllBooks()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_book}{Book}$>$ db.\+D\+B.\+get\+All\+Books (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_abd0d41674bbcdd524a3ca2403504bf25}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_ac7a84c5621f4ad2263cd830dbf10842e}\label{classdb_1_1_d_b_ac7a84c5621f4ad2263cd830dbf10842e}} 
+\index{db\+::\+DB@{db\+::\+DB}!get\+All\+Reviews@{get\+All\+Reviews}}
+\index{get\+All\+Reviews@{get\+All\+Reviews}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{get\+All\+Reviews()}{getAllReviews()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ db.\+D\+B.\+get\+All\+Reviews (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a08f60c8b923599c650f04b4192d00d55}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_ad02e4c78f9afe64af34fb2e5889ce501}\label{classdb_1_1_d_b_ad02e4c78f9afe64af34fb2e5889ce501}} 
+\index{db\+::\+DB@{db\+::\+DB}!get\+All\+Users@{get\+All\+Users}}
+\index{get\+All\+Users@{get\+All\+Users}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{get\+All\+Users()}{getAllUsers()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_user}{User}$>$ db.\+D\+B.\+get\+All\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a39ad15619eae3d0ec652e1849e3ebd50}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a02a42ee97d8e7189733dfc720a05452e}\label{classdb_1_1_d_b_a02a42ee97d8e7189733dfc720a05452e}} 
+\index{db\+::\+DB@{db\+::\+DB}!get\+Book\+Reviews@{get\+Book\+Reviews}}
+\index{get\+Book\+Reviews@{get\+Book\+Reviews}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{get\+Book\+Reviews()}{getBookReviews()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ db.\+D\+B.\+get\+Book\+Reviews (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a6b8fda48df77b542b8713bc4f035bccf}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a9ef4c302b91da17852f09a27a90fb4b5}\label{classdb_1_1_d_b_a9ef4c302b91da17852f09a27a90fb4b5}} 
+\index{db\+::\+DB@{db\+::\+DB}!get\+User\+Reviews@{get\+User\+Reviews}}
+\index{get\+User\+Reviews@{get\+User\+Reviews}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{get\+User\+Reviews()}{getUserReviews()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ db.\+D\+B.\+get\+User\+Reviews (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_afd7ee8924344c13a64a1363d1a295771}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a76fac3ed38eaecd5a073224d6ad51332}\label{classdb_1_1_d_b_a76fac3ed38eaecd5a073224d6ad51332}} 
+\index{db\+::\+DB@{db\+::\+DB}!register\+User@{register\+User}}
+\index{register\+User@{register\+User}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{register\+User()}{registerUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean db.\+D\+B.\+register\+User (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{password,  }\item[{boolean}]{role }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a92913d9357ef22978adc35d3fb9d3590}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_aa767c59cde3ca8f76c3acbd0c5348608}\label{classdb_1_1_d_b_aa767c59cde3ca8f76c3acbd0c5348608}} 
+\index{db\+::\+DB@{db\+::\+DB}!register\+User@{register\+User}}
+\index{register\+User@{register\+User}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{register\+User()}{registerUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean db.\+D\+B.\+register\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdb_1_1_d_b_ae902ce95ca7433f1f7f77419f4121f4c}\label{classdb_1_1_d_b_ae902ce95ca7433f1f7f77419f4121f4c}} 
+\index{db\+::\+DB@{db\+::\+DB}!show\+Book\+By\+I\+S\+BN@{show\+Book\+By\+I\+S\+BN}}
+\index{show\+Book\+By\+I\+S\+BN@{show\+Book\+By\+I\+S\+BN}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{show\+Book\+By\+I\+S\+B\+N()}{showBookByISBN()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} db.\+D\+B.\+show\+Book\+By\+I\+S\+BN (\begin{DoxyParamCaption}\item[{int}]{I\+S\+BN }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_aed305f6c36ff140084636a8eded479db}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a22a4c5b98facd4506b03828697220773}\label{classdb_1_1_d_b_a22a4c5b98facd4506b03828697220773}} 
+\index{db\+::\+DB@{db\+::\+DB}!show\+Book\+By\+Title@{show\+Book\+By\+Title}}
+\index{show\+Book\+By\+Title@{show\+Book\+By\+Title}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{show\+Book\+By\+Title()}{showBookByTitle()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} db.\+D\+B.\+show\+Book\+By\+Title (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a6418edaf7c25f99f0422c0000db521fa}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a84b36a9e2c155b1aa2868844cd157df7}\label{classdb_1_1_d_b_a84b36a9e2c155b1aa2868844cd157df7}} 
+\index{db\+::\+DB@{db\+::\+DB}!show\+Review@{show\+Review}}
+\index{show\+Review@{show\+Review}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{show\+Review()}{showReview()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_review}{Review} db.\+D\+B.\+show\+Review (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+review }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a6c44c3135f07ec6dbef84ecc6fe4f90f}{db.\+I\+DB}.
+
+\mbox{\Hypertarget{classdb_1_1_d_b_a914986669ac622ef33ae344baaefa32c}\label{classdb_1_1_d_b_a914986669ac622ef33ae344baaefa32c}} 
+\index{db\+::\+DB@{db\+::\+DB}!show\+User@{show\+User}}
+\index{show\+User@{show\+User}!db\+::\+DB@{db\+::\+DB}}
+\subsubsection{\texorpdfstring{show\+User()}{showUser()}}
+{\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_user}{User} db.\+D\+B.\+show\+User (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacedb_1_1_i_d_b_a8dca82226b1c27ceb4b765259546513d}{db.\+I\+DB}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/db/\hyperlink{_d_b_8java}{D\+B.\+java}\end{DoxyCompactItemize}

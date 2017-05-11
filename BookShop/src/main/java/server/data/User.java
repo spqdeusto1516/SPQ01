@@ -23,9 +23,16 @@ public class User implements Serializable{
 	private String password;
 	private String name;
 	private String address;
-	private boolean role;        //true --> admin
+	private boolean role; 
+	private double money=0;//true --> admin
 								 //false --> user
 	
+	public double getMoney() {
+		return money;
+	}
+	public void setMoney(double money) {
+		this.money = money;
+	}
 	public User(String email, String password, String name, String address, boolean role) {
 		
 		this.email = email;
@@ -33,12 +40,14 @@ public class User implements Serializable{
 		this.name = name;
 		this.address = address;
 		this.role = role;
+		this.money=1000;
 	}
 	public User(String email, String password, boolean role) {
 		// TODO Auto-generated constructor stub
 		this.email = email;
 		this.password = password;
 		this.role = role;
+		this.money=1000;
 	}
 	
 	@Persistent(defaultFetchGroup="true", mappedBy="user", dependentElement="true")
