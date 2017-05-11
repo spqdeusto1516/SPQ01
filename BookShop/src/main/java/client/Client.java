@@ -7,12 +7,9 @@ import javax.swing.plaf.synth.SynthSeparatorUI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+import client.gui.LogIn;
 import server.data.*;
 import server.remote.*;
-
-	
-
 
 	public class Client {
 
@@ -324,13 +321,13 @@ import server.remote.*;
 			if (System.getSecurityManager() == null) {
 				System.setSecurityManager(new SecurityManager());
 			}
-			
+			LogIn logIn;
 			try{
 				String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
 				IRemote server = (IRemote) java.rmi.Naming.lookup(name);
 				//Menu
-				mainMenu(server);
-				
+				//mainMenu(server);
+				logIn = new LogIn();
 			}catch (Exception e) {
 				logger.error("RMI Example exception: " + e.getMessage());
 				e.printStackTrace();

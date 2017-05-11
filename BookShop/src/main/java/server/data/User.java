@@ -23,9 +23,9 @@ public class User implements Serializable{
 	private String password;
 	private String name;
 	private String address;
-	private boolean role; 
-	private double money=0;//true --> admin
-								 //false --> user
+	private double money=0;	
+	private boolean role;		//true --> admin
+							 	//false --> user
 	
 	public double getMoney() {
 		return money;
