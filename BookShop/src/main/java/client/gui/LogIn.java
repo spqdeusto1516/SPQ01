@@ -117,9 +117,9 @@ public class LogIn {
 		gbc_imageLogo.gridy = 0;
 		gbc_imageLogo.fill= GridBagConstraints.HORIZONTAL;
 		imageLogo.setFont(new Font("Yu Gothic", Font.PLAIN, 25));
-		Image imgBack = new ImageIcon(this.getClass().getResource("booklogo.jpg")).getImage();
+		//Image imgBack = new ImageIcon(this.getClass().getResource("booklogo.jpg")).getImage();
 		//System.out.println(getClass().getResource("booklogo.jpg"));
-		imageLogo.setIcon( (Icon) new ImageIcon(imgBack));
+		//imageLogo.setIcon( (Icon) new ImageIcon(imgBack));
 		logIn.add(imageLogo, gbc_imageLogo);
 		
 		// JLabel component about login message
@@ -197,13 +197,14 @@ public class LogIn {
 				String accessEmail = email.getText();
 				String accessPassword = String.valueOf(password.getPassword());
 				try {
-					role = server.getUser(accessEmail).getRole();
 					server.registerUser(accessEmail, accessPassword, role);
+					role = server.getUser(accessEmail).getRole();
 				} catch (RemoteException e) {
 					logger.info(e.getMessage());
 				}
 				//Admin and user go to the same window
 				showbooks = new ShowBooks(role);
+				frame.setVisible(false);
 				frame.dispose();
 				frame.revalidate();
 				frame.repaint();
@@ -213,7 +214,7 @@ public class LogIn {
 		
 		// setting an image as an icon for Log In Button
 		
-		btnLogIn.setIcon( (Icon) new ImageIcon(LogIn.class.getResource("login.png")));
+		//btnLogIn.setIcon( (Icon) new ImageIcon(LogIn.class.getResource("login.png")));
 		//System.out.println(getClass().getResource("login.png"));
 		GridBagConstraints gbc_btnLogIn = new GridBagConstraints();
 		gbc_btnLogIn.insets = new Insets(0, 0, 2, 10);
@@ -385,4 +386,3 @@ public class LogIn {
 	
 
 }
-

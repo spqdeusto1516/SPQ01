@@ -5,8 +5,13 @@ import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
+import server.data.Book;
+import server.remote.IRemote;
+import server.remote.Remote;
+
 import java.awt.*;
 import java.awt.event.*;
+import java.rmi.RemoteException;
 
 public class ShowBooks {
 
@@ -28,6 +33,8 @@ public class ShowBooks {
 	private JButton btnLogOut;
 	
 	private static boolean role;
+	private LogIn logIn;
+	IRemote server;
 	
 	/**
 	 * Launch the application.
@@ -59,6 +66,11 @@ public class ShowBooks {
 		frame.setBackground(SystemColor.window);
 		
 		// Initialize the contents of the frame.
+		try {
+			server = new Remote();
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
 		this.role = role;
 		initializebookSearch(role);
 	}
@@ -134,6 +146,7 @@ public class ShowBooks {
 		
 		// Create the JTable and the table model 
 		TableModel BookTableModel = new BookTableModel();
+		((client.gui.BookTableModel) BookTableModel).setValues(server);
 		TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(BookTableModel);
 		listOfBooks = new JTable(BookTableModel);
 		listOfBooks.setRowHeight(40);
@@ -150,19 +163,24 @@ public class ShowBooks {
 		scrollListBooks.setPreferredSize(
 		    new Dimension(d.width,listOfBooks.getRowHeight()*listOfBooks.getRowCount()+25));
 //		// Mouse Listener -> go to a specific book
-//		listOfBooks.addMouseListener(new MouseAdapter() {
-//			@Override
-//			public void mouseClicked(MouseEvent e) {
-//				int selectedRow, selectedColumn; // from the search table listOfBooks
-//				Object selectedValue;
-//				selectedRow = listOfBooks.getSelectedRow();
-//				selectedColumn = listOfBooks.getSelectedColumn();
-//				selectedValue = listOfBooks.getValueAt(selectedRow, selectedColumn);
-//				Book.setVisible(true);
-//				bookSearch.setVisible(false);
-//				
-//			}
-//		});
+		listOfBooks.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				//Select a row to see the description window
+				listOfBooks.getSelectedRow();
+				String title = (String) BookTableModel.getValueAt(listOfBooks.getSelectedRow(), 0);
+				
+				if (role == false){  //User
+					showDescription = new ShowDescription(title);
+					frame.dispose();
+					frame.revalidate();
+					frame.repaint();
+				}else{  //true --> admin
+					//TODO coger un book y pasarselo a la ventana para q lo muestre
+					//showDescriptionAdmin = new ShowDescriptionAdmin();
+				}				
+			}
+		});
 		
 		//Add the scroll pane to this panel.
 		GridBagConstraints gbc_scrollListBooks = new GridBagConstraints();
@@ -181,6 +199,7 @@ public class ShowBooks {
 			public void actionPerformed(ActionEvent arg0) {
 				String searchText = textSearchUser.getText();
 				String type = (String) cmbSearch.getSelectedItem();
+				//TODO
 				if (searchText.length() == 0){
 					sorter.setRowFilter(null);
 				}
@@ -194,8 +213,8 @@ public class ShowBooks {
 		gbc_btnSearch.gridx = 3;
 		gbc_btnSearch.gridy = 2;
 		gbc_btnSearch.fill= GridBagConstraints.BOTH;
-		Image imgSearch = new ImageIcon(this.getClass().getResource("search.png")).getImage();
-		btnSearch.setIcon( (Icon) new ImageIcon(imgSearch));
+		//Image imgSearch = new ImageIcon(this.getClass().getResource("search.png")).getImage();
+		//btnSearch.setIcon( (Icon) new ImageIcon(imgSearch));
 		bookSearch.add(btnSearch, gbc_btnSearch);		
 		
 		// Create JButton for refreshing data of JTable
@@ -217,6 +236,15 @@ public class ShowBooks {
 		
 		btnLogOut = new JButton("Log out");
 		btnLogOut.setVerticalAlignment(SwingConstants.TOP);
+		btnLogOut.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				logIn = new LogIn();
+				frame.dispose();
+				frame.revalidate();
+				frame.repaint();
+			}
+		});
 		btnLogOut.setFont(new Font("Yu Gothic", Font.PLAIN, 25));
 		btnLogOut.setBackground(SystemColor.controlHighlight);
 		GridBagConstraints gbc_btnLogOut = new GridBagConstraints();
@@ -224,26 +252,13 @@ public class ShowBooks {
 		gbc_btnLogOut.gridy = 5;
 		bookSearch.add(btnLogOut, gbc_btnLogOut);
 		
-		//Select a row to see the description window
-		if (role == false){  //User
-			//TODO coger un book y pasarselo a la ventana para q lo muestre
-			//showDescription = new ShowDescription();
-		}else{  //true --> admin
-			//showDescriptionAdmin = new ShowDescriptionAdmin();
-		}
-		
 	}
 }
 
 class BookTableModel  extends AbstractTableModel {
 
 	String[] columnNames = {"TITLE", "AUTHOR", "ISBN", "RATING","PRICE"};
-	Object[][] data = { {"Great Story", "George", "1010101", "9.0", "100"}, 
-						{"Bad People", "John", "2010101", "9.0", "100"}, 
-						{"Libro del alumno", "Katerina", "4010101", "9.0", "100"},
-						{"Running", "Amelia", "5010101", "6.0", "100"},
-						{"Sense", "Anna", "6010101", "5.0", "100"},
-						{"Summer", "Anna", "7010101", "9.5", "100"}};
+	Object[][] data = null;
 
 	@Override
 	public int getColumnCount() {
@@ -274,6 +289,27 @@ class BookTableModel  extends AbstractTableModel {
 	public void setValueAt(Object value, int row, int col) {
 		data[row][col] = value;
         fireTableCellUpdated(row, col);
+	}
+	
+	public void setValues(IRemote server) {
+		try {
+			if(server.showBooksInStore().size()!= 0){
+				data = new String[server.showBooksInStore().size()][5];
+			}
+			else{
+				data = new String[0][4];
+			}
+			for (int i = 0; i < server.showBooksInStore().size(); i++)
+			{
+				data[i][0] = server.showBooksInStore().get(i).getTitle();
+				data[i][1] = server.showBooksInStore().get(i).getAuthor();
+				data[i][2] = "" + server.showBooksInStore().get(i).getISBN();
+				data[i][3] = "" + server.averageRatingByBook(server.showBooksInStore().get(i).getTitle()) + " /10";
+				data[i][4] = "" + server.showBooksInStore().get(i).getPrice() + " €";
+			}
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

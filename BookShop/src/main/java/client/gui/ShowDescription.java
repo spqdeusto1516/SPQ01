@@ -72,6 +72,8 @@ public class ShowDescription {
 		private JTextPane txtReview;
 		private JButton btnSend;
 		
+		private static String title;
+		
 	
 		/**
 		 * Launch the application.
@@ -80,7 +82,7 @@ public class ShowDescription {
 			EventQueue.invokeLater(new Runnable() {
 				public void run() {
 					try {
-						ShowDescription window = new ShowDescription();
+						ShowDescription window = new ShowDescription(title);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -91,7 +93,7 @@ public class ShowDescription {
 		/**
 		 * Create the application.
 		 */
-		public ShowDescription() {
+		public ShowDescription(String title) {
 			
 			// Create and set up the window.
 			frame = new JFrame("Book Shop");
@@ -103,6 +105,7 @@ public class ShowDescription {
 			frame.setBackground(SystemColor.window);
 			
 			// Initialize the contents of the frame.
+			this.title = title;
 			initializeShowDescription();
 		}
 		
@@ -148,7 +151,7 @@ public class ShowDescription {
 			lblRank.setBounds(674, 136, 45, 23);
 			bookPanel.add(lblRank);
 			
-			txtTitle = new JTextField();
+			txtTitle = new JTextField(title);
 			txtTitle.setEditable(false);
 			txtTitle.setBounds(415, 59, 177, 23);
 			bookPanel.add(txtTitle);
