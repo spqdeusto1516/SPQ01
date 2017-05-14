@@ -22,6 +22,10 @@ package db;
 			Book showBookByTitle	(String title);
 			Review showReview	(int id_review);
 			User showUser	(String email);
+			List<Review> getUserReviews(String email);
+			List<Review> getBookReviews(String title);
+			double averageRatingByBook(String title);
+			double averageRatingByUser(String email);
 		
 		
 }

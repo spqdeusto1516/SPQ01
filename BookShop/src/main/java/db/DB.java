@@ -51,6 +51,7 @@ public class DB implements IDB{
 		Book book =null;		
 		User user =null;
 		boolean ret=true;
+		double price;
 		try {
 			book= dao.retrieveBookByParameter(book_title);									
 			user = dao.retrieveUser(email);					
@@ -60,17 +61,28 @@ public class DB implements IDB{
 			e.printStackTrace();
 			ret=false;
 		}
+		if(user.getMoney()>=book.getPrice()){
 	
-		if (book == null  || user ==null ) {
-
-		}else if (book !=null  &&  user != null  ){
-			book.addUser(user);										
-			user.addBook(book);					
-
-			dao.updateBook(book);
-			dao.updateUser(user);
-						
-		}	
+				if (book == null  || user ==null ) {
+		
+				}else if (book !=null  &&  user != null  ){
+					book.addUser(user);										
+					user.addBook(book);	
+					
+					price=book.getPrice();
+					
+					user.setMoney(user.getMoney()-price);
+		
+					dao.updateBook(book);
+					dao.updateUser(user);
+								
+				}	
+				
+		}
+		else{
+			logger.error("Price higher than your balance");
+		}
+		
 
 		return ret;
 	
@@ -247,6 +259,41 @@ public class DB implements IDB{
 		User u=dao.retrieveUser(email);
 		// ao.retrieveLicenseByName(name);
 		return u;
+	}
+	public List<Review> getUserReviews(String email){
+		User u=showUser(email);
+		List<Review> userReviews=u.getReviews();
+		return userReviews;
+		
+	}
+	public List<Review> getBookReviews(String title){
+		Book b= showBookByTitle(title);
+		List<Review> bookReviews=b.getReviews();
+		return bookReviews;
+	}
+	public double averageRatingByBook(String title){
+		List<Review> bookReviews=null;
+		bookReviews=getBookReviews(title);
+		double total=0;
+		
+		
+		for(Review r : bookReviews){
+			total=total+r.getRating();
+			
+		}
+		return total/bookReviews.size();
+	}
+	public double averageRatingByUser(String email){
+		List<Review> userReviews=null;
+		userReviews=getUserReviews(email);
+		double total=0;
+		
+		
+		for(Review r : userReviews){
+			total=total+r.getRating();
+			
+		}
+		return total/userReviews.size();
 	}
 
 }

@@ -148,7 +148,7 @@
 					</formats>
 
 					<instrumentation>
-						<!-- This line is for skipping set/get and constructor trivial methods.
+						<!-- This line is for skipping set/get and constructor trivial methods. 
 							The coverage is higher -->
 						<ignoreTrivial>true</ignoreTrivial>
 						<excludes>
@@ -157,7 +157,7 @@
 							<exclude>server/**/I*.*</exclude>
 							<exclude>server/data/*.*</exclude>
 
-							<!-- This lines is for excluding from the instrumentation and the
+							<!-- This lines is for excluding from the instrumentation and the 
 								coverage calculations all the classes from server down <exclude>es/deusto/server/**/*</exclude> -->
 
 						</excludes>
@@ -177,7 +177,7 @@
 								<branchRate>90</branchRate>
 								<lineRate>90</lineRate>
 							</regex>
-							<!-- <regex> <pattern>com.example.boringcode.*</pattern> <branchRate>40</branchRate>
+							<!-- <regex> <pattern>com.example.boringcode.*</pattern> <branchRate>40</branchRate> 
 								<lineRate>30</lineRate> </regex> -->
 						</regexes>
 					</check>
@@ -352,3 +352,4 @@
 	</pluginRepositories>
 
 </project>
+

@@ -29,5 +29,9 @@ public interface IRemote extends Remote{
 	
 	 boolean buyBook(String email, String book_title) throws RemoteException;
 	 boolean addReview(Book b, Review r, User u) throws RemoteException;
+	 List<Review> getUserReviews(String email)  throws RemoteException;
+	 List<Review> getBookReviews(String title)  throws RemoteException;
+	 double averageRatingByBook(String title)  throws RemoteException;
+	 double averageRatingByUser(String email)  throws RemoteException;
 	
 }

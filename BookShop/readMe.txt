@@ -71,3 +71,9 @@ mvn cobertura:cobertura
 mvn checkstyle:checkstyle
 mvn jdepend:generate
 mvn dashboard:dashboard
+
+
+
+Doxygen
+mvn clean compile
+mvn doxygen:report

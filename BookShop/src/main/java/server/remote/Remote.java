@@ -181,7 +181,49 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 		}
 		return a;
 	}
+	public List<Review> getUserReviews(String email) {
+		IDB db =new DB();
+		List<Review> userReviews=null;
+		try{
+		 userReviews= db.getUserReviews(email);
+		}catch(Exception e){
+			
+		}
+		return userReviews;
+	}
 	
+	public List<Review> getBookReviews(String title) {
+		IDB db =new DB();
+		List<Review> bookReviews=null;
+		try{
+		 bookReviews= db.getBookReviews(title);
+		}catch(Exception e){
+			
+		}
+		return bookReviews;
+	}
+	public  double averageRatingByBook(String title){
+		IDB db =new DB();
+		double average=0;
+		try{
+		average= db.averageRatingByBook(title);
+		}catch(Exception e){
+			
+		}
+		return average;
+		
+	}
+	public  double averageRatingByUser(String email){
+		IDB db =new DB();
+		double average=0;
+		try{
+		average= db.averageRatingByUser(email);
+		}catch(Exception e){
+			
+		}
+		return average;
+		
+	}
 	
 	
 }

@@ -58,6 +58,7 @@ public class Server{
 			db.registerUser("pablo", "qwerty", false);
 			db.registerUser("Carazo", "qwerty", false);
 			db.registerUser("Alon", "qwerty", false);
+			db.registerUser("admin", "admin", true);
 	
 			User a1 =db.showUser("jon");						
 			User a2 =db.showUser("pablo");
@@ -73,8 +74,16 @@ public class Server{
 			db.addReview(b2, r5, a4);
 			
 			
+			
 	
 			db.buyBook("jon", "Book4");
+			double bookAverage=db.averageRatingByBook(b2.getTitle());
+			
+			logger.info("book avergae"+bookAverage);
+			
+			double userAverage=db.averageRatingByUser(a2.getEmail());
+
+			logger.info("user avergae"+userAverage);
 
 		
 			
