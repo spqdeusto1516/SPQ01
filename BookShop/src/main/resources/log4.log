@@ -1,445 +1,445 @@
-17:41:00> DEBUG (Log4JLogger.java:63): Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
-17:41:00> DEBUG (Log4JLogger.java:63): Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
-17:41:00> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
-17:41:00> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
-17:41:00> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar.
-17:41:00> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
-17:41:00> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
-17:41:00> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.api.jdo version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar.
-17:41:00> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
-17:41:00> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
-17:41:00> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.store.rdbms version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar.
-17:41:00> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
-17:41:00> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
-17:41:00> DEBUG (Log4JLogger.java:63): Tipos de Java inicializando ...
-17:41:00> DEBUG (Log4JLogger.java:63): Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
-17:41:00> DEBUG (Log4JLogger.java:63): Inicializando TypeConverters ...
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverters listo
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for char[] to : java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for double[] to : java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for float[] to : java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for int[] to : java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for long[] to : java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for short[] to : java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.Color to : java.lang.String,int[]
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.image.BufferedImage to : java.nio.ByteBuffer,byte[]
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.io.Serializable to : java.lang.String,java.nio.ByteBuffer,byte[]
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Boolean to : java.lang.Integer,java.lang.Character
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Character to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Class to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Integer to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Long to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigDecimal to : java.lang.Double,java.lang.String,java.nio.ByteBuffer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigInteger to : java.lang.String,java.nio.ByteBuffer,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URI to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URL to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Date to : java.util.Date,java.lang.String,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Time to : java.util.Date,java.lang.String,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Timestamp to : java.util.Date,java.lang.String,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Duration to : java.lang.Double,java.lang.String,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Instant to : java.util.Date,java.lang.String,java.sql.Timestamp,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDate to : java.util.Date,java.sql.Date,java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalTime to : java.sql.Time,java.util.Date,java.lang.String,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.MonthDay to : java.util.Date,java.sql.Date,java.lang.String,int[]
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetTime to : java.sql.Time,java.lang.String,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Period to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Year to : java.lang.String,java.lang.Integer
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.YearMonth to : java.util.Date,java.sql.Date,java.lang.String,int[]
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZonedDateTime to : java.lang.String,java.sql.Timestamp
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneId to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.BitSet to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Calendar to : java.util.Date,java.lang.String,java.sql.Timestamp,[Ljava.lang.Object;
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Currency to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Date to : java.lang.String,java.lang.Long
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Locale to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.TimeZone to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.UUID to : java.lang.String
-17:41:00> DEBUG (Log4JLogger.java:63): MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
-17:41:00> INFO  (Log4JLogger.java:82): DataNucleus Enhancer (versión 5.1.0.m2) para el API "JDO" utilisando el JRE "{2}"
-17:41:00> DEBUG (Log4JLogger.java:63): DataNucleus Enhancer : Classpath
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\git\SPQ01\BookShop\target\classes
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m2\datanucleus-core-5.1.0-m2.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m2\datanucleus-api-jdo-5.1.0-m2.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m2\datanucleus-rdbms-5.1.0-m2.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\mockito\mockito-core\2.7.21\mockito-core-2.7.21.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\ow2\asm\asm\5.2\asm-5.2.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-simple\1.6.4\slf4j-simple-1.6.4.jar
-17:41:00> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-api\1.6.4\slf4j-api-1.6.4.jar
-17:41:00> DEBUG (Log4JLogger.java:63): Reading fileListFile: C:\Users\Javier\AppData\Local\Temp\enhancer-7217330714782908177.flf
-17:41:00> DEBUG (Log4JLogger.java:63): Enhancing classes
-17:41:00> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata de las clases "[client.Client, client.gui.BookTableModel, client.gui.LogIn$1, client.gui.LogIn$2, client.gui.LogIn$3, client.gui.LogIn$4, client.gui.LogIn$5, client.gui.LogIn$6, client.gui.LogIn$7, client.gui.LogIn$8, client.gui.LogIn$9, client.gui.LogIn, client.gui.ReviewTableModel, client.gui.ShowBooks$1, client.gui.ShowBooks$2, client.gui.ShowBooks$3, client.gui.ShowBooks$4, client.gui.ShowBooks$5, client.gui.ShowBooks$6, client.gui.ShowBooks, client.gui.ShowDescription$1, client.gui.ShowDescription, db.DAO, db.DB, db.IDAO, db.IDB, server.data.Book, server.data.Review, server.data.User, server.remote.IRemote, server.remote.Remote, server.Server]" ...
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/Client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.Client"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.Client" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.Client" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client/gui/BookTableModel.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.BookTableModel" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.BookTableModel" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client/gui/LogIn$1.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$1" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$1" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client/gui/LogIn$2.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$2" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$2" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client/gui/LogIn$3.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$3" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$3" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client/gui/LogIn$4.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$4" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$4" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client/gui/LogIn$5.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$5" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$5" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client/gui/LogIn$6.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$6" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$6" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client/gui/LogIn$7.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$7" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$7" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client/gui/LogIn$8.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$8" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$8" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client/gui/LogIn$9.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$9" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$9" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client/gui/LogIn.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client/gui/ReviewTableModel.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ReviewTableModel" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ReviewTableModel" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client/gui/ShowBooks$1.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$1" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$1" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client/gui/ShowBooks$2.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$2" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$2" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client/gui/ShowBooks$3.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$3" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$3" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client/gui/ShowBooks$4.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$4" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$4" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client/gui/ShowBooks$5.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$5" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$5" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client/gui/ShowBooks$6.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$6" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$6" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client/gui/ShowBooks.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client/gui/ShowDescription$1.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowDescription$1" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowDescription$1" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client/gui/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client/gui.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client/gui/ShowDescription.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowDescription" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowDescription" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db/DAO.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.DAO"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "db.DAO" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "db.DAO" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db/DB.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.DB"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "db.DB" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "db.DB" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db/IDAO.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.IDAO"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "db.IDAO" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "db.IDAO" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db/IDB.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.IDB"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "db.IDB" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "db.IDB" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" tiene anotaciones de JDO y vamos a usarlas.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" tiene anotaciones de JDO y vamos a usarlas.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.User" tiene anotaciones de JDO y vamos a usarlas.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote/IRemote.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.IRemote"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "server.remote.IRemote" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "server.remote.IRemote" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote/Remote.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.Remote"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "server.remote.Remote" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "server.remote.Remote" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /META-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /WEB-INF/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/package.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/Server.jdo
-17:41:00> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.Server"
-17:41:00> DEBUG (Log4JLogger.java:63): Registrando la clase "server.Server" no tener Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): La clase "server.Server" no tiene MetaData o annotaciones.
-17:41:00> DEBUG (Log4JLogger.java:63): Populación del MetaData ...
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" : Populando Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "title" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "category" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "edition" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "author" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "price" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "description" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "img" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" : Populando Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" campo "comment" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" campo "rating" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.User" : Populando Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "name" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "address" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "money" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "role" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-17:41:00> DEBUG (Log4JLogger.java:63): Inicialisación del MetaData ...
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" : Inicializando Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" : Inicializando Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): Clase "server.data.User" : Inicializando Meta-Data
-17:41:00> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata ya ha terminado
-17:41:00> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Book" empezando ...
-17:41:00> INFO  (Log4JLogger.java:82): La clase "server.data.Book" esta enhanced.
-17:41:00> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.Book
-17:41:00> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Book" ha terminado
-17:41:00> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Review" empezando ...
-17:41:00> INFO  (Log4JLogger.java:82): La clase "server.data.Review" esta enhanced.
-17:41:00> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.Review
-17:41:00> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Review" ha terminado
-17:41:00> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.User" empezando ...
-17:41:00> INFO  (Log4JLogger.java:82): La clase "server.data.User" esta enhanced.
-17:41:00> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.User
-17:41:00> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.User" ha terminado
-17:41:00> INFO  (Log4JLogger.java:82): DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=123 ms, enhance=18 ms, total=141 ms. Compruebe el LOG para los detalles
+17:57:33> DEBUG (Log4JLogger.java:63): Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+17:57:33> DEBUG (Log4JLogger.java:63): Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
+17:57:33> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+17:57:33> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+17:57:33> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar.
+17:57:33> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
+17:57:33> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
+17:57:33> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.api.jdo version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar.
+17:57:33> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
+17:57:33> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
+17:57:33> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.store.rdbms version 5.1.0.m2 at URL file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar.
+17:57:33> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
+17:57:33> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Javier/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
+17:57:33> DEBUG (Log4JLogger.java:63): Tipos de Java inicializando ...
+17:57:33> DEBUG (Log4JLogger.java:63): Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
+17:57:33> DEBUG (Log4JLogger.java:63): Inicializando TypeConverters ...
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverters listo
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for char[] to : java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for double[] to : java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for float[] to : java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for int[] to : java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for long[] to : java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for short[] to : java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.Color to : java.lang.String,int[]
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.image.BufferedImage to : java.nio.ByteBuffer,byte[]
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.io.Serializable to : java.lang.String,java.nio.ByteBuffer,byte[]
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Boolean to : java.lang.Integer,java.lang.Character
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Character to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Class to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Integer to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Long to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigDecimal to : java.lang.Double,java.lang.String,java.nio.ByteBuffer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigInteger to : java.lang.String,java.nio.ByteBuffer,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URI to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URL to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Date to : java.util.Date,java.lang.String,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Time to : java.util.Date,java.lang.String,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Timestamp to : java.util.Date,java.lang.String,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Duration to : java.lang.Double,java.lang.String,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Instant to : java.util.Date,java.lang.String,java.sql.Timestamp,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDate to : java.util.Date,java.sql.Date,java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalTime to : java.sql.Time,java.util.Date,java.lang.String,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.MonthDay to : java.util.Date,java.sql.Date,java.lang.String,int[]
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetTime to : java.sql.Time,java.lang.String,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Period to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Year to : java.lang.String,java.lang.Integer
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.YearMonth to : java.util.Date,java.sql.Date,java.lang.String,int[]
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZonedDateTime to : java.lang.String,java.sql.Timestamp
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneId to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.BitSet to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Calendar to : java.util.Date,java.lang.String,java.sql.Timestamp,[Ljava.lang.Object;
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Currency to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Date to : java.lang.String,java.lang.Long
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Locale to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.TimeZone to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.UUID to : java.lang.String
+17:57:33> DEBUG (Log4JLogger.java:63): MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+17:57:33> INFO  (Log4JLogger.java:82): DataNucleus Enhancer (versión 5.1.0.m2) para el API "JDO" utilisando el JRE "{2}"
+17:57:33> DEBUG (Log4JLogger.java:63): DataNucleus Enhancer : Classpath
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\git\SPQ01\BookShop\target\classes
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m2\datanucleus-core-5.1.0-m2.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m2\datanucleus-api-jdo-5.1.0-m2.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m2\datanucleus-rdbms-5.1.0-m2.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\mockito\mockito-core\2.7.21\mockito-core-2.7.21.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\ow2\asm\asm\5.2\asm-5.2.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-simple\1.6.4\slf4j-simple-1.6.4.jar
+17:57:33> DEBUG (Log4JLogger.java:63): >>  C:\Users\Javier\.m2\repository\org\slf4j\slf4j-api\1.6.4\slf4j-api-1.6.4.jar
+17:57:33> DEBUG (Log4JLogger.java:63): Reading fileListFile: C:\Users\Javier\AppData\Local\Temp\enhancer-5359671164979490011.flf
+17:57:33> DEBUG (Log4JLogger.java:63): Enhancing classes
+17:57:33> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata de las clases "[client.Client, client.gui.BookTableModel, client.gui.LogIn$1, client.gui.LogIn$2, client.gui.LogIn$3, client.gui.LogIn$4, client.gui.LogIn$5, client.gui.LogIn$6, client.gui.LogIn$7, client.gui.LogIn$8, client.gui.LogIn$9, client.gui.LogIn, client.gui.ReviewTableModel, client.gui.ShowBooks$1, client.gui.ShowBooks$2, client.gui.ShowBooks$3, client.gui.ShowBooks$4, client.gui.ShowBooks$5, client.gui.ShowBooks$6, client.gui.ShowBooks, client.gui.ShowDescription$1, client.gui.ShowDescription, db.DAO, db.DB, db.IDAO, db.IDB, server.data.Book, server.data.Review, server.data.User, server.remote.IRemote, server.remote.Remote, server.Server]" ...
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.Client" en /client/Client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.Client"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.Client" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.Client" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel" en /client/gui/BookTableModel.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.BookTableModel"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.BookTableModel" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.BookTableModel" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1" en /client/gui/LogIn$1.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$1"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$1" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$1" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2" en /client/gui/LogIn$2.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$2"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$2" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$2" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3" en /client/gui/LogIn$3.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$3"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$3" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$3" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4" en /client/gui/LogIn$4.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$4"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$4" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$4" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5" en /client/gui/LogIn$5.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$5"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$5" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$5" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6" en /client/gui/LogIn$6.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$6"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$6" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$6" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7" en /client/gui/LogIn$7.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$7"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$7" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$7" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8" en /client/gui/LogIn$8.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$8"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$8" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$8" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9" en /client/gui/LogIn$9.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn$9"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn$9" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn$9" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.LogIn" en /client/gui/LogIn.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.LogIn"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.LogIn" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.LogIn" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel" en /client/gui/ReviewTableModel.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ReviewTableModel"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ReviewTableModel" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ReviewTableModel" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1" en /client/gui/ShowBooks$1.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$1"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$1" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$1" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2" en /client/gui/ShowBooks$2.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$2"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$2" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$2" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3" en /client/gui/ShowBooks$3.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$3"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$3" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$3" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4" en /client/gui/ShowBooks$4.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$4"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$4" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$4" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5" en /client/gui/ShowBooks$5.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$5"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$5" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$5" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6" en /client/gui/ShowBooks$6.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks$6"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks$6" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks$6" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks" en /client/gui/ShowBooks.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowBooks"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowBooks" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowBooks" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1" en /client/gui/ShowDescription$1.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription$1"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowDescription$1" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowDescription$1" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client/gui/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client/gui.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription" en /client/gui/ShowDescription.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "client.gui.ShowDescription"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "client.gui.ShowDescription" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "client.gui.ShowDescription" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DAO" en /db/DAO.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.DAO"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "db.DAO" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "db.DAO" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.DB" en /db/DB.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.DB"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "db.DB" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "db.DB" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDAO" en /db/IDAO.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.IDAO"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "db.IDAO" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "db.IDAO" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "db.IDB" en /db/IDB.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "db.IDB"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "db.IDB" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "db.IDB" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" tiene anotaciones de JDO y vamos a usarlas.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" tiene anotaciones de JDO y vamos a usarlas.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.User" tiene anotaciones de JDO y vamos a usarlas.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.IRemote" en /server/remote/IRemote.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.IRemote"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "server.remote.IRemote" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "server.remote.IRemote" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.remote.Remote" en /server/remote/Remote.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.remote.Remote"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "server.remote.Remote" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "server.remote.Remote" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /META-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /WEB-INF/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/package.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "server.Server" en /server/Server.jdo
+17:57:33> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "server.Server"
+17:57:33> DEBUG (Log4JLogger.java:63): Registrando la clase "server.Server" no tener Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): La clase "server.Server" no tiene MetaData o annotaciones.
+17:57:33> DEBUG (Log4JLogger.java:63): Populación del MetaData ...
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" : Populando Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "title" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "category" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "edition" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "author" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "price" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "description" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" campo "img" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" : Populando Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" campo "comment" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" campo "rating" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.User" : Populando Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "name" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "address" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "money" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.User" campo "role" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+17:57:33> DEBUG (Log4JLogger.java:63): Inicialisación del MetaData ...
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Book" : Inicializando Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.Review" : Inicializando Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): Clase "server.data.User" : Inicializando Meta-Data
+17:57:33> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata ya ha terminado
+17:57:33> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Book" empezando ...
+17:57:33> INFO  (Log4JLogger.java:82): La clase "server.data.Book" esta enhanced.
+17:57:33> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.Book
+17:57:33> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Book" ha terminado
+17:57:33> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Review" empezando ...
+17:57:33> INFO  (Log4JLogger.java:82): La clase "server.data.Review" esta enhanced.
+17:57:33> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.Review
+17:57:33> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.Review" ha terminado
+17:57:33> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.User" empezando ...
+17:57:33> INFO  (Log4JLogger.java:82): La clase "server.data.User" esta enhanced.
+17:57:33> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : server.data.User
+17:57:33> DEBUG (Log4JLogger.java:63): Enhance de la clase "server.data.User" ha terminado
+17:57:33> INFO  (Log4JLogger.java:82): DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=125 ms, enhance=17 ms, total=142 ms. Compruebe el LOG para los detalles
