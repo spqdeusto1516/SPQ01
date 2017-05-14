@@ -33,6 +33,7 @@ public class ShowBooks {
 	private JButton btnLogOut;
 	
 	private static boolean role;
+	private static String email;
 	private LogIn logIn;
 	IRemote server;
 	
@@ -43,7 +44,7 @@ public class ShowBooks {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ShowBooks window = new ShowBooks(role);
+					ShowBooks window = new ShowBooks(email, role);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -54,7 +55,7 @@ public class ShowBooks {
 	/**
 	 * Create the application.
 	 */
-	public ShowBooks(boolean role) {
+	public ShowBooks(String email, boolean role) {
 		
 		// Create and set up the window.
 		frame = new JFrame("Book Shop");
@@ -71,6 +72,7 @@ public class ShowBooks {
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
+		this.email = email;
 		this.role = role;
 		initializebookSearch(role);
 	}
@@ -171,10 +173,14 @@ public class ShowBooks {
 				String title = (String) BookTableModel.getValueAt(listOfBooks.getSelectedRow(), 0);
 				
 				if (role == false){  //User
-					showDescription = new ShowDescription(title);
-					frame.dispose();
-					frame.revalidate();
-					frame.repaint();
+					try {
+						showDescription = new ShowDescription(title, email, role);
+						frame.dispose();
+						frame.revalidate();
+						frame.repaint();
+					} catch (RemoteException e1) {
+						e1.printStackTrace();
+					}
 				}else{  //true --> admin
 					//TODO coger un book y pasarselo a la ventana para q lo muestre
 					//showDescriptionAdmin = new ShowDescriptionAdmin();
@@ -199,7 +205,6 @@ public class ShowBooks {
 			public void actionPerformed(ActionEvent arg0) {
 				String searchText = textSearchUser.getText();
 				String type = (String) cmbSearch.getSelectedItem();
-				//TODO "Title", "Author", "ISBN"
 				if (searchText.length() != 0){
 					if(type == "Title"){
 						RowFilter rowFilter = RowFilter.regexFilter(searchText, 0);
@@ -306,7 +311,7 @@ class BookTableModel  extends AbstractTableModel {
 				data = new String[server.showBooksInStore().size()][5];
 			}
 			else{
-				data = new String[0][4];
+				data = new String[0][5];
 			}
 			for (int i = 0; i < server.showBooksInStore().size(); i++)
 			{

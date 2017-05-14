@@ -56,6 +56,7 @@ public class LogIn {
 	private JLabel imageLogo;
 	private JButton btnNewUser;
 	
+	private String userEmail;
 	private boolean role = false;   //true --> admin
 									//false -->  user
 	IRemote server;
@@ -87,7 +88,6 @@ public class LogIn {
 		 try {
 			server = new Remote();
 		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		// Initialize the contents of the frame.
@@ -98,9 +98,6 @@ public class LogIn {
 	 * Initialize the contents of the Log In JPanel 
 	 */
 	private void initializeLogIn(){
-		//TODO borrar
-		String UserLogIn = "user";
-		String AdminLogIn = "admin";
 
 		// Beginning of Log In JPanel~window 
 		logIn = new JPanel();
@@ -199,11 +196,12 @@ public class LogIn {
 				try {
 					server.registerUser(accessEmail, accessPassword, role);
 					role = server.getUser(accessEmail).getRole();
+					userEmail = accessEmail;
 				} catch (RemoteException e) {
 					logger.info(e.getMessage());
 				}
 				//Admin and user go to the same window
-				showbooks = new ShowBooks(role);
+				showbooks = new ShowBooks(userEmail, role);
 				frame.setVisible(false);
 				frame.dispose();
 				frame.revalidate();
@@ -345,9 +343,7 @@ public class LogIn {
 		confirmPass.setColumns(12);
 		logIn.add(confirmPass, gbc_confirmPass);
 		
-		//TODO with the method of DB, 
-		//1. check the textfields
-		//2. keep them
+
 		btnNewUser = new JButton("Sign Me Up");
 		btnNewUser.setBackground(new Color(95, 158, 160));
 		btnNewUser.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -363,7 +359,7 @@ public class LogIn {
 						logger.info(e.getMessage());
 					}
 					//User go to the same window
-					showbooks = new ShowBooks(role);
+					showbooks = new ShowBooks(userEmail, role);
 					frame.dispose();
 					frame.revalidate();
 					frame.repaint();
