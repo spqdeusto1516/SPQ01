@@ -199,13 +199,21 @@ public class ShowBooks {
 			public void actionPerformed(ActionEvent arg0) {
 				String searchText = textSearchUser.getText();
 				String type = (String) cmbSearch.getSelectedItem();
-				//TODO
-				if (searchText.length() == 0){
+				//TODO "Title", "Author", "ISBN"
+				if (searchText.length() != 0){
+					if(type == "Title"){
+						RowFilter rowFilter = RowFilter.regexFilter(searchText, 0);
+						((DefaultRowSorter<TableModel, Integer>) listOfBooks.getRowSorter()).setRowFilter(rowFilter);
+					}else if (type == "Author"){
+						RowFilter rowFilter = RowFilter.regexFilter(searchText, 1);
+						((DefaultRowSorter<TableModel, Integer>) listOfBooks.getRowSorter()).setRowFilter(rowFilter);
+					}else if(type == "ISBN"){
+						RowFilter rowFilter = RowFilter.regexFilter(searchText, 2);
+						((DefaultRowSorter<TableModel, Integer>) listOfBooks.getRowSorter()).setRowFilter(rowFilter);	
+					}
+				}else{
 					sorter.setRowFilter(null);
-				}
-				else{
-					sorter.setRowFilter(RowFilter.regexFilter(searchText));
-				}
+				}			
 			}
 		});
 		GridBagConstraints gbc_btnSearch = new GridBagConstraints();
@@ -223,6 +231,7 @@ public class ShowBooks {
 		btnRefresh.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				sorter.setRowFilter(null);
+				textSearchUser.setText("");	
 			}
 		});
 		btnRefresh.setBackground(UIManager.getColor("Button.light"));
