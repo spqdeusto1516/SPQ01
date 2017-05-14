@@ -152,7 +152,7 @@
 							The coverage is higher -->
 						<ignoreTrivial>true</ignoreTrivial>
 						<excludes>
-							<exclude>client/*.class</exclude>
+							<exclude>client/**/*.class</exclude>
 							<exclude>server/Server.class</exclude>
 							<exclude>server/**/I*.*</exclude>
 							<exclude>server/data/*.*</exclude>
