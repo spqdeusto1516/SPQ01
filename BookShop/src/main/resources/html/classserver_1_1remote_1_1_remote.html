@@ -132,6 +132,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afd253ddc199a34a1e05317878f957cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67fc7aeeb889a80cda6e1a5f83858c2a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver_1_1remote_1_1_remote.html#a67fc7aeeb889a80cda6e1a5f83858c2a">averageRatingByUser</a> (String email)</td></tr>
 <tr class="separator:a67fc7aeeb889a80cda6e1a5f83858c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80b5addc446fe5f1ecf9a522794ff4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver_1_1remote_1_1_remote.html#ab80b5addc446fe5f1ecf9a522794ff4f">deleteReview</a> (int id_review)</td></tr>
+<tr class="separator:ab80b5addc446fe5f1ecf9a522794ff4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013ab36d40de824c6ad7a48f59d12684"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver_1_1remote_1_1_remote.html#a013ab36d40de824c6ad7a48f59d12684">deleteBook</a> (int ISBN)</td></tr>
+<tr class="separator:a013ab36d40de824c6ad7a48f59d12684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd807d8743560106c61a01094795c9cb"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver_1_1remote_1_1_remote.html#afd807d8743560106c61a01094795c9cb">addBook</a> (int ISBN, String title, String category, String edition, String author, double price, String description, String img)</td></tr>
+<tr class="separator:afd807d8743560106c61a01094795c9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a023cdc695c53195005bf645a97307529"></a>
@@ -153,7 +159,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a496fcecd259c1b527ffba62fc452afee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a496fcecd259c1b527ffba62fc452afee">&#9670;&nbsp;</a></span>addBook()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a496fcecd259c1b527ffba62fc452afee">&#9670;&nbsp;</a></span>addBook() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,6 +175,73 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#a3b11a0e182873e445ec8546394e36373">server.remote.IRemote</a>.</p>
+
+</div>
+</div>
+<a id="afd807d8743560106c61a01094795c9cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd807d8743560106c61a01094795c9cb">&#9670;&nbsp;</a></span>addBook() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean server.remote.Remote.addBook </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ISBN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>edition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>author</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>price</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>boolean true if the book is created and stored in db </dd></dl>
+
+<p>Implements <a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#aec137a7435ccced1aa7350b2fd2a1947">server.remote.IRemote</a>.</p>
 
 </div>
 </div>
@@ -294,6 +367,46 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#a5ecb918e7d2650346770f3ff5676c25b">server.remote.IRemote</a>.</p>
+
+</div>
+</div>
+<a id="a013ab36d40de824c6ad7a48f59d12684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a013ab36d40de824c6ad7a48f59d12684">&#9670;&nbsp;</a></span>deleteBook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void server.remote.Remote.deleteBook </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ISBN</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#ac64967dff86a9c603d0c9eb815f222df">server.remote.IRemote</a>.</p>
+
+</div>
+</div>
+<a id="ab80b5addc446fe5f1ecf9a522794ff4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80b5addc446fe5f1ecf9a522794ff4f">&#9670;&nbsp;</a></span>deleteReview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void server.remote.Remote.deleteReview </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id_review</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#a2bcc3db515d7b6f420449bcf6367298c">server.remote.IRemote</a>.</p>
 
 </div>
 </div>

@@ -225,6 +225,7 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 
 	}
 
+	
 	@Override
 	public void deleteReview(int id_review){
 		// TODO Auto-generated method stub
@@ -249,7 +250,9 @@ public class Remote extends UnicastRemoteObject implements IRemote {
 
 		}  
 	}
-
+/**
+ * @return boolean true if the book is created and stored in db
+ */
 	@Override
 	public boolean addBook(int ISBN, String title, String category, String edition, String author, double price,
 			String description, String img) {

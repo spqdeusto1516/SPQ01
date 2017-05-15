@@ -1,6 +1,8 @@
 var classdb_1_1_d_a_o =
 [
     [ "DAO", "classdb_1_1_d_a_o.html#abd016ae9834e8d5e94d96f551d1636e7", null ],
+    [ "deleteBook", "classdb_1_1_d_a_o.html#a65f6a816c5f6dfb07178daf490f56fdc", null ],
+    [ "deleteReview", "classdb_1_1_d_a_o.html#aa033f83155deb72d59492bcb2b8e4d3a", null ],
     [ "getAllBooks", "classdb_1_1_d_a_o.html#a82a8c60ccd0de2f70b69bc36d29aeef8", null ],
     [ "getAllReviews", "classdb_1_1_d_a_o.html#a4df79c7d44b050aa55451db2ecf342f6", null ],
     [ "getAllUsers", "classdb_1_1_d_a_o.html#a3b627b7177990799fd02e0c38b8adb70", null ],

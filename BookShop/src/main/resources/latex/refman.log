@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.10)  11 MAY 2017 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.10)  16 MAY 2017 01:41
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -1195,10 +1195,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 13.
+(Font)              scaled to size 6.29996pt on input line 11.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 18.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 18.
+(Font)              scaled to size 7.19995pt on input line 19.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1206,17 +1206,15 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 59.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 60.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 59.
+(Font)              scaled to size 6.29996pt on input line 60.
  [2] [3] [4]
-[5] [6] [7] [8])
+[5] [6] [7] [8] [9])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [9] [10
-
-]
+ [10]
 Package hyperref Info: Option `pageanchor' set `true' on input line 138.
 
 Chapter 1.
@@ -1236,6 +1234,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
+
 
 ] [2
 
@@ -1266,14 +1265,14 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 6.
-) (namespacedb.tex) (namespaceserver.tex) (namespaceserver_1_1data.tex
+) (namespaceclient_1_1gui.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
-)
-(namespaceserver_1_1remote.tex [9]) [10]
+) (namespacedb.tex) (namespaceserver.tex [9])
+(namespaceserver_1_1data.tex) (namespaceserver_1_1remote.tex) [10]
 Chapter 6.
 (classserver_1_1data_1_1_book.tex
-<classserver_1_1data_1_1_book.pdf, id=1514, 501.875pt x 343.2825pt>
+<classserver_1_1data_1_1_book.pdf, id=1699, 501.875pt x 343.2825pt>
 File: classserver_1_1data_1_1_book.pdf Graphic file (type pdf)
 
 <use classserver_1_1data_1_1_book.pdf>
@@ -1298,65 +1297,70 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 69.
 [12] [13] [14]) (classclient_1_1_client.tex [15] [16] [17])
 (classserver_1_1_conti_perf_test.tex [18]) (classdb_1_1_d_a_o.tex
-<classdb_1_1_d_a_o.pdf, id=1693, 501.875pt x 582.175pt>
+<classdb_1_1_d_a_o.pdf, id=1878, 501.875pt x 582.175pt>
 File: classdb_1_1_d_a_o.pdf Graphic file (type pdf)
 
 <use classdb_1_1_d_a_o.pdf>
 Package pdftex.def Info: classdb_1_1_d_a_o.pdf used on input line 6.
 (pdftex.def)             Requested size: 49.0494pt x 56.9055pt.
  [19] [20 <./classdb_1_1_d_a_o.pdf>] [21])
-(classserver_1_1_d_a_o_mock_test.tex [22]) (classdb_1_1_d_b.tex
-<classdb_1_1_d_b.pdf, id=1798, 501.875pt x 692.5875pt>
+(classserver_1_1_d_a_o_mock_test.tex [22] [23]) (classdb_1_1_d_b.tex
+<classdb_1_1_d_b.pdf, id=2007, 501.875pt x 692.5875pt>
 File: classdb_1_1_d_b.pdf Graphic file (type pdf)
 
 <use classdb_1_1_d_b.pdf>
 Package pdftex.def Info: classdb_1_1_d_b.pdf used on input line 6.
 (pdftex.def)             Requested size: 41.23059pt x 56.9055pt.
- [23] [24 <./classdb_1_1_d_b.pdf>] [25] [26])
-(interfacedb_1_1_i_d_a_o.tex [27]
-<interfacedb_1_1_i_d_a_o.pdf, id=1929, 501.875pt x 582.175pt>
+ [24 <./classdb_1_1_d_b.pdf>] [25] [26] [27])
+(interfacedb_1_1_i_d_a_o.tex
+<interfacedb_1_1_i_d_a_o.pdf, id=2132, 501.875pt x 582.175pt>
 File: interfacedb_1_1_i_d_a_o.pdf Graphic file (type pdf)
 
 <use interfacedb_1_1_i_d_a_o.pdf>
 Package pdftex.def Info: interfacedb_1_1_i_d_a_o.pdf used on input line 6.
 (pdftex.def)             Requested size: 49.0494pt x 56.9055pt.
- [28 <./interfacedb_1_1_i_d_a_o.pdf>] [29])
-(interfacedb_1_1_i_d_b.tex
-<interfacedb_1_1_i_d_b.pdf, id=1993, 501.875pt x 692.5875pt>
+ [28 <./interfacedb_1_1_i_d_a_o.pdf>] [29]
+[30]) (interfacedb_1_1_i_d_b.tex
+<interfacedb_1_1_i_d_b.pdf, id=2210, 501.875pt x 692.5875pt>
 File: interfacedb_1_1_i_d_b.pdf Graphic file (type pdf)
 
 <use interfacedb_1_1_i_d_b.pdf>
 Package pdftex.def Info: interfacedb_1_1_i_d_b.pdf used on input line 6.
 (pdftex.def)             Requested size: 41.23059pt x 56.9055pt.
- [30] [31 <./interfacedb_1_1_i_d_b.pdf>]
-[32] [33]) (interfaceserver_1_1remote_1_1_i_remote.tex
-<interfaceserver_1_1remote_1_1_i_remote.pdf, id=2073, 501.875pt x 274.02374pt>
+ [31 <./interfacedb_1_1_i_d_b.pdf>] [32]
+[33]) (interfaceserver_1_1remote_1_1_i_remote.tex
+<interfaceserver_1_1remote_1_1_i_remote.pdf, id=2290, 501.875pt x 274.02374pt>
 File: interfaceserver_1_1remote_1_1_i_remote.pdf Graphic file (type pdf)
 
 <use interfaceserver_1_1remote_1_1_i_remote.pdf>
 Package pdftex.def Info: interfaceserver_1_1remote_1_1_i_remote.pdf used on inp
 ut line 6.
 (pdftex.def)             Requested size: 104.21753pt x 56.9055pt.
- [34 <./interfaceserver_1_1remote_1_1_i_remote.pdf>] [35] [36]) (classserver_1_
-1remote_1_1_remote.tex
-<classserver_1_1remote_1_1_remote.pdf, id=2179, 501.875pt x 137.51375pt>
+ [34] [35 <./interfaceserver_1_1remote_1_1_i_remote.pdf>] [36] [37] [38]) (clas
+sclient_1_1gui_1_1_log_in.tex)
+(classserver_1_1remote_1_1_remote.tex
+<classserver_1_1remote_1_1_remote.pdf, id=2423, 501.875pt x 137.51375pt>
 File: classserver_1_1remote_1_1_remote.pdf Graphic file (type pdf)
 
 <use classserver_1_1remote_1_1_remote.pdf>
 Package pdftex.def Info: classserver_1_1remote_1_1_remote.pdf used on input lin
 e 6.
 (pdftex.def)             Requested size: 207.68457pt x 56.9055pt.
- [37] [38 <./classserver_1_1remote_1_1_remote.pdf>] [39] [40]) (classserver_1_1
-data_1_1_review.tex
-<classserver_1_1data_1_1_review.pdf, id=2270, 501.875pt x 309.155pt>
+ [39] [40 <./classserver_1_1remote_1_1_remote.pdf>]
+Underfull \hbox (badness 10000) detected at line 80
+[][][]
+ []
+
+[41] [42] [43]) (classserver_1_1data_1_1_review.tex
+<classserver_1_1data_1_1_review.pdf, id=2525, 501.875pt x 309.155pt>
 File: classserver_1_1data_1_1_review.pdf Graphic file (type pdf)
 
 <use classserver_1_1data_1_1_review.pdf>
 Package pdftex.def Info: classserver_1_1data_1_1_review.pdf used on input line 
 6.
 (pdftex.def)             Requested size: 92.37828pt x 56.9055pt.
- [41 <./classserver_1_1data_1_1_review.pdf>] [42] [43]) (classserver_1_1_r_m_i_
-test.tex [44] [45]
+ [44 <./classserver_1_1data_1_1_review.pdf>] [45] [46]) (classserver_1_1_r_m_i_
+test.tex [47] [48]
 Underfull \hbox (badness 7326) in paragraph at lines 103--104
 []\T1/phv/m/n/10 public void delete[]Database() { Persistence[]Manager[]Factory
  pmf = J[]D[]O[]Helper.[]get[]Persistence[]Manager[]
@@ -1368,47 +1372,54 @@ Underfull \hbox (badness 768) in paragraph at lines 103--104
 mf.[]get[]Persistence[]Manager(); Trans-ac-tion tx =
  []
 
-) (classserver_1_1_server.tex [46]) (classserver_1_1data_1_1_user.tex
-<classserver_1_1data_1_1_user.pdf, id=2372, 501.875pt x 349.305pt>
+) (classserver_1_1_server.tex [49]) (classclient_1_1gui_1_1_show_books.tex)
+(classclient_1_1gui_1_1_show_description.tex [50])
+(classserver_1_1data_1_1_user.tex
+<classserver_1_1data_1_1_user.pdf, id=2642, 501.875pt x 349.305pt>
 File: classserver_1_1data_1_1_user.pdf Graphic file (type pdf)
 
 <use classserver_1_1data_1_1_user.pdf>
 Package pdftex.def Info: classserver_1_1data_1_1_user.pdf used on input line 6.
 
 (pdftex.def)             Requested size: 81.75665pt x 56.9055pt.
- [47 <./classserver_1_1data_1_1_user.pdf>] [48] [49]) [50]
+ [51] [52 <./classserver_1_1data_1_1_user.pdf>] [53] [54]) [55] [56
+
+]
 Chapter 7.
-(_client_8java.tex) (_d_a_o_8java.tex) (_d_b_8java.tex) (_i_d_a_o_8java.tex)
-(_i_d_b_8java.tex [51
+(_client_8java.tex) (_log_in_8java.tex) (_show_books_8java.tex)
+(_show_description_8java.tex [57]) (_d_a_o_8java.tex) (_d_b_8java.tex)
+(_i_d_a_o_8java.tex) (_i_d_b_8java.tex) (_book_8java.tex [58])
+(_review_8java.tex) (_user_8java.tex) (_i_remote_8java.tex) (_remote_8java.tex
+[59]) (_server_8java.tex) (_conti_perf_test_8java.tex)
+(_d_a_o_mock_test_8java.tex) (_r_m_i_test_8java.tex [60]) [61] [62
 
-]) (_book_8java.tex) (_review_8java.tex) (_user_8java.tex) (_i_remote_8java.tex
- [52]) (_remote_8java.tex) (_server_8java.tex)
-(_conti_perf_test_8java.tex) (_d_a_o_mock_test_8java.tex [53])
-(_r_m_i_test_8java.tex) [54] (refman.ind [55
+] (refman.ind [63
 
 
+] [64] [65] [66] [67] [68
 
-] [56] [57] [58] [59])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
  (refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 32ECD05A7E032D2612230C32D05A8A00;52929.
+(rerunfilecheck)             Checksum: 16EF753044ED26B334A3B41B0C151D17;60166.
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
  ) 
 Here is how much of TeX's memory you used:
- 16010 strings out of 493328
- 248137 string characters out of 3139121
- 336139 words of memory out of 3000000
- 18616 multiletter control sequences out of 15000+200000
- 57168 words of font info for 77 fonts, out of 3000000 for 9000
+ 16183 strings out of 493328
+ 252952 string characters out of 3139121
+ 338197 words of memory out of 3000000
+ 18692 multiletter control sequences out of 15000+200000
+ 61983 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,16n,92p,830b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,16n,92p,831b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1417,10 +1428,11 @@ c/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/uc
 rr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (71 pages, 630455 bytes).
+ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
+elvetic/uhvro8a.pfb>
+Output written on refman.pdf (80 pages, 700851 bytes).
 PDF statistics:
- 3106 PDF objects out of 3580 (max. 8388607)
- 604 named destinations out of 1000 (max. 500000)
- 2110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3475 PDF objects out of 3580 (max. 8388607)
+ 685 named destinations out of 1000 (max. 500000)
+ 2358 words of extra memory for PDF output out of 10000 (max. 10000000)
 

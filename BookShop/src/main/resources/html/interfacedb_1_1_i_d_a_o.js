@@ -1,5 +1,7 @@
 var interfacedb_1_1_i_d_a_o =
 [
+    [ "deleteBook", "interfacedb_1_1_i_d_a_o.html#a1d6c98ea794177d7fd12c4a028ec29c1", null ],
+    [ "deleteReview", "interfacedb_1_1_i_d_a_o.html#a78ca80bc2f2b660edeb9eddd8ca9a4b7", null ],
     [ "getAllBooks", "interfacedb_1_1_i_d_a_o.html#a75a5ebcd7c3421ae7cccc8e2f3b2d9f9", null ],
     [ "getAllReviews", "interfacedb_1_1_i_d_a_o.html#a3d9625d7e5426aad3c2e70fd0174e5f0", null ],
     [ "getAllUsers", "interfacedb_1_1_i_d_a_o.html#a88b60729d9517ca9aa31b7db7ae07aee", null ],
