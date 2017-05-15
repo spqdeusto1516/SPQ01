@@ -75,6 +75,8 @@ public class Server{
 			
 			
 			
+			
+			
 	
 			db.buyBook("jon", "Book4");
 			double bookAverage=db.averageRatingByBook(b2.getTitle());

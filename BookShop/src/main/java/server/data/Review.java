@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 
 
-@PersistenceCapable
+@PersistenceCapable(detachable="true")
 public class Review implements Serializable{
 	
 	

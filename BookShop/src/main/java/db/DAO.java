@@ -25,24 +25,24 @@ public class DAO implements IDAO {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
-	    boolean ret=true;
+		boolean ret=true;
 		try {
-	       tx.begin();
-	      
-		       pm.makePersistent(u);
-		       tx.commit();
-		    } catch (Exception ex) {
-		    	
-		    	ret=false;
-		    
-		    } finally {
-		    	if (tx != null && tx.isActive()) {
-		    		tx.rollback();
-		    	}
+			tx.begin();
 
-	    		pm.close();
-		    }
-	    return ret;
+			pm.makePersistent(u);
+			tx.commit();
+		} catch (Exception ex) {
+
+			ret=false;
+
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+		return ret;
 	}
 
 	@Override
@@ -60,16 +60,16 @@ public class DAO implements IDAO {
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
-			
+
 		}
 
 		finally {
-	    	if (tx != null && tx.isActive()) {
-	    		tx.rollback();
-	    	}
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
 
-    		pm.close();
-	    }
+			pm.close();
+		}
 
 		return userCopy;
 	}
@@ -78,27 +78,27 @@ public class DAO implements IDAO {
 	public boolean updateUser(User u) {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
-	    Transaction tx = pm.currentTransaction();
-	    boolean r =true;
-	    try {
-	    	tx.begin();
-	    	pm.makePersistent(u);
-	    	tx.commit();
-	     } catch (Exception ex) {
-		   	
-		   	r=false;
-	     } finally {
-		   	if (tx != null && tx.isActive()) {
-		   		tx.rollback();
-		   	}
+		Transaction tx = pm.currentTransaction();
+		boolean r =true;
+		try {
+			tx.begin();
+			pm.makePersistent(u);
+			tx.commit();
+		} catch (Exception ex) {
 
-	   		pm.close();
-	     }
-	    return r;
+			r=false;
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+		return r;
 	}
 
-	
-	
+
+
 
 	@Override
 	public Review retrieveReview(int id_review) {
@@ -113,16 +113,16 @@ public class DAO implements IDAO {
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
-			
+
 		}
 
 		finally {
-	    	if (tx != null && tx.isActive()) {
-	    		tx.rollback();
-	    	}
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
 
-    		pm.close();
-	    }
+			pm.close();
+		}
 
 		return review;
 	}
@@ -131,23 +131,23 @@ public class DAO implements IDAO {
 	public boolean updateReview(Review review) {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
-	    Transaction tx = pm.currentTransaction();
-	    boolean r =true;
-	    try {
-	    	tx.begin();
-	    	pm.makePersistent(review);
-	    	tx.commit();
-	     } catch (Exception ex) {
-		   	
-		   	r=false;
-	     } finally {
-		   	if (tx != null && tx.isActive()) {
-		   		tx.rollback();
-		   	}
+		Transaction tx = pm.currentTransaction();
+		boolean r =true;
+		try {
+			tx.begin();
+			pm.makePersistent(review);
+			tx.commit();
+		} catch (Exception ex) {
 
-	   		pm.close();
-	     }
-	    return r;
+			r=false;
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+		return r;
 	}
 
 	@Override
@@ -155,24 +155,24 @@ public class DAO implements IDAO {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
-	    boolean ret=true;
+		boolean ret=true;
 		try {
-	       tx.begin();
-	      
-		       pm.makePersistent(b);
-		       tx.commit();
-		    } catch (Exception ex) {
-		    	
-		    	ret=false;
-		    
-		    } finally {
-		    	if (tx != null && tx.isActive()) {
-		    		tx.rollback();
-		    	}
+			tx.begin();
 
-	    		pm.close();
-		    }
-	    return ret;
+			pm.makePersistent(b);
+			tx.commit();
+		} catch (Exception ex) {
+
+			ret=false;
+
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+		return ret;
 	}
 
 	@Override
@@ -190,16 +190,16 @@ public class DAO implements IDAO {
 			tx.commit();
 		} catch (javax.jdo.JDOObjectNotFoundException jonfe)
 		{
-			
+
 		}
 
 		finally {
-	    	if (tx != null && tx.isActive()) {
-	    		tx.rollback();
-	    	}
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
 
-    		pm.close();
-	    }
+			pm.close();
+		}
 
 		return bookCopy;
 	}
@@ -208,152 +208,172 @@ public class DAO implements IDAO {
 	public boolean updateBook(Book b) {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
-	    Transaction tx = pm.currentTransaction();
-	    boolean r =true;
-	    try {
-	    	tx.begin();
-	    	pm.makePersistent(b);
-	    	tx.commit();
-	     } catch (Exception ex) {
-		   
-		   	r=false;
-	     } finally {
-		   	if (tx != null && tx.isActive()) {
-		   		tx.rollback();
-		   	}
+		Transaction tx = pm.currentTransaction();
+		boolean r =true;
+		try {
+			tx.begin();
+			pm.makePersistent(b);
+			tx.commit();
+		} catch (Exception ex) {
 
-	   		pm.close();
-	     }
-	    return r;
+			r=false;
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+		return r;
 	}
 
 	@Override
 	public Book retrieveBookByParameter(String title) {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
-	    Transaction tx = pm.currentTransaction();
-	    pm.getFetchPlan().setMaxFetchDepth(3);
-	    Book book = null;
-	    
-	    try {
-	        tx.begin();
-	        Extent<Book> extentP = pm.getExtent(Book.class);
+		Transaction tx = pm.currentTransaction();
+		pm.getFetchPlan().setMaxFetchDepth(3);
+		Book book = null;
 
-	        for (Book p : extentP) {
+		try {
+			tx.begin();
+			Extent<Book> extentP = pm.getExtent(Book.class);
 
-	            if (p.getTitle().equals(title)) {
-	                book = p;
-	            }
-	        }
-	        tx.commit();
-	    } catch (Exception ex) {
-	        
-	       
-	    } finally {
-	        if (tx.isActive()) {
-	            tx.rollback();
-	        }
-	        pm.close();
-	    }
-	    logger.info(book.toString());
-	    return book;
+			for (Book p : extentP) {
+
+				if (p.getTitle().equals(title)) {
+					book = p;
+				}
+			}
+			tx.commit();
+		} catch (Exception ex) {
+
+
+		} finally {
+			if (tx.isActive()) {
+				tx.rollback();
+			}
+			pm.close();
+		}
+		logger.info(book.toString());
+		return book;
 	}
 
 	@Override
 	public List<User> getAllUsers() {
 		// TODO Auto-generated method stub
-		   PersistenceManager pm = pmf.getPersistenceManager();
-	        Transaction tx = pm.currentTransaction();
-	        pm.getFetchPlan().setMaxFetchDepth(3);
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		pm.getFetchPlan().setMaxFetchDepth(3);
 
-	        List<User> users=new ArrayList<>();
-	        try {
-	            tx.begin();
-	            Extent<User> extentP = pm.getExtent(User.class);
+		List<User> users=new ArrayList<>();
+		try {
+			tx.begin();
+			Extent<User> extentP = pm.getExtent(User.class);
 
-	            for (User p : extentP) {
+			for (User p : extentP) {
 
-	               users.add(p);
-	              
-	               
-	                }
+				users.add(p);
 
-	            tx.commit();
-	        } catch (Exception ex) {
-	            
-	        } finally {
-	            if (tx.isActive()) {
-	                tx.rollback();
-	            }
-	            pm.close();
-	        }
 
-	        return users;
+			}
+
+			tx.commit();
+		} catch (Exception ex) {
+
+		} finally {
+			if (tx.isActive()) {
+				tx.rollback();
+			}
+			pm.close();
+		}
+
+		return users;
 	}
 
 	@Override
 	public List<Review> getAllReviews() {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
-        Transaction tx = pm.currentTransaction();
-        pm.getFetchPlan().setMaxFetchDepth(3);
+		Transaction tx = pm.currentTransaction();
+		pm.getFetchPlan().setMaxFetchDepth(3);
 
-        List<Review> reviews=new ArrayList<>();
-        try {
-            tx.begin();
-            Extent<Review> extentP = pm.getExtent(Review.class);
+		List<Review> reviews=new ArrayList<>();
+		try {
+			tx.begin();
+			Extent<Review> extentP = pm.getExtent(Review.class);
 
-            for (Review p : extentP) {
+			for (Review p : extentP) {
 
-               reviews.add(p);
-              
-               
-                }
+				reviews.add(p);
 
-            tx.commit();
-        } catch (Exception ex) {
-           
-        } finally {
-            if (tx.isActive()) {
-                tx.rollback();
-            }
-            pm.close();
-        }
 
-        return reviews;
+			}
+
+			tx.commit();
+		} catch (Exception ex) {
+
+		} finally {
+			if (tx.isActive()) {
+				tx.rollback();
+			}
+			pm.close();
+		}
+
+		return reviews;
 	}
 
 	@Override
 	public List<Book> getAllBooks() {
 		// TODO Auto-generated method stub
 		PersistenceManager pm = pmf.getPersistenceManager();
-        Transaction tx = pm.currentTransaction();
-        pm.getFetchPlan().setMaxFetchDepth(3);
+		Transaction tx = pm.currentTransaction();
+		pm.getFetchPlan().setMaxFetchDepth(3);
 
-        List<Book> books=new ArrayList<>();
-        try {
-            tx.begin();
-            Extent<Book> extentP = pm.getExtent(Book.class);
+		List<Book> books=new ArrayList<>();
+		try {
+			tx.begin();
+			Extent<Book> extentP = pm.getExtent(Book.class);
 
-            for (Book p : extentP) {
+			for (Book p : extentP) {
 
-               books.add(p);
-              
-               
-                }
+				books.add(p);
 
-            tx.commit();
-        } catch (Exception ex) {
-            
-        } finally {
-            if (tx.isActive()) {
-                tx.rollback();
-            }
-            pm.close();
-        }
 
-        return books;
+			}
+
+			tx.commit();
+		} catch (Exception ex) {
+
+		} finally {
+			if (tx.isActive()) {
+				tx.rollback();
+			}
+			pm.close();
+		}
+
+		return books;
 	}
+	@Override
+	public void deleteReview(Review r) {
+		// TODO Auto-generated method stub
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		tx.begin();
+		pm.deletePersistent(r);
+		tx.commit();
+	}
+	@Override
+	public void deleteBook(Book b) {
+		// TODO Auto-generated method stub
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		tx.begin();
+		pm.deletePersistent(b);
+		tx.commit();
+
+	}
+
 	/*
 	public  boolean deleteDatabase() {
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
@@ -363,7 +383,7 @@ public class DAO implements IDAO {
         try
         {
             tx.begin();
-	
+
             logger.info("Deleting test users from persistence. Cleaning up.");
             Query<User> q1 = pm.newQuery(User.class);
             Query<Book> q2 = pm.newQuery(Book.class);
@@ -371,10 +391,10 @@ public class DAO implements IDAO {
             	q1.deletePersistentAll();
             	q2.deletePersistentAll();
             	q3.deletePersistentAll();
-           
-			
+
+
             tx.commit();
-            
+
         }
         catch(Exception ex) {
             logger.error("# Error deleting DB: " + ex.getMessage());
@@ -389,7 +409,7 @@ public class DAO implements IDAO {
             pm.close();
         }
         return r;
-		
+
 	}
-*/
+	 */
 }

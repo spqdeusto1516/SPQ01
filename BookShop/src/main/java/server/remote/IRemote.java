@@ -33,5 +33,7 @@ public interface IRemote extends Remote{
 	 List<Review> getBookReviews(String title)  throws RemoteException;
 	 double averageRatingByBook(String title)  throws RemoteException;
 	 double averageRatingByUser(String email)  throws RemoteException;
-	
+	 void deleteReview(int id_review) throws RemoteException;
+	 void deleteBook(int ISBN) throws RemoteException;
+	 boolean addBook(int ISBN, String title, String category, String edition, String author, double price, String description, String img) throws RemoteException;
 }

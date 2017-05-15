@@ -26,6 +26,9 @@ package db;
 			List<Review> getBookReviews(String title);
 			double averageRatingByBook(String title);
 			double averageRatingByUser(String email);
+			boolean deleteReview(int id_review);
+			boolean deleteBook(int ISBN);
+			
 		
 		
 }
