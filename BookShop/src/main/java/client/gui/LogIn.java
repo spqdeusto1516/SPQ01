@@ -42,6 +42,7 @@ public class LogIn {
 	final static  Logger logger = LoggerFactory.getLogger(Client.class);
 	
 	private ShowBooks showbooks;
+	private ShowBooksAdmin showbooksAdmin;
 	private JFrame frame;
 	private JPanel logIn;
 	private JTextField email;
@@ -194,18 +195,28 @@ public class LogIn {
 				String accessEmail = email.getText();
 				String accessPassword = String.valueOf(password.getPassword());
 				try {
-					server.registerUser(accessEmail, accessPassword, role);
 					role = server.getUser(accessEmail).getRole();
+					server.registerUser(accessEmail, accessPassword, role);
 					userEmail = accessEmail;
 				} catch (RemoteException e) {
 					logger.info(e.getMessage());
 				}
+				System.out.println("-------------------------------ROLE: " + role);
 				//Admin and user go to the same window
-				showbooks = new ShowBooks(userEmail, role);
-				frame.setVisible(false);
-				frame.dispose();
-				frame.revalidate();
-				frame.repaint();
+				if(role == false){
+					showbooks = new ShowBooks(userEmail, role);
+					frame.setVisible(false);
+					frame.dispose();
+					frame.revalidate();
+					frame.repaint();
+				}else{
+					showbooksAdmin = new ShowBooksAdmin(userEmail, role);
+					frame.setVisible(false);
+					frame.dispose();
+					frame.revalidate();
+					frame.repaint();
+				}
+				
 			}
 		});
 		btnLogIn.setFont(new Font("Times New Roman", Font.PLAIN, 20));
