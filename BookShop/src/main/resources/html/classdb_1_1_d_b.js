@@ -7,6 +7,8 @@ var classdb_1_1_d_b =
     [ "averageRatingByBook", "classdb_1_1_d_b.html#a8b2b9d6c4aabb17719e2d2af4cf7ba74", null ],
     [ "averageRatingByUser", "classdb_1_1_d_b.html#a38091677ae1e964a84320d6e539ea62e", null ],
     [ "buyBook", "classdb_1_1_d_b.html#a8a1a15bae4352c3c73092d801ef26c41", null ],
+    [ "deleteBook", "classdb_1_1_d_b.html#a712d418878efa15112c62eb6db4b022d", null ],
+    [ "deleteReview", "classdb_1_1_d_b.html#ab3664756678e77a9f1b9c6c93c81d691", null ],
     [ "getAllBooks", "classdb_1_1_d_b.html#ab4fbfd3716967ce37cc462ca04c68ca8", null ],
     [ "getAllReviews", "classdb_1_1_d_b.html#ac7a84c5621f4ad2263cd830dbf10842e", null ],
     [ "getAllUsers", "classdb_1_1_d_b.html#ad02e4c78f9afe64af34fb2e5889ce501", null ],

@@ -1,6 +1,6 @@
 var namespaces =
 [
-    [ "client", "namespaceclient.html", null ],
+    [ "client", "namespaceclient.html", "namespaceclient" ],
     [ "db", "namespacedb.html", null ],
     [ "server", "namespaceserver.html", "namespaceserver" ]
 ];

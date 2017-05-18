@@ -31,8 +31,8 @@ public class ShowBooks {
 	private JScrollPane scrollListBooks;
 	private JButton btnRefresh;
 	private JButton btnLogOut;
-	
-	private static boolean role;
+
+	private static String email;
 	private LogIn logIn;
 	IRemote server;
 	
@@ -43,7 +43,7 @@ public class ShowBooks {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ShowBooks window = new ShowBooks(role);
+					ShowBooks window = new ShowBooks(email);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -54,7 +54,7 @@ public class ShowBooks {
 	/**
 	 * Create the application.
 	 */
-	public ShowBooks(boolean role) {
+	public ShowBooks(String email) {
 		
 		// Create and set up the window.
 		frame = new JFrame("Book Shop");
@@ -71,14 +71,14 @@ public class ShowBooks {
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
-		this.role = role;
-		initializebookSearch(role);
+		this.email = email;
+		initializebookSearch();
 	}
 	
 	/**
 	 * Initialize the contents of the bookSearch JPanel 
 	 */
-	private void initializebookSearch(boolean role){
+	private void initializebookSearch(){
 		
 		// initialization of items used
 		String[] Menu = {"Title", "Author", "ISBN"};
@@ -170,15 +170,15 @@ public class ShowBooks {
 				listOfBooks.getSelectedRow();
 				String title = (String) BookTableModel.getValueAt(listOfBooks.getSelectedRow(), 0);
 				
-				if (role == false){  //User
-					showDescription = new ShowDescription(title);
+				try {
+					showDescription = new ShowDescription(title, email);
 					frame.dispose();
 					frame.revalidate();
 					frame.repaint();
-				}else{  //true --> admin
-					//TODO coger un book y pasarselo a la ventana para q lo muestre
-					//showDescriptionAdmin = new ShowDescriptionAdmin();
-				}				
+				} catch (RemoteException e1) {
+					e1.printStackTrace();
+				}
+
 			}
 		});
 		
@@ -199,7 +199,6 @@ public class ShowBooks {
 			public void actionPerformed(ActionEvent arg0) {
 				String searchText = textSearchUser.getText();
 				String type = (String) cmbSearch.getSelectedItem();
-				//TODO "Title", "Author", "ISBN"
 				if (searchText.length() != 0){
 					if(type == "Title"){
 						RowFilter rowFilter = RowFilter.regexFilter(searchText, 0);
@@ -299,6 +298,9 @@ class BookTableModel  extends AbstractTableModel {
 		data[row][col] = value;
         fireTableCellUpdated(row, col);
 	}
+	public void setDataEmpty() {
+		data = null;
+	}
 	
 	public void setValues(IRemote server) {
 		try {
@@ -306,7 +308,7 @@ class BookTableModel  extends AbstractTableModel {
 				data = new String[server.showBooksInStore().size()][5];
 			}
 			else{
-				data = new String[0][4];
+				data = new String[0][5];
 			}
 			for (int i = 0; i < server.showBooksInStore().size(); i++)
 			{

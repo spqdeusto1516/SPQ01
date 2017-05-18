@@ -26,6 +26,9 @@ public interface IDAO {
 	public List<User> getAllUsers();
 	public List<Review> getAllReviews();
 	public List<Book> getAllBooks();
+	
+	void deleteReview(Review r);
+	void deleteBook(Book b);
 
 
 }

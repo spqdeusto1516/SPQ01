@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['main',['main',['../classclient_1_1_client.html#a535f4e7494d7095589ebf11a8d8f50df',1,'client.Client.main()'],['../classserver_1_1_server.html#acd8e4cb5c187614b7bb0160103e61083',1,'server.Server.main()']]],
+  ['main',['main',['../classclient_1_1_client.html#a535f4e7494d7095589ebf11a8d8f50df',1,'client.Client.main()'],['../classclient_1_1gui_1_1_log_in.html#a5bff6d5c81be59bf4aecb55182417f8a',1,'client.gui.LogIn.main()'],['../classclient_1_1gui_1_1_show_books.html#acb7c683c6a19a35f85878d376c8b210e',1,'client.gui.ShowBooks.main()'],['../classserver_1_1_server.html#acd8e4cb5c187614b7bb0160103e61083',1,'server.Server.main()']]],
   ['mainmenu',['mainMenu',['../classclient_1_1_client.html#abb4f93c11e43c61c21ac7f42a826964c',1,'client::Client']]],
   ['menubook',['menuBook',['../classclient_1_1_client.html#aa8fa722000df2208c9a3f4ac7092ea5e',1,'client::Client']]],
   ['menureviews',['menuReviews',['../classclient_1_1_client.html#ab5381c77d6c103c49fe3a876e711c318',1,'client::Client']]],

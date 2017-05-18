@@ -26,7 +26,7 @@ public class DB implements IDB{
 		dao = udao;
 
 	}
-	
+
 	@Override
 	public List<User> getAllUsers() {
 		// TODO Auto-generated method stub
@@ -62,78 +62,78 @@ public class DB implements IDB{
 			ret=false;
 		}
 		if(user.getMoney()>=book.getPrice()){
-	
-				if (book == null  || user ==null ) {
-		
-				}else if (book !=null  &&  user != null  ){
-					book.addUser(user);										
-					user.addBook(book);	
-					
-					price=book.getPrice();
-					
-					user.setMoney(user.getMoney()-price);
-		
-					dao.updateBook(book);
-					dao.updateUser(user);
-								
-				}	
-				
+
+			if (book == null  || user ==null ) {
+
+			}else if (book !=null  &&  user != null  ){
+				book.addUser(user);										
+				user.addBook(book);	
+
+				price=book.getPrice();
+
+				user.setMoney(user.getMoney()-price);
+
+				dao.updateBook(book);
+				dao.updateUser(user);
+
+			}	
+
 		}
 		else{
 			logger.error("Price higher than your balance");
 		}
-		
+
 
 		return ret;
-	
+
 	}
 
-	
+
 	public boolean addReview(Book b, Review r, User u ) {
 		Book book =null;
 		Review review = null ;
 		User user =null;
 		boolean ret=true;
-		
-					try {
 
-					book= dao.retrieveBookByParameter(b.getTitle());				
-					review = dao.retrieveReview(r.getId_review());
-					user = dao.retrieveUser(u.getEmail());
-					
+		try {
 
-				} catch (Exception  e) {
-					logger.error("Exception launched in checking if the data already exist: ");
-					e.printStackTrace();
-					ret=false;
-				}
+			book= dao.retrieveBookByParameter(b.getTitle());				
+			review = dao.retrieveReview(r.getId_review());
+			user = dao.retrieveUser(u.getEmail());
 
 
-				if (book == null  || user == null ||review !=null ) {
+		} catch (Exception  e) {
+			logger.error("Exception launched in checking if the data already exist: ");
+			e.printStackTrace();
+			ret=false;
+		}
+
+
+		if (book == null  || user == null ||review !=null ) {
 
 
 
-				}else if (book !=null  && user !=null && review == null  ){
-					int a= getAllReviews().size()+1;
-					r.setBook(book);
-					r.setUser(user);
-					r.setId_review(a);
-					
-					book.addReview(r);										
-					user.addReview(r);
-					
-					
-					dao.updateBook(book);
-					dao.updateUser(user);
-					
-				}
-				
-			return ret;	
+		}else if (book !=null  && user !=null && review == null  ){
+			int a= getAllReviews().size()+1;
+			r.setBook(book);
+			r.setUser(user);
+			r.setId_review(a);
+
+			book.addReview(r);										
+			user.addReview(r);
+
+
+			dao.updateBook(book);
+			dao.updateUser(user);
+
+		}
+
+		return ret;	
 	}
 
-	
-	
-	
+
+
+
 
 	@Override
 	public boolean registerUser(String email, String password, boolean role) {
@@ -157,14 +157,14 @@ public class DB implements IDB{
 			dao.updateUser(user);
 
 		} else {
-		
+
 			user = new User(email, password,role);
 			dao.storeUser(user);
-			
+
 		}
 		return ret;
 	}
-	
+
 	public boolean registerUser(User u) {
 
 
@@ -181,17 +181,17 @@ public class DB implements IDB{
 		}
 
 		if (user != null) {
-			
+
 			user.setPassword(u.getPassword());
 			user.setRole(u.getRole());
-		
+
 			dao.updateUser(user);
 
 		} else {
-			
-			
+
+
 			dao.storeUser(u);
-			
+
 		}
 		return ret;
 	}
@@ -200,13 +200,13 @@ public class DB implements IDB{
 	public boolean addBookToDb(Book b) {
 		// TODO Auto-generated method stub
 		Book book = null;
-		
+
 		boolean ret=true;
 
 		try {
 
 			book  = dao.retrieveBook(b.getISBN());
-		
+
 
 		} catch (Exception  e) {
 			logger.error("Exception launched in checking if the data already exist: ");
@@ -220,12 +220,12 @@ public class DB implements IDB{
 		}else{
 
 
-		
+
 			dao.storeBook(b);
-	
+
 
 		}
-		
+
 		return ret;
 	}
 
@@ -240,16 +240,16 @@ public class DB implements IDB{
 	@Override
 	public Book showBookByTitle(String title) {
 		// TODO Auto-generated method stub
-				Book b=dao.retrieveBookByParameter(title);
-				// ao.retrieveLicenseByName(name);
-				return b;
+		Book b=dao.retrieveBookByParameter(title);
+		// ao.retrieveLicenseByName(name);
+		return b;
 	}
 
 	@Override
 	public Review showReview( int id_review) {
 		// TODO Auto-generated method stub
 		Review r=dao.retrieveReview(id_review);
-		// ao.retrieveLicenseByName(name);
+
 		return r;
 	}
 
@@ -264,7 +264,7 @@ public class DB implements IDB{
 		User u=showUser(email);
 		List<Review> userReviews=u.getReviews();
 		return userReviews;
-		
+
 	}
 	public List<Review> getBookReviews(String title){
 		Book b= showBookByTitle(title);
@@ -275,11 +275,11 @@ public class DB implements IDB{
 		List<Review> bookReviews=null;
 		bookReviews=getBookReviews(title);
 		double total=0;
-		
-		
+
+
 		for(Review r : bookReviews){
 			total=total+r.getRating();
-			
+
 		}
 		return total/bookReviews.size();
 	}
@@ -287,13 +287,53 @@ public class DB implements IDB{
 		List<Review> userReviews=null;
 		userReviews=getUserReviews(email);
 		double total=0;
-		
-		
+
+
 		for(Review r : userReviews){
 			total=total+r.getRating();
-			
+
 		}
 		return total/userReviews.size();
+	}
+	public boolean deleteReview(int id_review){
+		boolean ret=false;
+		Review r;
+
+		r =showReview(id_review);
+		if(r!=null){
+
+			dao.deleteReview(r);
+
+
+			ret=true;}
+		else{
+
+		}
+
+
+		return ret;
+
+
+	}
+	public boolean deleteBook(int ISBN){
+		boolean ret=false;
+		Book b;
+
+		b =showBookByISBN(ISBN);
+		if(b!=null){
+
+			dao.deleteBook(b);
+
+
+			ret=true;}
+		else{
+
+		}
+
+
+		return ret;
+
+
 	}
 
 }

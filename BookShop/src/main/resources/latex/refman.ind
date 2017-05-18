@@ -1,52 +1,56 @@
 \begin{theindex}
 
   \item {add\+Book}
-    \subitem {server\+::data\+::\+User}, \hyperpage{48}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{35}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{38}
+    \subitem {server\+::data\+::\+User}, \hyperpage{53}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{35, 36}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{41}
   \item {add\+Book\+To\+Db}
     \subitem {db\+::\+DB}, \hyperpage{25}
-    \subitem {db\+::\+I\+DB}, \hyperpage{31}
+    \subitem {db\+::\+I\+DB}, \hyperpage{32}
   \item {add\+Review}
     \subitem {db\+::\+DB}, \hyperpage{25}
-    \subitem {db\+::\+I\+DB}, \hyperpage{31}
+    \subitem {db\+::\+I\+DB}, \hyperpage{32}
     \subitem {server\+::data\+::\+Book}, \hyperpage{12}
-    \subitem {server\+::data\+::\+User}, \hyperpage{48}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{35}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{38}
+    \subitem {server\+::data\+::\+User}, \hyperpage{53}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{41}
   \item {add\+User}
     \subitem {server\+::data\+::\+Book}, \hyperpage{12}
   \item {average\+Rating\+By\+Book}
     \subitem {db\+::\+DB}, \hyperpage{25}
-    \subitem {db\+::\+I\+DB}, \hyperpage{31}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{35}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{39}
+    \subitem {db\+::\+I\+DB}, \hyperpage{32}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{41}
   \item {average\+Rating\+By\+User}
     \subitem {db\+::\+DB}, \hyperpage{25}
     \subitem {db\+::\+I\+DB}, \hyperpage{32}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{35}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{39}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{42}
 
   \indexspace
 
   \item {Book}
     \subitem {server\+::data\+::\+Book}, \hyperpage{12}
   \item {book\+Test}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{35}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{39}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{42}
   \item {book\+Test\+Validation}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{45}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{48}
   \item {buy\+Book}
     \subitem {client\+::\+Client}, \hyperpage{16}
     \subitem {db\+::\+DB}, \hyperpage{26}
     \subitem {db\+::\+I\+DB}, \hyperpage{32}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{35}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{39}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{42}
 
   \indexspace
 
   \item {client}, \hyperpage{9}
   \item {client.\+Client}, \hyperpage{15}
+  \item {client.\+gui}, \hyperpage{9}
+  \item {client.\+gui.\+Log\+In}, \hyperpage{39}
+  \item {client.\+gui.\+Show\+Books}, \hyperpage{50}
+  \item {client.\+gui.\+Show\+Description}, \hyperpage{51}
   \item {client\+::\+Client}
     \subitem {buy\+Book}, \hyperpage{16}
     \subitem {display\+Menu}, \hyperpage{16}
@@ -63,13 +67,21 @@
     \subitem {show\+Book}, \hyperpage{17}
     \subitem {show\+Books}, \hyperpage{17}
     \subitem {sign\+Up}, \hyperpage{18}
+  \item {client\+::gui\+::\+Log\+In}
+    \subitem {Log\+In}, \hyperpage{39}
+    \subitem {main}, \hyperpage{39}
+  \item {client\+::gui\+::\+Show\+Books}
+    \subitem {main}, \hyperpage{50}
+    \subitem {Show\+Books}, \hyperpage{50}
+  \item {client\+::gui\+::\+Show\+Description}
+    \subitem {Show\+Description}, \hyperpage{51}
 
   \indexspace
 
   \item {D\+AO}
     \subitem {db\+::\+D\+AO}, \hyperpage{20}
   \item {DB}
-    \subitem {db\+::\+DB}, \hyperpage{24, 25}
+    \subitem {db\+::\+DB}, \hyperpage{25}
   \item {db}, \hyperpage{9}
   \item {db.\+D\+AO}, \hyperpage{20}
   \item {db.\+DB}, \hyperpage{24}
@@ -77,14 +89,16 @@
   \item {db.\+I\+DB}, \hyperpage{31}
   \item {db\+::\+D\+AO}
     \subitem {D\+AO}, \hyperpage{20}
-    \subitem {get\+All\+Books}, \hyperpage{20}
-    \subitem {get\+All\+Reviews}, \hyperpage{20}
+    \subitem {delete\+Book}, \hyperpage{20}
+    \subitem {delete\+Review}, \hyperpage{20}
+    \subitem {get\+All\+Books}, \hyperpage{21}
+    \subitem {get\+All\+Reviews}, \hyperpage{21}
     \subitem {get\+All\+Users}, \hyperpage{21}
     \subitem {retrieve\+Book}, \hyperpage{21}
     \subitem {retrieve\+Book\+By\+Parameter}, \hyperpage{21}
     \subitem {retrieve\+Review}, \hyperpage{21}
-    \subitem {retrieve\+User}, \hyperpage{21}
-    \subitem {store\+Book}, \hyperpage{21}
+    \subitem {retrieve\+User}, \hyperpage{22}
+    \subitem {store\+Book}, \hyperpage{22}
     \subitem {store\+User}, \hyperpage{22}
     \subitem {update\+Book}, \hyperpage{22}
     \subitem {update\+Review}, \hyperpage{22}
@@ -95,46 +109,66 @@
     \subitem {average\+Rating\+By\+Book}, \hyperpage{25}
     \subitem {average\+Rating\+By\+User}, \hyperpage{25}
     \subitem {buy\+Book}, \hyperpage{26}
-    \subitem {DB}, \hyperpage{24, 25}
+    \subitem {DB}, \hyperpage{25}
+    \subitem {delete\+Book}, \hyperpage{26}
+    \subitem {delete\+Review}, \hyperpage{26}
     \subitem {get\+All\+Books}, \hyperpage{26}
     \subitem {get\+All\+Reviews}, \hyperpage{26}
     \subitem {get\+All\+Users}, \hyperpage{26}
-    \subitem {get\+Book\+Reviews}, \hyperpage{26}
-    \subitem {get\+User\+Reviews}, \hyperpage{26}
+    \subitem {get\+Book\+Reviews}, \hyperpage{27}
+    \subitem {get\+User\+Reviews}, \hyperpage{27}
     \subitem {register\+User}, \hyperpage{27}
     \subitem {show\+Book\+By\+I\+S\+BN}, \hyperpage{27}
     \subitem {show\+Book\+By\+Title}, \hyperpage{27}
-    \subitem {show\+Review}, \hyperpage{27}
-    \subitem {show\+User}, \hyperpage{27}
+    \subitem {show\+Review}, \hyperpage{28}
+    \subitem {show\+User}, \hyperpage{28}
   \item {db\+::\+I\+D\+AO}
-    \subitem {get\+All\+Books}, \hyperpage{28}
-    \subitem {get\+All\+Reviews}, \hyperpage{28}
+    \subitem {delete\+Book}, \hyperpage{29}
+    \subitem {delete\+Review}, \hyperpage{29}
+    \subitem {get\+All\+Books}, \hyperpage{29}
+    \subitem {get\+All\+Reviews}, \hyperpage{29}
     \subitem {get\+All\+Users}, \hyperpage{29}
     \subitem {retrieve\+Book}, \hyperpage{29}
-    \subitem {retrieve\+Book\+By\+Parameter}, \hyperpage{29}
-    \subitem {retrieve\+Review}, \hyperpage{29}
-    \subitem {retrieve\+User}, \hyperpage{29}
-    \subitem {store\+Book}, \hyperpage{29}
+    \subitem {retrieve\+Book\+By\+Parameter}, \hyperpage{30}
+    \subitem {retrieve\+Review}, \hyperpage{30}
+    \subitem {retrieve\+User}, \hyperpage{30}
+    \subitem {store\+Book}, \hyperpage{30}
     \subitem {store\+User}, \hyperpage{30}
     \subitem {update\+Book}, \hyperpage{30}
-    \subitem {update\+Review}, \hyperpage{30}
-    \subitem {update\+User}, \hyperpage{30}
+    \subitem {update\+Review}, \hyperpage{31}
+    \subitem {update\+User}, \hyperpage{31}
   \item {db\+::\+I\+DB}
-    \subitem {add\+Book\+To\+Db}, \hyperpage{31}
-    \subitem {add\+Review}, \hyperpage{31}
-    \subitem {average\+Rating\+By\+Book}, \hyperpage{31}
+    \subitem {add\+Book\+To\+Db}, \hyperpage{32}
+    \subitem {add\+Review}, \hyperpage{32}
+    \subitem {average\+Rating\+By\+Book}, \hyperpage{32}
     \subitem {average\+Rating\+By\+User}, \hyperpage{32}
     \subitem {buy\+Book}, \hyperpage{32}
-    \subitem {get\+All\+Books}, \hyperpage{32}
-    \subitem {get\+All\+Reviews}, \hyperpage{32}
-    \subitem {get\+All\+Users}, \hyperpage{32}
-    \subitem {get\+Book\+Reviews}, \hyperpage{32}
+    \subitem {delete\+Book}, \hyperpage{32}
+    \subitem {delete\+Review}, \hyperpage{33}
+    \subitem {get\+All\+Books}, \hyperpage{33}
+    \subitem {get\+All\+Reviews}, \hyperpage{33}
+    \subitem {get\+All\+Users}, \hyperpage{33}
+    \subitem {get\+Book\+Reviews}, \hyperpage{33}
     \subitem {get\+User\+Reviews}, \hyperpage{33}
-    \subitem {register\+User}, \hyperpage{33}
-    \subitem {show\+Book\+By\+I\+S\+BN}, \hyperpage{33}
-    \subitem {show\+Book\+By\+Title}, \hyperpage{33}
-    \subitem {show\+Review}, \hyperpage{33}
+    \subitem {register\+User}, \hyperpage{34}
+    \subitem {show\+Book\+By\+I\+S\+BN}, \hyperpage{34}
+    \subitem {show\+Book\+By\+Title}, \hyperpage{34}
+    \subitem {show\+Review}, \hyperpage{34}
     \subitem {show\+User}, \hyperpage{34}
+  \item {delete\+Book}
+    \subitem {db\+::\+D\+AO}, \hyperpage{20}
+    \subitem {db\+::\+DB}, \hyperpage{26}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
+    \subitem {db\+::\+I\+DB}, \hyperpage{32}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{42}
+  \item {delete\+Review}
+    \subitem {db\+::\+D\+AO}, \hyperpage{20}
+    \subitem {db\+::\+DB}, \hyperpage{26}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
+    \subitem {db\+::\+I\+DB}, \hyperpage{33}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{42}
   \item {display\+Menu}
     \subitem {client\+::\+Client}, \hyperpage{16}
   \item {display\+Sub\+Menu}
@@ -143,95 +177,97 @@
   \indexspace
 
   \item {get\+Address}
-    \subitem {server\+::data\+::\+User}, \hyperpage{48}
+    \subitem {server\+::data\+::\+User}, \hyperpage{53}
   \item {get\+All\+Books}
-    \subitem {db\+::\+D\+AO}, \hyperpage{20}
+    \subitem {db\+::\+D\+AO}, \hyperpage{21}
     \subitem {db\+::\+DB}, \hyperpage{26}
-    \subitem {db\+::\+I\+D\+AO}, \hyperpage{28}
-    \subitem {db\+::\+I\+DB}, \hyperpage{32}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
+    \subitem {db\+::\+I\+DB}, \hyperpage{33}
   \item {get\+All\+Reviews}
-    \subitem {db\+::\+D\+AO}, \hyperpage{20}
+    \subitem {db\+::\+D\+AO}, \hyperpage{21}
     \subitem {db\+::\+DB}, \hyperpage{26}
-    \subitem {db\+::\+I\+D\+AO}, \hyperpage{28}
-    \subitem {db\+::\+I\+DB}, \hyperpage{32}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{39}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
+    \subitem {db\+::\+I\+DB}, \hyperpage{33}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{42}
   \item {get\+All\+Users}
     \subitem {db\+::\+D\+AO}, \hyperpage{21}
     \subitem {db\+::\+DB}, \hyperpage{26}
     \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
-    \subitem {db\+::\+I\+DB}, \hyperpage{32}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{40}
+    \subitem {db\+::\+I\+DB}, \hyperpage{33}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{43}
   \item {get\+Author}
     \subitem {server\+::data\+::\+Book}, \hyperpage{12}
   \item {get\+Book}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{42}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{45}
   \item {get\+Book\+By\+I\+S\+BN}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{40}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{43}
   \item {get\+Book\+By\+Title}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{40}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{38}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{43}
   \item {get\+Book\+Reviews}
-    \subitem {db\+::\+DB}, \hyperpage{26}
-    \subitem {db\+::\+I\+DB}, \hyperpage{32}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{40}
+    \subitem {db\+::\+DB}, \hyperpage{27}
+    \subitem {db\+::\+I\+DB}, \hyperpage{33}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{38}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{43}
   \item {get\+Books}
-    \subitem {server\+::data\+::\+User}, \hyperpage{48}
+    \subitem {server\+::data\+::\+User}, \hyperpage{53}
   \item {get\+Category}
     \subitem {server\+::data\+::\+Book}, \hyperpage{12}
   \item {get\+Comment}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{43}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{46}
   \item {get\+Description}
     \subitem {server\+::data\+::\+Book}, \hyperpage{13}
   \item {get\+Edition}
     \subitem {server\+::data\+::\+Book}, \hyperpage{13}
   \item {get\+Email}
-    \subitem {server\+::data\+::\+User}, \hyperpage{49}
+    \subitem {server\+::data\+::\+User}, \hyperpage{53}
   \item {get\+I\+S\+BN}
     \subitem {server\+::data\+::\+Book}, \hyperpage{13}
   \item {get\+Id\+\_\+review}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{43}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{46}
   \item {get\+Img}
     \subitem {server\+::data\+::\+Book}, \hyperpage{13}
   \item {get\+Money}
-    \subitem {server\+::data\+::\+User}, \hyperpage{49}
+    \subitem {server\+::data\+::\+User}, \hyperpage{53}
   \item {get\+Name}
-    \subitem {server\+::data\+::\+User}, \hyperpage{49}
+    \subitem {server\+::data\+::\+User}, \hyperpage{53}
   \item {get\+Password}
-    \subitem {server\+::data\+::\+User}, \hyperpage{49}
+    \subitem {server\+::data\+::\+User}, \hyperpage{53}
   \item {get\+Price}
     \subitem {server\+::data\+::\+Book}, \hyperpage{13}
   \item {get\+Rating}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{43}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{46}
   \item {get\+Review}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{36}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{40}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{38}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{43}
   \item {get\+Reviews}
     \subitem {server\+::data\+::\+Book}, \hyperpage{13}
-    \subitem {server\+::data\+::\+User}, \hyperpage{49}
+    \subitem {server\+::data\+::\+User}, \hyperpage{54}
   \item {get\+Role}
-    \subitem {server\+::data\+::\+User}, \hyperpage{49}
+    \subitem {server\+::data\+::\+User}, \hyperpage{54}
   \item {get\+Things}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{45}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{48}
   \item {get\+Title}
     \subitem {server\+::data\+::\+Book}, \hyperpage{13}
   \item {get\+User}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{43}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{40}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{46}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{38}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{43}
   \item {get\+User\+Reviews}
-    \subitem {db\+::\+DB}, \hyperpage{26}
+    \subitem {db\+::\+DB}, \hyperpage{27}
     \subitem {db\+::\+I\+DB}, \hyperpage{33}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{41}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{38}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{44}
   \item {get\+Users}
     \subitem {server\+::data\+::\+Book}, \hyperpage{13}
 
   \indexspace
 
+  \item {Log\+In}
+    \subitem {client\+::gui\+::\+Log\+In}, \hyperpage{39}
   \item {log\+In}
     \subitem {client\+::\+Client}, \hyperpage{16}
 
@@ -239,7 +275,9 @@
 
   \item {main}
     \subitem {client\+::\+Client}, \hyperpage{16}
-    \subitem {server\+::\+Server}, \hyperpage{47}
+    \subitem {client\+::gui\+::\+Log\+In}, \hyperpage{39}
+    \subitem {client\+::gui\+::\+Show\+Books}, \hyperpage{50}
+    \subitem {server\+::\+Server}, \hyperpage{50}
   \item {main\+Menu}
     \subitem {client\+::\+Client}, \hyperpage{16}
   \item {menu\+Book}
@@ -254,22 +292,22 @@
   \indexspace
 
   \item {register\+Existing\+User\+Test}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{45}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{48}
   \item {register\+New\+User\+Test}
     \subitem {server\+::\+Conti\+Perf\+Test}, \hyperpage{18}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{45}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{48}
   \item {register\+User}
     \subitem {db\+::\+DB}, \hyperpage{27}
-    \subitem {db\+::\+I\+DB}, \hyperpage{33}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{41}
+    \subitem {db\+::\+I\+DB}, \hyperpage{34}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{38}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{44}
   \item {Remote}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{38}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{40}
   \item {remove\+Book}
-    \subitem {server\+::data\+::\+User}, \hyperpage{49}
+    \subitem {server\+::data\+::\+User}, \hyperpage{54}
   \item {remove\+Review}
     \subitem {server\+::data\+::\+Book}, \hyperpage{14}
-    \subitem {server\+::data\+::\+User}, \hyperpage{49}
+    \subitem {server\+::data\+::\+User}, \hyperpage{54}
   \item {remove\+User}
     \subitem {server\+::data\+::\+Book}, \hyperpage{14}
   \item {retrieve\+Book}
@@ -277,15 +315,15 @@
     \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
   \item {retrieve\+Book\+By\+Parameter}
     \subitem {db\+::\+D\+AO}, \hyperpage{21}
-    \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{30}
   \item {retrieve\+Review}
     \subitem {db\+::\+D\+AO}, \hyperpage{21}
-    \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{30}
   \item {retrieve\+User}
-    \subitem {db\+::\+D\+AO}, \hyperpage{21}
-    \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
+    \subitem {db\+::\+D\+AO}, \hyperpage{22}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{30}
   \item {Review}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{42}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{45}
   \item {rule}
     \subitem {server\+::\+Conti\+Perf\+Test}, \hyperpage{19}
 
@@ -295,18 +333,18 @@
     \subitem {client\+::\+Client}, \hyperpage{17}
   \item {search\+Title}
     \subitem {client\+::\+Client}, \hyperpage{17}
-  \item {server}, \hyperpage{9}
+  \item {server}, \hyperpage{10}
   \item {server.\+Conti\+Perf\+Test}, \hyperpage{18}
   \item {server.\+D\+A\+O\+Mock\+Test}, \hyperpage{23}
   \item {server.\+data}, \hyperpage{10}
   \item {server.\+data.\+Book}, \hyperpage{11}
-  \item {server.\+data.\+Review}, \hyperpage{41}
-  \item {server.\+data.\+User}, \hyperpage{47}
-  \item {server.\+R\+M\+I\+Test}, \hyperpage{44}
+  \item {server.\+data.\+Review}, \hyperpage{44}
+  \item {server.\+data.\+User}, \hyperpage{51}
+  \item {server.\+R\+M\+I\+Test}, \hyperpage{47}
   \item {server.\+remote}, \hyperpage{10}
-  \item {server.\+remote.\+I\+Remote}, \hyperpage{34}
-  \item {server.\+remote.\+Remote}, \hyperpage{38}
-  \item {server.\+Server}, \hyperpage{47}
+  \item {server.\+remote.\+I\+Remote}, \hyperpage{35}
+  \item {server.\+remote.\+Remote}, \hyperpage{40}
+  \item {server.\+Server}, \hyperpage{50}
   \item {server\+::\+Conti\+Perf\+Test}
     \subitem {register\+New\+User\+Test}, \hyperpage{18}
     \subitem {rule}, \hyperpage{19}
@@ -320,22 +358,22 @@
     \subitem {suite}, \hyperpage{23}
     \subitem {test\+Add\+Book\+Invalid\+Remote}, \hyperpage{23}
     \subitem {test\+Add\+Book\+Valid}, \hyperpage{23}
-    \subitem {test\+Register\+User\+Already\+Exists}, \hyperpage{23}
+    \subitem {test\+Register\+User\+Already\+Exists}, \hyperpage{24}
     \subitem {test\+Register\+User\+Correctly}, \hyperpage{24}
   \item {server\+::\+R\+M\+I\+Test}
-    \subitem {book\+Test\+Validation}, \hyperpage{45}
-    \subitem {get\+Things}, \hyperpage{45}
-    \subitem {register\+Existing\+User\+Test}, \hyperpage{45}
-    \subitem {register\+New\+User\+Test}, \hyperpage{45}
-    \subitem {set\+Up}, \hyperpage{45}
-    \subitem {set\+Up\+Client}, \hyperpage{45}
-    \subitem {show\+Books\+In\+Store\+Test}, \hyperpage{45}
-    \subitem {show\+User\+Fail\+Test}, \hyperpage{46}
-    \subitem {show\+Users\+Test}, \hyperpage{46}
-    \subitem {suite}, \hyperpage{46}
-    \subitem {tear\+Down}, \hyperpage{46}
+    \subitem {book\+Test\+Validation}, \hyperpage{48}
+    \subitem {get\+Things}, \hyperpage{48}
+    \subitem {register\+Existing\+User\+Test}, \hyperpage{48}
+    \subitem {register\+New\+User\+Test}, \hyperpage{48}
+    \subitem {set\+Up}, \hyperpage{48}
+    \subitem {set\+Up\+Client}, \hyperpage{48}
+    \subitem {show\+Books\+In\+Store\+Test}, \hyperpage{48}
+    \subitem {show\+User\+Fail\+Test}, \hyperpage{49}
+    \subitem {show\+Users\+Test}, \hyperpage{49}
+    \subitem {suite}, \hyperpage{49}
+    \subitem {tear\+Down}, \hyperpage{49}
   \item {server\+::\+Server}
-    \subitem {main}, \hyperpage{47}
+    \subitem {main}, \hyperpage{50}
   \item {server\+::data\+::\+Book}
     \subitem {add\+Review}, \hyperpage{12}
     \subitem {add\+User}, \hyperpage{12}
@@ -362,168 +400,180 @@
     \subitem {set\+Title}, \hyperpage{15}
     \subitem {to\+String}, \hyperpage{15}
   \item {server\+::data\+::\+Review}
-    \subitem {get\+Book}, \hyperpage{42}
-    \subitem {get\+Comment}, \hyperpage{43}
-    \subitem {get\+Id\+\_\+review}, \hyperpage{43}
-    \subitem {get\+Rating}, \hyperpage{43}
-    \subitem {get\+User}, \hyperpage{43}
-    \subitem {Review}, \hyperpage{42}
-    \subitem {set\+Book}, \hyperpage{43}
-    \subitem {set\+Comment}, \hyperpage{43}
-    \subitem {set\+Id\+\_\+review}, \hyperpage{43}
-    \subitem {set\+Rating}, \hyperpage{44}
-    \subitem {set\+User}, \hyperpage{44}
-    \subitem {to\+String}, \hyperpage{44}
+    \subitem {get\+Book}, \hyperpage{45}
+    \subitem {get\+Comment}, \hyperpage{46}
+    \subitem {get\+Id\+\_\+review}, \hyperpage{46}
+    \subitem {get\+Rating}, \hyperpage{46}
+    \subitem {get\+User}, \hyperpage{46}
+    \subitem {Review}, \hyperpage{45}
+    \subitem {set\+Book}, \hyperpage{46}
+    \subitem {set\+Comment}, \hyperpage{46}
+    \subitem {set\+Id\+\_\+review}, \hyperpage{46}
+    \subitem {set\+Rating}, \hyperpage{47}
+    \subitem {set\+User}, \hyperpage{47}
+    \subitem {to\+String}, \hyperpage{47}
   \item {server\+::data\+::\+User}
-    \subitem {add\+Book}, \hyperpage{48}
-    \subitem {add\+Review}, \hyperpage{48}
-    \subitem {get\+Address}, \hyperpage{48}
-    \subitem {get\+Books}, \hyperpage{48}
-    \subitem {get\+Email}, \hyperpage{49}
-    \subitem {get\+Money}, \hyperpage{49}
-    \subitem {get\+Name}, \hyperpage{49}
-    \subitem {get\+Password}, \hyperpage{49}
-    \subitem {get\+Reviews}, \hyperpage{49}
-    \subitem {get\+Role}, \hyperpage{49}
-    \subitem {remove\+Book}, \hyperpage{49}
-    \subitem {remove\+Review}, \hyperpage{49}
-    \subitem {set\+Address}, \hyperpage{50}
-    \subitem {set\+Email}, \hyperpage{50}
-    \subitem {set\+Money}, \hyperpage{50}
-    \subitem {set\+Name}, \hyperpage{50}
-    \subitem {set\+Password}, \hyperpage{50}
-    \subitem {set\+Role}, \hyperpage{50}
-    \subitem {to\+String}, \hyperpage{50}
-    \subitem {User}, \hyperpage{48}
+    \subitem {add\+Book}, \hyperpage{53}
+    \subitem {add\+Review}, \hyperpage{53}
+    \subitem {get\+Address}, \hyperpage{53}
+    \subitem {get\+Books}, \hyperpage{53}
+    \subitem {get\+Email}, \hyperpage{53}
+    \subitem {get\+Money}, \hyperpage{53}
+    \subitem {get\+Name}, \hyperpage{53}
+    \subitem {get\+Password}, \hyperpage{53}
+    \subitem {get\+Reviews}, \hyperpage{54}
+    \subitem {get\+Role}, \hyperpage{54}
+    \subitem {remove\+Book}, \hyperpage{54}
+    \subitem {remove\+Review}, \hyperpage{54}
+    \subitem {set\+Address}, \hyperpage{54}
+    \subitem {set\+Email}, \hyperpage{54}
+    \subitem {set\+Money}, \hyperpage{54}
+    \subitem {set\+Name}, \hyperpage{55}
+    \subitem {set\+Password}, \hyperpage{55}
+    \subitem {set\+Role}, \hyperpage{55}
+    \subitem {to\+String}, \hyperpage{55}
+    \subitem {User}, \hyperpage{52}
   \item {server\+::remote\+::\+I\+Remote}
-    \subitem {add\+Book}, \hyperpage{35}
-    \subitem {add\+Review}, \hyperpage{35}
-    \subitem {average\+Rating\+By\+Book}, \hyperpage{35}
-    \subitem {average\+Rating\+By\+User}, \hyperpage{35}
-    \subitem {book\+Test}, \hyperpage{35}
-    \subitem {buy\+Book}, \hyperpage{35}
-    \subitem {get\+All\+Reviews}, \hyperpage{36}
-    \subitem {get\+All\+Users}, \hyperpage{36}
-    \subitem {get\+Book\+By\+I\+S\+BN}, \hyperpage{36}
-    \subitem {get\+Book\+By\+Title}, \hyperpage{36}
-    \subitem {get\+Book\+Reviews}, \hyperpage{36}
-    \subitem {get\+Review}, \hyperpage{36}
-    \subitem {get\+User}, \hyperpage{37}
-    \subitem {get\+User\+Reviews}, \hyperpage{37}
-    \subitem {register\+User}, \hyperpage{37}
-    \subitem {show\+Books\+In\+Store}, \hyperpage{37}
+    \subitem {add\+Book}, \hyperpage{35, 36}
+    \subitem {add\+Review}, \hyperpage{36}
+    \subitem {average\+Rating\+By\+Book}, \hyperpage{36}
+    \subitem {average\+Rating\+By\+User}, \hyperpage{36}
+    \subitem {book\+Test}, \hyperpage{36}
+    \subitem {buy\+Book}, \hyperpage{37}
+    \subitem {delete\+Book}, \hyperpage{37}
+    \subitem {delete\+Review}, \hyperpage{37}
+    \subitem {get\+All\+Reviews}, \hyperpage{37}
+    \subitem {get\+All\+Users}, \hyperpage{37}
+    \subitem {get\+Book\+By\+I\+S\+BN}, \hyperpage{37}
+    \subitem {get\+Book\+By\+Title}, \hyperpage{38}
+    \subitem {get\+Book\+Reviews}, \hyperpage{38}
+    \subitem {get\+Review}, \hyperpage{38}
+    \subitem {get\+User}, \hyperpage{38}
+    \subitem {get\+User\+Reviews}, \hyperpage{38}
+    \subitem {register\+User}, \hyperpage{38}
+    \subitem {show\+Books\+In\+Store}, \hyperpage{39}
   \item {server\+::remote\+::\+Remote}
-    \subitem {add\+Book}, \hyperpage{38}
-    \subitem {add\+Review}, \hyperpage{38}
-    \subitem {average\+Rating\+By\+Book}, \hyperpage{39}
-    \subitem {average\+Rating\+By\+User}, \hyperpage{39}
-    \subitem {book\+Test}, \hyperpage{39}
-    \subitem {buy\+Book}, \hyperpage{39}
-    \subitem {get\+All\+Reviews}, \hyperpage{39}
-    \subitem {get\+All\+Users}, \hyperpage{40}
-    \subitem {get\+Book\+By\+I\+S\+BN}, \hyperpage{40}
-    \subitem {get\+Book\+By\+Title}, \hyperpage{40}
-    \subitem {get\+Book\+Reviews}, \hyperpage{40}
-    \subitem {get\+Review}, \hyperpage{40}
-    \subitem {get\+User}, \hyperpage{40}
-    \subitem {get\+User\+Reviews}, \hyperpage{41}
-    \subitem {register\+User}, \hyperpage{41}
-    \subitem {Remote}, \hyperpage{38}
-    \subitem {show\+Books\+In\+Store}, \hyperpage{41}
+    \subitem {add\+Book}, \hyperpage{41}
+    \subitem {add\+Review}, \hyperpage{41}
+    \subitem {average\+Rating\+By\+Book}, \hyperpage{41}
+    \subitem {average\+Rating\+By\+User}, \hyperpage{42}
+    \subitem {book\+Test}, \hyperpage{42}
+    \subitem {buy\+Book}, \hyperpage{42}
+    \subitem {delete\+Book}, \hyperpage{42}
+    \subitem {delete\+Review}, \hyperpage{42}
+    \subitem {get\+All\+Reviews}, \hyperpage{42}
+    \subitem {get\+All\+Users}, \hyperpage{43}
+    \subitem {get\+Book\+By\+I\+S\+BN}, \hyperpage{43}
+    \subitem {get\+Book\+By\+Title}, \hyperpage{43}
+    \subitem {get\+Book\+Reviews}, \hyperpage{43}
+    \subitem {get\+Review}, \hyperpage{43}
+    \subitem {get\+User}, \hyperpage{43}
+    \subitem {get\+User\+Reviews}, \hyperpage{44}
+    \subitem {register\+User}, \hyperpage{44}
+    \subitem {Remote}, \hyperpage{40}
+    \subitem {show\+Books\+In\+Store}, \hyperpage{44}
   \item {set\+Address}
-    \subitem {server\+::data\+::\+User}, \hyperpage{50}
+    \subitem {server\+::data\+::\+User}, \hyperpage{54}
   \item {set\+Author}
     \subitem {server\+::data\+::\+Book}, \hyperpage{14}
   \item {set\+Book}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{43}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{46}
   \item {set\+Category}
     \subitem {server\+::data\+::\+Book}, \hyperpage{14}
   \item {set\+Comment}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{43}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{46}
   \item {set\+Description}
     \subitem {server\+::data\+::\+Book}, \hyperpage{14}
   \item {set\+Edition}
     \subitem {server\+::data\+::\+Book}, \hyperpage{14}
   \item {set\+Email}
-    \subitem {server\+::data\+::\+User}, \hyperpage{50}
+    \subitem {server\+::data\+::\+User}, \hyperpage{54}
   \item {set\+I\+S\+BN}
     \subitem {server\+::data\+::\+Book}, \hyperpage{15}
   \item {set\+Id\+\_\+review}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{43}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{46}
   \item {set\+Img}
     \subitem {server\+::data\+::\+Book}, \hyperpage{14}
   \item {set\+Money}
-    \subitem {server\+::data\+::\+User}, \hyperpage{50}
+    \subitem {server\+::data\+::\+User}, \hyperpage{54}
   \item {set\+Name}
-    \subitem {server\+::data\+::\+User}, \hyperpage{50}
+    \subitem {server\+::data\+::\+User}, \hyperpage{55}
   \item {set\+Password}
-    \subitem {server\+::data\+::\+User}, \hyperpage{50}
+    \subitem {server\+::data\+::\+User}, \hyperpage{55}
   \item {set\+Price}
     \subitem {server\+::data\+::\+Book}, \hyperpage{15}
   \item {set\+Rating}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{44}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{47}
   \item {set\+Role}
-    \subitem {server\+::data\+::\+User}, \hyperpage{50}
+    \subitem {server\+::data\+::\+User}, \hyperpage{55}
   \item {set\+Title}
     \subitem {server\+::data\+::\+Book}, \hyperpage{15}
   \item {set\+Up}
     \subitem {server\+::\+D\+A\+O\+Mock\+Test}, \hyperpage{23}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{45}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{48}
   \item {set\+Up\+Client}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{45}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{48}
   \item {set\+User}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{44}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{47}
   \item {show\+Book}
     \subitem {client\+::\+Client}, \hyperpage{17}
   \item {show\+Book\+By\+I\+S\+BN}
     \subitem {db\+::\+DB}, \hyperpage{27}
-    \subitem {db\+::\+I\+DB}, \hyperpage{33}
+    \subitem {db\+::\+I\+DB}, \hyperpage{34}
   \item {show\+Book\+By\+Title}
     \subitem {db\+::\+DB}, \hyperpage{27}
-    \subitem {db\+::\+I\+DB}, \hyperpage{33}
+    \subitem {db\+::\+I\+DB}, \hyperpage{34}
   \item {show\+Book\+Threads}
     \subitem {server\+::\+Conti\+Perf\+Test}, \hyperpage{18}
   \item {show\+Book\+Threads2}
     \subitem {server\+::\+Conti\+Perf\+Test}, \hyperpage{19}
+  \item {Show\+Books}
+    \subitem {client\+::gui\+::\+Show\+Books}, \hyperpage{50}
   \item {show\+Books}
     \subitem {client\+::\+Client}, \hyperpage{17}
   \item {show\+Books\+In\+Store}
-    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{37}
-    \subitem {server\+::remote\+::\+Remote}, \hyperpage{41}
+    \subitem {server\+::remote\+::\+I\+Remote}, \hyperpage{39}
+    \subitem {server\+::remote\+::\+Remote}, \hyperpage{44}
   \item {show\+Books\+In\+Store\+Test}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{45}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{48}
+  \item {Show\+Description}
+    \subitem {client\+::gui\+::\+Show\+Description}, \hyperpage{51}
   \item {show\+Review}
-    \subitem {db\+::\+DB}, \hyperpage{27}
-    \subitem {db\+::\+I\+DB}, \hyperpage{33}
+    \subitem {db\+::\+DB}, \hyperpage{28}
+    \subitem {db\+::\+I\+DB}, \hyperpage{34}
   \item {show\+User}
-    \subitem {db\+::\+DB}, \hyperpage{27}
+    \subitem {db\+::\+DB}, \hyperpage{28}
     \subitem {db\+::\+I\+DB}, \hyperpage{34}
   \item {show\+User\+Fail\+Test}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{46}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{49}
   \item {show\+Users\+Test}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{46}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{49}
   \item {sign\+Up}
     \subitem {client\+::\+Client}, \hyperpage{18}
-  \item {src/main/java/client/\+Client.\+java}, \hyperpage{51}
-  \item {src/main/java/db/\+D\+A\+O.\+java}, \hyperpage{51}
-  \item {src/main/java/db/\+D\+B.\+java}, \hyperpage{51}
-  \item {src/main/java/db/\+I\+D\+A\+O.\+java}, \hyperpage{52}
-  \item {src/main/java/db/\+I\+D\+B.\+java}, \hyperpage{52}
-  \item {src/main/java/server/\+Server.\+java}, \hyperpage{53}
-  \item {src/main/java/server/data/\+Book.\+java}, \hyperpage{52}
-  \item {src/main/java/server/data/\+Review.\+java}, \hyperpage{52}
-  \item {src/main/java/server/data/\+User.\+java}, \hyperpage{53}
+  \item {src/main/java/client/\+Client.\+java}, \hyperpage{57}
+  \item {src/main/java/client/gui/\+Log\+In.\+java}, \hyperpage{57}
+  \item {src/main/java/client/gui/\+Show\+Books.\+java}, \hyperpage{57}
+  \item {src/main/java/client/gui/\+Show\+Description.\+java}, 
+		\hyperpage{58}
+  \item {src/main/java/db/\+D\+A\+O.\+java}, \hyperpage{58}
+  \item {src/main/java/db/\+D\+B.\+java}, \hyperpage{58}
+  \item {src/main/java/db/\+I\+D\+A\+O.\+java}, \hyperpage{58}
+  \item {src/main/java/db/\+I\+D\+B.\+java}, \hyperpage{59}
+  \item {src/main/java/server/\+Server.\+java}, \hyperpage{60}
+  \item {src/main/java/server/data/\+Book.\+java}, \hyperpage{59}
+  \item {src/main/java/server/data/\+Review.\+java}, \hyperpage{59}
+  \item {src/main/java/server/data/\+User.\+java}, \hyperpage{59}
   \item {src/main/java/server/remote/\+I\+Remote.\+java}, 
-		\hyperpage{53}
-  \item {src/main/java/server/remote/\+Remote.\+java}, \hyperpage{53}
+		\hyperpage{60}
+  \item {src/main/java/server/remote/\+Remote.\+java}, \hyperpage{60}
   \item {src/test/java/server/\+Conti\+Perf\+Test.\+java}, 
-		\hyperpage{54}
+		\hyperpage{60}
   \item {src/test/java/server/\+D\+A\+O\+Mock\+Test.\+java}, 
-		\hyperpage{54}
-  \item {src/test/java/server/\+R\+M\+I\+Test.\+java}, \hyperpage{54}
+		\hyperpage{61}
+  \item {src/test/java/server/\+R\+M\+I\+Test.\+java}, \hyperpage{61}
   \item {store\+Book}
-    \subitem {db\+::\+D\+AO}, \hyperpage{21}
-    \subitem {db\+::\+I\+D\+AO}, \hyperpage{29}
+    \subitem {db\+::\+D\+AO}, \hyperpage{22}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{30}
     \subitem {server\+::\+Conti\+Perf\+Test}, \hyperpage{19}
   \item {store\+Book\+Duration}
     \subitem {server\+::\+Conti\+Perf\+Test}, \hyperpage{19}
@@ -533,24 +583,24 @@
   \item {suite}
     \subitem {server\+::\+Conti\+Perf\+Test}, \hyperpage{19}
     \subitem {server\+::\+D\+A\+O\+Mock\+Test}, \hyperpage{23}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{46}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{49}
 
   \indexspace
 
   \item {tear\+Down}
-    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{46}
+    \subitem {server\+::\+R\+M\+I\+Test}, \hyperpage{49}
   \item {test\+Add\+Book\+Invalid\+Remote}
     \subitem {server\+::\+D\+A\+O\+Mock\+Test}, \hyperpage{23}
   \item {test\+Add\+Book\+Valid}
     \subitem {server\+::\+D\+A\+O\+Mock\+Test}, \hyperpage{23}
   \item {test\+Register\+User\+Already\+Exists}
-    \subitem {server\+::\+D\+A\+O\+Mock\+Test}, \hyperpage{23}
+    \subitem {server\+::\+D\+A\+O\+Mock\+Test}, \hyperpage{24}
   \item {test\+Register\+User\+Correctly}
     \subitem {server\+::\+D\+A\+O\+Mock\+Test}, \hyperpage{24}
   \item {to\+String}
     \subitem {server\+::data\+::\+Book}, \hyperpage{15}
-    \subitem {server\+::data\+::\+Review}, \hyperpage{44}
-    \subitem {server\+::data\+::\+User}, \hyperpage{50}
+    \subitem {server\+::data\+::\+Review}, \hyperpage{47}
+    \subitem {server\+::data\+::\+User}, \hyperpage{55}
 
   \indexspace
 
@@ -559,11 +609,11 @@
     \subitem {db\+::\+I\+D\+AO}, \hyperpage{30}
   \item {update\+Review}
     \subitem {db\+::\+D\+AO}, \hyperpage{22}
-    \subitem {db\+::\+I\+D\+AO}, \hyperpage{30}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{31}
   \item {update\+User}
     \subitem {db\+::\+D\+AO}, \hyperpage{22}
-    \subitem {db\+::\+I\+D\+AO}, \hyperpage{30}
+    \subitem {db\+::\+I\+D\+AO}, \hyperpage{31}
   \item {User}
-    \subitem {server\+::data\+::\+User}, \hyperpage{48}
+    \subitem {server\+::data\+::\+User}, \hyperpage{52}
 
 \end{theindex}

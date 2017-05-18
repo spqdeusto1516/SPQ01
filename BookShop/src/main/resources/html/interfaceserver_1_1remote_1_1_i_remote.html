@@ -130,10 +130,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4a53942c94debc835f1817b2753722de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11c915f0c22728be1898d46a78ac92cf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#a11c915f0c22728be1898d46a78ac92cf">averageRatingByUser</a> (String email)  throws RemoteException</td></tr>
 <tr class="separator:a11c915f0c22728be1898d46a78ac92cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bcc3db515d7b6f420449bcf6367298c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#a2bcc3db515d7b6f420449bcf6367298c">deleteReview</a> (int id_review)  throws RemoteException</td></tr>
+<tr class="separator:a2bcc3db515d7b6f420449bcf6367298c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64967dff86a9c603d0c9eb815f222df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#ac64967dff86a9c603d0c9eb815f222df">deleteBook</a> (int ISBN)  throws RemoteException</td></tr>
+<tr class="separator:ac64967dff86a9c603d0c9eb815f222df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec137a7435ccced1aa7350b2fd2a1947"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceserver_1_1remote_1_1_i_remote.html#aec137a7435ccced1aa7350b2fd2a1947">addBook</a> (int ISBN, String title, String category, String edition, String author, double price, String description, String img)  throws RemoteException</td></tr>
+<tr class="separator:aec137a7435ccced1aa7350b2fd2a1947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3b11a0e182873e445ec8546394e36373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b11a0e182873e445ec8546394e36373">&#9670;&nbsp;</a></span>addBook()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b11a0e182873e445ec8546394e36373">&#9670;&nbsp;</a></span>addBook() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,6 +155,72 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a496fcecd259c1b527ffba62fc452afee">server.remote.Remote</a>.</p>
+
+</div>
+</div>
+<a id="aec137a7435ccced1aa7350b2fd2a1947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec137a7435ccced1aa7350b2fd2a1947">&#9670;&nbsp;</a></span>addBook() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean server.remote.IRemote.addBook </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ISBN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>edition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>author</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>price</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws RemoteException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#afd807d8743560106c61a01094795c9cb">server.remote.Remote</a>.</p>
 
 </div>
 </div>
@@ -274,6 +346,46 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#af5d1abb1730b8db14ab9dd476df158d8">server.remote.Remote</a>.</p>
+
+</div>
+</div>
+<a id="ac64967dff86a9c603d0c9eb815f222df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac64967dff86a9c603d0c9eb815f222df">&#9670;&nbsp;</a></span>deleteBook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void server.remote.IRemote.deleteBook </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ISBN</em></td><td>)</td>
+          <td> throws RemoteException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a013ab36d40de824c6ad7a48f59d12684">server.remote.Remote</a>.</p>
+
+</div>
+</div>
+<a id="a2bcc3db515d7b6f420449bcf6367298c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bcc3db515d7b6f420449bcf6367298c">&#9670;&nbsp;</a></span>deleteReview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void server.remote.IRemote.deleteReview </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id_review</em></td><td>)</td>
+          <td> throws RemoteException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#ab80b5addc446fe5f1ecf9a522794ff4f">server.remote.Remote</a>.</p>
 
 </div>
 </div>
