@@ -153,10 +153,6 @@ public class ShowBooksAdmin {
 				frame.dispose();
 				frame.revalidate();
 				frame.repaint();
-				//for(i = 0)
-				//bookTableModel.setValueAt(, rowIndex, columnIndex);
-				//((client.gui.ReviewTableModel) m).setValues(server);
-				
 			}
 		});
 		
@@ -342,14 +338,7 @@ public class ShowBooksAdmin {
 				} catch (RemoteException e1) {
 					e1.printStackTrace();
 				}
-				//((AbstractTableModel) bookTableModel).fireTableDataChanged();
-				
-//				frame.invalidate();
-//				frame.validate();
-//				frame.repaint();
-				
-				//((BookTableModel) bookTableModel).setDataEmpty();
-				//((BookTableModel) bookTableModel).setValues(server);
+				ShowBooksAdmin refresh = new ShowBooksAdmin(email);
 				
 			}
 		});

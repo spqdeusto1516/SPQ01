@@ -396,7 +396,6 @@ public class ShowDescriptionAdmin implements ActionListener {
 				
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					// TODO Borrar data y poner los datos + nuevo libro en Jtable
 					int selectedRow = reviewsTable.getSelectedRow();
 					try {
 						server.deleteReview(server.getBookReviews(title).get(selectedRow).getId_review());
@@ -405,7 +404,7 @@ public class ShowDescriptionAdmin implements ActionListener {
 					} catch (RemoteException e1) {
 						e1.printStackTrace();
 					}
-					
+					ShowDescriptionAdmin refresh = new ShowDescriptionAdmin(title, email);
 				}
 			});
 		

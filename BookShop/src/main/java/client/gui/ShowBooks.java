@@ -298,9 +298,6 @@ class BookTableModel  extends AbstractTableModel {
 		data[row][col] = value;
         fireTableCellUpdated(row, col);
 	}
-	public void setDataEmpty() {
-		data = null;
-	}
 	
 	public void setValues(IRemote server) {
 		try {
