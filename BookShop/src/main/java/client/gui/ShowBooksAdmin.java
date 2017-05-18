@@ -149,7 +149,6 @@ public class ShowBooksAdmin {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Borrar data y poner los datos + nuevo libro en Jtable
 				addBook = new AddBooks(email);
 				frame.dispose();
 				frame.revalidate();
@@ -237,13 +236,15 @@ public class ShowBooksAdmin {
 		listOfBooks.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				//Select a row to see the description window
-				listOfBooks.getSelectedRow();
-				String title = (String) bookTableModel.getValueAt(listOfBooks.getSelectedRow(), 0);
-				showDescriptionAdmin = new ShowDescriptionAdmin(title, email);
-				frame.dispose();
-				frame.revalidate();
-				frame.repaint();				
+				if (e.getClickCount() == 2) {
+					//Select a row to see the description window
+					listOfBooks.getSelectedRow();
+					String title = (String) bookTableModel.getValueAt(listOfBooks.getSelectedRow(), 0);
+					showDescriptionAdmin = new ShowDescriptionAdmin(title, email);
+					frame.dispose();
+					frame.revalidate();
+					frame.repaint();	
+				}
 			}
 		});
 		
@@ -332,7 +333,23 @@ public class ShowBooksAdmin {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO
+				// TODO Borrar data y poner los datos + nuevo libro en Jtable
+				int selectedRow = listOfBooks.getSelectedRow();
+				try {
+					server.deleteBook(Integer.parseInt((String) bookTableModel.getValueAt(selectedRow, 2)));
+				} catch (NumberFormatException e1) {
+					e1.printStackTrace();
+				} catch (RemoteException e1) {
+					e1.printStackTrace();
+				}
+				//((AbstractTableModel) bookTableModel).fireTableDataChanged();
+				
+//				frame.invalidate();
+//				frame.validate();
+//				frame.repaint();
+				
+				//((BookTableModel) bookTableModel).setDataEmpty();
+				//((BookTableModel) bookTableModel).setValues(server);
 				
 			}
 		});

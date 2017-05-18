@@ -144,7 +144,7 @@ public class AddBooks {
 		bookPanel.add(lblDescription);
 
 		txtDescription = new JTextPane();
-		txtDescription.setBounds(100, 230, 200, 30);
+		txtDescription.setBounds(100, 230, 400, 40);
 		bookPanel.add(txtDescription);
 
 		lblPrice = new JLabel("Price: ");
@@ -155,8 +155,6 @@ public class AddBooks {
 		txtPrice.setColumns(10);
 		txtPrice.setBounds(100, 280, 150, 23);
 		bookPanel.add(txtPrice);
-		//price = Double.valueOf(txtPrice.getText());
-		price = 0;
 
 		lblISBN = new JLabel("ISBN: ");
 		lblISBN.setBounds(25, 330, 152, 23);
@@ -166,8 +164,6 @@ public class AddBooks {
 		txtISBN.setColumns(10);
 		txtISBN.setBounds(100, 330, 150, 23);
 		bookPanel.add(txtISBN);
-		//ISBN = Integer.parseInt(txtISBN.getText());
-		ISBN = 5;
 /*
 		lblImage = new JLabel("Image");
 		lblImage.setBounds(300, 140, 150, 23);
@@ -187,8 +183,8 @@ public class AddBooks {
 				category = txtCategory.getText();
 				edition = txtEdition.getText();
 				description = txtDescription.getText();
-				//price
-				//ISBN
+				price = Double.valueOf(txtPrice.getText());
+				ISBN = Integer.parseInt(txtISBN.getText());
 				//img
 				
 				try {
@@ -203,13 +199,5 @@ public class AddBooks {
 				
 			}
 		});
-
-
-
-
-
-
-
-
 	}
 }

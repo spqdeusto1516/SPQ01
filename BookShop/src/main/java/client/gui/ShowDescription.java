@@ -229,6 +229,18 @@ public class ShowDescription {
 			btnBuy = new JButton("BUY");
 			btnBuy.setBounds(818, 81, 89, 23);
 			bookPanel.add(btnBuy);
+			btnBuy.addActionListener(new ActionListener() {
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					try {
+						server.buyBook(email, title);
+					} catch (RemoteException e1) {
+						e1.printStackTrace();
+					}
+					JOptionPane.showMessageDialog (null, "You have buy "+title, "InfoBox", JOptionPane.INFORMATION_MESSAGE);
+				}
+			});
 			
 			reviewPanel = new JPanel();
 			reviewPanel.setBounds(0, 337, 975, 285);
@@ -256,7 +268,6 @@ public class ShowDescription {
 						txtReview.setText("");
 						cmbRate.setSelectedIndex(0);
 					} catch (RemoteException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 					
