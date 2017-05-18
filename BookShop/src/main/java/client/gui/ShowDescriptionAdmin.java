@@ -93,7 +93,6 @@ public class ShowDescriptionAdmin implements ActionListener {
 		
 		private JButton btnsaveChanges;
 		
-		private static boolean role;
 		private static String email;
 		private static String title;
 		private static IRemote server;
@@ -105,7 +104,7 @@ public class ShowDescriptionAdmin implements ActionListener {
 			EventQueue.invokeLater(new Runnable() {
 				public void run() {
 					try {
-						ShowDescriptionAdmin window = new ShowDescriptionAdmin(title, email, role);
+						ShowDescriptionAdmin window = new ShowDescriptionAdmin(title, email);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -116,7 +115,7 @@ public class ShowDescriptionAdmin implements ActionListener {
 		/**
 		 * Create the application.
 		 */
-		public ShowDescriptionAdmin(String title, String email, boolean role) {
+		public ShowDescriptionAdmin(String title, String email) {
 			
 			// Create and set up the window.
 			frame = new JFrame("Book Shop");
@@ -134,7 +133,6 @@ public class ShowDescriptionAdmin implements ActionListener {
 				e.printStackTrace();
 			}
 			this.email = email;
-			this.role = role;
 			this.title = title;
 			initializeShowDescription();
 		}
@@ -348,7 +346,7 @@ public class ShowDescriptionAdmin implements ActionListener {
 							
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					ShowBooksAdmin showBooksAdmin = new ShowBooksAdmin(email, role);
+					ShowBooksAdmin showBooksAdmin = new ShowBooksAdmin(email);
 					frame.dispose();
 					frame.revalidate();
 					frame.repaint();
@@ -359,9 +357,10 @@ public class ShowDescriptionAdmin implements ActionListener {
 			btnRemove.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e){
 					//TODO Llamar al metodo remote para borrar de la bd
-					//server.deletereview(idReview);
+					//server.deletereview();
 					//((client.gui.ReviewTableModel) m).setValues(server);
 					/*
+					//TODO Estas seguro?? si --> borrar
 					BORRAR???
 					try{	
 						fSelect = reviewsTable.getSelectedRow();
@@ -379,7 +378,7 @@ public class ShowDescriptionAdmin implements ActionListener {
 						System.out.println(a);
 					}*/
 				}
-				});
+			});
 			btnRemove.setBounds(699, 190, 89, 23);
 			reviewPanel.add(btnRemove);
 		

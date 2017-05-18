@@ -81,7 +81,7 @@ public class ShowDescription {
 		private JComboBox<Integer> cmbRate;
 		private JLabel lCmbRate;
 		
-		private boolean role;
+		
 		private String email;
 		private static String title;
 		private static IRemote server;
@@ -108,7 +108,7 @@ public class ShowDescription {
 		 * @param user 
 		 * @throws RemoteException 
 		 */
-		public ShowDescription(String title, String email, boolean role) throws RemoteException {
+		public ShowDescription(String title, String email) throws RemoteException {
 			
 			
 			// Create and set up the window.
@@ -127,7 +127,6 @@ public class ShowDescription {
 				e.printStackTrace();
 			}
 			this.email = email;
-			this.role = role;
 			this.title = title;
 			initializeShowDescription();
 		}
@@ -301,7 +300,7 @@ public class ShowDescription {
 				
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					ShowBooks showBooks = new ShowBooks(email, role);
+					ShowBooks showBooks = new ShowBooks(email);
 					frame.dispose();
 					frame.revalidate();
 					frame.repaint();

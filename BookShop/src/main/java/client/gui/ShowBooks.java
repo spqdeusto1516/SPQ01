@@ -31,8 +31,7 @@ public class ShowBooks {
 	private JScrollPane scrollListBooks;
 	private JButton btnRefresh;
 	private JButton btnLogOut;
-	
-	private static boolean role;
+
 	private static String email;
 	private LogIn logIn;
 	IRemote server;
@@ -44,7 +43,7 @@ public class ShowBooks {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ShowBooks window = new ShowBooks(email, role);
+					ShowBooks window = new ShowBooks(email);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -55,7 +54,7 @@ public class ShowBooks {
 	/**
 	 * Create the application.
 	 */
-	public ShowBooks(String email, boolean role) {
+	public ShowBooks(String email) {
 		
 		// Create and set up the window.
 		frame = new JFrame("Book Shop");
@@ -73,14 +72,13 @@ public class ShowBooks {
 			e.printStackTrace();
 		}
 		this.email = email;
-		this.role = role;
-		initializebookSearch(role);
+		initializebookSearch();
 	}
 	
 	/**
 	 * Initialize the contents of the bookSearch JPanel 
 	 */
-	private void initializebookSearch(boolean role){
+	private void initializebookSearch(){
 		
 		// initialization of items used
 		String[] Menu = {"Title", "Author", "ISBN"};
@@ -172,19 +170,15 @@ public class ShowBooks {
 				listOfBooks.getSelectedRow();
 				String title = (String) BookTableModel.getValueAt(listOfBooks.getSelectedRow(), 0);
 				
-				if (role == false){  //User
-					try {
-						showDescription = new ShowDescription(title, email, role);
-						frame.dispose();
-						frame.revalidate();
-						frame.repaint();
-					} catch (RemoteException e1) {
-						e1.printStackTrace();
-					}
-				}else{  //true --> admin
-					//TODO coger un book y pasarselo a la ventana para q lo muestre
-					//showDescriptionAdmin = new ShowDescriptionAdmin();
-				}				
+				try {
+					showDescription = new ShowDescription(title, email);
+					frame.dispose();
+					frame.revalidate();
+					frame.repaint();
+				} catch (RemoteException e1) {
+					e1.printStackTrace();
+				}
+
 			}
 		});
 		

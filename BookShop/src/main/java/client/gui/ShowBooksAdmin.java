@@ -49,15 +49,16 @@ public class ShowBooksAdmin {
 	private JTextField textSearchUser;
 	private JButton btnSearch;
 	private JTable listOfBooks;
+	TableModel bookTableModel;
 	private JScrollPane scrollListBooks;
 	private JButton btnRefresh;
 	private JButton btnAddBook;
 	private JButton btnDeleteBook;
 	private JButton btnLogOut;
 	
-	private static boolean role;
 	private static String email;
 	private LogIn logIn;
+	private AddBooks addBook;
 	IRemote server;
 	
 	/**
@@ -67,7 +68,7 @@ public class ShowBooksAdmin {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ShowBooksAdmin window = new ShowBooksAdmin(email, role);
+					ShowBooksAdmin window = new ShowBooksAdmin(email);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -78,7 +79,7 @@ public class ShowBooksAdmin {
 	/**
 	 * Create the application.
 	 */
-	public ShowBooksAdmin(String email, boolean role) {
+	public ShowBooksAdmin(String email) {
 		
 		// Create and set up the window.
 		frame = new JFrame("Book Shop");
@@ -96,14 +97,34 @@ public class ShowBooksAdmin {
 			e.printStackTrace();
 		}
 		this.email = email;
-		this.role = role;
-		initializebookSearchAdmin(role);
+		
+		initializebookSearchAdmin();
+	}
+	
+	public ShowBooksAdmin() {
+		
+		// Create and set up the window.
+		frame = new JFrame("Book Shop");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		// Display the window.
+		frame.setBounds(0, 0, 991, 661);
+		frame.setVisible(true);
+		frame.setBackground(SystemColor.window);
+		
+		// Initialize the contents of the frame.
+		try {
+			server = new Remote();
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		initializebookSearchAdmin();
 	}
 	
 	/**
 	 * Initialize the contents of the bookSearch JPanel 
 	 */
-	private void initializebookSearchAdmin(boolean role){
+	private void initializebookSearchAdmin(){
 		
 		// initialization of items used
 		String[] Menu = {"Title", "Author", "ISBN"};
@@ -128,8 +149,13 @@ public class ShowBooksAdmin {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO
-				//server.deletereview(idReview);
+				// TODO Borrar data y poner los datos + nuevo libro en Jtable
+				addBook = new AddBooks(email);
+				frame.dispose();
+				frame.revalidate();
+				frame.repaint();
+				//for(i = 0)
+				//bookTableModel.setValueAt(, rowIndex, columnIndex);
 				//((client.gui.ReviewTableModel) m).setValues(server);
 				
 			}
@@ -190,10 +216,10 @@ public class ShowBooksAdmin {
 		// JTable with all the available books
 		
 		// Create the JTable and the table model 
-		TableModel BookTableModel = new BookTableModel();
-		((client.gui.BookTableModel) BookTableModel).setValues(server);
-		TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(BookTableModel);
-		listOfBooks = new JTable(BookTableModel);
+		bookTableModel = new BookTableModel();
+		((client.gui.BookTableModel) bookTableModel).setValues(server);
+		TableRowSorter<TableModel> sorter = new TableRowSorter<TableModel>(bookTableModel);
+		listOfBooks = new JTable(bookTableModel);
 		listOfBooks.setRowHeight(40);
 		listOfBooks.setRowSorter(sorter);
 		listOfBooks.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -213,8 +239,8 @@ public class ShowBooksAdmin {
 			public void mouseClicked(MouseEvent e) {
 				//Select a row to see the description window
 				listOfBooks.getSelectedRow();
-				String title = (String) BookTableModel.getValueAt(listOfBooks.getSelectedRow(), 0);
-				showDescriptionAdmin = new ShowDescriptionAdmin(title, email, role);
+				String title = (String) bookTableModel.getValueAt(listOfBooks.getSelectedRow(), 0);
+				showDescriptionAdmin = new ShowDescriptionAdmin(title, email);
 				frame.dispose();
 				frame.revalidate();
 				frame.repaint();				

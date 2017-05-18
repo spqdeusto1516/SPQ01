@@ -201,16 +201,15 @@ public class LogIn {
 				} catch (RemoteException e) {
 					logger.info(e.getMessage());
 				}
-				System.out.println("-------------------------------ROLE: " + role);
 				//Admin and user go to the same window
 				if(role == false){
-					showbooks = new ShowBooks(userEmail, role);
+					showbooks = new ShowBooks(userEmail);
 					frame.setVisible(false);
 					frame.dispose();
 					frame.revalidate();
 					frame.repaint();
 				}else{
-					showbooksAdmin = new ShowBooksAdmin(userEmail, role);
+					showbooksAdmin = new ShowBooksAdmin(userEmail);
 					frame.setVisible(false);
 					frame.dispose();
 					frame.revalidate();
@@ -370,7 +369,7 @@ public class LogIn {
 						logger.info(e.getMessage());
 					}
 					//User go to the same window
-					showbooks = new ShowBooks(userEmail, role);
+					showbooks = new ShowBooks(userEmail);
 					frame.dispose();
 					frame.revalidate();
 					frame.repaint();
