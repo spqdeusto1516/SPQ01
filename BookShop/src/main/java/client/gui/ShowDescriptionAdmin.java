@@ -188,7 +188,7 @@ public class ShowDescriptionAdmin implements ActionListener {
 			bookPanel.add(lblRank);
 			
 			
-			txtTitle = new JTextField();
+			txtTitle = new JTextField(title);
 			txtTitle.setEditable(false);
 			txtTitle.setBounds(415, 59, 177, 23);
 			bookPanel.add(txtTitle);
@@ -203,7 +203,12 @@ public class ShowDescriptionAdmin implements ActionListener {
 			bookPanel.add(this.btnEditTitle);
 			this.btnEditTitle.addActionListener(this);
 			
-			txtAuthor = new JTextField();
+			try {
+				txtAuthor = new JTextField(server.getBookByTitle(title).getAuthor());
+			} catch (RemoteException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
 			txtAuthor.setEditable(false);
 			txtAuthor.setColumns(10);
 			txtAuthor.setBounds(415, 94, 177, 23);
@@ -218,7 +223,12 @@ public class ShowDescriptionAdmin implements ActionListener {
 			bookPanel.add(this.btnEditAuthor);
 			this.btnEditAuthor.addActionListener(this);
 			
-			txtCategory = new JTextField();
+			try {
+				txtCategory = new JTextField(server.getBookByTitle(title).getCategory());
+			} catch (RemoteException e4) {
+				// TODO Auto-generated catch block
+				e4.printStackTrace();
+			}
 			txtCategory.setEditable(false);
 			txtCategory.setColumns(10);
 			txtCategory.setBounds(415, 128, 177, 23);
@@ -233,7 +243,12 @@ public class ShowDescriptionAdmin implements ActionListener {
 			bookPanel.add(this.btnEditCategory);
 			this.btnEditCategory.addActionListener (this);
 			
-			txtEdition = new JTextField();
+			try {
+				txtEdition = new JTextField(server.getBookByTitle(title).getEdition());
+			} catch (RemoteException e3) {
+				// TODO Auto-generated catch block
+				e3.printStackTrace();
+			}
 			txtEdition.setEditable(false);
 			txtEdition.setColumns(10);
 			txtEdition.setBounds(415, 162, 177, 23);
@@ -248,7 +263,12 @@ public class ShowDescriptionAdmin implements ActionListener {
 			bookPanel.add(this.btnEditEdition);
 			this.btnEditEdition.addActionListener(this);
 			
-			txtPrice = new JTextField();
+			try {
+				txtPrice = new JTextField(""+server.getBookByTitle(title).getPrice());
+			} catch (RemoteException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
 			txtPrice.setEditable(false);
 			txtPrice.setColumns(10);
 			txtPrice.setBounds(716, 80, 92, 23);
@@ -258,7 +278,12 @@ public class ShowDescriptionAdmin implements ActionListener {
 			lblISBN.setBounds(357, 196, 45, 23);
 			bookPanel.add(lblISBN);
 			
-			txtISBN = new JTextField();
+			try {
+				txtISBN = new JTextField("" + server.getBookByTitle(title).getISBN());
+			} catch (RemoteException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
 			txtISBN.setEditable(false);
 			txtISBN.setColumns(10);
 			txtISBN.setBounds(415, 196, 177, 23);
@@ -273,7 +298,12 @@ public class ShowDescriptionAdmin implements ActionListener {
 			bookPanel.add(this.btnEditISBN);
 			this.btnEditISBN.addActionListener(this);
 			
-			txtRank = new JTextField();
+			try {
+				txtRank = new JTextField("" + server.averageRatingByBook(title)+ " /10");
+			} catch (RemoteException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
 			txtRank.setEditable(false);
 			txtRank.setColumns(10);
 			txtRank.setBounds(716, 136, 92, 23);
@@ -290,6 +320,12 @@ public class ShowDescriptionAdmin implements ActionListener {
 			
 			txtDescription = new JTextPane();
 			txtDescription.setEditable(false);
+			try {
+				txtDescription.setText(server.getBookByTitle(title).getDescription());
+			} catch (RemoteException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
 			txtDescription.setBounds(357, 251, 460, 58);
 			bookPanel.add(txtDescription);
 			
@@ -354,33 +390,24 @@ public class ShowDescriptionAdmin implements ActionListener {
 			});
 			
 			btnRemove = new JButton("Remove");
-			btnRemove.addActionListener(new ActionListener(){
-				public void actionPerformed(ActionEvent e){
-					//TODO Llamar al metodo remote para borrar de la bd
-					//server.deletereview();
-					//((client.gui.ReviewTableModel) m).setValues(server);
-					/*
-					//TODO Estas seguro?? si --> borrar
-					BORRAR???
-					try{	
-						fSelect = reviewsTable.getSelectedRow();
-						if(fSelect == -1){
-							JOptionPane.showMessageDialog(null, "You must select the comment to delete", "Warning", JOptionPane.WARNING_MESSAGE );
-						}else {
-							resp = JOptionPane.showConfirmDialog(null, "�Are you sure you want to delete the comment?", "Remove", JOptionPane.YES_NO_OPTION);
-							if (fSelect >= 0){
-								m = (ReviewTableModel) reviewsTable.getModel();
-								m.removeRow(fSelect);
-							}
-						}
-					} catch (Exception a){
-						JOptionPane.showMessageDialog (null , "Error! The row has not been deleted");
-						System.out.println(a);
-					}*/
-				}
-			});
 			btnRemove.setBounds(699, 190, 89, 23);
 			reviewPanel.add(btnRemove);
+			btnRemove.addActionListener(new ActionListener() {
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					// TODO Borrar data y poner los datos + nuevo libro en Jtable
+					int selectedRow = reviewsTable.getSelectedRow();
+					try {
+						server.deleteReview(server.getBookReviews(title).get(selectedRow).getId_review());
+					} catch (NumberFormatException e1) {
+						e1.printStackTrace();
+					} catch (RemoteException e1) {
+						e1.printStackTrace();
+					}
+					
+				}
+			});
 		
 			btnsaveChanges = new JButton("Save Changes");
 			btnsaveChanges.addActionListener(new ActionListener(){
