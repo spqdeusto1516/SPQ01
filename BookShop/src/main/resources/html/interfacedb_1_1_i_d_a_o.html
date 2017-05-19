@@ -143,6 +143,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Eliminates a book from the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>the book to eliminate </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a65f6a816c5f6dfb07178daf490f56fdc">db.DAO</a>.</p>
 
@@ -163,6 +169,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Eliminates a Review from the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>the review to eliminate </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#aa033f83155deb72d59492bcb2b8e4d3a">db.DAO</a>.</p>
 
@@ -182,6 +194,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>get all the Books of the Database </p><dl class="section return"><dt>Returns</dt><dd>A List&lt;Book&gt; of all users </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a82a8c60ccd0de2f70b69bc36d29aeef8">db.DAO</a>.</p>
 
@@ -201,6 +214,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>get all the Reviews of the Database </p><dl class="section return"><dt>Returns</dt><dd>A List&lt;Review&gt; of all users </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a4df79c7d44b050aa55451db2ecf342f6">db.DAO</a>.</p>
 
@@ -220,6 +234,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>get all the Users of the Database </p><dl class="section return"><dt>Returns</dt><dd>A List&lt;User&gt; of all users </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a3b627b7177990799fd02e0c38b8adb70">db.DAO</a>.</p>
 
@@ -240,6 +255,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a Book from the database by its ISBN </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ISBN</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Book </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#ade778f907d0a74dc27c4fc03f8709815">db.DAO</a>.</p>
 
@@ -260,6 +282,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a Book from the database by its title </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>of the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The book </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a1f8580da682f8a8af4896c491c3b6611">db.DAO</a>.</p>
 
@@ -280,6 +309,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a Review from the database by its ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_review</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Review </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#ae43e182fae8ee7028db6ff17c2d5768f">db.DAO</a>.</p>
 
@@ -300,6 +336,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a User form the database by its email </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>Email of the user you want to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The User </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a6da084ffd9b0da23acba9dc68e747303">db.DAO</a>.</p>
 
@@ -320,6 +363,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Store a Book in the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>the Book you want to store </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true of false to tell if it worked </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a036246b8124d7ac8a36e3eaafd3eb81a">db.DAO</a>.</p>
 
@@ -340,6 +390,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Store a user in the dataBase </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>User you want to store </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true of false to tell if it worked </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a1600c5d7d28eb225fc7c244fdfb16150">db.DAO</a>.</p>
 
@@ -360,6 +417,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Updates the row in the database of a given Book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true of false to tell if it worked </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a4ea10c177ef93a3084ed74b38556adca">db.DAO</a>.</p>
 
@@ -380,6 +444,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Updates the row in the database of a given Review </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>the review to update </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true of false to tell if it worked </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#ab73940ac7600902ea7d52bcd041a9c6e">db.DAO</a>.</p>
 
@@ -400,6 +471,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Updates the row in the database of a given User </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>User you are updating </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true of false to tell if it worked </dd></dl>
 
 <p>Implemented in <a class="el" href="classdb_1_1_d_a_o.html#a5cd4462deb77065c2d12471cd73b3ec8">db.DAO</a>.</p>
 

@@ -153,6 +153,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>adds a book to the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">book</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false to tell if it worked </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a496fcecd259c1b527ffba62fc452afee">server.remote.Remote</a>.</p>
 
@@ -219,6 +232,26 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates new book in the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ISBN</td><td>unique identifier </td></tr>
+    <tr><td class="paramname">title</td><td>String of the book </td></tr>
+    <tr><td class="paramname">category</td><td>genre of book </td></tr>
+    <tr><td class="paramname">edition</td><td></td></tr>
+    <tr><td class="paramname">author</td><td></td></tr>
+    <tr><td class="paramname">price</td><td></td></tr>
+    <tr><td class="paramname">description</td><td></td></tr>
+    <tr><td class="paramname">img</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true of false to tell if it worked </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#afd807d8743560106c61a01094795c9cb">server.remote.Remote</a>.</p>
 
@@ -255,6 +288,21 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>add a new review to a book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>the book to add a review </td></tr>
+    <tr><td class="paramname">r</td><td>the Review </td></tr>
+    <tr><td class="paramname">u</td><td>the User who made the review </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true of false to tell if it worked </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#af94163cf6d5c40cfc880eb517d56aa48">server.remote.Remote</a>.</p>
 
@@ -275,6 +323,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get the average Rating of a book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>of the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a double </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#afd253ddc199a34a1e05317878f957cc9">server.remote.Remote</a>.</p>
 
@@ -295,6 +356,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get the average Rating given by a User </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a double </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a67fc7aeeb889a80cda6e1a5f83858c2a">server.remote.Remote</a>.</p>
 
@@ -314,6 +388,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Test </p><dl class="section return"><dt>Returns</dt><dd>the test book </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a38bce20fa59064fe8d970164d6155435">server.remote.Remote</a>.</p>
 
@@ -344,6 +425,20 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Buy a book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>of the user </td></tr>
+    <tr><td class="paramname">book_title</td><td>title of the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true of false to tell if it worked </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#af5d1abb1730b8db14ab9dd476df158d8">server.remote.Remote</a>.</p>
 
@@ -364,6 +459,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Eliminates a Book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ISBN</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a013ab36d40de824c6ad7a48f59d12684">server.remote.Remote</a>.</p>
 
@@ -384,6 +491,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Eliminates a Review </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_review</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#ab80b5addc446fe5f1ecf9a522794ff4f">server.remote.Remote</a>.</p>
 
@@ -403,6 +522,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>gives you a all the Review in the database </p><dl class="section return"><dt>Returns</dt><dd>a list&lt;Review&gt; with all the books in the database </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a22538e64b45f5f93237b455100243b44">server.remote.Remote</a>.</p>
 
@@ -422,6 +548,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>gives you a all the users in the database </p><dl class="section return"><dt>Returns</dt><dd>a list&lt;User&gt; with all the users in the database </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a3d41acc8ab7328be2082573542758f07">server.remote.Remote</a>.</p>
 
@@ -442,6 +575,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a book by its ISBN </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ISBN</td><td>unique book ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a Book with the selected ISBN </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a36ffc6f95ea75ad7d393ea296e1bc0cc">server.remote.Remote</a>.</p>
 
@@ -462,6 +608,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a Book by its title </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>name of the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a Book with the selected Title </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a560427fc017e15f04e12bd880e6f086e">server.remote.Remote</a>.</p>
 
@@ -482,6 +641,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get all the Reviews of a Book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>of the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List&lt;Review&gt; </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a501e5c5fe847917c9615f0772864a147">server.remote.Remote</a>.</p>
 
@@ -502,6 +674,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a Review by its ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_review</td><td>unique number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a Review </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a98bd7181568c637a6cbcc0b72ebb9f95">server.remote.Remote</a>.</p>
 
@@ -522,6 +707,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a User by its Email </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a User </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#abef8350014445d8f2d5ffb4c088e82b6">server.remote.Remote</a>.</p>
 
@@ -542,6 +740,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get all the Reviews a User Made </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>of the user </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a List&lt;Review&gt; </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a396c96a6b8802c2b4658ecccd37e84db">server.remote.Remote</a>.</p>
 
@@ -578,6 +789,21 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>creates a new user </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td></td></tr>
+    <tr><td class="paramname">password</td><td></td></tr>
+    <tr><td class="paramname">role</td><td>(true admin; false user) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false to tell if it worked </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#ad3a381123e93a8e5ec26d84c4ff8b92f">server.remote.Remote</a>.</p>
 
@@ -597,6 +823,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>gives you a all the books in the database </p><dl class="section return"><dt>Returns</dt><dd>a list&lt;Book&gt; with all the books in the database </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classserver_1_1remote_1_1_remote.html#a131873c01bc4fe829dd7d2385c89ca87">server.remote.Remote</a>.</p>
 

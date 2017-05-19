@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['book',['Book',['../classserver_1_1data_1_1_book.html',1,'server::data']]]
+  ['addbooks',['AddBooks',['../classclient_1_1gui_1_1_add_books.html',1,'client::gui']]]
 ];

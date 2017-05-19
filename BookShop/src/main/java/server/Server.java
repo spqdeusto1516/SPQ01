@@ -36,11 +36,11 @@ public class Server{
 
 	
 
-			Review r1 = new Review( "Review 1",56.6);
-			Review r2 = new Review( "Review 2",28.6);
-			Review r3 = new Review( "Review 3",100.6);
-			Review r4 = new Review( "Review 4",100.6);
-			Review r5 = new Review( "Review 5",100.6);
+			Review r1 = new Review( "Review 1",6.6);
+			Review r2 = new Review( "Review 2",8.6);
+			Review r3 = new Review( "Review 3",7.6);
+			Review r4 = new Review( "Review 4",3.6);
+			Review r5 = new Review( "Review 5",5.6);
 			
 			Book b4 =new Book(1,"Book1","pabloaut",0.2);
 			Book b1 =new Book(2,"Book2","maria",0.2);

@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "client.gui.AddBooks", "classclient_1_1gui_1_1_add_books.html", null ],
     [ "client.Client", "classclient_1_1_client.html", null ],
     [ "server.ContiPerfTest", "classserver_1_1_conti_perf_test.html", null ],
     [ "server.DAOMockTest", "classserver_1_1_d_a_o_mock_test.html", null ],
@@ -16,7 +17,11 @@ var hierarchy =
     [ "server.RMITest", "classserver_1_1_r_m_i_test.html", null ],
     [ "server.Server", "classserver_1_1_server.html", null ],
     [ "client.gui.ShowBooks", "classclient_1_1gui_1_1_show_books.html", null ],
+    [ "client.gui.ShowBooksAdmin", "classclient_1_1gui_1_1_show_books_admin.html", null ],
     [ "client.gui.ShowDescription", "classclient_1_1gui_1_1_show_description.html", null ],
+    [ "ActionListener", null, [
+      [ "client.gui.ShowDescriptionAdmin", "classclient_1_1gui_1_1_show_description_admin.html", null ]
+    ] ],
     [ "Serializable", null, [
       [ "server.data.Book", "classserver_1_1data_1_1_book.html", null ],
       [ "server.data.Review", "classserver_1_1data_1_1_review.html", null ],

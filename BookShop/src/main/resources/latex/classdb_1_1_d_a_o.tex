@@ -57,6 +57,11 @@ void \hyperlink{classdb_1_1_d_a_o_a65f6a816c5f6dfb07178daf490f56fdc}{delete\+Boo
 \subsubsection{\texorpdfstring{delete\+Book()}{deleteBook()}}
 {\footnotesize\ttfamily void db.\+D\+A\+O.\+delete\+Book (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{b }\end{DoxyParamCaption})}
 
+Eliminates a book from the database 
+\begin{DoxyParams}{Parameters}
+{\em b} & the book to eliminate \\
+\hline
+\end{DoxyParams}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a1d6c98ea794177d7fd12c4a028ec29c1}{db.\+I\+D\+AO}.
@@ -67,6 +72,11 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a1d6c98ea794177d7fd12c4a028ec29c1}
 \subsubsection{\texorpdfstring{delete\+Review()}{deleteReview()}}
 {\footnotesize\ttfamily void db.\+D\+A\+O.\+delete\+Review (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_review}{Review}}]{r }\end{DoxyParamCaption})}
 
+Eliminates a Review from the database 
+\begin{DoxyParams}{Parameters}
+{\em r} & the review to eliminate \\
+\hline
+\end{DoxyParams}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a78ca80bc2f2b660edeb9eddd8ca9a4b7}{db.\+I\+D\+AO}.
@@ -77,6 +87,9 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a78ca80bc2f2b660edeb9eddd8ca9a4b7}
 \subsubsection{\texorpdfstring{get\+All\+Books()}{getAllBooks()}}
 {\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_book}{Book}$>$ db.\+D\+A\+O.\+get\+All\+Books (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+get all the Books of the Database \begin{DoxyReturn}{Returns}
+A List$<$\+Book$>$ of all users 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a75a5ebcd7c3421ae7cccc8e2f3b2d9f9}{db.\+I\+D\+AO}.
@@ -87,6 +100,9 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a75a5ebcd7c3421ae7cccc8e2f3b2d9f9}
 \subsubsection{\texorpdfstring{get\+All\+Reviews()}{getAllReviews()}}
 {\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ db.\+D\+A\+O.\+get\+All\+Reviews (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+get all the Reviews of the Database \begin{DoxyReturn}{Returns}
+A List$<$\+Review$>$ of all users 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a3d9625d7e5426aad3c2e70fd0174e5f0}{db.\+I\+D\+AO}.
@@ -97,6 +113,9 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a3d9625d7e5426aad3c2e70fd0174e5f0}
 \subsubsection{\texorpdfstring{get\+All\+Users()}{getAllUsers()}}
 {\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_user}{User}$>$ db.\+D\+A\+O.\+get\+All\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+get all the Users of the Database \begin{DoxyReturn}{Returns}
+A List$<$\+User$>$ of all users 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a88b60729d9517ca9aa31b7db7ae07aee}{db.\+I\+D\+AO}.
@@ -107,6 +126,14 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a88b60729d9517ca9aa31b7db7ae07aee}
 \subsubsection{\texorpdfstring{retrieve\+Book()}{retrieveBook()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} db.\+D\+A\+O.\+retrieve\+Book (\begin{DoxyParamCaption}\item[{int}]{I\+S\+BN }\end{DoxyParamCaption})}
 
+Get a Book from the database by its I\+S\+BN 
+\begin{DoxyParams}{Parameters}
+{\em I\+S\+BN} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Book 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a1457ecf91799eaacd17cd3259826fc36}{db.\+I\+D\+AO}.
@@ -117,6 +144,14 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a1457ecf91799eaacd17cd3259826fc36}
 \subsubsection{\texorpdfstring{retrieve\+Book\+By\+Parameter()}{retrieveBookByParameter()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} db.\+D\+A\+O.\+retrieve\+Book\+By\+Parameter (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption})}
 
+Get a Book from the database by its title 
+\begin{DoxyParams}{Parameters}
+{\em title} & of the book \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The book 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a4c5eda35bfbba1b0a994efe00f99a544}{db.\+I\+D\+AO}.
@@ -127,6 +162,14 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a4c5eda35bfbba1b0a994efe00f99a544}
 \subsubsection{\texorpdfstring{retrieve\+Review()}{retrieveReview()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_review}{Review} db.\+D\+A\+O.\+retrieve\+Review (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+review }\end{DoxyParamCaption})}
 
+Get a Review from the database by its ID 
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+review} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Review 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a53fd20610d94f7c5f0f713dad7528c26}{db.\+I\+D\+AO}.
@@ -137,6 +180,14 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a53fd20610d94f7c5f0f713dad7528c26}
 \subsubsection{\texorpdfstring{retrieve\+User()}{retrieveUser()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_user}{User} db.\+D\+A\+O.\+retrieve\+User (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
 
+Get a User form the database by its email 
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the user you want to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The User 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_ad00bb5255d0badadbf5244799c3b708f}{db.\+I\+D\+AO}.
@@ -147,6 +198,14 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_ad00bb5255d0badadbf5244799c3b708f}
 \subsubsection{\texorpdfstring{store\+Book()}{storeBook()}}
 {\footnotesize\ttfamily boolean db.\+D\+A\+O.\+store\+Book (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{b }\end{DoxyParamCaption})}
 
+Store a Book in the database 
+\begin{DoxyParams}{Parameters}
+{\em b} & the Book you want to store \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of false to tell if it worked 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a39851dc1e1f05af40afeb76a5f8be99a}{db.\+I\+D\+AO}.
@@ -157,6 +216,14 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a39851dc1e1f05af40afeb76a5f8be99a}
 \subsubsection{\texorpdfstring{store\+User()}{storeUser()}}
 {\footnotesize\ttfamily boolean db.\+D\+A\+O.\+store\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption})}
 
+Store a user in the data\+Base 
+\begin{DoxyParams}{Parameters}
+{\em u} & User you want to store \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of false to tell if it worked 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a5b1f408c9a25305e977e962faa38b026}{db.\+I\+D\+AO}.
@@ -167,6 +234,14 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a5b1f408c9a25305e977e962faa38b026}
 \subsubsection{\texorpdfstring{update\+Book()}{updateBook()}}
 {\footnotesize\ttfamily boolean db.\+D\+A\+O.\+update\+Book (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{b }\end{DoxyParamCaption})}
 
+Updates the row in the database of a given Book 
+\begin{DoxyParams}{Parameters}
+{\em b} & the book \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of false to tell if it worked 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a202354d7a3e1231687d543e82c15a6f5}{db.\+I\+D\+AO}.
@@ -175,8 +250,16 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a202354d7a3e1231687d543e82c15a6f5}
 \index{db\+::\+D\+AO@{db\+::\+D\+AO}!update\+Review@{update\+Review}}
 \index{update\+Review@{update\+Review}!db\+::\+D\+AO@{db\+::\+D\+AO}}
 \subsubsection{\texorpdfstring{update\+Review()}{updateReview()}}
-{\footnotesize\ttfamily boolean db.\+D\+A\+O.\+update\+Review (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_review}{Review}}]{review }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily boolean db.\+D\+A\+O.\+update\+Review (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_review}{Review}}]{r }\end{DoxyParamCaption})}
 
+Updates the row in the database of a given Review 
+\begin{DoxyParams}{Parameters}
+{\em r} & the review to update \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of false to tell if it worked 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_a7288e76ee3ce667c0d0d7ecaeef0d94e}{db.\+I\+D\+AO}.
@@ -187,6 +270,14 @@ Implements \hyperlink{interfacedb_1_1_i_d_a_o_a7288e76ee3ce667c0d0d7ecaeef0d94e}
 \subsubsection{\texorpdfstring{update\+User()}{updateUser()}}
 {\footnotesize\ttfamily boolean db.\+D\+A\+O.\+update\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption})}
 
+Updates the row in the database of a given User 
+\begin{DoxyParams}{Parameters}
+{\em u} & User you are updating \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of false to tell if it worked 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{interfacedb_1_1_i_d_a_o_adbc5f00b7bcdffb6692367a3c9564193}{db.\+I\+D\+AO}.

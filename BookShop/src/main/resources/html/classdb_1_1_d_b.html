@@ -191,6 +191,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Adds a new book to the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>the book to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false to tell if it worked </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a63904b26597f651ea6acbd03384e0afb">db.IDB</a>.</p>
 
@@ -218,7 +225,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classserver_1_1data_1_1_user.html">User</a>&#160;</td>
-          <td class="paramname"><em>u</em>&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -227,6 +234,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Adds a new Review to the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>the book its from </td></tr>
+    <tr><td class="paramname">r</td><td>the review </td></tr>
+    <tr><td class="paramname">user</td><td>the user that wrote it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false to tell if it worked </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a00a453c6d4fc604615f5a173d86600fc">db.IDB</a>.</p>
 
@@ -247,6 +263,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gets the average rating of a book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>of the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a double the average rating </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a4d23da2e383e7fe0638089fb2686b6c3">db.IDB</a>.</p>
 
@@ -267,6 +290,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gets the average rating given by a user </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>of the user </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a double the average rating </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a5bb2209c976ab0a7f20606ed5df0e0cf">db.IDB</a>.</p>
 
@@ -297,6 +327,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Allow the User to buy a selected book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>Email of the buying user </td></tr>
+    <tr><td class="paramname">book_title</td><td>the title of the book to buy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false to tell if it worked </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a2ac985a90e8369fab676950b3fb4c2bc">db.IDB</a>.</p>
 
@@ -317,6 +355,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Eliminates a book from the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ISBN</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false to tell if it worked </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a8fa065455c75f33b9713b8d5058a0e30">db.IDB</a>.</p>
 
@@ -337,6 +382,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Eliminates a Review from the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_review</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false to tell if it worked </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a37810242fa48895f21f790ef6a367225">db.IDB</a>.</p>
 
@@ -356,6 +408,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>get all the Books of the Database </p><dl class="section return"><dt>Returns</dt><dd>A List&lt;Book&gt; of all users </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#abd0d41674bbcdd524a3ca2403504bf25">db.IDB</a>.</p>
 
@@ -375,6 +428,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>get all the Reviews of the Database </p><dl class="section return"><dt>Returns</dt><dd>A List&lt;Review&gt; of all users </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a08f60c8b923599c650f04b4192d00d55">db.IDB</a>.</p>
 
@@ -394,6 +448,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>get all the Users of the Database </p><dl class="section return"><dt>Returns</dt><dd>A List&lt;User&gt; of all users </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a39ad15619eae3d0ec652e1849e3ebd50">db.IDB</a>.</p>
 
@@ -414,6 +469,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get all the reviews of a book </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>of the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A List&lt;Review&gt; of a given book </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a6b8fda48df77b542b8713bc4f035bccf">db.IDB</a>.</p>
 
@@ -434,6 +496,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get all the reviews a User wrote </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>of the user </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A List&lt;Review&gt; of a given user </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#afd7ee8924344c13a64a1363d1a295771">db.IDB</a>.</p>
 
@@ -470,6 +539,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>creates a new user </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td></td></tr>
+    <tr><td class="paramname">password</td><td></td></tr>
+    <tr><td class="paramname">role</td><td>(true admin; false user) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false to tell if it worked </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a92913d9357ef22978adc35d3fb9d3590">db.IDB</a>.</p>
 
@@ -508,6 +586,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a book from the database by its ISBN </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ISBN</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Book </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#aed305f6c36ff140084636a8eded479db">db.IDB</a>.</p>
 
@@ -528,6 +613,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a Book from the database by its title </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>of the book </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The book </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a6418edaf7c25f99f0422c0000db521fa">db.IDB</a>.</p>
 
@@ -548,6 +640,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a Review from the database by its ID </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_review</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Review </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a6c44c3135f07ec6dbef84ecc6fe4f90f">db.IDB</a>.</p>
 
@@ -568,6 +667,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get a User form the database by its email </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>Email of the user you want to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The User </dd></dl>
 
 <p>Implements <a class="el" href="interfacedb_1_1_i_d_b.html#a8dca82226b1c27ceb4b765259546513d">db.IDB</a>.</p>
 

@@ -22,8 +22,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_book_8java.html",
-"interfaceserver_1_1remote_1_1_i_remote.html#a5ecb918e7d2650346770f3ff5676c25b"
+"_add_books_8java.html",
+"interfacedb_1_1_i_d_b.html#aed305f6c36ff140084636a8eded479db"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

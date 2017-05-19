@@ -56,6 +56,19 @@ boolean \hyperlink{interfaceserver_1_1remote_1_1_i_remote_aec137a7435ccced1aa735
 \subsubsection{\texorpdfstring{add\+Book()}{addBook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily boolean server.\+remote.\+I\+Remote.\+add\+Book (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{book }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+adds a book to the database 
+\begin{DoxyParams}{Parameters}
+{\em book} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false to tell if it worked 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a496fcecd259c1b527ffba62fc452afee}{server.\+remote.\+Remote}.
@@ -66,6 +79,33 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a496fcecd259c1b527ffb
 \subsubsection{\texorpdfstring{add\+Book()}{addBook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily boolean server.\+remote.\+I\+Remote.\+add\+Book (\begin{DoxyParamCaption}\item[{int}]{I\+S\+BN,  }\item[{String}]{title,  }\item[{String}]{category,  }\item[{String}]{edition,  }\item[{String}]{author,  }\item[{double}]{price,  }\item[{String}]{description,  }\item[{String}]{img }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Creates new book in the database 
+\begin{DoxyParams}{Parameters}
+{\em I\+S\+BN} & unique identifier \\
+\hline
+{\em title} & String of the book \\
+\hline
+{\em category} & genre of book \\
+\hline
+{\em edition} & \\
+\hline
+{\em author} & \\
+\hline
+{\em price} & \\
+\hline
+{\em description} & \\
+\hline
+{\em img} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of false to tell if it worked 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_afd807d8743560106c61a01094795c9cb}{server.\+remote.\+Remote}.
@@ -76,6 +116,23 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_afd807d8743560106c61a
 \subsubsection{\texorpdfstring{add\+Review()}{addReview()}}
 {\footnotesize\ttfamily boolean server.\+remote.\+I\+Remote.\+add\+Review (\begin{DoxyParamCaption}\item[{\hyperlink{classserver_1_1data_1_1_book}{Book}}]{b,  }\item[{\hyperlink{classserver_1_1data_1_1_review}{Review}}]{r,  }\item[{\hyperlink{classserver_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+add a new review to a book 
+\begin{DoxyParams}{Parameters}
+{\em b} & the book to add a review \\
+\hline
+{\em r} & the Review \\
+\hline
+{\em u} & the User who made the review \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of false to tell if it worked 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_af94163cf6d5c40cfc880eb517d56aa48}{server.\+remote.\+Remote}.
@@ -86,6 +143,19 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_af94163cf6d5c40cfc880
 \subsubsection{\texorpdfstring{average\+Rating\+By\+Book()}{averageRatingByBook()}}
 {\footnotesize\ttfamily double server.\+remote.\+I\+Remote.\+average\+Rating\+By\+Book (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Get the average Rating of a book 
+\begin{DoxyParams}{Parameters}
+{\em title} & of the book \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_afd253ddc199a34a1e05317878f957cc9}{server.\+remote.\+Remote}.
@@ -96,6 +166,19 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_afd253ddc199a34a1e053
 \subsubsection{\texorpdfstring{average\+Rating\+By\+User()}{averageRatingByUser()}}
 {\footnotesize\ttfamily double server.\+remote.\+I\+Remote.\+average\+Rating\+By\+User (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Get the average Rating given by a User 
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a67fc7aeeb889a80cda6e1a5f83858c2a}{server.\+remote.\+Remote}.
@@ -106,6 +189,14 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a67fc7aeeb889a80cda6e
 \subsubsection{\texorpdfstring{book\+Test()}{bookTest()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} server.\+remote.\+I\+Remote.\+book\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Test \begin{DoxyReturn}{Returns}
+the test book 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a38bce20fa59064fe8d970164d6155435}{server.\+remote.\+Remote}.
@@ -116,6 +207,21 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a38bce20fa59064fe8d97
 \subsubsection{\texorpdfstring{buy\+Book()}{buyBook()}}
 {\footnotesize\ttfamily boolean server.\+remote.\+I\+Remote.\+buy\+Book (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{book\+\_\+title }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Buy a book 
+\begin{DoxyParams}{Parameters}
+{\em email} & of the user \\
+\hline
+{\em book\+\_\+title} & title of the book \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of false to tell if it worked 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_af5d1abb1730b8db14ab9dd476df158d8}{server.\+remote.\+Remote}.
@@ -126,6 +232,16 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_af5d1abb1730b8db14ab9
 \subsubsection{\texorpdfstring{delete\+Book()}{deleteBook()}}
 {\footnotesize\ttfamily void server.\+remote.\+I\+Remote.\+delete\+Book (\begin{DoxyParamCaption}\item[{int}]{I\+S\+BN }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Eliminates a Book 
+\begin{DoxyParams}{Parameters}
+{\em I\+S\+BN} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a013ab36d40de824c6ad7a48f59d12684}{server.\+remote.\+Remote}.
@@ -136,6 +252,16 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a013ab36d40de824c6ad7
 \subsubsection{\texorpdfstring{delete\+Review()}{deleteReview()}}
 {\footnotesize\ttfamily void server.\+remote.\+I\+Remote.\+delete\+Review (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+review }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Eliminates a Review 
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+review} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_ab80b5addc446fe5f1ecf9a522794ff4f}{server.\+remote.\+Remote}.
@@ -146,6 +272,14 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_ab80b5addc446fe5f1ecf
 \subsubsection{\texorpdfstring{get\+All\+Reviews()}{getAllReviews()}}
 {\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ server.\+remote.\+I\+Remote.\+get\+All\+Reviews (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+gives you a all the Review in the database \begin{DoxyReturn}{Returns}
+a list$<$\+Review$>$ with all the books in the database 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a22538e64b45f5f93237b455100243b44}{server.\+remote.\+Remote}.
@@ -156,6 +290,14 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a22538e64b45f5f93237b
 \subsubsection{\texorpdfstring{get\+All\+Users()}{getAllUsers()}}
 {\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_user}{User}$>$ server.\+remote.\+I\+Remote.\+get\+All\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+gives you a all the users in the database \begin{DoxyReturn}{Returns}
+a list$<$\+User$>$ with all the users in the database 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a3d41acc8ab7328be2082573542758f07}{server.\+remote.\+Remote}.
@@ -166,6 +308,19 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a3d41acc8ab7328be2082
 \subsubsection{\texorpdfstring{get\+Book\+By\+I\+S\+B\+N()}{getBookByISBN()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} server.\+remote.\+I\+Remote.\+get\+Book\+By\+I\+S\+BN (\begin{DoxyParamCaption}\item[{int}]{I\+S\+BN }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Get a book by its I\+S\+BN 
+\begin{DoxyParams}{Parameters}
+{\em I\+S\+BN} & unique book ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Book with the selected I\+S\+BN 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a36ffc6f95ea75ad7d393ea296e1bc0cc}{server.\+remote.\+Remote}.
@@ -176,6 +331,19 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a36ffc6f95ea75ad7d393
 \subsubsection{\texorpdfstring{get\+Book\+By\+Title()}{getBookByTitle()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_book}{Book} server.\+remote.\+I\+Remote.\+get\+Book\+By\+Title (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Get a Book by its title 
+\begin{DoxyParams}{Parameters}
+{\em title} & name of the book \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Book with the selected Title 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a560427fc017e15f04e12bd880e6f086e}{server.\+remote.\+Remote}.
@@ -186,6 +354,19 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a560427fc017e15f04e12
 \subsubsection{\texorpdfstring{get\+Book\+Reviews()}{getBookReviews()}}
 {\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ server.\+remote.\+I\+Remote.\+get\+Book\+Reviews (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Get all the Reviews of a Book 
+\begin{DoxyParams}{Parameters}
+{\em title} & of the book \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List$<$\+Review$>$ 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a501e5c5fe847917c9615f0772864a147}{server.\+remote.\+Remote}.
@@ -196,6 +377,19 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a501e5c5fe847917c9615
 \subsubsection{\texorpdfstring{get\+Review()}{getReview()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_review}{Review} server.\+remote.\+I\+Remote.\+get\+Review (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+review }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Get a Review by its ID 
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+review} & unique number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Review 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a98bd7181568c637a6cbcc0b72ebb9f95}{server.\+remote.\+Remote}.
@@ -206,6 +400,19 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a98bd7181568c637a6cbc
 \subsubsection{\texorpdfstring{get\+User()}{getUser()}}
 {\footnotesize\ttfamily \hyperlink{classserver_1_1data_1_1_user}{User} server.\+remote.\+I\+Remote.\+get\+User (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Get a User by its Email 
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a User 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_abef8350014445d8f2d5ffb4c088e82b6}{server.\+remote.\+Remote}.
@@ -216,6 +423,19 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_abef8350014445d8f2d5f
 \subsubsection{\texorpdfstring{get\+User\+Reviews()}{getUserReviews()}}
 {\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_review}{Review}$>$ server.\+remote.\+I\+Remote.\+get\+User\+Reviews (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+Get all the Reviews a User Made 
+\begin{DoxyParams}{Parameters}
+{\em email} & of the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a List$<$\+Review$>$ 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a396c96a6b8802c2b4658ecccd37e84db}{server.\+remote.\+Remote}.
@@ -226,6 +446,23 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a396c96a6b8802c2b4658
 \subsubsection{\texorpdfstring{register\+User()}{registerUser()}}
 {\footnotesize\ttfamily boolean server.\+remote.\+I\+Remote.\+register\+User (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{password,  }\item[{boolean}]{role }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+creates a new user 
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+{\em password} & \\
+\hline
+{\em role} & (true admin; false user) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false to tell if it worked 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_ad3a381123e93a8e5ec26d84c4ff8b92f}{server.\+remote.\+Remote}.
@@ -236,6 +473,14 @@ Implemented in \hyperlink{classserver_1_1remote_1_1_remote_ad3a381123e93a8e5ec26
 \subsubsection{\texorpdfstring{show\+Books\+In\+Store()}{showBooksInStore()}}
 {\footnotesize\ttfamily List$<$\hyperlink{classserver_1_1data_1_1_book}{Book}$>$ server.\+remote.\+I\+Remote.\+show\+Books\+In\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+gives you a all the books in the database \begin{DoxyReturn}{Returns}
+a list$<$\+Book$>$ with all the books in the database 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classserver_1_1remote_1_1_remote_a131873c01bc4fe829dd7d2385c89ca87}{server.\+remote.\+Remote}.

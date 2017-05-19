@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.10)  16 MAY 2017 01:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.10)  19 MAY 2017 11:37
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -1197,8 +1197,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 11.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 19.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 19.
+(Font)              scaled to size 7.19995pt on input line 24.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1210,11 +1210,13 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 60.
  [2] [3] [4]
-[5] [6] [7] [8] [9])
+[5] [6] [7] [8] [9] [10])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [10]
+ [11] [12
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 138.
 
 Chapter 1.
@@ -1234,7 +1236,6 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
-
 
 ] [2
 
@@ -1271,8 +1272,13 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 ) (namespacedb.tex) (namespaceserver.tex [9])
 (namespaceserver_1_1data.tex) (namespaceserver_1_1remote.tex) [10]
 Chapter 6.
-(classserver_1_1data_1_1_book.tex
-<classserver_1_1data_1_1_book.pdf, id=1699, 501.875pt x 343.2825pt>
+(classclient_1_1gui_1_1_add_books.tex
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 19.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 20.
+) (classserver_1_1data_1_1_book.tex
+<classserver_1_1data_1_1_book.pdf, id=1832, 501.875pt x 343.2825pt>
 File: classserver_1_1data_1_1_book.pdf Graphic file (type pdf)
 
 <use classserver_1_1data_1_1_book.pdf>
@@ -1281,9 +1287,7 @@ Package pdftex.def Info: classserver_1_1data_1_1_book.pdf used on input line 6.
 (pdftex.def)             Requested size: 83.18869pt x 56.9055pt.
  [11
 
- <./classserver_1_1data_1_1_book.pdf>]
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 68.
+]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 7.19995pt on input line 68.
 
@@ -1291,76 +1295,525 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
 (Font)              using `T1/pcr/m/n' instead on input line 68.
 
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 69.
-[12] [13] [14]) (classclient_1_1_client.tex [15] [16] [17])
-(classserver_1_1_conti_perf_test.tex [18]) (classdb_1_1_d_a_o.tex
-<classdb_1_1_d_a_o.pdf, id=1878, 501.875pt x 582.175pt>
+[12 <./classserver_1_1data_1_1_book.pdf>] [13] [14] [15])
+(classclient_1_1_client.tex [16] [17]) (classserver_1_1_conti_perf_test.tex
+[18] [19]) (classdb_1_1_d_a_o.tex
+<classdb_1_1_d_a_o.pdf, id=2020, 501.875pt x 582.175pt>
 File: classdb_1_1_d_a_o.pdf Graphic file (type pdf)
 
 <use classdb_1_1_d_a_o.pdf>
 Package pdftex.def Info: classdb_1_1_d_a_o.pdf used on input line 6.
 (pdftex.def)             Requested size: 49.0494pt x 56.9055pt.
- [19] [20 <./classdb_1_1_d_a_o.pdf>] [21])
-(classserver_1_1_d_a_o_mock_test.tex [22] [23]) (classdb_1_1_d_b.tex
-<classdb_1_1_d_b.pdf, id=2007, 501.875pt x 692.5875pt>
+ [20 <./classdb_1_1_d_a_o.pdf>] [21]
+Underfull \hbox (badness 10000) detected at line 90
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 103
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 116
+[][][]
+ []
+
+[22]
+Underfull \hbox (badness 10000) detected at line 134
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 152
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 170
+[][][]
+ []
+
+[23]
+Underfull \hbox (badness 10000) detected at line 188
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 206
+[][][]
+ []
+
+[24]
+Underfull \hbox (badness 10000) detected at line 224
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 242
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 260
+[][][]
+ []
+
+[25]
+Underfull \hbox (badness 10000) detected at line 278
+[][][]
+ []
+
+) (classserver_1_1_d_a_o_mock_test.tex [26]) (classdb_1_1_d_b.tex
+<classdb_1_1_d_b.pdf, id=2169, 501.875pt x 692.5875pt>
 File: classdb_1_1_d_b.pdf Graphic file (type pdf)
 
 <use classdb_1_1_d_b.pdf>
 Package pdftex.def Info: classdb_1_1_d_b.pdf used on input line 6.
 (pdftex.def)             Requested size: 41.23059pt x 56.9055pt.
- [24 <./classdb_1_1_d_b.pdf>] [25] [26] [27])
-(interfacedb_1_1_i_d_a_o.tex
-<interfacedb_1_1_i_d_a_o.pdf, id=2132, 501.875pt x 582.175pt>
+ [27 <./classdb_1_1_d_b.pdf>] [28]
+Underfull \hbox (badness 10000) detected at line 81
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 103
+[][][]
+ []
+
+[29]
+Underfull \hbox (badness 10000) detected at line 121
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 159
+[][][]
+ []
+
+[30]
+Underfull \hbox (badness 10000) detected at line 177
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 195
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 208
+[][][]
+ []
+
+[31]
+Underfull \hbox (badness 10000) detected at line 221
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 234
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 252
+[][][]
+ []
+
+[32]
+Underfull \hbox (badness 10000) detected at line 270
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 292
+[][][]
+ []
+
+[33]
+Underfull \hbox (badness 10000) detected at line 316
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 334
+[][][]
+ []
+
+[34]
+Underfull \hbox (badness 10000) detected at line 352
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 370
+[][][]
+ []
+
+) (interfacedb_1_1_i_d_a_o.tex
+<interfacedb_1_1_i_d_a_o.pdf, id=2324, 501.875pt x 582.175pt>
 File: interfacedb_1_1_i_d_a_o.pdf Graphic file (type pdf)
 
 <use interfacedb_1_1_i_d_a_o.pdf>
 Package pdftex.def Info: interfacedb_1_1_i_d_a_o.pdf used on input line 6.
 (pdftex.def)             Requested size: 49.0494pt x 56.9055pt.
- [28 <./interfacedb_1_1_i_d_a_o.pdf>] [29]
-[30]) (interfacedb_1_1_i_d_b.tex
-<interfacedb_1_1_i_d_b.pdf, id=2210, 501.875pt x 692.5875pt>
+ [35 <./interfacedb_1_1_i_d_a_o.pdf>]
+Underfull \hbox (badness 10000) detected at line 79
+[][][]
+ []
+
+[36]
+Underfull \hbox (badness 10000) detected at line 92
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 105
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 123
+[][][]
+ []
+
+[37]
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 159
+[][][]
+ []
+
+[38]
+Underfull \hbox (badness 10000) detected at line 177
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 195
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 213
+[][][]
+ []
+
+[39]
+Underfull \hbox (badness 10000) detected at line 231
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 249
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 267
+[][][]
+ []
+
+) (interfacedb_1_1_i_d_b.tex [40]
+<interfacedb_1_1_i_d_b.pdf, id=2426, 501.875pt x 692.5875pt>
 File: interfacedb_1_1_i_d_b.pdf Graphic file (type pdf)
 
 <use interfacedb_1_1_i_d_b.pdf>
 Package pdftex.def Info: interfacedb_1_1_i_d_b.pdf used on input line 6.
 (pdftex.def)             Requested size: 41.23059pt x 56.9055pt.
- [31 <./interfacedb_1_1_i_d_b.pdf>] [32]
-[33]) (interfaceserver_1_1remote_1_1_i_remote.tex
-<interfaceserver_1_1remote_1_1_i_remote.pdf, id=2290, 501.875pt x 274.02374pt>
+
+Underfull \hbox (badness 10000) detected at line 60
+[][][]
+ []
+
+[41 <./interfacedb_1_1_i_d_b.pdf>]
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 100
+[][][]
+ []
+
+[42]
+Underfull \hbox (badness 10000) detected at line 118
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 138
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 156
+[][][]
+ []
+
+[43]
+Underfull \hbox (badness 10000) detected at line 174
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 187
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 200
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 213
+[][][]
+ []
+
+[44]
+Underfull \hbox (badness 10000) detected at line 231
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 249
+[][][]
+ []
+
+[45]
+Underfull \hbox (badness 10000) detected at line 271
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 289
+[][][]
+ []
+
+[46]
+Underfull \hbox (badness 10000) detected at line 307
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 325
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 343
+[][][]
+ []
+
+) (interfaceserver_1_1remote_1_1_i_remote.tex [47]
+<interfaceserver_1_1remote_1_1_i_remote.pdf, id=2537, 501.875pt x 274.02374pt>
 File: interfaceserver_1_1remote_1_1_i_remote.pdf Graphic file (type pdf)
 
 <use interfaceserver_1_1remote_1_1_i_remote.pdf>
 Package pdftex.def Info: interfaceserver_1_1remote_1_1_i_remote.pdf used on inp
 ut line 6.
 (pdftex.def)             Requested size: 104.21753pt x 56.9055pt.
- [34] [35 <./interfaceserver_1_1remote_1_1_i_remote.pdf>] [36] [37] [38]) (clas
-sclient_1_1gui_1_1_log_in.tex)
+ [48 <./interfaceserver_1_1remote_1_1_i_remote.pdf>]
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 101
+[][][]
+ []
+
+[49]
+Underfull \hbox (badness 10000) detected at line 128
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 151
+[][][]
+ []
+
+[50]
+Underfull \hbox (badness 10000) detected at line 174
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 192
+[][][]
+ []
+
+[51]
+Underfull \hbox (badness 10000) detected at line 217
+[][][]
+ []
+
+[52]
+Underfull \hbox (badness 10000) detected at line 275
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 293
+[][][]
+ []
+
+[53]
+Underfull \hbox (badness 10000) detected at line 316
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 339
+[][][]
+ []
+
+[54]
+Underfull \hbox (badness 10000) detected at line 362
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 385
+[][][]
+ []
+
+[55]
+Underfull \hbox (badness 10000) detected at line 408
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 431
+[][][]
+ []
+
+[56]
+Underfull \hbox (badness 10000) detected at line 458
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 476
+[][][]
+ []
+
+) (classclient_1_1gui_1_1_log_in.tex [57])
 (classserver_1_1remote_1_1_remote.tex
-<classserver_1_1remote_1_1_remote.pdf, id=2423, 501.875pt x 137.51375pt>
+<classserver_1_1remote_1_1_remote.pdf, id=2730, 501.875pt x 137.51375pt>
 File: classserver_1_1remote_1_1_remote.pdf Graphic file (type pdf)
 
 <use classserver_1_1remote_1_1_remote.pdf>
 Package pdftex.def Info: classserver_1_1remote_1_1_remote.pdf used on input lin
 e 6.
 (pdftex.def)             Requested size: 207.68457pt x 56.9055pt.
- [39] [40 <./classserver_1_1remote_1_1_remote.pdf>]
-Underfull \hbox (badness 10000) detected at line 80
+ [58 <./classserver_1_1remote_1_1_remote.pdf>]
+Underfull \hbox (badness 10000) detected at line 75
 [][][]
  []
 
-[41] [42] [43]) (classserver_1_1data_1_1_review.tex
-<classserver_1_1data_1_1_review.pdf, id=2525, 501.875pt x 309.155pt>
+[59]
+Underfull \hbox (badness 10000) detected at line 93
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 115
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 138
+[][][]
+ []
+
+[60]
+Underfull \hbox (badness 10000) detected at line 161
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 179
+[][][]
+ []
+
+[61]
+Underfull \hbox (badness 10000) detected at line 204
+[][][]
+ []
+
+[62]
+Underfull \hbox (badness 10000) detected at line 262
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 280
+[][][]
+ []
+
+[63]
+Underfull \hbox (badness 10000) detected at line 303
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 326
+[][][]
+ []
+
+[64]
+Underfull \hbox (badness 10000) detected at line 349
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 372
+[][][]
+ []
+
+[65]
+Underfull \hbox (badness 10000) detected at line 395
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 418
+[][][]
+ []
+
+[66]
+Underfull \hbox (badness 10000) detected at line 445
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 463
+[][][]
+ []
+
+) (classserver_1_1data_1_1_review.tex
+<classserver_1_1data_1_1_review.pdf, id=2872, 501.875pt x 309.155pt>
 File: classserver_1_1data_1_1_review.pdf Graphic file (type pdf)
 
 <use classserver_1_1data_1_1_review.pdf>
 Package pdftex.def Info: classserver_1_1data_1_1_review.pdf used on input line 
 6.
 (pdftex.def)             Requested size: 92.37828pt x 56.9055pt.
- [44 <./classserver_1_1data_1_1_review.pdf>] [45] [46]) (classserver_1_1_r_m_i_
-test.tex [47] [48]
+ [67 <./classserver_1_1data_1_1_review.pdf>] [68] [69]) (classserver_1_1_r_m_i_
+test.tex [70] [71]
 Underfull \hbox (badness 7326) in paragraph at lines 103--104
 []\T1/phv/m/n/10 public void delete[]Database() { Persistence[]Manager[]Factory
  pmf = J[]D[]O[]Helper.[]get[]Persistence[]Manager[]
@@ -1372,54 +1825,70 @@ Underfull \hbox (badness 768) in paragraph at lines 103--104
 mf.[]get[]Persistence[]Manager(); Trans-ac-tion tx =
  []
 
-) (classserver_1_1_server.tex [49]) (classclient_1_1gui_1_1_show_books.tex)
-(classclient_1_1gui_1_1_show_description.tex [50])
+) (classserver_1_1_server.tex [72]) (classclient_1_1gui_1_1_show_books.tex)
+(classclient_1_1gui_1_1_show_books_admin.tex [73])
+(classclient_1_1gui_1_1_show_description.tex [74])
+(classclient_1_1gui_1_1_show_description_admin.tex
+<classclient_1_1gui_1_1_show_description_admin.pdf, id=3005, 501.875pt x 196.73
+5pt>
+File: classclient_1_1gui_1_1_show_description_admin.pdf Graphic file (type pdf)
+
+ <use classclient_1_1gui_1_1_show_description_admin.pdf>
+Package pdftex.def Info: classclient_1_1gui_1_1_show_description_admin.pdf used
+ on input line 6.
+(pdftex.def)             Requested size: 145.16478pt x 56.9055pt.
+ [75])
 (classserver_1_1data_1_1_user.tex
-<classserver_1_1data_1_1_user.pdf, id=2642, 501.875pt x 349.305pt>
+<classserver_1_1data_1_1_user.pdf, id=3018, 501.875pt x 349.305pt>
 File: classserver_1_1data_1_1_user.pdf Graphic file (type pdf)
 
 <use classserver_1_1data_1_1_user.pdf>
 Package pdftex.def Info: classserver_1_1data_1_1_user.pdf used on input line 6.
 
 (pdftex.def)             Requested size: 81.75665pt x 56.9055pt.
- [51] [52 <./classserver_1_1data_1_1_user.pdf>] [53] [54]) [55] [56
-
-]
+ [76 <./classclient_1_1gui_1_1_show_description_admin.pdf>] [77 <./classserver_
+1_1data_1_1_user.pdf>] [78] [79])
+[80]
 Chapter 7.
-(_client_8java.tex) (_log_in_8java.tex) (_show_books_8java.tex)
-(_show_description_8java.tex [57]) (_d_a_o_8java.tex) (_d_b_8java.tex)
-(_i_d_a_o_8java.tex) (_i_d_b_8java.tex) (_book_8java.tex [58])
-(_review_8java.tex) (_user_8java.tex) (_i_remote_8java.tex) (_remote_8java.tex
-[59]) (_server_8java.tex) (_conti_perf_test_8java.tex)
-(_d_a_o_mock_test_8java.tex) (_r_m_i_test_8java.tex [60]) [61] [62
+(_client_8java.tex) (_add_books_8java.tex) (_log_in_8java.tex)
+(_show_books_8java.tex [81
 
-] (refman.ind [63
+]) (_show_books_admin_8java.tex)
+(_show_description_8java.tex) (_show_description_admin_8java.tex)
+(_d_a_o_8java.tex) (_d_b_8java.tex [82]) (_i_d_a_o_8java.tex) (_i_d_b_8java.tex
+) (_book_8java.tex) (_review_8java.tex [83]) (_user_8java.tex)
+(_i_remote_8java.tex) (_remote_8java.tex) (_server_8java.tex [84])
+(_conti_perf_test_8java.tex) (_d_a_o_mock_test_8java.tex)
+(_r_m_i_test_8java.tex) [85] [86
+
+] (refman.ind [87
 
 
-] [64] [65] [66] [67] [68
+] [88] [89] [90] [91] [92
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
- (refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+
+(refman.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 16EF753044ED26B334A3B41B0C151D17;60166.
+(rerunfilecheck)             Checksum: 7A9DA27B901076FCF3B3B849CC88EF6C;65614.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
  ) 
 Here is how much of TeX's memory you used:
- 16183 strings out of 493328
- 252952 string characters out of 3139121
- 338197 words of memory out of 3000000
- 18692 multiletter control sequences out of 15000+200000
+ 16548 strings out of 493328
+ 258343 string characters out of 3139121
+ 342074 words of memory out of 3000000
+ 18858 multiletter control sequences out of 15000+200000
  61983 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,16n,92p,831b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,16n,92p,839b,630s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1430,9 +1899,9 @@ rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
 elvetic/uhvro8a.pfb>
-Output written on refman.pdf (80 pages, 700851 bytes).
+Output written on refman.pdf (106 pages, 795059 bytes).
 PDF statistics:
- 3475 PDF objects out of 3580 (max. 8388607)
- 685 named destinations out of 1000 (max. 500000)
- 2358 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3920 PDF objects out of 4296 (max. 8388607)
+ 872 named destinations out of 1000 (max. 500000)
+ 2523 words of extra memory for PDF output out of 10000 (max. 10000000)
 
